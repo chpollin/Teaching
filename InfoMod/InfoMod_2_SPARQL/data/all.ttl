@@ -1,0 +1,989 @@
+# filename: ex002.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+
+ab:richard ab:homeTel "(229) 276-5135" . 
+ab:richard ab:email   "richard49@hotmail.com" . 
+
+ab:cindy ab:homeTel "(245) 646-5488" . 
+ab:cindy ab:email   "cindym@gmail.com" . 
+
+ab:craig ab:homeTel "(194) 966-1505" . 
+ab:craig ab:email   "craigellis@yahoo.com" . 
+ab:craig ab:email   "c.ellis@usairwaysgroup.com" . 
+# filename: ex012.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+d:i0432 ab:firstName "Richard" . 
+d:i0432 ab:lastName  "Mutt" . 
+d:i0432 ab:homeTel   "(229) 276-5135" .
+d:i0432 ab:email     "richard49@hotmail.com" . 
+
+d:i9771 ab:firstName "Cindy" . 
+d:i9771 ab:lastName  "Marshall" . 
+d:i9771 ab:homeTel   "(245) 646-5488" . 
+d:i9771 ab:email     "cindym@gmail.com" . 
+
+d:i8301 ab:firstName "Craig" . 
+d:i8301 ab:lastName  "Ellis" . 
+d:i8301 ab:email     "craigellis@yahoo.com" . 
+d:i8301 ab:email     "c.ellis@usairwaysgroup.com" . 
+# filename: ex033.ttl
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix d:   <http://learningsparql.com/ns/data#> .
+@prefix dm:  <http://learningsparql.com/ns/demo#> .
+
+d:item342 dm:shipped     "2011-02-14"^^<http://www.w3.org/2001/XMLSchema#date> . 
+d:item342 dm:quantity    "4"^^xsd:integer . 
+d:item342 dm:invoiced    "false"^^xsd:boolean . 
+d:item342 dm:costPerItem "3.50"^^xsd:decimal . 
+# filename: ex034.ttl
+
+@prefix d:   <http://learningsparql.com/ns/data#> .
+@prefix dm: <http://learningsparql.com/ns/demo#> .
+
+d:item342 dm:shipped     "2011-02-14"^^<http://www.w3.org/2001/XMLSchema#date> . 
+d:item342 dm:quantity    4 . 
+d:item342 dm:invoiced    true .  
+d:item342 dm:costPerItem 3.50 . 
+# filename: ex036.ttl
+
+@prefix v:  <http://www.w3.org/2006/vcard/> .
+
+<http://www.w3.org/People/Berners-Lee/card#i> v:title "Director"@en .
+<http://www.w3.org/People/Berners-Lee/card#i> v:title "Directeur"@fr .
+# filename: ex037.ttl
+
+@prefix :     <http://www.learningsparql.com/ns/demo#> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:sideDish42 rdfs:label "french fries"@en-US . 
+:sideDish42 rdfs:label "chips"@en-GB . 
+
+:sideDish43 rdfs:label "chips"@en-US . 
+:sideDish43 rdfs:label "crisps"@en-GB . 
+# filename: ex038.ttl
+
+<http://www.w3.org/People/Berners-Lee/card#i> 
+<http://www.w3.org/2000/01/rdf-schema#label>
+"Tim Berners-Lee" . 
+# filename: ex039.ttl
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Switzerland> rdfs:label "Switzerland"@en,
+  "Suiza"@es, "Sveitsi"@fi, "Suisse"@fr .
+# filename: ex040.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+
+ab:i0432 ab:firstName    "Richard" ;
+        ab:lastName      "Mutt" ;
+        ab:postalCode    "49345" ;
+        ab:city          "Springfield" ;
+        ab:homeTel       "(229) 276-5135" ;
+        ab:streetAddress "32 Main St." ;
+        ab:region        "Connecticut" ;         
+        ab:email         "richard49@hotmail.com" . 
+# filename: ex041.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+
+ab:i0432 ab:firstName    "Richard" ;
+        ab:lastName      "Mutt" ;
+        ab:homeTel       "(229) 276-5135" ;
+        ab:email         "richard49@hotmail.com" ;
+        ab:address       _:b1 .
+
+_:b1    ab:postalCode    "49345" ;
+        ab:city          "Springfield" ;
+        ab:streetAddress "32 Main St." ;
+        ab:region        "Connecticut" . 
+# filename: ex042.ttl
+
+@prefix dc:   <http://purl.org/dc/elements/1.1/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dc:creator
+      rdf:type rdf:Property ;     
+      # a rdf:Property ;
+      rdfs:comment "An entity primarily responsible for making the resource."@en-US ;
+      rdfs:label "Creator"@en-US .
+# filename: ex043.ttl
+
+@prefix ab:   <http://learningsparql.com/ns/addressbook#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ab:Musician
+      rdf:type rdfs:Class ;
+      rdfs:label "Musician" ;
+      rdfs:comment "Someone who plays a musical instrument" .
+
+ab:MusicalInstrument
+      a rdfs:Class ;
+      rdfs:label "musical instrument" .
+# filename: ex044.ttl
+
+@prefix ab:   <http://learningsparql.com/ns/addressbook#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ab:playsInstrument
+      rdf:type rdf:Property ;
+      rdfs:comment "Identifies the instrument that someone plays" ;
+      rdfs:label "plays instrument" ;
+      rdfs:domain ab:Musician ;
+      rdfs:range ab:MusicalInstrument .  
+
+# filename: ex045.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+
+ab:i0432 ab:firstName     "Richard" ;
+        ab:lastName       "Mutt" ;
+        ab:postalCode     "49345" ;
+        ab:city           "Springfield" ;
+        ab:homeTel        "(229) 276-5135" ;
+        ab:streetAddress  "32 Main St." ;
+        ab:region         "Connecticut" ;         
+        ab:email          "richard49@hotmail.com" ;
+        ab:playsInstrument ab:vacuumCleaner .
+# filename: ex046.ttl
+
+@prefix ab:   <http://learningsparql.com/ns/addressbook#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+ab:i0432  
+   ab:firstName "Richard" ;
+   ab:lastName  "Mutt" ;
+   ab:spouse    ab:i9771 . 
+
+ab:i8301  
+   ab:firstName "Craig" ;
+   ab:lastName  "Ellis" ;
+   ab:patient   ab:i9771 . 
+
+ab:i9771
+   ab:firstName "Cindy" ; 
+   ab:lastName  "Marshall" .  
+
+ab:spouse
+   rdf:type owl:SymmetricProperty ; 
+   rdfs:comment "Identifies someone's spouse" .
+
+ab:patient 
+   rdf:type rdf:Property ;
+   rdfs:comment "Identifies a doctor's patient" . 
+
+ab:doctor 
+   rdf:type rdf:Property ;
+   rdfs:comment "Identifies a doctor treating the named resource" ;
+   owl:inverseOf ab:patient . 
+# filename: ex050.ttl
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+
+<http://www.learningsparql.com/ns/demo#i93234>
+        foaf:nick "Dick" ;  
+        foaf:givenname "Richard" ; 
+        foaf:mbox "richard49@hotmail.com" ;
+        foaf:surname "Mutt" ;
+        foaf:workplaceHomepage <http://www.philamuseum.org/> ;
+        foaf:aimChatID "bridesbachelor" . 
+
+# filename: ex054.ttl
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+d:i0432 ab:firstName "Richard" . 
+d:i0432 ab:lastName  "Mutt" . 
+d:i0432 ab:homeTel   "(229) 276-5135" . 
+d:i0432 ab:nick      "Dick" .
+d:i0432 ab:email     "richard49@hotmail.com" . 
+
+d:i9771 ab:firstName "Cindy" . 
+d:i9771 ab:lastName  "Marshall" . 
+d:i9771 ab:homeTel   "(245) 646-5488" . 
+d:i9771 ab:email     "cindym@gmail.com" . 
+
+d:i8301 ab:firstName "Craig" . 
+d:i8301 ab:lastName  "Ellis" . 
+d:i8301 ab:workTel   "(245) 315-5486" .
+d:i8301 ab:email     "craigellis@yahoo.com" . 
+d:i8301 ab:email     "c.ellis@usairwaysgroup.com" . 
+
+# filename: ex069.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+# People
+
+d:i0432 ab:firstName "Richard" ; 
+        ab:lastName  "Mutt" ; 
+        ab:email     "richard49@hotmail.com" . 
+
+d:i9771 ab:firstName "Cindy" ; 
+        ab:lastName  "Marshall" ; 
+        ab:email     "cindym@gmail.com" . 
+
+d:i8301 ab:firstName "Craig" ; 
+        ab:lastName  "Ellis" ; 
+        ab:email     "c.ellis@usairwaysgroup.com" . 
+
+# Courses
+
+d:course34 ab:courseTitle "Modeling Data with OWL" .
+d:course71 ab:courseTitle "Enhancing Websites with RDFa" .
+d:course59 ab:courseTitle "Using SPARQL with non-RDF Data" .
+d:course85 ab:courseTitle "Updating Data with SPARQL" .
+
+# Who's taking which courses
+
+d:i8301 ab:takingCourse d:course59 . 
+d:i9771 ab:takingCourse d:course34 . 
+d:i0432 ab:takingCourse d:course85 . 
+d:i0432 ab:takingCourse d:course59 . 
+d:i9771 ab:takingCourse d:course59 . 
+
+
+# filename: ex072.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+# People
+
+d:i0432 ab:firstName "Richard" ; 
+        ab:lastName  "Mutt" ; 
+        ab:email     "richard49@hotmail.com" . 
+
+d:i9771 ab:firstName "Cindy" ; 
+        ab:lastName  "Marshall" ; 
+        ab:email     "cindym@gmail.com" . 
+
+d:i8301 ab:firstName "Craig" ; 
+        ab:lastName  "Ellis" ; 
+        ab:email     "c.ellis@usairwaysgroup.com" . 
+
+# filename: ex073.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+# Courses
+
+d:course34 ab:courseTitle "Modeling Data with OWL" .
+d:course71 ab:courseTitle "Enhancing Websites with RDFa" .
+d:course59 ab:courseTitle "Using SPARQL with non-RDF Data" .
+d:course85 ab:courseTitle "Updating Data with SPARQL" .
+
+# filename: ex074.ttl
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix c: <http://learningsparql.com/ns/citations#> . 
+@prefix : <http://learningsparql.com/ns/papers#> .
+
+:paperA dc:title "Paper A" . 
+
+:paperB rdfs:label "Paper B" ;
+        c:cites :paperA . 
+
+:paperC c:cites :paperA . 
+
+:paperD c:cites :paperA , :paperB . 
+
+:paperE c:cites :paperA . 
+
+:paperF c:cites :paperC , :paperE . 
+
+:paperG c:cites :paperC , :paperE . 
+
+:paperH c:cites :paperD . 
+
+:paperI c:cites :paperF , :paperG . 
+
+# filename: ex100.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix d:   <http://learningsparql.com/ns/data#> .
+
+d:i0432 ab:firstName  "Richard" ;
+        ab:lastName   "Mutt" ;
+        ab:instrument "sax" ;
+        ab:instrument "clarinet" . 
+
+d:i9771 ab:firstName  "Cindy" ;
+        ab:lastName   "Marshall" ;
+        ab:instrument "drums" . 
+
+d:i8301 ab:firstName  "Craig" ;
+        ab:lastName   "Ellis" ; 
+        ab:instrument "trumpet" . 
+
+# filename: ex104.ttl
+
+@prefix dm: <http://learningsparql.com/ns/demo#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+d:item432 dm:cost 8 ;
+          dm:location <http://dbpedia.org/resource/Boston> .
+d:item857 dm:cost 12 ;
+          dm:location <http://dbpedia.org/resource/Montreal> .
+d:item693 dm:cost 10 ; 
+          dm:location "Heidelberg" . 
+d:item126 dm:cost 5 ;
+          dm:location <http://dbpedia.org/resource/Lisbon> .
+
+
+# filename: ex115.ttl
+
+@prefix d:    <http://learningsparql.com/ns/data#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+
+d:one   rdfs:label "one" . 
+d:two   rdfs:label "two" . 
+d:three rdfs:label "three" . 
+d:four  rdfs:label "four" . 
+d:five  rdfs:label "five" . 
+d:six   rdfs:label "six" . 
+
+# filename: ex122.ttl 
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+d:i5433 ab:firstName "Katherine" ; 
+        ab:lastName  "Duncan" ; 
+        ab:email     "katherine.duncan@elpaso.com" . 
+
+d:i2194 ab:firstName "Bradley" ; 
+        ab:lastName  "Perry" ; 
+        ab:email     "bradley.perry@corning.com" . 
+
+# filename: ex125.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+ab:course42 ab:courseTitle "Combining Public and Private RDF Data" .
+ab:course24 ab:courseTitle "Using Named Graphs" .
+
+# filename: ex132.ttl
+
+@prefix images: <http://www.somepublisher.com/img/> .
+@prefix isi: <http://www.isi.edu/ikcap/Wingse/fileOntology.owl#> .
+
+images:f43240.jpg isi:hasMetadata <http://www.somepublisher.com/ns/m43240> . 
+
+# filename: ex133.ttl
+
+@prefix images: <http://www.somepublisher.com/img/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+images:f43240.jpg dc:creator "Richard Mutt" ;
+                  dc:title "Fountain" ;
+                  dc:format "jpeg" . 
+
+# filename: ex134.ttl
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> . 
+
+<ex125.ttl> dc:date "2011-09-23" ;
+            dc:creator "Richard Mutt" .
+
+<ex122.ttl> dc:date "2011-09-24" ;
+            dc:creator "Richard Mutt" .
+
+# filename: ex138.ttl
+
+@prefix e: <http://learningsparql.com/ns/expenses#> .
+@prefix d: <http://learningsparql.com/ns/data#> .
+
+d:m40392 e:description "breakfast" ;
+         e:date "2011-10-14T08:53" ;
+         e:amount 6.53 . 
+
+d:m40393 e:description "lunch" ;
+         e:date "2011-10-14T13:19" ;
+         e:amount 11.13 . 
+
+d:m40394 e:description "dinner" ;
+         e:date "2011-10-14T19:04" ;
+         e:amount 28.30 . 
+
+# filename: ex145.ttl
+
+@prefix e: <http://learningsparql.com/ns/expenses#> .
+@prefix d: <http://learningsparql.com/ns/data#> .
+
+d:m40392 e:description "breakfast" ;
+         e:date "2011-10-14" ;
+         e:amount 6.53 . 
+
+d:m40393 e:description "lunch" ;
+         e:date "2011-10-14" ;
+         e:amount 11.13 . 
+
+d:m40394 e:description "dinner" ;
+         e:date "2011-10-14" ;
+         e:amount 28.30 . 
+
+d:m40395 e:description "breakfast" ;
+         e:date "2011-10-15" ;
+         e:amount 4.32 . 
+
+d:m40396 e:description "lunch" ;
+         e:date "2011-10-15" ;
+         e:amount 9.45 . 
+
+d:m40397 e:description "dinner" ;
+         e:date "2011-10-15" ;
+         e:amount 31.45 . 
+
+d:m40398 e:description "breakfast" ;
+         e:date "2011-10-16" ;
+         e:amount 6.65 . 
+
+d:m40399 e:description "lunch" ;
+         e:date "2011-10-16" ;
+         e:amount 10.00 . 
+
+d:m40400 e:description "dinner" ;
+         e:date "2011-10-16" ;
+         e:amount 25.05 . 
+
+# filename: ex187.ttl
+
+@prefix d:  <http://learningsparql.com/ns/data#> .
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+
+d:jane ab:hasParent d:gene .
+d:gene ab:hasParent d:pat ;
+       ab:gender    d:female .
+d:joan ab:hasParent d:pat ;
+       ab:gender    d:female . 
+d:pat  ab:gender    d:male .
+d:mike ab:hasParent d:joan .
+
+# filename: ex193.ttl
+
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ab:   <http://learningsparql.com/ns/addressbook#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+ab:Aunt rdf:type owl:Class ;
+        rdfs:comment "The sister of one of the resource's parents." . 
+
+
+# filename: ex198.ttl
+
+@prefix dm: <http://learningsparql.com/ns/demo#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+d:item432 dm:cost 8.50 ;
+          dm:amount 14 ;
+          dm:approval d:emp079 ;
+          dm:location <http://dbpedia.org/resource/Boston> .
+
+d:item201 dm:cost 9.25 ;
+          dm:amount 12 ;
+          dm:approval d:emp092 ;
+          dm:location <http://dbpedia.org/resource/Ghent> .
+
+d:item857 dm:cost 12 ;
+          dm:amount 10 ;   
+          dm:location <http://dbpedia.org/resource/Montreal> .
+
+d:item693 dm:cost 10.25 ; 
+          dm:amount 1.5 ;
+          dm:location "Heidelberg" . 
+
+d:item126 dm:cost 5.05 ;
+          dm:amount 4 ;
+          dm:location <http://dbpedia.org/resource/Lisbon> .
+
+
+d:emp092  dm:jobGrade 1 .
+d:emp041  dm:jobGrade 3 .
+d:emp079  dm:jobGrade 5 .
+
+# filename: ex217.ttl
+
+@prefix d:   <http://learningsparql.com/ns/data#> .
+@prefix dm:  <http://learningsparql.com/ns/demo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mt:  <http://learningsparql.com/ns/mytypesystem#> . 
+
+d:item1a dm:prop "1" . 
+d:item1b dm:prop "1"^^xsd:integer . 
+d:item1c dm:prop 1 . 
+d:item1d dm:prop 1.0e5 . 
+d:item2a dm:prop "two" . 
+d:item2b dm:prop "two"^^xsd:string . 
+d:item2c dm:prop "two"^^mt:potrzebies .
+d:item2d dm:prop "two"@en . 
+
+# filename: ex224.ttl
+
+@prefix d:    <http://learningsparql.com/ns/data#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+d:item1 rdfs:label "sample string 1" .
+d:item2 rdfs:label 'sample string 2' .
+d:item3 rdfs:label 'These quotes are "ironic" quotes.' .
+d:item4 rdfs:label "These too are \"ironic\" quotes." .
+d:item5 rdfs:label "McDonald's is not my kind of place." . 
+d:item6 rdfs:label """this
+
+has two carriage returns in the middle.""" . 
+
+
+# filename: ex227.ttl
+
+@prefix e:   <http://learningsparql.com/ns/expenses#> .
+@prefix d:   <http://learningsparql.com/ns/data#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+d:m40392 e:description "breakfast" ;
+         e:date "2011-10-14T08:53:00"^^xsd:dateTime ;
+         e:amount 6.53 . 
+
+d:m40393 e:description "lunch" ;
+         e:date "2011-10-14T13:19:00"^^xsd:dateTime ;
+         e:amount 11.13 . 
+
+d:m40394 e:description "dinner" ;
+         e:date "2011-10-14T19:04:00"^^xsd:dateTime ;
+         e:amount 28.30 . 
+
+# filename: ex241.ttl
+
+@prefix dm:   <http://learningsparql.com/ns/demo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+d:id1 dm:location _:b1 .
+d:id2 dm:location <http://dbpedia.org/resource/Montréal> .
+d:id3 dm:amount 3 . 
+d:id4 dm:amount "4"^^xsd:integer . 
+d:id5 dm:amount 1.0e5 . 
+d:id6 rdfs:label "5 bucks" . 
+d:id7 dm:shipped true  . 
+
+# filename: ex249.ttl
+
+@prefix dm: <http://learningsparql.com/ns/demo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:   <http://learningsparql.com/ns/data#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+d:id3 dm:amount 3 . 
+d:id4 dm:amount "4"^^xsd:integer . 
+d:id5 dm:amount 1.0e5 . 
+d:id6 rdfs:label "5 bucks" . 
+d:id7 dm:shipped true  . 
+
+# filename: ex259.ttl
+
+@prefix dm: <http://learningsparql.com/ns/demo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:   <http://learningsparql.com/ns/data#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+d:id1 dm:location _:b1 .
+d:id3 dm:amount 3 . 
+d:id4 dm:amount "4"^^xsd:integer . 
+d:id5 dm:amount 1.0e5 . 
+d:id6 rdfs:label "5 bucks" . 
+d:id7 dm:shipped true  . 
+d:id8 dm:shipped "true"  . 
+d:id9 dm:shipped "True"  . 
+d:id10 dm:shipDate "2011-11-12"  . 
+d:id11 dm:shipDate "2011-11-13T14:30:00"  . 
+d:id12 dm:shipDate "2011-11-14T14:30:00"^^xsd:dateTime  . 
+
+# filename: ex266.ttl
+
+@prefix im: <http://learningsparql.com/ns/importedData#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+d:item1 im:product "kerosene" ;
+        im:amount "14" ; 
+        im:units "liters" . 
+
+d:item2 im:product "double-knit polyester" ; 
+        im:amount "10" ;
+        im:units "squareMeters" . 
+
+d:item3 im:product "gold-plated chain" ;
+        im:amount "30" ; 
+        im:units "centimeters" . 
+
+# filename: ex278.ttl
+
+@prefix d:    <http://learningsparql.com/ns/data#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
+
+d:item1 rdfs:label "dog" . 
+d:item2 rdfs:label "cat"@en . 
+d:item3 rdfs:label "turtle"@en-US . 
+
+# filename: ex281.ttl
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dm:   <http://learningsparql.com/ns/demo#> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+
+d:cell1 dm:row 1 ; 
+        dm:column 1 ; 
+        rdfs:label "truck" .
+
+d:cell2 dm:row 1 ; 
+        dm:column 2 ; 
+        rdfs:label "lorry" .
+
+d:cell3 dm:row 2 ; 
+        dm:column 1 ; 
+        rdfs:label "apartment" .
+
+d:cell4 dm:row 2 ; 
+        dm:column 2 ; 
+        rdfs:label "flat" .
+
+d:cell5 dm:row 3 ; 
+        dm:column 1 ; 
+        rdfs:label "elevator" .
+
+d:cell6 dm:row 3 ; 
+        dm:column 2 ; 
+        rdfs:label "lift" .
+
+# filename: ex284.ttl
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+
+d:item1 rdfs:label "My String" . 
+
+d:item2 rdfs:label "123456" . 
+
+# filename: ex289.ttl
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+
+d:item1 rdfs:label "My String" . 
+
+d:item2 rdfs:label "http://www.learnsparql.com/cgi/func1&color=red" . 
+
+# filename: ex292.ttl
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+@prefix dm:   <http://learningsparql.com/ns/demo#> .
+
+d:item1 dm:amount 4 . 
+d:item2 dm:amount 3.2 . 
+d:item3 dm:amount 3.8 . 
+d:item4 dm:amount -4.2 . 
+d:item5 dm:amount -4.8 . 
+
+# filename: ex298.ttl
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix d:   <http://learningsparql.com/ns/data#> .
+@prefix t:   <http://purl.org/tio/ns#> . 
+
+d:meeting1 t:starts "2011-10-14T12:30:00.000-05:00"^^xsd:dateTime . 
+
+d:meeting2 t:starts "2011-10-15T12:30:00"^^xsd:dateTime . 
+
+<http://rdf.freebase.com/ns/en.tommy_potter>	
+    <http://rdf.freebase.com/ns/people.person.date_of_birth>	
+    "1918-09-21" .
+
+<http://rdf.freebase.com/ns/en.tommy_potter>	
+    owl:sameAs	
+    <http://dbpedia.org/resource/Tommy_Potter> . 
+
+# filename: ex327.ttl
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
+@prefix d:    <http://learningsparql.com/ns/data#> .
+
+d:c1 a skos:Concept ;
+     skos:prefLabel "Mammal" . 
+
+d:c2 a skos:Concept ;
+     skos:prefLabel "Dog" ;
+     skos:broader d:c1 . 
+
+d:c3 a skos:Concept ;
+     skos:prefLabel "Cat" ;
+     skos:broader d:c1 . 
+
+# filename: ex328.ttl
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
+@prefix xl:   <http://www.w3.org/2008/05/skos-xl#> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+@prefix dc:   <http://purl.org/dc/elements/1.1/> . 
+
+d:c1 a skos:Concept ;
+     xl:prefLabel d:label1 . 
+
+d:c2 a skos:Concept ;
+     xl:prefLabel d:label2 ;
+     skos:broader d:c1 . 
+
+d:c3 a skos:Concept ;
+     xl:prefLabel d:label3 ;
+     skos:broader d:c1 . 
+
+d:label1 a xl:Label ;
+         xl:literalForm "Mammal" ;
+         dc:source <http://en.wikipedia.org/wiki/Mammal> . 
+
+d:label2 a xl:Label ;
+         xl:literalForm "Dog" ;
+         dc:source <http://en.wikipedia.org/wiki/Dog> . 
+
+d:label3 a xl:Label ;
+         xl:literalForm "Cat" ;
+         dc:source <http://en.wikipedia.org/wiki/Cat> . 
+
+# filename: ex368.ttl
+
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+
+# Who's taking which courses
+
+d:i8301 ab:takingCourse d:course59 . 
+d:i9771 ab:takingCourse d:course34 . 
+d:i0432 ab:takingCourse d:course85 . 
+d:i0432 ab:takingCourse d:course59 . 
+d:i9771 ab:takingCourse d:course59 . 
+
+
+# filename: ex409.ttl
+
+@prefix dm:   <http://learningsparql.com/ns/demo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+
+d:id1 rdfs:label "book" .
+d:id2 rdfs:label "5 bucks"@en-US . 
+d:id3 dm:shipped true  . 
+d:id4 dm:location _:b1 .
+d:id5 dm:amount 3 . 
+# filename: ex417.ttl
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dm:   <http://learningsparql.com/ns/demo#> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+@prefix dc:   <http://purl.org/dc/elements/1.1/> . 
+@prefix nfo:  <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> . 
+
+dm:composer rdfs:subPropertyOf dc:creator . 
+dm:photographer rdfs:subPropertyOf dc:creator . 
+
+d:file02924 nfo:fileName "9894397.mp3" ;
+            dm:composer "Charles Ives" . 
+
+d:file74395 nfo:fileName "884930.mp3" ;
+            dm:composer "Eric Satie" . 
+
+d:file69383 nfo:fileName "119933.mp3" ;
+            dm:photographer "Diane Arbus" . 
+
+d:file54839 nfo:fileName "204364.mp3" ;
+            dm:photographer "Henry Fox Talbot" . 
+
+
+# filename: ex421.ttl
+
+@prefix ab:   <http://learningsparql.com/ns/addressbook#> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ab:Musician rdf:type rdfs:Class . # could have said a instead of rdf:type
+
+d:i8301 rdf:type ab:Musician ;
+        ab:firstName "Craig" ;
+        ab:lastName  "Ellis" . 
+
+ab:Person a rdfs:Class .          # could have said rdf:type instead of a
+ab:Musician rdfs:subClassOf ab:Person . 
+# filename: ex424.ttl
+
+@prefix d:       <http://learningsparql.com/ns/data#> .
+@prefix dm:      <http://learningsparql.com/ns/demo#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+d:CA rdfs:label "California" .
+d:TX rdfs:label "Texas" .
+d:NY rdfs:label "New York" .
+
+d:m1 rdfs:label "Bonnie Raitt" ;
+     dm:plays d:Guitar ;
+     dm:stateOfBirth d:CA .
+
+d:m2 rdfs:label "Charlie Christian" ;
+     dm:plays d:Guitar ;
+     dm:stateOfBirth d:TX .
+
+d:m3 rdfs:label "Dusty Hill" ;
+     dm:plays d:Bass ;
+     dm:stateOfBirth d:TX .
+
+d:m4 rdfs:label "Kim Gordon" ;
+     dm:plays d:Bass ;
+     dm:stateOfBirth d:NY .
+
+d:m5 rdfs:label "Red Garland" ;
+     dm:plays d:Piano ;
+     dm:stateOfBirth d:TX .
+
+d:m6 rdfs:label "Roky Erickson" ;
+     dm:plays d:Guitar ;
+     dm:stateOfBirth d:TX .
+
+dm:Guitarist
+   owl:equivalentClass
+           [ rdf:type owl:Restriction ;
+             owl:hasValue d:Guitar ;
+             owl:onProperty dm:plays
+           ] .
+
+dm:Texan
+   owl:equivalentClass
+           [ rdf:type owl:Restriction ;
+             owl:hasValue d:TX ;
+             owl:onProperty dm:stateOfBirth
+           ] .
+
+dm:TexasGuitarPlayer
+   owl:equivalentClass
+        [ rdf:type owl:Class ;
+          owl:intersectionOf (dm:Texan dm:Guitarist)
+        ] .
+
+# filename: ex438.ttl
+
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+
+d:emp91234 a d:Employee .      # "a" a shortcut for "rdf:type" 
+d:Employee a rdfs:Class . 
+d:Employee a owl:Class . 
+
+# filename: ex442.ttl (excerpt from void.ttl)
+
+void:Linkset a rdfs:Class, owl:Class;
+    rdfs:label "linkset";
+    rdfs:comment "A collection of RDF links between two void:Datasets.";
+    rdfs:subClassOf void:Dataset .
+# filename: ex443.ttl
+
+@prefix ab:   <http://learningsparql.com/ns/addressbook#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+ab:playsInstrument rdf:type rdf:Property .
+ab:quantity rdf:type owl:DatatypeProperty . 
+# filename: ex477.ttl
+
+@prefix dm:      <http://learningsparql.com/ns/demo#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dm:i590 dc:title "Installation Guide" ; dcterms:dateCopyrighted "2012" . 
+dm:i591 dc:title "Users Guide" ; dcterms:dateCopyrighted "2013" .  
+dm:i592 dc:title "API Reference" ; dcterms:dateCopyrighted "2013" .  
+dm:i593 dc:title "Tutorial" ; dcterms:dateCopyrighted "2011" . 
+dm:i594 dc:title "Reference Guide" ; dcterms:dateCopyrighted "2013" .  
+# filename: ex483.ttl
+
+@prefix dm:   <http://learningsparql.com/ns/demo#> .
+@prefix d:    <http://learningsparql.com/ns/data#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+d:item1 rdfs:label "kerosene, 1 quart" ;
+        dm:amount "14"^^xsd:integer . 
+
+d:item2 rdfs:label "double-knit polyester vest" ; 
+        dm:amount 10 .
+
+d:item3 rdfs:label "gold-plated chain" ;
+        dm:amount "30"^^xsd:string .
+
+d:item4 rdfs:label "reverse flange" ;
+        dm:amount "12" . 
+
+# filename: ex521.ttl
+
+@prefix d:    <http://learningsparql.com/ns/data#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+skos:prefLabel rdfs:subPropertyOf rdfs:label .
+d:i4230 skos:prefLabel "Frank" . 
+# d:i4230 rdfs:label "Frank" . 
+# filename: ex530.ttl
+
+@prefix d:  <http://learningsparql.com/ns/data#> .
+@prefix dm: <http://learningsparql.com/ns/demo#> .
+
+d:x dm:tag "seven" . 
+d:x dm:tag "eight" . 
+<http://learningsparql.com/ns/data#x>
+      <http://learningsparql.com/ns/demo#tag>
+                    "two" ;
+      <http://learningsparql.com/ns/demo#tag>
+                    "one" .
+# filename: ex536.ttl
+
+@prefix ab:   <http://learningsparql.com/ns/addressbook#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+ab:Person a owl:Class .
+ab:MusicalInstrument a owl:Class .
+
+ab:firstName rdfs:domain ab:Person ;
+             rdfs:label "first name" .   
+ab:lastName  rdfs:domain ab:Person ;
+             rdfs:label "last name" .  
+ab:homeTel   rdfs:domain ab:Person ;
+             rdfs:label "home telephone" .  
+ab:email     rdfs:domain ab:Person ;
+             rdfs:label "email address" .  
+
+ab:plays rdfs:domain ab:Person . 
+ab:plays rdfs:range ab:MusicalInstrument . 
+
+ab:guitar a ab:MusicalInstrument ;
+          rdfs:label "guitar" .  
+ab:bass   a ab:MusicalInstrument ;
+          rdfs:label "bass" .  
+ab:drums  a ab:MusicalInstrument ;
+           rdfs:label "drums" .  
+

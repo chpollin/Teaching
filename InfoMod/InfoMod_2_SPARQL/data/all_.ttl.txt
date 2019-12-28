@@ -1,0 +1,222 @@
+# filename: ex054.ttl
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mt:  <http://learningsparql.com/ns/mytypesystem#> . 
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix d:  <http://learningsparql.com/ns/data#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dm:  <http://learningsparql.com/ns/demo#> .
+@prefix v:  <http://www.w3.org/2006/vcard/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:   <http://purl.org/dc/elements/1.1/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix c: <http://learningsparql.com/ns/citations#> . 
+@prefix : <http://learningsparql.com/ns/papers#> .
+@prefix images: <http://www.somepublisher.com/img/> .
+@prefix isi: <http://www.isi.edu/ikcap/Wingse/fileOntology.owl#> .
+@prefix e: <http://learningsparql.com/ns/expenses#> .
+@prefix im: <http://learningsparql.com/ns/importedData#> .
+@prefix t:   <http://purl.org/tio/ns#> . 
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
+@prefix xl:   <http://www.w3.org/2008/05/skos-xl#> .
+@prefix nfo:  <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> . 
+
+ab:i0432 ab:firstName    "Richard" ;
+        ab:lastName      "Mutt" ;
+        ab:nick          "Richy300" ;
+        ab:postalCode    "49345" ;
+        ab:city          "Springfield" ;
+        ab:homeTel       "(229) 276-5135" ;
+        ab:streetAddress "32 Main St." ;
+        ab:region        "Connecticut" ;         
+        ab:email         "richard49@hotmail.com" ;
+        ab:address       ab:b1 ;
+        ab:playsInstrument ab:vacuumCleaner ;
+        ab:spouse    ab:i9771;
+        ab:instrument "sax" ;
+        ab:instrument "clarinet" . 
+        
+ab:i043211 ab:firstName    "Christopher" ;
+        ab:lastName      "Pollin" ;
+        ab:nick          "Chrisi" ;
+        ab:postalCode    "8010" ;
+        ab:city          "graz" ;
+        ab:homeTel       "1234-5135" ;
+        ab:streetAddress "Lendplatz" ;
+        ab:region        "Steiermark" ;         
+        ab:email         "chrisi@hotmail.com".
+        
+        
+ab:b1   ab:postalCode    "49345" ;
+        ab:city          "Springfield" ;
+        ab:streetAddress "32 Main St." ;
+        ab:region        "Connecticut" . 
+
+d:i9771 ab:firstName "Cindy" .
+d:i9771 ab:lastName  "Marshall" .
+d:i9771 ab:homeTel   "(245) 646-5488" .
+d:i9771 ab:email     "cindym@gmail.com" ;
+        ab:instrument "drums" . 
+
+d:i8301 ab:firstName "Craig" .
+d:i8301 ab:lastName  "Ellis" .
+d:i8301 ab:workTel   "(245) 315-5486" .
+d:i8301 ab:email     "craigellis@yahoo.com" .
+d:i8301 ab:email     "c.ellis@usairwaysgroup.com" ;
+        ab:patient   ab:i9771 ;
+        ab:instrument "trumpet" . 
+
+<http://www.w3.org/People/Berners-Lee/card#i> v:title "Director"@en .
+<http://www.w3.org/People/Berners-Lee/card#i> v:title "Directeur"@fr .
+
+:sideDish42 rdfs:label "french fries"@en-US . 
+:sideDish42 rdfs:label "chips"@en-GB . 
+
+:sideDish43 rdfs:label "chips"@en-US . 
+:sideDish43 rdfs:label "crisps"@en-GB . 
+
+ab:playsInstrument
+      rdf:type rdf:Property ;
+      rdfs:comment "Identifies the instrument that someone plays" ;
+      rdfs:label "plays instrument" ;
+      rdfs:domain ab:Musician ;
+      rdfs:range ab:MusicalInstrument . 
+      
+ab:Musician
+    rdf:type rdfs:Class ;
+    rdfs:label "Musician" ;
+    rdfs:comment "Someone who plays a musical instrument" .
+
+ab:MusicalInstrument
+      a rdfs:Class ;
+      rdfs:label "musical instrument" .
+      
+ab:spouse
+   rdf:type owl:SymmetricProperty ; 
+   rdfs:comment "Identifies someone's spouse" .
+   
+ab:patient 
+   rdf:type rdf:Property ;
+   rdfs:comment "Identifies a doctor's patient" . 
+
+ab:doctor 
+   rdf:type rdf:Property ;
+   rdfs:comment "Identifies a doctor treating the named resource" ;
+   owl:inverseOf ab:patient . 
+   
+   
+<http://www.learningsparql.com/ns/demo#i93234>
+        foaf:nick "Dick" ;  
+        foaf:givenname "Richard" ; 
+        foaf:mbox "richard49@hotmail.com" ;
+        foaf:surname "Mutt" ;
+        foaf:workplaceHomepage <http://www.philamuseum.org/> ;
+        foaf:aimChatID "bridesbachelor" . 
+
+
+d:course34 ab:courseTitle "Modeling Data with OWL" .
+d:course71 ab:courseTitle "Enhancing Websites with RDFa" .
+d:course59 ab:courseTitle "Using SPARQL with non-RDF Data" .
+d:course85 ab:courseTitle "Updating Data with SPARQL" .
+
+d:course134 ab:prerequisite d:course171.
+d:course171 ab:prerequisite d:course159.
+d:course134 ab:courseTitle "SPARQL Workshop b".
+d:course171 ab:courseTitle "SPARQL Workshop a".
+d:course159 ab:courseTitle "SPARQL Workshop c".
+ab:i043212 ab:takingCourse d:course134.
+ab:i043212 ab:lastName      "Sepp" .
+
+d:i8301 ab:takingCourse d:course59 . 
+d:i9771 ab:takingCourse d:course34 . 
+d:i0432 ab:takingCourse d:course85 . 
+d:i0432 ab:takingCourse d:course59 . 
+d:i9771 ab:takingCourse d:course59 .   
+
+:paperA dc:title "Paper A" . 
+
+:paperB rdfs:label "Paper B" ;
+        c:cites :paperA . 
+
+:paperC rdfs:label "Paper C" ;
+        c:cites :paperA . 
+
+:paperD rdfs:label "Paper D" ;
+    c:cites :paperA , :paperB . 
+
+:paperE dc:title "Paper E";
+    c:cites :paperA . 
+
+:paperF dc:title "Paper F";
+    c:cites :paperC , :paperE . 
+
+:paperG c:cites :paperC , :paperE . 
+
+:paperH c:cites :paperD . 
+
+:paperI c:cites :paperF , :paperG . 
+ 
+
+d:item432 dm:cost 8 ;
+    dm:location <http://dbpedia.org/resource/Boston> ;
+    dm:amount 14 ;
+    dm:approval d:emp079 ;
+    dm:location <http://dbpedia.org/resource/Boston> .
+
+        
+d:item857 dm:cost 12 ;
+        dm:amount 12 ;
+        dm:approval d:emp092 ;
+        dm:location <http://dbpedia.org/resource/Ghent>;
+        dm:location <http://dbpedia.org/resource/Montreal> .
+
+d:item693 dm:cost 10 ; 
+          dm:location "Heidelberg" . 
+d:item126 dm:cost 5 ;
+          dm:location <http://dbpedia.org/resource/Lisbon> .
+
+d:one   rdfs:label "one" . 
+d:two   rdfs:label "two" . 
+d:three rdfs:label "three" . 
+d:four  rdfs:label "four" . 
+d:five  rdfs:label "five" . 
+d:six   rdfs:label "six" . 
+
+d:m40392 e:description "breakfast" ;
+         e:date "2011-10-14" ;
+         e:amount 6.53 . 
+
+d:m40393 e:description "lunch" ;
+         e:date "2011-10-14" ;
+         e:amount 11.13 . 
+
+d:m40394 e:description "dinner" ;
+         e:date "2011-10-14" ;
+         e:amount 28.30 . 
+
+d:m40395 e:description "breakfast" ;
+         e:date "2011-10-15" ;
+         e:amount 4.32 . 
+
+d:m40396 e:description "lunch" ;
+         e:date "2011-10-15" ;
+         e:amount 9.45 . 
+
+d:m40397 e:description "dinner" ;
+         e:date "2011-10-15" ;
+         e:amount 31.45 . 
+
+d:m40398 e:description "breakfast" ;
+         e:date "2011-10-16" ;
+         e:amount 6.65 . 
+
+d:m40399 e:description "lunch" ;
+         e:date "2011-10-16" ;
+         e:amount 10.00 . 
+
+d:m40400 e:description "dinner" ;
+         e:date "2011-10-16" ;
+         e:amount 25.05 . 
+
+      
