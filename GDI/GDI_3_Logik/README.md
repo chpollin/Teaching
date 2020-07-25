@@ -1,11 +1,4 @@
-# GDI_6_Logik
-[Folien](https://www.google.com)
+# GDI_3_Aussagenlogik
 
-## TOC
-
-* 
-*
-*
-*
-*
-
+* [Folien](https://docs.google.com/presentation/d/1dujrq3RTFDCgTUwCNwAacjZK6SfUYasNXWxUyLktdnY/edit?usp=sharing)
+* [Folien](https://youtu.be/2vfaQLVStmU )

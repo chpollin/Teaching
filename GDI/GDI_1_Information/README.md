@@ -1,4 +1,4 @@
-# GDI_1_Information
+# GDI_1_Information und Informatik
 
 [Folien](https://docs.google.com/presentation)
 
