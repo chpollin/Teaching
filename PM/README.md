@@ -33,13 +33,13 @@
 
 * Git einrichten (Linux/Mac über Konsole; für Windwos [GitHub Desktop](https://desktop.github.com/))
 * Repositories
-  * git init
-  * git status
-  * git add
-  * git commit 
-  * git push
-  * git pull 
-  * git clone
+  * `git init`
+  * `git status`
+  * `git add`
+  * `git commit` 
+  * `git push`
+  * `git pull` 
+  * `git clone`
   * Branches
 
 ### GitHub 
