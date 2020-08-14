@@ -90,6 +90,10 @@ GitHub Pages are free, public websites hosted and published directly from your G
 
 [Folien: Projektantrag, Projektdetailplan](https://docs.google.com/presentation/d/1TeztL5tN1GimbQWPMkDsSkXJ4nYQy_qFPBAKTZ1o77Q/edit?usp=sharing)
 
+[Beispiel: Projektdefinition Pflichtenheft - Stefan Zweig digital](https://docs.google.com/document/d/1KNq_i1ljKNUE9MnoklJKrWYsap9ZRapOaRh1Tt9-E14/edit?usp=sharing)
+
+[Beispiel: Projektdefinition Pflichtenheft - Kriminalmuseum, Uni Graz](https://docs.google.com/document/d/1EO3QIWx1ItTOoe52jdi0oVgYQcHQLv8voM3DcLbmDpI/edit?usp=sharing)
+
 ## PM_DH 5 - XY
 
 [Folien: XY](https://docs.google.com/presentation/d/1JjjR_ApAKIv27Hf_4X70RBJSrKeF8a_H-qE7tXzFND4/edit?usp=sharing)
