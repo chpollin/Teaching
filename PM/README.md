@@ -24,7 +24,7 @@
 
 [Video: Learn Git In 15 Minutes](https://www.youtube.com/watch?v=USjZcfj8yxE)
 
-[Notes: Introduction to Git](https://www.notion.so/Introduction-to-Git-ac396a0697704709a12b6a0e545db049)]
+[Notes: Introduction to Git](https://www.notion.so/Introduction-to-Git-ac396a0697704709a12b6a0e545db049)
 
 [OpenHPI-Kurs: Let’s Git - Versionsverwaltung und OpenSource](https://open.hpi.de/courses/git2020/items/3sXmcWVGB2ZXM5m316du2C) ("Woche 1" + "Woche 2")
 
@@ -46,7 +46,7 @@
 
 [Video: Learn Github in 20 Minutes](https://www.youtube.com/watch?v=USjZcfj8yxE)
 
-[Notes: Introduction to GitHub](https://www.notion.so/Introduction-to-GitHub-202af6f64bbd4299b15f238dcd09d2a7)]
+[Notes: Introduction to GitHub](https://www.notion.so/Introduction-to-GitHub-202af6f64bbd4299b15f238dcd09d2a7)
 
 * Die Ausgangsdaten liegen in einem Git-Repo; Studis müssen dieses Repo clonen, um an die Daten zu kommen. 
 
@@ -57,10 +57,9 @@
 * Issues
 * Pull Requests
 * Milestones
-* Projects
-  * Boards
+* Projects (Boards)
 
-  [Video: Workflow Strategies](https://www.youtube.com/watch?v=aJnFGMclhU8)
+[Video: Workflow Strategies](https://www.youtube.com/watch?v=aJnFGMclhU8)
 
 * Branching
 * Pull Requests (Review + Discusse + Merge) 
@@ -70,7 +69,7 @@
 
 [Video: Learning GitHub - Making Wikis](https://www.youtube.com/watch?v=bnMl0d-RcPQ)
 
-* [Markdown (Cheatsheet)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Markdown (Cheatsheet)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### GitHub Pages
 
