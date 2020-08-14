@@ -1,6 +1,10 @@
 # Projektmanagement (Planung, Umsetzung, Evaluierung von DH-Projekten)
 
-## Einführung in das Projektmanagement
+## PM_DH 1 - Organisation, Einführung
+
+[Folien: Organisation, Einführung](https://docs.google.com/presentation/d/1dRN373oRK28bFPUaIfzh-N9PKwP5JAR4ZLxnHmT-eiI/edit?usp=sharing)
+
+### Einführung in das Projektmanagement
 
 [Video: Introduction to Project Management (2020)](https://www.youtube.com/watch?v=rBSCvPYGnTc&t=1667s)
 
@@ -8,6 +12,10 @@
   * Time - Goal - Cost
 * Project Team
   * Project Manager
+
+## PM_DH 2 - Projektphasen und Grundbegriffe, Projektmanagementsoftware
+
+[Folien: Projektphasen und Grundbegriffe, Projektmanagementsoftware](https://docs.google.com/presentation/d/18ucIkRPNlM6gsy5Vqe3S_mB0-HHWMgYNKhmPKUKs_pY/edit?usp=sharing)
 
 ### 4 Stages of Project Life Cycle
 
@@ -18,9 +26,11 @@
 * Excecution
 * Closure
 
-## Git/GitHub - Versionsverwaltung
+## PM_DH 3 - Git, GitHub und (Software)Projektmanagement
 
-### Git 
+[Folien: Git, GitHub und (Software)Projektmanagement](https://docs.google.com/presentation/d/1CtEpMq80aqKTTsGwFFmxbzRFuVQuhR3IKLHQ_bHl-rw/edit?usp=sharing)
+
+### Git
 
 [Video: Learn Git In 15 Minutes](https://www.youtube.com/watch?v=USjZcfj8yxE)
 
@@ -30,19 +40,18 @@
 
 [OpenHPI CheatSheet](https://github.com/chpollin/Teaching/tree/master/PM/Git/Cheatsheetv3.pdf)
 
-
 * Git einrichten (Linux/Mac über Konsole; für Windwos [GitHub Desktop](https://desktop.github.com/))
 * Repositories
   * `git init`
   * `git status`
   * `git add`
-  * `git commit` 
+  * `git commit`
   * `git push`
-  * `git pull` 
+  * `git pull`
   * `git clone`
   * Branches
 
-### GitHub 
+### GitHub
 
 [Video: Learn Github in 20 Minutes](https://www.youtube.com/watch?v=USjZcfj8yxE)
 
@@ -71,8 +80,16 @@
 
 [Markdown (Cheatsheet)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-### GitHub Pages
+#### GitHub Pages
 
 GitHub Pages are free, public websites hosted and published directly from your GitHub repository. They can be used to communicate information about users, organizations, or projects.
 
 [Video: GitHub Pages Getting Started](https://www.youtube.com/watch?v=RaKX4A5EiQo)
+
+## PM_DH 4 - XY
+
+[Folien: Projektantrag, Projektdetailplan](https://docs.google.com/presentation/d/1TeztL5tN1GimbQWPMkDsSkXJ4nYQy_qFPBAKTZ1o77Q/edit?usp=sharing)
+
+## PM_DH 5 - XY
+
+[Folien: XY](https://docs.google.com/presentation/d/1JjjR_ApAKIv27Hf_4X70RBJSrKeF8a_H-qE7tXzFND4/edit?usp=sharing)
