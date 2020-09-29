@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Der Struwwelpeter</title>
+            <title type="sub">Die Geschichte vom bösen Friederich</title>
+            <author>
+               <name ref="https://de.wikisource.org/wiki/Heinrich_Hoffmann">Heinrich Hoffmann</name>
+            </author>
+         </titleStmt>
+         <editionStmt>
+            <edition>400. Auflage</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Literarische Anstalt Rütten &amp; Loening</publisher>
+            <date>1917</date>
+            <pubPlace>Frankfurt am Main</pubPlace>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Exemplar der Universitätsbibliothek Braunschweig, Signatur: <idno type="signature">2007-0968</idno>.
+               Das Entstehungsdatum der Quelle ist das Jahr <date>1844</date>. 
+            </p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <ref target="https://de.wikisource.org/wiki/Der_Struwwelpeter/Die_Geschichte_vom_b%C3%B6sen_Friederich">
+               Die Geschichte vom bösen Friederich.</ref>
+         </head>
+         <div xml:id="page.1" n="3">
+            <p>Der Friederich, der Friederich,<lb/>Das war ein arger Wüterich!<lb/>Er fing die
+               Fliegen in dem Haus<lb/>Und riß ihnen die Flügel aus.<lb/>Er schlug die Stühl’ und
+               Vögel tot,<lb/>Die Katzen litten große Not.<lb/>Und höre nur, wie bös er war:<lb/>Er
+               peitschte seine Gretchen gar!</p>
+            <figure>
+               <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/H_Hoffmann_Struwwel_04.jpg/300px-H_Hoffmann_Struwwel_04.jpg"/>
+            </figure>
+         </div>
+         <div xml:id="page.2" n="4">
+            <p>Am Brunnen stand ein großer Hund,<lb/>Trank Wasser dort mit seinem Mund.<lb/>Da mit
+               der Peitsch’ herzu sich schlich<lb/>Der bitterböse Friederich;<lb/>Und schlug den
+               Hund, der heulte sehr,<lb/>Und trat und schlug ihn immer mehr.<lb/>Da biß der Hund
+               ihn in das Bein,<lb/>Recht tief bis in das Blut hinein.<lb/>Der bitterböse
+               Friederich,<lb/>Der schrie und weinte bitterlich. —<lb/>Jedoch nach Hause lief der
+               Hund<lb/>Und trug die Peitsche in dem Mund</p>
+            <figure>
+               <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/H_Hoffmann_Struwwel_05.jpg/300px-H_Hoffmann_Struwwel_05.jpg"/>
+            </figure>
+         </div>
+         <div xml:id="page.3" n="5">
+            <p>Ins Bett muß Friedrich nun hinein,<lb/>Litt vielen Schmerz an seinem Bein;<lb/>Und
+               der Herr Doktor sitzt dabei<lb/>Und gibt ihm bitt’re Arzenei.</p>
+            <p>Der Hund an Friedrichs Tischchen saß,<lb/>Wo er den großen Kuchen aß;<lb/>Aß auch die
+               gute Leberwurst<lb/>Und trank den Wein für seinen Durst.<lb/>Die Peitsche hat er
+               mitgebracht<lb/>Und nimmt sie sorglich sehr in acht.</p>
+            <figure>
+               <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/H_Hoffmann_Struwwel_04.jpg/300px-H_Hoffmann_Struwwel_06.jpg"/>
+            </figure>
+         </div>
+
+         <!--<p>Some text here.</p>
+         <figure>
+            <graphic url="http://www.tei-c.org/logos/TEI-glow.png"/>
+         </figure>-->
+      </body>
+   </text>
+</TEI>

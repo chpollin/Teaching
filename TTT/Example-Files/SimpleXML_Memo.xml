@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<memos xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <memo id="memo.1">
+        <to>Luke Skywalker</to>
+        <from>Rebel Alliance</from>
+        <date>12.01.1900</date>
+        <dc:date>01.01.1900</dc:date>
+        <body>
+            <!-- text -->
+            <p>Yoda says, <q> "For your support thank I must!" </q>
+            </p>
+        </body>
+    </memo>
+    <memo id="memo.2">
+        <to>C3PO</to>
+        <from>Rebel Alliance 5 &gt; 1</from>
+        <body>
+            <p>Hallo! &amp;</p>
+        </body>
+    </memo>
+</memos>
