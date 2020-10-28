@@ -1,11 +1,4 @@
 # GDI_4_Reguläre Sprachen
-[Folien](https://www.google.com)
+[Folien](https://docs.google.com/presentation/d/1TcEmapxsaebBDcY73URAaE1AieseT_XzoDLhpZQNxJA/edit?usp=sharing)
 
-## TOC
-
-* 
-*
-*
-*
-*
-
+[Video](https://www.youtube.com/watch?v=eTFsb7qROt0)
