@@ -10,13 +10,14 @@
    
 
 2. Wandle die Dezimalzahlen in Binärzahlen um und führe folgende arithmetische Operationen durch:
-     2.1)  12 + 8 = ?
-     2.2)  12 - 8 = ?
-     2.3)  8 - 12 = ?
-     2.4)  5 * 10 = ?
-     2.5)  9 : 3 = ?
 
-3. Wie wird die Zeichenkette 123 gespeichert, wenn die UTF8-Kodierung  verwendet wird? Welche Codepoints sind das? Wie sieht die binäre Form  davon aus? Was ist UTF-8?
+2.1)  12 + 8 = ?
+2.2)  12 - 8 = ?
+2.3)  8 - 12 = ?
+2.4)  5 * 10 = ?
+2.5)  9 : 3 = ?
+
+3. Wie wird die Zeichenkette 123 gespeichert, wenn die UTF8-Kodierung verwendet wird? Welche Codepoints sind das? Wie sieht die binäre Form  davon aus? Was ist UTF-8?
 
    
 
@@ -32,5 +33,4 @@
 
    ## Bonus
 
-6. Gegeben ist ein Alphabet {a, b, c} mit den Auftrittswahrscheinlichkeiten p {a = 0,7; b = 0,2 ; c = 0,1}. 
-     Berechne H (H = mittlerer Informationsgehalt).
+6. Gegeben ist ein Alphabet {a, b, c} mit den Auftrittswahrscheinlichkeiten p {a = 0,7; b = 0,2 ; c = 0,1}. Berechne H (H = mittlerer Informationsgehalt).
