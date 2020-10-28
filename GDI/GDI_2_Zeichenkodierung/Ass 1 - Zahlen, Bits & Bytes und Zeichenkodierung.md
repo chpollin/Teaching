@@ -1,6 +1,7 @@
 # Ass 1 - Zahlen, Bits & Bytes und Zeichenkodierung
 
 1. Kodiere deinen Vornamen (Text) in Hexadezimal und in Binär. Nutze dazu die ASCII Tabelle. Zeige für einen Wert wie die manuelle Umrechnung (binär->hex; binär -> dezimal) funktioniert. 
+
    Text: Christopher
    Hex: 43 68 ...
    Binär: 01000011 01101000 ...
@@ -24,11 +25,10 @@
    
 
 5. Kopiere das tschechische Wort *Žluté* in einen beliebigen Texteditor und speichere es ab. 
-   Verwende den Befehl `hexdump` auf dieses File. Nimm das Ergebnis, das herauskommt und 
-     konvertiere es nach Binär (https://www.rapidtables.com/convert/number/hex-to-binary.html) und 
-     überführe dieses Ergebnis schließlich in die ASCII-Kodierung https://www.rapidtables.com/convert/number/binary-to-ascii.html. 
+   Verwende den Befehl `hexdump` auf dieses File. Nimm das Ergebnis, das herauskommt und konvertiere es nach Binär (https://www.rapidtables.com/convert/number/hex-to-binary.html) und 
+   überführe dieses Ergebnis schließlich in die ASCII-Kodierung https://www.rapidtables.com/convert/number/binary-to-ascii.html. 
 
-     Welches Ergebnis bekommst du und warum?
+   Welches Ergebnis bekommst du und warum?
 
    ## Bonus
 
