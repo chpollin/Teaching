@@ -7,7 +7,7 @@
 
 ## Assignment 3
 
-1.) Formalisiere jede der folgenden Aussagen durch eine aussagenlogische Formel:
+**1.) Formalisiere jede der folgenden Aussagen durch eine aussagenlogische Formel:**
 
 Aus den Formulierungen "Wenn... dann", "zusammen", "Entweder...oder", "nicht", "aber" lassen sich die aussagenlogischen Formeln schließen.
 Reduziere weiter die Aussage in ihre einzelnen Atomformeln. 
@@ -20,45 +20,45 @@ Statt "regnet" und "nass" kannst du auch einfach p und q als Variablen verwenden
 
   1.3) Entweder wird ein Gebüsch gekauft oder es wird kein Gebüsch gekauft.
 
-2.) Formuliere die Regel, "wenn der Hahn auf dem Misthaufen kräht, dann ändert sich
+**2.) Formuliere die Regel, "wenn der Hahn auf dem Misthaufen kräht, dann ändert sich
 das Wetter oder es bleibt so, wie es ist" als Formel der Aussagenlogik. Zeige, dass die
-Formel eine Tautologie ist (Wahrheitstabelle)
+Formel eine Tautologie ist (Wahrheitstabelle)**
 
-3.) Begründe ob folgende Formeln erfüllbar, gültig oder unerfüllbar sind.
+**3.) Begründe ob folgende Formeln erfüllbar, gültig oder unerfüllbar sind.
 Erfüllbar bist ist eine Formel, wenn mindesten einmal "wahr" in der Wahrheitstabelle auftaucht.
-Gültig wenn alle "wahr" sind und unerfüllbar wenn alle "falsch" sind.
+Gültig wenn alle "wahr" sind und unerfüllbar wenn alle "falsch" sind.**
 
-  3.1)  a → a ∧ b
+  3.1)  `a → a ∧ b`
 
-  3.2) (a → b) → (b → a)
+  3.2) `(a → b) → (b → a)`
 
-  3.3) (a ∧ b) → (¬a v ¬b)
+  3.3) `(a ∧ b) → (¬a v ¬b)`
 
-  3.4) (⊥ → p) ∧ ¬(q ←→ p) ∧ ¬((¬p ∧ ¬q) → q)
+  3.4) `(⊥ → p) ∧ ¬(q ←→ p) ∧ ¬((¬p ∧ ¬q) → q)`
 
-4.) Zeichne einen Parse Tree für folgende Formel und verwende den Tree, um zu überprüfen,ob die Zuordnung p = F, q =T, r = F die Formel true oder false werden lässt. Finde
-ein Modell, welches das Gegenteil erreicht.
+**4.) Zeichne einen Parse Tree für folgende Formel und verwende den Tree, um zu überprüfen,ob die Zuordnung p = F, q =T, r = F die Formel true oder false werden lässt. Finde
+ein Modell, welches das Gegenteil erreicht.**
 
-(¬(r ←→ q) → ¬r) ∧ (¬(r → q) ∨ (p → q))
+`(¬(r ←→ q) → ¬r) ∧ (¬(r → q) ∨ (p → q))`
 
-5.) Gib folgende Befehle in deiner Konsole ein:
+**5.) Gib folgende Befehle in deiner Konsole ein:**
 
-  echo $(( 2 & 3 ))
-  echo $(( 2 && 3 ))
+  `echo $(( 2 & 3 ))`
+  `echo $(( 2 && 3 ))`
 
 und
 
-  echo $(( 5 | 5 ))
-  echo $(( 5 || 5 ))
+  `echo $(( 5 | 5 ))`
+  `echo $(( 5 || 5 ))`
 
 Erkläre was jeweils passiert und um welche unterschiedlichen Operatoren es sich handelt.
 (https://www.linux.com/tutorials/logical-ampersand-bash/)
 
-Bonus:
+**Bonus:**
 
 Was ist die Konjunktive Normalform (KNF) des folgenden logischen Ausdrucks:
 
-(p -> q) ∧ (¬q v p)
+`(p -> q) ∧ (¬q v p)`
 
 ## Mengen und Prädikatenlogik
 
