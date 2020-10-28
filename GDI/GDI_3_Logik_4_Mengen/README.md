@@ -1,6 +1,6 @@
 # GDI_3_Logik und Mengen
 
-## Aussagenlogik
+# Aussagenlogik
 
 * [Folien](https://docs.google.com/presentation/d/1dujrq3RTFDCgTUwCNwAacjZK6SfUYasNXWxUyLktdnY/edit?usp=sharing)
 * [Video](https://youtu.be/2vfaQLVStmU)
@@ -60,7 +60,7 @@ Was ist die Konjunktive Normalform (KNF) des folgenden logischen Ausdrucks:
 
 `(p -> q) ∧ (¬q v p)`
 
-## Mengen und Prädikatenlogik
+# Mengen und Prädikatenlogik
 
 * [Folien](https://docs.google.com/presentation/d/19b51V9_RjuJAN9ogYhZnPZVNFqUhMPqgbDJviZoaoDk/edit?usp=sharing)
 * [Video](https://youtu.be/zs8ZHLRPZhI)
