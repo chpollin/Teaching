@@ -20,7 +20,11 @@
 * [InfoMod_1_RDF](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_1_RDF)
 * [InfoMod_2_SPARQL](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_2_SPARQL)
 * [InfoMod_3_Ontology](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_3_Ontology)
+* [InfoMod_4_TORDF](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_4_TORDF)
 
 ## Project management (Planning, development, evaluation of DH projects)  (VU) 
 
 ## Text Coding and Text Analysis with TEI
+
+* [TTT_1_XML_TEI](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_1_XML_TEI)
+* [TTT_1_TTT_2_XMLSchema](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_2_XMLSchema)
