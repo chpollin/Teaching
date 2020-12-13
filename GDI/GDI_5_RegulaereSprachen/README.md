@@ -5,6 +5,12 @@
 
 [RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
 
+## Literatur
+
+* [Prokop, Lukas: Grundlagen der Informatik, 2014, S.69-83](https://github.com/chpollin/Teaching/blob/master/GDI/Literature/PROKOP_GDI_Skriptum.pdf)
+
+
+
 ## Assignment
 
 **1) Konstruiere einen RegEx der auf folgende Terme matcht**

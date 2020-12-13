@@ -3,6 +3,10 @@
 * [Folien](https://docs.google.com/presentation/d/1OR7xebWLDSk6TBoL5CE8GgchCugNaYNr_4wqcn214hk/edit?usp=sharing)
 * [Video](https://youtu.be/bhqwCW7WVSA)
 
+## Literatur
+
+* [Prokop, Lukas: Grundlagen der Informatik, 2014, S.5-12](https://github.com/chpollin/Teaching/blob/master/GDI/Literature/PROKOP_GDI_Skriptum.pdf)
+
 ## Assignment  
 
 1. Kodiere deinen Vornamen (Text) in Hexadezimal und in Binär. Nutze dazu die  ASCII Tabelle. 

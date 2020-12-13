@@ -3,6 +3,10 @@
 * [Folien](https://docs.google.com/presentation/d/19b51V9_RjuJAN9ogYhZnPZVNFqUhMPqgbDJviZoaoDk/edit?usp=sharing)
 * [Video](https://youtu.be/zs8ZHLRPZhI)
 
+## Literatur
+
+* [Prokop, Lukas: Grundlagen der Informatik, 2014, S.23-27](https://github.com/chpollin/Teaching/blob/master/GDI/Literature/PROKOP_GDI_Skriptum.pdf)
+
 ## Assignment
 
 **1.) Überführe folgende Sätze in Formeln der Prädikatenlogik. Sei so präzise wie möglich. Definiere alle Variablen.** 
