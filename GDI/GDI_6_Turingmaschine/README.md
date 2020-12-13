@@ -32,7 +32,21 @@
 Die Turingmaschine ersetzt alle Einser mit dem Zeichen, das sich vor Ausführung der Turingmaschine **rechts** neben der jeweiligen Eins befindet. Nachdem sie alle Ersetzungen durchgeführt hat, geht sie in den Zustand HALT, sobald sie eine Null als Eingabezeichen findet. 
 Das Eingabeband ist am Anfang mit Einsen und Zweiern gefüllt, die links und rechts von unendlich vielen Nullen umgeben sind.
 
-**1) Vervollständige die fehlenden Werte in der Zustandstabelle (unten). Schreibe  den ganzen Ablauf (per Hand) der Turingmaschine mit gegebenen Start und  Endzustand auf.**
+**1) Vervollständige die fehlenden Werte in der Zustandstabelle. Schreibe  den ganzen Ablauf (per Hand) der Turingmaschine mit gegebenen Start und  Endzustand auf.**
+
+**Zustandstabelle:**
+
+|  Z1  |  2   |      |  Z3  |  0   |  >   |
+| :--: | :--: | ---- | :--: | :--: | :--: |
+|  Z1  |  0   |      |  Z3  |  0   |  >   |
+|  Z2  |  2   |      |  Z3  |  1   |  >   |
+|  Z3  |  1   |      |  Z4  |      |  >   |
+|  Z3  |  2   |      |  Z3  |      |      |
+|  Z3  |  0   |      | HALT |  0   |      |
+|  Z4  |  1   |      |  Z2  |  1   |  <   |
+|  Z4  |  2   |      |  Z3  |  2   |      |
+|  Z4  |      |      |  Z1  |      |  <   |
+|      |      |      |      |      |      |
 
 **2) Gib weiters an, wie oft sich die Turingmaschine bei der Ausführung mit dem gegebenen Eingabeband im Zustand Z3 befindet.** 
 
