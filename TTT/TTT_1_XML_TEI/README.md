@@ -10,7 +10,7 @@
 
 ## Übungen
 
-**Die Lösungen zu diesen Übungen findest du [hier]().**
+**Die Lösungen zu diesen Übungen findest du [hier](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_1_XML_TEI/Uebungen).**
 
 **1.) Suche dir eine Geschichte aus im [Struwwelpeter](https://de.wikisource.org/wiki/Der_Struwwelpeter) Überlege dir ein einfaches XML-Modell, wie man diese Geschichten auszeichnen/strukturieren könnte.**
 

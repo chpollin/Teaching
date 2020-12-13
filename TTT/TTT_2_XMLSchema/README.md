@@ -6,7 +6,7 @@
 
 ## Übung
 
-**Die Lösungen zu diesen Übungen findest du [hier]().**
+**Die Lösungen zu diesen Übungen findest du [hier](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_2_XMLSchema/Uebungen).**
 
 **1.) Erweitere memo_schema.rng. Lade dazu das File [Memo RELAX NG Datei]() herunter.** 
 

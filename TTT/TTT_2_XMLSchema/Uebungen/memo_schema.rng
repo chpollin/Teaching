@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+    xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="memos">
+            <oneOrMore>
+                <element name="memo">
+                    <attribute name="id">
+                        <data type="string">
+                            <param name="pattern">memo.+</param>
+                        </data>
+                    </attribute>
+                    <!-- to -->
+                    <element name="to">
+                        <data type="string">
+                            <param name="pattern">.+</param>
+                        </data>
+                    </element>
+                    <!-- from -->
+                    <element name="from">
+                        <data type="string">
+                            <param name="pattern">.+</param>
+                        </data>
+                    </element>
+                    <!-- date -->
+                    <optional>
+                     <element name="date">
+                         <data type="date"/>
+                     </element>
+                    </optional>
+                    <!-- body -->
+                    <element name="body">
+                       <element name="p">
+                           <mixed>
+                               <zeroOrMore>
+                                   <element name="q">
+                                       <text/>
+                                   </element>
+                               </zeroOrMore>
+                           </mixed>
+                       </element>
+                    </element>
+                </element>
+            </oneOrMore>
+        </element>
+    </start>
+</grammar>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="memo_schema.rng" 
+    type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<memos>
+    <memo id="memo.1">
+        <to>R2D2</to>
+        <from>C3PO</from>
+        <date>1990-01-01</date>
+        <body>
+            <p>
+                <q>Bew" Pip Pip!</q>
+            </p>
+        </body>
+    </memo>
+    <memo id="memo.2">
+        <to>Luke Skywalker</to>
+        <from>Rebel Alliance</from>
+        <body>
+            <p>Yoda says,
+                <q>
+                    "For your support thank 
+                    I must!"
+                </q>
+            </p>
+        </body>
+    </memo>
+    <memo id="memo.3">
+        <to>Obi-Wan Kenobi</to>
+        <from>General Grievous</from>
+        <body>
+            <p>I've been trained in your Jedi arts by Count Dooku!</p>
+        </body>
+    </memo>
+</memos>
