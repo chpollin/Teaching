@@ -15,13 +15,13 @@
 
 1.4) Einige Zwerge mögen überhaupt niemanden.
 
-**2.) Gegeben sind die 3 Mengen: **
+**2.) Gegeben sind die 3 Mengen:**
 
-**A={3,5,7,12,14,17,19,23}**
+`A={3,5,7,12,14,17,19,23}`
 
-**B={3,5,17}**
+`B={3,5,17}`
 
-**C={12,14,17,24}**
+`C={12,14,17,24}`
 
 Beurteile, ob die folgenden Aussagen wahr oder falsch sind: 
 
@@ -33,7 +33,7 @@ Beurteile, ob die folgenden Aussagen wahr oder falsch sind:
 
 **3) Zeige mit einem VENN-Diagramm, ob folgende Aussage true oder false ist.**
 
-*D'⋂(B∪C) = (D'⋂B)∪(D'⋂C*) 
+​    `D'⋂(B∪C) = (D'⋂B)∪(D'⋂C)`
 
 **4.) Welche der folgenden Aussagen sind äquivalent zu `¬∀x A(x) ⇒ B(x)`? [2 Punkte]**
 

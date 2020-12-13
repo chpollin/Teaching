@@ -59,3 +59,8 @@ Erkläre was jeweils passiert und um welche Operatoren es sich handelt. Info daz
 Was ist die Konjunktive Normalform (KNF) des folgenden logischen Ausdrucks:
 
 `(p -> q) ∧ (¬q v p)`
+
+**7.) Zeichne einen Parse Tree für folgende Formel und verwende dieses Modell: `{p = F, q = T, r = F}`
+Ist diese Formel erfüllbar? Erstelle auch eine Wahrheitstabelle und die KNF für diese Formel**.
+
+`((q -> ¬p) v r) -> (q ∧ (r -> p))`
