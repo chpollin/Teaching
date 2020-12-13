@@ -3,6 +3,8 @@
 
 [Video](https://www.youtube.com/watch?v=eTFsb7qROt0)
 
+[RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
+
 ## Assignment
 
 **1) Konstruiere einen RegEx der auf folgende Terme matcht**
@@ -11,7 +13,7 @@
 
 **2) Gib an welche der folgenden Terme auf den angegebenen RegEx matchen.**
 
-`ac?c+a?a\*ca?`
+`ac?c+a?a*ca?`
 
 - `acaaacccaaa`
 - `aaaaaaca`
@@ -39,7 +41,7 @@
 
 **5) Zeichne einen endlichen deterministischen Automaten, der genau die Wörter akzeptiert, die (ausschließlich) durch gegebenen RegEx akzeptiert werden. Versuche ihn so vereinfacht wie möglich zu zeichnen, also mit minimaler Knotenanzahl. Gib alle Endzustände an (doppelte Kreise)**
 
-`(ac+a\*)|(c+a\*c)?`
+`(ac+a*)|(c+a*c)?`
 
 **6) Definiere ein Alphabet 𝝨 für die formale Sprache der Addition, Subtraktion, Multiplikation und Division von rationalen Zahlen (+, -, Komma/Punkt). Gib 2 gültige und zwei ungültige Wörter dieser Sprache an. Beschreibe die Regeln dieser formale Sprachen in Worten.**
 
@@ -73,6 +75,4 @@ Du Semantik in ISBN-10 und ISBN-13 musst du nicht abbilden (Prüfsumme). Die ISB
 **10) Verwende den [egrep](https://www.computerhope.com/unix/uegrep.htm)  Befehl  im Terminal, um aus den zwei Dateien `uk-500.csv` und `us-500.csv` mittels eines RegEx alle Web-Adressen auszulesen. Schreibe das Ergebnis in eine neue Datei, direkt in der  Konsole. Der Befehl dafür schaut so aus:**
 
 ` egrep -i -oh HIER STEHT DEIN REGEX uk-500.csv > mails.txt`
-
-Erkläre auch diesen Befehlsaufruf in der Konsole.
 

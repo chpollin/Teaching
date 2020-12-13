@@ -7,13 +7,13 @@
 
 **1.) Überführe folgende Sätze in Formeln der Prädikatenlogik. Sei so präzise wie möglich. Definiere alle Variablen.** 
 
-1.1) Alle Menschen brauchen Wasser.
+1.1) *Alle Menschen brauchen Wasser.*
 
-1.2) Nicht jeder mag Kaffee.
+1.2) *Nicht jeder mag Kaffee.*
 
-1.3) Nicht jeder/jede Student/In mag sowohl die Programmiersprache C als auch XSLT.
+1.3) *Nicht jeder/jede Student/In mag sowohl die Programmiersprache C als auch XSLT.*
 
-1.4) Einige Zwerge mögen überhaupt niemanden.
+1.4) *Einige Hobbits mögen überhaupt niemanden.*
 
 **2.) Gegeben sind die 3 Mengen:**
 

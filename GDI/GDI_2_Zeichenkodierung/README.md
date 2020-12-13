@@ -3,25 +3,35 @@
 * [Folien](https://docs.google.com/presentation/d/1OR7xebWLDSk6TBoL5CE8GgchCugNaYNr_4wqcn214hk/edit?usp=sharing)
 * [Video](https://youtu.be/bhqwCW7WVSA)
 
-# Assignment  
+## Assignment  
 
 1. Kodiere deinen Vornamen (Text) in Hexadezimal und in Binär. Nutze dazu die  ASCII Tabelle. 
    Zeige für einen Wert wie die manuelle Umrechnung  (binär->hex; binär -> dezimal) funktioniert.  
 
-   *Text: Christopher* *
-   Hex: 43 68 ... 
-   Binär: 01000011 01101000 ... 
-   Dezimal: ...*
-
+   *Text: Christopher* 
    
-
+   Hex: 43 68 ... 
+   
+Binär: 01000011 01101000 ... 
+   
+Dezimal: ...
+   
+   
+   
 2. Wandle die Dezimalzahlen in Binärzahlen um (manuell) und führe folgende arithmetische Operationen durch: 
+   
    2.1)  12 + 8 = ? 
+   
    2.2)  12 - 8 = ? 
-   2.3)  8 - 12 = ? 
+   
+2.3)  8 - 12 = ? 
+   
    2.4)  5 * 10 = ? 
+   
    2.5)  9 : 3 = ?
-
+   
+   
+   
 3. Wie wird die Zeichenkette 123 gespeichert, wenn die UTF8-Kodierung verwendet wird? Welche Codepoints sind das? Wie sieht die binäre Form davon aus? Was ist UTF-8?
 
    
