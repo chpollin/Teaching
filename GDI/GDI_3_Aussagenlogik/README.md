@@ -1,7 +1,7 @@
 # Aussagenlogik
 
 * [Folien](https://docs.google.com/presentation/d/1dujrq3RTFDCgTUwCNwAacjZK6SfUYasNXWxUyLktdnY/edit?usp=sharing)
-* [Video](https://youtu.be/2vfaQLVStmU)
+* [Video](https://youtube.com/embed/2vfaQLVStmU)
 
 ## Assignment 2
 
