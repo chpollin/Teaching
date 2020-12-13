@@ -1,13 +1,16 @@
-## ##  **Introduction to Computer Science** (VU)  / **Selected Questions of Computer Science** (KV)
+## Introduction to Computer Science (VU)  / **Selected Questions of Computer Science** (KV)
 
-## ## **Web Development**  (VU)            
+* [GDI_0_LinuxUndKonsole](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_0_LinuxUndKonsole)
+* [GDI_1_Information](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_1_Information)
 
-## ## **Data-based knowledge production and  organization**         
+## Web Development  (VU)            
 
-## ## **Advanced Information Modelling**  (VU)
+## Data-based knowledge production and  organization         
 
-## ## **Project management (Planning, development, evaluation of DH projects)** 
+## Advanced Information Modelling  (VU)
 
-## ## **SPARQL-Workshop**
+## Project management (Planning, development, evaluation of DH projects) 
 
-## ## **Textkodierung und Textanalyse mit TEI**
+## SPARQL-Workshop
+
+## Textkodierung und Textanalyse mit TEI
