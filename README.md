@@ -1,8 +1,8 @@
 ## Introduction to Computer Science (VU)  / **Selected Questions of Computer Science** (KV)
 
 * [GDI_0_LinuxUndKonsole](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_0_LinuxUndKonsole)
-* [GDI_1_Information
-* [[GDI_2_Zeichenkodierung](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_2_Zeichenkodierung)](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_1_Information)
+* [GDI_1_Information](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_1_Information)
+* [GDI_2_Zeichenkodierung](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_2_Zeichenkodierung)          
 * [GDI_3_Logik_4_Mengen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_3_Logik_4_Mengen)
 * [GDI_5_ReguläreSprachen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_5_RegulaereSprachen)
 * [GDI_6_Turingmaschine](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_6_Turingmaschine)
@@ -19,4 +19,4 @@
 
 ## SPARQL-Workshop
 
-## Textkodierung und Textanalyse mit TEI
+## Text coding and text analysis with TEI
