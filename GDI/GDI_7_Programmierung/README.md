@@ -4,15 +4,20 @@
 
 [Video](https://www.youtube.com/watch?v=0Te9S22fPcs&feature=youtu.be)
 
+[C_Examples](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_7_Programmierung/C_Examples)
+
+[HelloWorld_Compiled](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_7_Programmierung/HelloWorld_Compiled)
+
 ## Literatur
 
 * [C-Tuorial](http://www.c-howto.de/tutorial/)
 * [Video Tutorial für C](https://www.youtube.com/watch?v=1uR4tL-OSNI)
 * [Tutorial für x86 Assembly](https://www.youtube.com/watch?v=75gBFiFtAb8)
+* [Compiling a C program:- Behind the Scenes](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
 
 ## Assignment
 
-**1.1) Kompiliere und führe alle C-Programme in [deiner Konsole](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/) aus.** 
+**1.1) Kompiliere und führe alle C-Programme in deiner Konsole aus.** 
 
 **1.2) Im ersten Teil geht es darum die Programme auszuführen und zu verstehen, warum sie den jeweiligen Output haben. Führe selbstständig Recherche im Web durch, um die einzelnen unklaren Programmstrukturen zu verstehen.''**
 
