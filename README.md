@@ -17,8 +17,10 @@
 
 ## Advanced Information Modelling  (VU)
 
-## Project management (Planning, development, evaluation of DH projects)  (VU) 
+* [InfoMod_1_RDF](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_1_RDF)
+* [InfoMod_2_SPARQL](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_2_SPARQL)
+* [InfoMod_3_Ontology](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_3_Ontology)
 
-## [SPARQL-Workshop](https://github.com/chpollin/Teaching/tree/master/SPARQL_Workshop)
+## Project management (Planning, development, evaluation of DH projects)  (VU) 
 
 ## Text Coding and Text Analysis with TEI

@@ -1,11 +1,15 @@
-# GDI_1_Information
-[Folien](https://docs.google.com/presentation/d/1uv8o7v4b0DWM75JQBEG9GNrMiq2wYY45Drq7oIvE0n8/edit?usp=sharing)
+# SPARQL
 
-## TOC
+[Folien: Triplestore einrichten (Blazegraph)](https://docs.google.com/presentation/d/12wupTsbqfXMki7r1WuUHkVflTrP_jr-7pRpMuKjqyXs/edit?usp=sharing)
 
-* 
-*
-*
-*
-*
+[Video: Triplestore einrichten (Blazegraph)](https://youtu.be/LjB8kAOv5mM)
 
+[Folien: SPARQL](https://docs.google.com/presentation/d/19rQz1HBn1OtVPdI0wvLWP3e5U5L75DK1y6S8BV-TVEw/edit?usp=sharing)
+
+[Video: SPARQL 1](https://youtu.be/rfECeJ-JHVo)
+
+[Video: SPARQL 2](https://youtu.be/cbWP-pRyCVk)
+
+## Literatur
+
+## Assignment
