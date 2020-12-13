@@ -6,6 +6,11 @@
 
 ## Literatur
 
+* [Adjazenzmatrix und Adjazenzliste](https://www.youtube.com/watch?v=Pw4aeb_UMOo)
+* [What on Earth is Recursion? - Computerphile](https://www.youtube.com/watch?v=Mv9NEXX1VHc)
+* [Programming Loops vs Recursion - Computerphile](https://www.youtube.com/watch?v=HXNhEYqFo0o)
+* [Getting Sorted & Big O Notation - Computerphile](https://www.youtube.com/watch?v=kgBjXUE_Nwc)
+
 ## Assignment
 
 **1.1) Zwerge und Schneewittchen beschuldigen sich gegenseitig**
@@ -32,12 +37,13 @@ Dieses Mal gibt es zwei Lügner. Wer lügt?
 * n! = n + (n-1)!**
 
 **2.1) Fakultät lässt sich rekursiv und mit Hilfe der Datenstruktur Stack berechnen. Zeige dies für 5!.** 
+
 Erkläre Schritt für Schritt wie eine Funktion *factorial()* am Stack dafür zur Anwendung kommt. Zeichen dir einen Stack auf und push factorial(5). Push solange auf den Stack bis du zu einer Bedingung kommst, wo du weißt was factorial(n) ist. Pop die Ergebnisse vom Stack bis nur noch das Endergebnis am Stack ist.
 
 **2.2) Schreibe ein C-Programm einer rekursiven Implementierung zur Berechnung von 5! .**
 
 **2.3) Schreibe ein C-Programm einer iterativen Implementierung zur Berechnung von 5! .**
 
-**3.) Schreibe ein C-Programm einer Implementierung eines Bubble-Sort und sortiere damit das Array [5,4,7,1,9,0,2].** 
+**3.) Schreibe ein C-Programm eines Bubble-Sort und sortiere damit das Array [5,4,7,1,9,0,2].** 
 
 

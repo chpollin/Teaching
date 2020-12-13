@@ -8,7 +8,8 @@
 * [GDI_5_ReguläreSprachen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_5_RegulaereSprachen)
 * [GDI_6_Turingmaschine](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_6_Turingmaschine)
 * [GDI_7_Programmierung](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_7_Programmierung)
-* [GDI_8_Datenstrukturen und Algorithmen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_8_DatenAlgo)          
+* [GDI_8_Datenstrukturen und Algorithmen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_8_DatenAlgo) 
+* [GDI_9_Internet und Web](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_9_Internet)                   
 
 ## Web Development  (VU)            
 
@@ -16,8 +17,8 @@
 
 ## Advanced Information Modelling  (VU)
 
-## Project management (Planning, development, evaluation of DH projects) 
+## Project management (Planning, development, evaluation of DH projects)  (VU) 
 
-## SPARQL-Workshop
+## [SPARQL-Workshop](https://github.com/chpollin/Teaching/tree/master/SPARQL_Workshop)
 
-## Text coding and text analysis with TEI
+## Text Coding and Text Analysis with TEI
