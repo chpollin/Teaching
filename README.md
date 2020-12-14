@@ -1,17 +1,21 @@
 ## Introduction to Computer Science (VU)  / **Selected Questions of Computer Science** (KV)
 
-* [GDI_0_Linux_Konsole](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_0_LinuxUndKonsole)
+* [GDI_0_Linux und Konsole](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_0_LinuxUndKonsole)
 * [GDI_1_Information](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_1_Information)
 * [GDI_2_Zeichenkodierung](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_2_Zeichenkodierung)          
 * [GDI_3_Aussagenlogik](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_3_Aussagenlogik)
 * [GDI_4_Mengen und Prädikatenlogik](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_4_Mengen_Prädikatenlogik)
-* [GDI_5_ReguläreSprachen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_5_RegulaereSprachen)
+* [GDI_5_Reguläre Sprachen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_5_RegulaereSprachen)
 * [GDI_6_Turingmaschine](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_6_Turingmaschine)
 * [GDI_7_Programmierung](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_7_Programmierung)
 * [GDI_8_Datenstrukturen und Algorithmen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_8_DatenAlgo) 
 * [GDI_9_Internet und Web](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_9_Internet)                   
 
-## Web Development  (VU)            
+## Web Development  (VU)       
+
+* WebDev_1_HTML
+* WebDev_2_CSS
+* WebDev_3_JavaScript
 
 ## Data-based knowledge production and  organization         
 
