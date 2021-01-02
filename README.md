@@ -13,9 +13,8 @@
 
 ## Web Development  (VU)       
 
-* WebDev_1_HTML
-* WebDev_2_CSS
-* WebDev_3_JavaScript
+* [WebDev_0_JavaScript_Introduction](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_0_JavaScript_Introduction)
+* [WebDev_1_JavaScript_Fundamentals_1](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_1_JavaScript_Fundamentals)
 
 ## Data-based knowledge production and  organization         
 
