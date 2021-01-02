@@ -8,6 +8,6 @@
 
 [Video: Beispiele "Looping a triangle" und "FizzBuzz"](https://www.youtube.com/watch?v=Q0rqwNPla3Q&feature=youtu.be)
 
-[Functions](https://eloquentjavascript.net/03_functions.html)
+### [Functions](https://eloquentjavascript.net/03_functions.html)
 
 [Video: Beispiel "Bean Counting"](https://www.youtube.com/watch?v=7yix811I9So&feature=youtu.be)
