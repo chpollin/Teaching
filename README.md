@@ -18,7 +18,7 @@
 * [WebDev_2_JavaScript_Fundamentals_2](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_2_JavaScript_Fundamentals_2)
 * [WebDev_3_JavaScript_Fundamentals_3](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_3_JavaScript_Fundamentals_3)
 * [WebDev_4_JavaScript_Fundamentals_4](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_4_JavaScript_Fundamentals_4)
-* [WebDev_5_JavaScript_jQuery](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_5_JavaScript_Fundamentals_jQuery)
+* [WebDev_5_JavaScript_jQuery](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_5_JavaScript_jQuery)
 * [WebDev_6_JavaScript_EventHandling](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_6_JavaScript_EventHandling)
 
 ## Data-based knowledge production and  organization         

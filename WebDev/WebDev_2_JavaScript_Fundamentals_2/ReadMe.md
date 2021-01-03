@@ -1,5 +1,7 @@
 # JavaScript Fundamentals 2
 
+Program Structure | Functions
+
 [Folien](https://docs.google.com/presentation/d/1WR8R30T6Gju10VV5gWfB_i6e-GMbdhBatiQ820MkGow/edit?usp=sharing)
 
 *One of my first videos at the beginning of the Corona crisis. At that time I still had a poor recording device:*

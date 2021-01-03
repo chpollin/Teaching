@@ -1,5 +1,7 @@
 # JavaScript Fundamentals 3
 
+Data Structures: Objects and Arrays
+
 [Folien](https://docs.google.com/presentation/d/1iyI0JbsfFwKXIEc8RvSWL2TKITLmdFDTydntsARsFE4/edit?usp=sharing)
 
 *One of my first videos at the beginning of the Corona crisis. At that time I still had a poor recording device:*
