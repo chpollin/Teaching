@@ -1,3 +1,7 @@
+
+
+# Courses
+
 ## Introduction to Computer Science (VU)  / **Selected Questions of Computer Science** (KV)
 
 * [GDI_0_Linux und Konsole](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_0_LinuxUndKonsole)
@@ -35,4 +39,4 @@
 ## Text Coding and Text Analysis with TEI
 
 * [TTT_1_XML_TEI](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_1_XML_TEI)
-* [TTT_1_TTT_2_XMLSchema](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_2_XMLSchema)
+* [TTT_2_XMLSchema](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_2_XMLSchema)
