@@ -29,6 +29,7 @@
 
 ## Advanced Information Modelling  (VU)
 
+* [InfoMod_0_Web of Data und LOD](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_0_WebofData_LOD)
 * [InfoMod_1_RDF](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_1_RDF)
 * [InfoMod_2_SPARQL](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_2_SPARQL)
 * [InfoMod_3_Ontology](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_3_Ontology)
