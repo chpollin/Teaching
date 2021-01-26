@@ -2,6 +2,8 @@
 
 # Courses
 
+[ Copyright 2020 by the author, except as otherwise noted. This work is placed under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence. https://creativecommons.org/licenses/by/4.0/]
+
 ## Introduction to Computer Science (VU)  / **Selected Questions of Computer Science** (KV)
 
 * [GDI_0_Linux und Konsole](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_0_LinuxUndKonsole)
@@ -24,6 +26,10 @@
 * [WebDev_4_JavaScript_Fundamentals_4](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_4_JavaScript_Fundamentals_4)
 * [WebDev_5_JavaScript_jQuery](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_5_JavaScript_jQuery)
 * [WebDev_6_JavaScript_EventHandling](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_6_JavaScript_EventHandling)
+
+## Knowledge Engineering in the Digital Humanities (VU)
+
+* [WissMod_InfoVis_1](https://github.com/chpollin/Teaching/tree/master/WissMod/WissMod_InfoVis_1)
 
 ## Data-based knowledge production and  organization         
 
