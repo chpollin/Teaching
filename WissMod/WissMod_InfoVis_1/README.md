@@ -1,7 +1,7 @@
 # Informationsvisualisierung
 [Folien](https://docs.google.com/presentation/d/1QT764MIUzzfTIV-z3rjyHPoc1LKQoJLJjWtimOoFxBI/edit?usp=sharing)
 
-[Video](https://youtu.be/3kp6zSIoMnI))
+[Video](https://youtu.be/3kp6zSIoMnI)
 
 ## Literatur
 
