@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+            <author ana="bk:from" ref="#pers_WCDH002">L.M. Wheaton</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Zentrum für Informationsmodellierung - Universität Graz</publisher>
+            <idno type="PID">o:depcha.wheaton.1</idno>
+            <ref target="context:depcha.wheaton" type="context">Wheaton Financial Papers</ref>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="bk" matchPattern="([(a-z)|(A-Z)]+)"
+          replacementPattern="https://gams.uni-graz.at/o:depcha.bookkeeping#$1">
+          <p>Analytical descriptors are considered to represent concepts from the DEPCHA bookkeeping
+            ontology and can be extended to respective URIs.</p>
+        </prefixDef>
+        <prefixDef ident="wd" matchPattern="([(a-z)|(A-Z)]+)"
+          replacementPattern="http://www.wikidata.org/wiki/$1">
+          <p>
+            <ref target="https://www.wikidata.org/wiki/Help:Namespaces"/>
+          </p>
+        </prefixDef>
+      </listPrefixDef>
+      <unitDecl>
+        <unitDef ref="wd:Q4917" type="currency" xml:id="dollar" ana="bk:unit" from="1690">
+          <label xml:lang="en">dollar</label>
+          <country>USA</country>
+          <unit>$</unit>
+          <conversion fromUnit="#dollar" toUnit="#cents" formula="$fromUnit div 100"/>
+        </unitDef>
+        <unitDef ref="wd:Q58093" type="currency" xml:id="cent" >
+          <label xml:lang="en">cent</label>
+          <country>USA</country>
+          <unit>c</unit>
+        </unitDef>
+        <unitDef ref="wd:Q216658" type="weight" xml:id="unit.1">
+          <unit></unit>
+          <label xml:lang="en">bushels</label>
+        </unitDef>
+        <unitDef ref="wd:Q100995" type="weight" xml:id="unit.2">
+          <label xml:lang="en">pounds</label>
+        </unitDef>
+        <unitDef ref="wd:Q48013" type="weight" xml:id="unit.14">
+          <label xml:lang="en">ounces</label>
+        </unitDef>
+        <unitDef ref="wd:Q218593" type="length" xml:id="unit.18">
+          <label xml:lang="en">inches</label>
+        </unitDef>
+        <unitDef ref="wd:Q3710" type="length" xml:id="unit.5">
+          <label xml:lang="en">feet</label>
+        </unitDef>
+        <unitDef ref="wd:Q482798" type="length" xml:id="unit.7">
+          <label xml:lang="en">yards</label>
+        </unitDef>
+        <unitDef ref="wd:Q844338" type="length" xml:id="unit.23">
+          <label xml:lang="en">hectometer</label>
+        </unitDef>
+        <unitDef ref="wd:Q61793198" type="length" xml:id="unit.24">
+          <label xml:lang="en">rods</label>
+        </unitDef>
+        <unitDef ref="wd:Q351646" type="capacity" xml:id="unit.15">
+          <label xml:lang="en">peck</label>
+        </unitDef>
+        <unitDef ref="wd:Q178413" type="capacity" xml:id="unit.20">
+          <label xml:lang="en">gallons</label>
+        </unitDef>
+        <unitDef ref="wd:Q178506" type="capacity" xml:id="unit.25">
+          <label xml:lang="en">barrels</label>
+        </unitDef>
+        <unitDef type="capacity" xml:id="unit.29">
+          <label xml:lang="en">tub</label>
+        </unitDef>
+        <unitDef ref="wd:Q81292" type="surface" xml:id="unit.17">
+          <label xml:lang="en">acres</label>
+        </unitDef>
+        <unitDef ref="wd:Q188869" type="surface" xml:id="unit.27">
+          <label xml:lang="en">field</label>
+        </unitDef>
+        <unitDef ref="wd:Q2360918" type="number" xml:id="unit.3">
+          <label xml:lang="en">pieces</label>
+        </unitDef>
+        <unitDef ref="wd:Q25235" type="time" xml:id="unit.4">
+          <label xml:lang="en">hours</label>
+        </unitDef>
+        <unitDef ref="wd:Q573" type="time" xml:id="unit.12">
+          <label xml:lang="en">days</label>
+        </unitDef>
+        <unitDef ref="wd:Q23387" type="time" xml:id="unit.19">
+          <label xml:lang="en">weeks</label>
+        </unitDef>
+        <unitDef ref="wd:Q5151" type="time" xml:id="unit.22">
+          <label xml:lang="en">months</label>
+        </unitDef>
+      </unitDecl>
+      <classDecl>
+        <!-- #c_salt
+#c_soap
+#c_cracker
+#c_lampoil
+#c_beetseed
+#c_canbric
+#c_mackerel
+#c_plate
+#c_broom
+#c_letter
+#c_thread
+#c_cheese
+#c_hide
+#c_shoe
+#c_marplegreen
+#c_beer
+#c_peekpine -->
+        <taxonomy ana="bk:Taxonomy">
+          <gloss xml:lang="en">Commodities</gloss>
+          <category xml:id="c_dairyproduct">
+            <catDesc><term ref="wd:Q185217" xml:lang="en">dairy product</term></catDesc>
+            <category xml:id="c_butter">
+              <catDesc><term ref="wd:Q34172" xml:lang="en">butter</term></catDesc>
+            </category>
+          </category>
+          <category xml:id="c_service">
+            <catDesc><term ref="wd:Q7406919" xml:lang="en">service</term></catDesc>
+            <category xml:id="c_work">
+              <catDesc><term ref="wd:Q6958747" xml:lang="en">work</term></catDesc>
+            </category>
+            <category xml:id="c_rental">
+              <catDesc><term ref="wd:Q157171" xml:lang="en">renting</term></catDesc>
+              <category xml:id="c_oxenrental">
+                <catDesc>
+                  <term xml:lang="en">oxen rental</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_cartrental">
+                <catDesc>
+                  <term xml:lang="en">cart rental</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_waggonrental">
+                <catDesc>
+                  <term xml:lang="en">waggon rental</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_heiferrental">
+                <catDesc>
+                  <term xml:lang="en">heifer rental</term>
+                </catDesc>
+              </category>
+            </category>
+          </category>
+          <category xml:id="c_costumeaccessory">
+            <catDesc><term ref="wd:Q1065579" xml:lang="en">costume accessory</term></catDesc>
+            <category xml:id="c_frenchbraid">
+              <catDesc><term ref="wd:Q16752165" xml:lang="en">french braid</term></catDesc>
+            </category>
+          </category>
+          <category xml:id="c_tool">
+            <catDesc><term ref="wd:Q39546" xml:lang="en">tool</term></catDesc>
+            <category xml:id="c_handtool">
+              <catDesc><term ref="wd:Q2578402" xml:lang="en">hand tool</term></catDesc>
+              <category xml:id="c_hammer">
+                <catDesc><term ref="wd:Q25294" xml:lang="en">hammer</term></catDesc>
+              </category>
+              <category xml:id="c_saw">
+                <catDesc>
+                  <term ref="wd:Q125356" xml:lang="en">saw</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_trowel">
+                <catDesc>
+                  <term ref="wd:Q747382" xml:lang="en">trowel</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_dungfork">
+                <catDesc>
+                  <term xml:lang="en">dung fork</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_paintbrush">
+                <catDesc>
+                  <term ref="wd:Q614467" xml:lang="en">paint brush</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_InkStand">
+                <catDesc>
+                  <term xml:lang="en">Ink Stand</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_shoebrush">
+                <catDesc>
+                  <term ref="wd:Q98296331" xml:lang="en">shoe brush</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_shovel">
+                <catDesc>
+                  <term xml:lang="en">shovel</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_crane">
+              <catDesc>
+                <term ref="wd:Q178692" xml:lang="en">crane</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_broom">
+              <catDesc><term ref="wd:Q172833" xml:lang="en">broom</term></catDesc>
+            </category>
+            <category xml:id="c_clipboards">
+              <catDesc><term ref="wd:Q204461" xml:lang="en">clipboards</term></catDesc>
+            </category>
+          </category>
+          <category xml:id="c_productiveanimal">
+            <catDesc><term ref="wd:Q1797813" xml:lang="en">productive animal</term></catDesc>
+            <category xml:id="c_goose">
+              <catDesc><term ref="wd:Q16529344" xml:lang="en">goose</term></catDesc>
+            </category>
+            <category xml:id="c_geese">
+              <catDesc><term ref="wd:Q16529344" xml:lang="en">geese</term></catDesc>
+            </category>
+            <category xml:id="c_cow">
+              <catDesc><term ref="wd:Q11748378" xml:lang="en">cow</term></catDesc>
+            </category>
+            <category xml:id="c_calf">
+              <catDesc>
+                <term ref="wd:Q2935" xml:lang="en">calf</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_pig">
+              <catDesc>
+                <term ref="wd:Q787" xml:lang="en">pig</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_cattle">
+              <catDesc>
+                <term ref="wd:Q830" xml:lang="en">cattle</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_oxen">
+              <catDesc>
+                <term ref="wd:Q473194" xml:lang="en">oxen</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_horse">
+              <catDesc>
+                <term ref="wd:Q726" xml:lang="en">horse</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_alpaca">
+              <catDesc>
+                <term ref="wd:Q81564" xml:lang="en">alpaca</term>
+              </catDesc>
+              <category xml:id="c_blueblk.alpaca">
+                <catDesc>
+                  <term xml:lang="en">blue blk. alpaca</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_hen">
+              <catDesc>
+                <term ref="wd:Q2201314" xml:lang="en">hen</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_cock">
+              <catDesc>
+                <term ref="wd:Q2216236" xml:lang="en">cock</term>
+              </catDesc>
+            </category>
+          </category>
+          <!--  -->
+          <category xml:id="c_basematerial">
+            <catDesc><term ref="wd:Q214609" xml:lang="en">base material</term></catDesc>
+            <category xml:id="c_wood">
+              <catDesc>
+                <term ref="wd:Q287" xml:lang="en">wood</term>
+              </catDesc>
+              <category xml:id="c_softwood">
+                <catDesc><term ref="wd:Q252108" xml:lang="en">softwood</term></catDesc>
+                <category xml:id="c_pinewood">
+                  <catDesc><term ref="wd:Q1503211" xml:lang="en">pine wood</term></catDesc>
+                </category>
+                <category xml:id="c_freshpine">
+                  <catDesc><term ref="wd:Q1503211" xml:lang="en">fresh pine</term></catDesc>
+                </category>
+                <category xml:id="c_pinelogs">
+                  <catDesc><term ref="wd:Q3737064" xml:lang="en">pine logs</term></catDesc>
+                </category>
+                <category xml:id="c_pinestick">
+                  <catDesc><term ref="wd:Q287" xml:lang="en">pine stick</term></catDesc>
+                </category>
+                <category xml:id="c_hardpine">
+                  <catDesc>
+                    <term xml:lang="en">hard pine</term>
+                  </catDesc>
+                </category>
+              </category>
+              <category xml:id="c_hardwood">
+                <catDesc><term ref="wd:Q2266509" xml:lang="en">hardwood</term></catDesc>
+                <category xml:id="c_oakwood">
+                  <catDesc>
+                    <term ref="wd:Q2075708" xml:lang="en">oak wood</term>
+                  </catDesc>
+                </category>
+              </category>
+              <category xml:id="c_logs">
+                <catDesc>
+                  <term ref="wd:Q3737064" xml:lang="en">logs</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_forestproduct">
+              <catDesc><term ref="wd:Q5469189" xml:lang="en">forest product</term></catDesc>
+              <category xml:id="c_lumber">
+                <catDesc><term ref="wd:Q1370714" xml:lang="en">lumber</term></catDesc>
+                <category xml:id="c_pineboard">
+                  <catDesc><term ref="wd:Q1370714" xml:lang="en">pine board</term></catDesc>
+                </category>
+                <category xml:id="c_sawedpinewood">
+                  <catDesc>
+                    <term xml:lang="en">sawed pine wood</term>
+                  </catDesc>
+                </category>
+                <category xml:id="c_timber">
+                  <catDesc>
+                    <term ref="wd:Q1370714" xml:lang="en">timber</term>
+                  </catDesc>
+                  <category xml:id="c_oaktimber">
+                    <catDesc>
+                      <term xml:lang="en">oak timber</term>
+                    </catDesc>
+                  </category>
+                  <category xml:id="c_pinetimber">
+                    <catDesc>
+                      <term xml:lang="en">pine timber</term>
+                    </catDesc>
+                  </category>
+                  <category xml:id="c_oldtimber">
+                    <catDesc>
+                      <term xml:lang="en">old timber</term>
+                    </catDesc>
+                  </category>
+                  <category xml:id="c_sawedoaktimber">
+                    <catDesc>
+                      <term xml:lang="en">sawed oaktimber</term>
+                    </catDesc>
+                  </category>
+                  <category xml:id="c_pinetimberstick">
+                    <catDesc>
+                      <term xml:lang="en">pine timber stick</term>
+                    </catDesc>
+                  </category>
+                </category>
+              </category>
+            </category>
+            <category xml:id="c_buildingmaterial">
+              <catDesc><term ref="wd:Q206615" xml:lang="en">building material</term></catDesc>
+              <category xml:id="c_plank">
+                <catDesc><term ref="wd:Q1355652" xml:lang="en">plank</term></catDesc>
+              </category>
+              <category xml:id="c_nails">
+                <catDesc><term ref="wd:Q37077" xml:lang="en">nails</term></catDesc>
+              </category>
+              <category xml:id="c_pipe">
+                <catDesc><term ref="wd:Q41551" xml:lang="en">pipe</term></catDesc>
+              </category>
+              <category xml:id="c_stovepipe">
+                <catDesc>
+                  <term xml:lang="en">stove pipe</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_rail">
+                <catDesc>
+                  <term xml:lang="en">rail</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_brick">
+                <catDesc><term ref="wd:Q40089" xml:lang="en">brick</term></catDesc>
+              </category>
+              <category xml:id="c_cement">
+                <catDesc>
+                  <term ref="wd:Q45190" xml:lang="en">cement</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_paint">
+              <catDesc><term ref="wd:Q174219" xml:lang="en">paint</term></catDesc>
+            </category>
+            <category xml:id="c_metal">
+              <catDesc>
+                <term ref="wd:Q11426" xml:lang="en">metal</term>
+              </catDesc>
+              <category xml:id="c_oldiron">
+                <catDesc>
+                  <term xml:lang="en">old iron</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_glass">
+              <catDesc>
+                <term ref="wd:Q11469" xml:lang="en">glass</term>
+              </catDesc>
+            </category>
+          </category>
+          <category xml:id="c_textile">
+            <catDesc><term ref="wd:Q1314278" xml:lang="en">textile</term></catDesc>
+            <category xml:id="c_cottonfabric">
+              <catDesc><term ref="wd:Q8231603" xml:lang="en">cotton fabric</term></catDesc>
+              <category xml:id="c_calico">
+                <catDesc><term ref="wd:Q1132695" xml:lang="en">calico</term></catDesc>
+              </category>
+              <category xml:id="c_cottoncloth">
+                <catDesc><term ref="wd:Q8231603" xml:lang="en">cotton cloth</term></catDesc>
+              </category>
+              <category xml:id="c_finecotton">
+                <catDesc>
+                  <term xml:lang="en">fine cotton</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_gingham">
+                <catDesc>
+                  <term ref="Q2289640" xml:lang="en">gingham</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_wovenfabric">
+              <catDesc><term ref="wd:Q5295538" xml:lang="en">woven fabric</term></catDesc>
+              <category xml:id="c_shirting">
+                <catDesc><term ref="wd:Q2236475" xml:lang="en">shirting</term></catDesc>
+              </category>
+            </category>
+            <category xml:id="c_twill">
+              <catDesc><term ref="wd:Q12060020" xml:lang="en">twill</term></catDesc>
+              <category xml:id="c_flannel">
+                <catDesc><term ref="wd:Q58162" xml:lang="en">flannel</term></catDesc>
+              </category>
+            </category>
+            <category xml:id="c_canvas">
+              <catDesc>
+                <term ref="wd:Q4259259" xml:lang="en">canvas</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_silk">
+              <catDesc>
+                <term ref="wd:Q37681" xml:lang="en">silk</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_ribbon">
+              <catDesc>
+                <term ref="wd:Q6918773" xml:lang="en">ribbon</term>
+              </catDesc>
+            </category>
+          </category>
+          <category xml:id="c_products">
+            <catDesc><term ref="wd:Q2424752" xml:lang="en">products</term></catDesc>
+            <category xml:id="c_meal">
+              <catDesc><term ref="wd:Q2095" xml:lang="en">meal</term></catDesc>
+            </category>
+            <category xml:id="c_windingwatch">
+              <catDesc><term ref="wd:Q178794" xml:lang="en">winding watch</term></catDesc>
+            </category>
+            <category xml:id="c_chaise">
+              <catDesc><term ref="wd:Q15026" xml:lang="en">chaise</term></catDesc>
+            </category>
+          </category>
+          <category xml:id="c_crop">
+            <catDesc><term ref="wd:Q235352" xml:lang="en">crop</term></catDesc>
+            <category xml:id="c_cornseeds">
+              <catDesc><term ref="wd:Q40763" xml:lang="en">corn seeds</term></catDesc>
+            </category>
+            <category xml:id="c_hay">
+              <catDesc><term ref="wd:Q336989" xml:lang="en">hay</term></catDesc>
+            </category>
+            <category xml:id="c_cloverseeds">
+              <catDesc>
+                <term ref="wd:Q101538" xml:lang="en">clover seeds</term>
+              </catDesc>
+            </category>
+          </category>
+          <!--  -->
+          <category xml:id="c_clothing">
+            <catDesc><term ref="wd:Q11460" xml:lang="en">clothing</term></catDesc>
+            <category xml:id="c_trousers">
+              <catDesc><term ref="wd:Q39908" xml:lang="en">trousers</term></catDesc>
+              <category xml:id="c_pantaloons">
+                <catDesc><term ref="wd:Q38795853" xml:lang="en">pantaloons</term></catDesc>
+              </category>
+            </category>
+            <category xml:id="c_pants">
+              <catDesc>
+                <term ref="wd:Q39908" xml:lang="en">pants</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_headgear">
+              <catDesc><term ref="wd:Q14952" xml:lang="en">headgear</term></catDesc>
+              <category xml:id="c_hat">
+                <catDesc><term ref="wd:Q80151" xml:lang="en">hat</term></catDesc>
+              </category>
+            </category>
+            <category xml:id="c_footwear">
+              <catDesc><term ref="wd:Q161928" xml:lang="en">footwear</term></catDesc>
+              <category xml:id="c_boots">
+                <catDesc><term ref="wd:Q190868" xml:lang="en">boots</term></catDesc>
+                <category xml:id="c_trenchcalfboots">
+                  <catDesc>
+                    <term xml:lang="en">trench calf boots</term>
+                  </catDesc>
+                </category>
+              </category>
+              <category xml:id="c_shoes">
+                <catDesc>
+                  <term ref="wd:Q22676" xml:lang="en">shoes</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_socks">
+                <catDesc>
+                  <term ref="wd:Q43663" xml:lang="en">socks</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_handwear">
+              <catDesc><term ref="wd:Q28932195" xml:lang="en">handwear</term></catDesc>
+              <category xml:id="c_gloves">
+                <catDesc><term ref="wd:Q169031" xml:lang="en">gloves</term></catDesc>
+              </category>
+            </category>
+            <category xml:id="c_coat">
+              <catDesc>
+                <term ref="wd:Q152574" xml:lang="en">coat</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_buckeles">
+              <catDesc>
+                <term xml:lang="en">buckeles</term>
+              </catDesc>
+            </category>
+          </category>
+          <!--  -->
+          <category xml:id="c_spice">
+            <catDesc><term ref="wd:Q42527" xml:lang="en">spice</term></catDesc>
+            <category xml:id="c_pepper">
+              <catDesc><term ref="wd:Q3143131" xml:lang="en">pepper</term></catDesc>
+            </category>
+          </category>
+          <category xml:id="c_food">
+            <catDesc><term ref="wd:Q2095" xml:lang="en">food</term></catDesc>
+            <category xml:id="c_eggs">
+              <catDesc>
+                <term xml:lang="en">eggs</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_Sugarandsugarproducts">
+              <catDesc><term ref="wd:Q32106920" xml:lang="en">Sugar and sugar
+                products</term></catDesc>
+              <category xml:id="c_sugar">
+                <catDesc>
+                  <term ref="wd:Q11002" xml:lang="en">sugar</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_molasses">
+                <catDesc>
+                  <term ref="wd:Q154389" xml:lang="en">molasses</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_loafsugar">
+                <catDesc>
+                  <term ref="wd:Q227864" xml:lang="en">loaf sugar</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_lumpsugar">
+                <catDesc>
+                  <term ref="wd:Q1042920" xml:lang="en">lump sugar</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_ediblefatsandoils">
+              <catDesc><term ref="wd:Q912613" xml:lang="en">edible fats and oils</term></catDesc>
+              <category xml:id="c_lard">
+                <catDesc><term ref="wd:Q72827" xml:lang="en">lard</term></catDesc>
+                <category xml:id="c_hogslard">
+                  <catDesc>
+                    <term xml:lang="en">hogs lard</term>
+                  </catDesc>
+                </category>
+              </category>
+              <category xml:id="c_oil">
+                <catDesc><term ref="wd:Q42962" xml:lang="en">oil</term></catDesc>
+              </category>
+            </category>
+            <category xml:id="c_beverage">
+              <catDesc><term ref="wd:Q40050" xml:lang="en">beverage</term></catDesc>
+              <category xml:id="c_nonalcoholic">
+                <catDesc><term ref="wd:Q2647467" xml:lang="en">non alcoholic</term></catDesc>
+                <category xml:id="c_milk">
+                  <catDesc><term ref="wd:Q8495" xml:lang="en">milk</term></catDesc>
+                </category>
+                <category xml:id="c_tea">
+                  <catDesc>
+                    <term xml:lang="en">tea</term>
+                  </catDesc>
+                </category>
+                <category xml:id="c_coffee">
+                  <catDesc>
+                    <term ref="wd:Q8486">coffee</term>
+                  </catDesc>
+                </category>
+
+              </category>
+              <category xml:id="c_alcoholic">
+                <catDesc><term ref="wd:Q154" xml:lang="en">alcoholic</term></catDesc>
+                <category xml:id="c_beers">
+                  <catDesc><term ref="wd:Q44" xml:lang="en">beers</term></catDesc>
+                </category>
+                <category xml:id="c_cider">
+                  <catDesc xml:lang="en"><term ref="wd:Q167296" xml:lang="en">cider</term>
+                  </catDesc>
+                </category>
+                <category xml:id="c_rum">
+                  <catDesc xml:lang="en"><term ref="wd:Q83376" xml:lang="en">rum</term></catDesc>
+                  <category xml:id="c_St.Rum">
+                    <catDesc>
+                      <term xml:lang="en">St. Rum</term>
+                    </catDesc>
+                  </category>
+                  <category xml:id="c_BRum">
+                    <catDesc>
+                      <term xml:lang="en">B Rum</term>
+                    </catDesc>
+                  </category>
+                  <category xml:id="c_NERum">
+                    <catDesc>
+                      <term xml:lang="en">N E Rum</term>
+                    </catDesc>
+                  </category>
+                  <category xml:id="c_bestRum">
+                    <catDesc>
+                      <term xml:lang="en">best Rum</term>
+                    </catDesc>
+                  </category>
+                </category>
+                <category xml:id="c_gin">
+                  <catDesc>
+                    <term ref="wd:Q959362" xml:lang="en">gin</term>
+                  </catDesc>
+                  <category xml:id="c_HGin">
+                    <catDesc>
+                      <term xml:lang="en">H Gin</term>
+                    </catDesc>
+                  </category>
+                  <category xml:id="c_wine">
+                    <catDesc>
+                      <term ref="wd:Q282" xml:lang="en">wine</term>
+                    </catDesc>
+                  </category>
+                </category>
+                <category xml:id="c_brandy">
+                  <catDesc>
+                    <term ref="wd:Q146470" xml:lang="en">brandy</term>
+                  </catDesc>
+                </category>
+              </category>
+            </category>
+            <category xml:id="c_staplefood">
+              <catDesc><term ref="wd:Q736427" xml:lang="en">staple food</term></catDesc>
+              <category xml:id="c_flour">
+                <catDesc><term ref="wd:Q36465" xml:lang="en">flour</term></catDesc>
+              </category>
+              <category xml:id="c_grain">
+                <catDesc xml:lang="en"><term ref="wd:Q2995529" xml:lang="en">grain</term>
+                </catDesc>
+                <category xml:id="c_oats">
+                  <catDesc>
+                    <term ref="wd:Q24265484" xml:lang="en">oats</term>
+                  </catDesc>
+                </category>
+              </category>
+              <category xml:id="c_potatoes">
+                <catDesc><term ref="wd:Q16587531" xml:lang="en">potatoes</term></catDesc>
+                <category xml:id="c_blackpotatoes">
+                  <catDesc><term xml:lang="en">black potatoes</term></catDesc>
+                </category>
+                <category xml:id="c_brownpotatoes">
+                  <catDesc><term xml:lang="en">brown potatoes</term></catDesc>
+                </category>
+                <category xml:id="c_whitepotatoes">
+                  <catDesc>
+                    <term xml:lang="en">white potatoes</term>
+                  </catDesc>
+                </category>
+                <category xml:id="c_snowpotatoes">
+                  <catDesc>
+                    <term xml:lang="en">snow potatoes</term>
+                  </catDesc>
+                </category>
+                <category xml:id="c_snowballpotatoes">
+                  <catDesc>
+                    <term xml:lang="en">snowball potatoes</term>
+                  </catDesc>
+                </category>
+                <category xml:id="c_s.b.potatoes">
+                  <catDesc>
+                    <term xml:lang="en">s. b. potatoes</term>
+                  </catDesc>
+                </category>
+                <category xml:id="c_pinepotatoes">
+                  <catDesc>
+                    <term xml:lang="en">pine potatoes</term>
+                  </catDesc>
+                </category>
+                <category xml:id="c_redpotatoes">
+                  <catDesc>
+                    <term xml:lang="en">red potatoes</term>
+                  </catDesc>
+                </category>
+              </category>
+              <category xml:id="c_rye">
+                <catDesc>
+                  <term ref="wd:Q12099" xml:lang="en">rye</term>
+                </catDesc>
+                <category xml:id="c_springrye">
+                  <catDesc>
+                    <term xml:lang="en">spring rye</term>
+                  </catDesc>
+                </category>
+              </category>
+              <category xml:id="c_corn">
+                <catDesc><term ref="wd:Q11575" xml:lang="en">corn</term></catDesc>
+              </category>
+            </category>
+            <category xml:id="c_meat">
+              <catDesc><term ref="wd:Q10990" xml:lang="en">meat</term></catDesc>
+              <category xml:id="c_poultry">
+                <catDesc><term ref="wd:Q178559" xml:lang="en">poultry</term></catDesc>
+                <category xml:id="c_chicken">
+                  <catDesc><term ref="wd:Q780" xml:lang="en">chicken</term></catDesc>
+                </category>
+                <category xml:id="c_turkeys">
+                  <catDesc><term ref="wd:Q4200953" xml:lang="en">turkeys</term></catDesc>
+                </category>
+              </category>
+              <category xml:id="c_veal">
+                <catDesc>
+                  <term ref="wd:Q957434" xml:lang="en">veal</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_beef">
+                <catDesc><term ref="wd:Q192628" xml:lang="en">beef</term></catDesc>
+                <category xml:id="c_saltbeef">
+                  <catDesc><term ref="wd:Q1682434" xml:lang="en">salt beef</term></catDesc>
+                </category>
+                <category xml:id="c_dryedbeef">
+                  <catDesc>
+                    <term xml:lang="en">dryed beef</term>
+                  </catDesc>
+                </category>
+              </category>
+              <category xml:id="c_pork">
+                <catDesc><term ref="wd:Q191768" xml:lang="en">pork</term></catDesc>
+                <category xml:id="c_ham">
+                  <catDesc><term ref="wd:Q170486" xml:lang="en">ham</term></catDesc>
+                </category>
+                <category xml:id="c_saltpork">
+                  <catDesc>
+                    <term xml:lang="en">salt pork</term>
+                  </catDesc>
+                </category>
+                <category xml:id="c_bacon">
+                  <catDesc>
+                    <term ref="wd:Q11106" xml:lang="en">bacon</term>
+                  </catDesc>
+                </category>
+              </category>
+              <category xml:id="c_ribs">
+                <catDesc>
+                  <term xml:lang="en">ribs</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_fruitvegetable">
+              <catDesc><term ref="wd:Q1470762" xml:lang="en">fruit vegetable</term></catDesc>
+              <category xml:id="c_squash">
+                <catDesc><term ref="wd:Q7533" xml:lang="en">squash</term></catDesc>
+              </category>
+              <category xml:id="c_pome">
+                <catDesc><term ref="wd:Q41274" xml:lang="en">pome</term></catDesc>
+                <category xml:id="c_apples">
+                  <catDesc><term ref="wd:Q89" xml:lang="en">apples</term></catDesc>
+                </category>
+              </category>
+              <category xml:id="c_rhubarb">
+                <catDesc>
+                  <term ref="wd:Q7535" xml:lang="en">rhubarb</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_sarsparilla">
+                <catDesc>
+                  <term xml:lang="en">sarsparilla</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_driedfruit">
+                <catDesc><term ref="wd:Q234901" xml:lang="en">dried fruit</term></catDesc>
+                <category xml:id="c_rosin">
+                  <catDesc><term ref="wd:Q13186" xml:lang="en">rosin</term></catDesc>
+                </category>
+              </category>
+              <category xml:id="c_cabages">
+                <catDesc>
+                  <term xml:lang="en">cabages</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_peas">
+                <catDesc>
+                  <term ref="wd:Q25237" xml:lang="en">peas</term>
+                </catDesc>
+              </category>
+              <category xml:id="c_cranberry">
+                <catDesc>
+                  <term ref="wd:Q21546387" xml:lang="en">cranberry</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_starch">
+              <catDesc>
+                <term ref="wd:Q41534" xml:lang="en">starch</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_foodcoloring">
+              <catDesc><term ref="wd:Q753009" xml:lang="en">food coloring</term></catDesc>
+              <category xml:id="c_skyblue">
+                <catDesc><term ref="wd:Q420087" xml:lang="en">sky blue</term></catDesc>
+              </category>
+            </category>
+
+            <category xml:id="c_fish">
+              <catDesc>
+                <term ref="wd:Q152" xml:lang="en">fish</term>
+              </catDesc>
+              <category xml:id="c_codfish">
+                <catDesc>
+                  <term ref="wd:Q13194939" xml:lang="en">codfish</term>
+                </catDesc>
+              </category>
+            </category>
+            <category xml:id="c_pastry">
+              <catDesc>
+                <term ref="wd:Q477248" xml:lang="en">pastry</term>
+              </catDesc>
+              <category xml:id="c_bread">
+                <catDesc>
+                  <term ref="Q7802" xml:lang="en">bread</term>
+                </catDesc>
+                <category xml:id="c_brownbread">
+                  <catDesc>
+                    <term>brown bread</term>
+                  </catDesc>
+                </category>
+              </category>
+            </category>
+          </category>
+          <category xml:id="c_tobacco">
+            <catDesc>
+              <term ref="wd:Q1566" xml:lang="en">tobacco</term>
+            </catDesc>
+          </category>
+          <category xml:id="c_vinegar">
+            <catDesc>
+              <term ref="wd:Q41354" xml:lang="en">vinegar</term>
+            </catDesc>
+          </category>
+          <category xml:id="c_paper">
+            <catDesc>
+              <term ref="wd:Q11472" xml:lang="en">paper</term>
+            </catDesc>
+            <category xml:id="c_postageofletter">
+              <catDesc>
+                <term xml:lang="en">postage of letter</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_book">
+              <catDesc>
+                <term xml:lang="en">book</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_bible">
+              <catDesc>
+                <term xml:lang="en">bible</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_psalmbook">
+              <catDesc>
+                <term xml:lang="en">psalm book</term>
+              </catDesc>
+            </category>
+          </category>
+
+          <category xml:id="c_unkown">
+            <catDesc>
+              <term xml:lang="en">unkown</term>
+            </catDesc>
+            <category xml:id="c_do">
+              <catDesc>
+                <term xml:lang="en">do</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_suet">
+              <catDesc>
+                <term xml:lang="en">suet</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_beefstock">
+              <catDesc>
+                <term xml:lang="en">beef stock</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_pumplog">
+              <catDesc>
+                <term xml:lang="en">pump log</term>
+              </catDesc>
+            </category>
+
+            <category xml:id="c_chips">
+              <catDesc>
+                <term xml:lang="en">chips</term>
+              </catDesc>
+            </category>
+
+            <category xml:id="c_englishhay">
+              <catDesc>
+                <term xml:lang="en">english hay</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_tallow">
+              <catDesc>
+                <term xml:lang="en">tallow</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_LoafTea">
+              <catDesc>
+                <term xml:lang="en">Loaf Tea</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_FineTassSeed">
+              <catDesc>
+                <term xml:lang="en">Fine Tass Seed</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_blackcrape">
+              <catDesc>
+                <term xml:lang="en">black crape</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_mushin">
+              <catDesc>
+                <term xml:lang="en">mushin</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_calica">
+              <catDesc>
+                <term xml:lang="en">calica</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_padding">
+              <catDesc>
+                <term xml:lang="en">padding</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_saleratus">
+              <catDesc>
+                <term xml:lang="en">saleratus</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_lace">
+              <catDesc>
+                <term xml:lang="en">lace</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_pins">
+              <catDesc>
+                <term xml:lang="en">pins</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_blacking">
+              <catDesc>
+                <term xml:lang="en">blacking</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_Heiffer">
+              <catDesc>
+                <term xml:lang="en">Heiffer</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_steer">
+              <catDesc>
+                <term xml:lang="en">steer</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_parts">
+              <catDesc>
+                <term xml:lang="en">parts</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_scraper">
+              <catDesc>
+                <term xml:lang="en">scraper</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_quinacs">
+              <catDesc>
+                <term xml:lang="en">quinacs?</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_billowers">
+              <catDesc>
+                <term xml:lang="en">billowers</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_oxframe">
+              <catDesc>
+                <term xml:lang="en">ox frame</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_stuff">
+              <catDesc>
+                <term xml:lang="en">stuff</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_largeats">
+              <catDesc>
+                <term xml:lang="en">large ?ats</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_huck">
+              <catDesc>
+                <term xml:lang="en">huck</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_redpairs">
+              <catDesc>
+                <term xml:lang="en">red pairs?</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_hert">
+              <catDesc>
+                <term xml:lang="en">hert?</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_pasturinghorse">
+              <catDesc>
+                <term xml:lang="en">pasturing horse</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_booteas">
+              <catDesc>
+                <term xml:lang="en">booteas</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_blackball">
+              <catDesc>
+                <term xml:lang="en">blackball</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_DayBook">
+              <catDesc>
+                <term xml:lang="en">Day Book</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_Tlound">
+              <catDesc>
+                <term xml:lang="en">T lound</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_beefrye">
+              <catDesc>
+                <term xml:lang="en">beef rye</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_edging">
+              <catDesc>
+                <term xml:lang="en">edging</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_pasturing">
+              <catDesc>
+                <term xml:lang="en">pasturing</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_shutlink">
+              <catDesc>
+                <term xml:lang="en">shut link</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_use">
+              <catDesc>
+                <term xml:lang="en">use</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_crushing">
+              <catDesc>
+                <term xml:lang="en">crushing</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_milenary">
+              <catDesc>
+                <term xml:lang="en">milenary</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_tickets">
+              <catDesc>
+                <term xml:lang="en">tickets</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_parsnips">
+              <catDesc>
+                <term xml:lang="en">parsnips</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_subscription">
+              <catDesc>
+                <term xml:lang="en">subscription</term>
+              </catDesc>
+            </category>
+            <category xml:id="c_beefcorn">
+              <catDesc>
+                <term xml:lang="en">beef corn</term>
+              </catDesc>
+            </category>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb n="4"/>
+         <fw type="pageNum">4</fw>
+         <table>
+            <head>
+               <date ana="bk:when" when="1828-12-29">Monday Dec. 29th 1828</date>
+            </head>
+            <row ana="bk:entry">
+               <cell ana="bk:status" corresp="#364">364</cell>
+               <cell>
+                  <name ana="bk:to" ref="#pers_WCDH596" type="person">Oliver Sweet</name>
+                  <lb/> To<measure ana="bk:commodity" unit="count" quantity="1" commodity="#c_hat">a
+                     hat 18/</measure>
+               </cell>
+               <cell>
+                  <measure ana="bk:money" quantity="3" unit="dollar">3</measure>
+               </cell>
+               <cell> 00</cell>
+               <cell/>
+               <cell/>
+            </row>
+            <row ana="bk:entry">
+               <cell ana="bk:status" corresp="#313">313</cell>
+               <cell>
+                  <name ana="bk:to" ref="#pers_WCDH134" type="person">Asa M Adams</name> <span ana="bk:debit">D</span>
+                  <lb/> To<measure ana="bk:commodity" unit="feet" quantity="25"
+                     commodity="#c_pineboard">25 ft Mich Pine board 2 ½ ct</measure>
+               </cell>
+               <cell/>
+               <cell>
+                  <measure ana="bk:money" quantity="63" unit="cent">63</measure>
+               </cell>
+               <cell/>
+               <cell/>
+            </row>
+            <span type="subheading">
+               <date ana="bk:when" when="1828-12-31">31</date>
+            </span>
+            <row ana="bk:entry">
+               <cell ana="bk:status" corresp="#settled">settled</cell>
+               <cell>Nathaniel W Lincoln<lb/> By <measure ana="bk:service" unit="day" quantity="1"
+                     commodity="#c_work">1 Days work</measure> moving Windows 2/6</cell>
+               <cell/>
+               <cell>
+                  <measure ana="bk:money" quantity="42" unit="cent">42</measure>
+               </cell>
+               <cell/>
+               <cell/>
+            </row>
+         </table>
+      </body>
+   </text>
+</TEI>

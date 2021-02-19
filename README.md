@@ -47,3 +47,9 @@
 
 * [TTT_1_XML_TEI](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_1_XML_TEI)
 * [TTT_2_XMLSchema](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_2_XMLSchema)
+
+## Schools
+
+### Winter School. Digitale Editionen Masterclass. Wuppertal (22.-26.2.2021)
+
++ https://github.com/chpollin/Teaching/tree/master/WuppertalSchool/NamedEntities

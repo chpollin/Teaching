@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:functx="http://www.functx.com" xmlns:gn="http://www.geonames.org/ontology#"
+    xmlns:gams="https://gams.uni-graz.at/o:gams-ontology#"
+    xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    xmlns:bk="https://gams.uni-graz.at/o:depcha.bookkeeping#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:t="http://www.tei-c.org/ns/1.0"
+    xmlns:foaf="http://xmlns.com/foaf/spec/">
+    <skos:ConceptScheme rdf:about="https://gams.uni-graz.at/context:depcha.wheaton">
+        <dc:title xml:lang="en">Commodities</dc:title>
+        <skos:prefLabel xml:lang="en">Commodities</skos:prefLabel>
+        <skos:hasTopConcept
+            rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_dairyproduct"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_service"/>
+        <skos:hasTopConcept
+            rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_costumeaccessory"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tool"/>
+        <skos:hasTopConcept
+            rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:hasTopConcept
+            rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_basematerial"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_textile"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_products"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_crop"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clothing"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_spice"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tobacco"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_vinegar"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_paper"/>
+        <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+    </skos:ConceptScheme>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_dairyproduct">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_butter"/>
+        <skos:prefLabel xml:lang="en">dairy product</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q185217"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_butter">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_dairyproduct"/>
+        <skos:prefLabel xml:lang="en">butter</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q34172"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_service">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_work"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rental"/>
+        <skos:prefLabel xml:lang="en">service</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q7406919"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_work">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_service"/>
+        <skos:prefLabel xml:lang="en">work</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q6958747"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rental">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oxenrental"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cartrental"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_waggonrental"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_heiferrental"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_service"/>
+        <skos:prefLabel xml:lang="en">renting</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q157171"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oxenrental">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rental"/>
+        <skos:prefLabel xml:lang="en">oxen rental</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cartrental">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rental"/>
+        <skos:prefLabel xml:lang="en">cart rental</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_waggonrental">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rental"/>
+        <skos:prefLabel xml:lang="en">waggon rental</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_heiferrental">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rental"/>
+        <skos:prefLabel xml:lang="en">heifer rental</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_costumeaccessory">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_frenchbraid"/>
+        <skos:prefLabel xml:lang="en">costume accessory</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1065579"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_frenchbraid">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_costumeaccessory"/>
+        <skos:prefLabel xml:lang="en">french braid</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q16752165"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tool">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handtool"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_crane"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_broom"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clipboards"/>
+        <skos:prefLabel xml:lang="en">tool</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q39546"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handtool">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hammer"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_saw"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_trowel"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_dungfork"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_paintbrush"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_InkStand"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_shoebrush"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_shovel"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tool"/>
+        <skos:prefLabel xml:lang="en">hand tool</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2578402"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hammer">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handtool"/>
+        <skos:prefLabel xml:lang="en">hammer</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q25294"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_saw">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handtool"/>
+        <skos:prefLabel xml:lang="en">saw</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q125356"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_trowel">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handtool"/>
+        <skos:prefLabel xml:lang="en">trowel</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q747382"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_dungfork">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handtool"/>
+        <skos:prefLabel xml:lang="en">dung fork</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_paintbrush">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handtool"/>
+        <skos:prefLabel xml:lang="en">paint brush</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q614467"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_InkStand">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handtool"/>
+        <skos:prefLabel xml:lang="en">Ink Stand</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_shoebrush">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handtool"/>
+        <skos:prefLabel xml:lang="en">shoe brush</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q98296331"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_shovel">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handtool"/>
+        <skos:prefLabel xml:lang="en">shovel</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_crane">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tool"/>
+        <skos:prefLabel xml:lang="en">crane</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q178692"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_broom">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tool"/>
+        <skos:prefLabel xml:lang="en">broom</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q172833"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clipboards">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tool"/>
+        <skos:prefLabel xml:lang="en">clipboards</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q204461"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_goose"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_geese"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cow"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_calf"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pig"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cattle"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oxen"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_horse"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_alpaca"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hen"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cock"/>
+        <skos:prefLabel xml:lang="en">productive animal</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1797813"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_goose">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">goose</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q16529344"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_geese">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">geese</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q16529344"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cow">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">cow</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q11748378"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_calf">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">calf</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2935"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pig">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">pig</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q787"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cattle">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">cattle</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q830"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oxen">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">oxen</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q473194"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_horse">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">horse</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q726"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_alpaca">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_blueblk.alpaca"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">alpaca</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q81564"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_blueblk.alpaca">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_alpaca"/>
+        <skos:prefLabel xml:lang="en">blue blk. alpaca</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hen">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">hen</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2201314"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cock">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_productiveanimal"/>
+        <skos:prefLabel xml:lang="en">cock</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2216236"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_basematerial">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_wood"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_forestproduct"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buildingmaterial"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_paint"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_metal"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_glass"/>
+        <skos:prefLabel xml:lang="en">base material</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q214609"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_wood">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_softwood"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hardwood"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_logs"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_basematerial"/>
+        <skos:prefLabel xml:lang="en">wood</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q287"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_softwood">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinewood"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_freshpine"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinelogs"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinestick"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hardpine"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_wood"/>
+        <skos:prefLabel xml:lang="en">softwood</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q252108"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinewood">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_softwood"/>
+        <skos:prefLabel xml:lang="en">pine wood</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1503211"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_freshpine">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_softwood"/>
+        <skos:prefLabel xml:lang="en">fresh pine</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1503211"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinelogs">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_softwood"/>
+        <skos:prefLabel xml:lang="en">pine logs</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q3737064"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinestick">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_softwood"/>
+        <skos:prefLabel xml:lang="en">pine stick</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q287"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hardpine">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_softwood"/>
+        <skos:prefLabel xml:lang="en">hard pine</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hardwood">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oakwood"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_wood"/>
+        <skos:prefLabel xml:lang="en">hardwood</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2266509"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oakwood">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hardwood"/>
+        <skos:prefLabel xml:lang="en">oak wood</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2075708"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_logs">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_wood"/>
+        <skos:prefLabel xml:lang="en">logs</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q3737064"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_forestproduct">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lumber"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_basematerial"/>
+        <skos:prefLabel xml:lang="en">forest product</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q5469189"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lumber">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pineboard"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_sawedpinewood"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_timber"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_forestproduct"/>
+        <skos:prefLabel xml:lang="en">lumber</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1370714"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pineboard">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lumber"/>
+        <skos:prefLabel xml:lang="en">pine board</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1370714"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_sawedpinewood">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lumber"/>
+        <skos:prefLabel xml:lang="en">sawed pine wood</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_timber">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oaktimber"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinetimber"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oldtimber"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_sawedoaktimber"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinetimberstick"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lumber"/>
+        <skos:prefLabel xml:lang="en">timber</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1370714"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oaktimber">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_timber"/>
+        <skos:prefLabel xml:lang="en">oak timber</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinetimber">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_timber"/>
+        <skos:prefLabel xml:lang="en">pine timber</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oldtimber">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_timber"/>
+        <skos:prefLabel xml:lang="en">old timber</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_sawedoaktimber">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_timber"/>
+        <skos:prefLabel xml:lang="en">sawed oaktimber</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinetimberstick">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_timber"/>
+        <skos:prefLabel xml:lang="en">pine timber stick</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buildingmaterial">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_plank"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_nails"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pipe"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_stovepipe"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rail"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_brick"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cement"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_basematerial"/>
+        <skos:prefLabel xml:lang="en">building material</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q206615"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_plank">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buildingmaterial"/>
+        <skos:prefLabel xml:lang="en">plank</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1355652"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_nails">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buildingmaterial"/>
+        <skos:prefLabel xml:lang="en">nails</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q37077"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pipe">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buildingmaterial"/>
+        <skos:prefLabel xml:lang="en">pipe</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q41551"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_stovepipe">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buildingmaterial"/>
+        <skos:prefLabel xml:lang="en">stove pipe</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rail">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buildingmaterial"/>
+        <skos:prefLabel xml:lang="en">rail</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_brick">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buildingmaterial"/>
+        <skos:prefLabel xml:lang="en">brick</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q40089"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cement">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buildingmaterial"/>
+        <skos:prefLabel xml:lang="en">cement</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q45190"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_paint">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_basematerial"/>
+        <skos:prefLabel xml:lang="en">paint</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q174219"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_metal">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oldiron"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_basematerial"/>
+        <skos:prefLabel xml:lang="en">metal</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q11426"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oldiron">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_metal"/>
+        <skos:prefLabel xml:lang="en">old iron</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_glass">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_basematerial"/>
+        <skos:prefLabel xml:lang="en">glass</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q11469"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_textile">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cottonfabric"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_wovenfabric"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_twill"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_canvas"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_silk"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_ribbon"/>
+        <skos:prefLabel xml:lang="en">textile</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1314278"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cottonfabric">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_calico"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cottoncloth"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_finecotton"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_gingham"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_textile"/>
+        <skos:prefLabel xml:lang="en">cotton fabric</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q8231603"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_calico">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cottonfabric"/>
+        <skos:prefLabel xml:lang="en">calico</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1132695"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cottoncloth">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cottonfabric"/>
+        <skos:prefLabel xml:lang="en">cotton cloth</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q8231603"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_finecotton">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cottonfabric"/>
+        <skos:prefLabel xml:lang="en">fine cotton</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_gingham">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cottonfabric"/>
+        <skos:prefLabel xml:lang="en">gingham</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="Q2289640"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_wovenfabric">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_shirting"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_textile"/>
+        <skos:prefLabel xml:lang="en">woven fabric</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q5295538"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_shirting">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_wovenfabric"/>
+        <skos:prefLabel xml:lang="en">shirting</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2236475"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_twill">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_flannel"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_textile"/>
+        <skos:prefLabel xml:lang="en">twill</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q12060020"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_flannel">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_twill"/>
+        <skos:prefLabel xml:lang="en">flannel</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q58162"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_canvas">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_textile"/>
+        <skos:prefLabel xml:lang="en">canvas</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q4259259"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_silk">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_textile"/>
+        <skos:prefLabel xml:lang="en">silk</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q37681"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_ribbon">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_textile"/>
+        <skos:prefLabel xml:lang="en">ribbon</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q6918773"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_products">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_meal"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_windingwatch"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_chaise"/>
+        <skos:prefLabel xml:lang="en">products</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2424752"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_meal">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_products"/>
+        <skos:prefLabel xml:lang="en">meal</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2095"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_windingwatch">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_products"/>
+        <skos:prefLabel xml:lang="en">winding watch</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q178794"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_chaise">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_products"/>
+        <skos:prefLabel xml:lang="en">chaise</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q15026"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_crop">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cornseeds"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hay"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cloverseeds"/>
+        <skos:prefLabel xml:lang="en">crop</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q235352"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cornseeds">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_crop"/>
+        <skos:prefLabel xml:lang="en">corn seeds</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q40763"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hay">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_crop"/>
+        <skos:prefLabel xml:lang="en">hay</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q336989"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cloverseeds">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_crop"/>
+        <skos:prefLabel xml:lang="en">clover seeds</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q101538"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clothing">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_trousers"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pants"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_headgear"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_footwear"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handwear"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_coat"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buckeles"/>
+        <skos:prefLabel xml:lang="en">clothing</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q11460"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_trousers">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pantaloons"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clothing"/>
+        <skos:prefLabel xml:lang="en">trousers</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q39908"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pantaloons">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_trousers"/>
+        <skos:prefLabel xml:lang="en">pantaloons</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q38795853"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pants">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clothing"/>
+        <skos:prefLabel xml:lang="en">pants</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q39908"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_headgear">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hat"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clothing"/>
+        <skos:prefLabel xml:lang="en">headgear</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q14952"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hat">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_headgear"/>
+        <skos:prefLabel xml:lang="en">hat</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q80151"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_footwear">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_boots"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_shoes"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_socks"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clothing"/>
+        <skos:prefLabel xml:lang="en">footwear</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q161928"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_boots">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_trenchcalfboots"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_footwear"/>
+        <skos:prefLabel xml:lang="en">boots</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q190868"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_trenchcalfboots">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_boots"/>
+        <skos:prefLabel xml:lang="en">trench calf boots</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_shoes">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_footwear"/>
+        <skos:prefLabel xml:lang="en">shoes</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q22676"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_socks">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_footwear"/>
+        <skos:prefLabel xml:lang="en">socks</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q43663"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handwear">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_gloves"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clothing"/>
+        <skos:prefLabel xml:lang="en">handwear</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q28932195"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_gloves">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_handwear"/>
+        <skos:prefLabel xml:lang="en">gloves</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q169031"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_coat">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clothing"/>
+        <skos:prefLabel xml:lang="en">coat</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q152574"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_buckeles">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_clothing"/>
+        <skos:prefLabel xml:lang="en">buckeles</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_spice">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pepper"/>
+        <skos:prefLabel xml:lang="en">spice</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q42527"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pepper">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_spice"/>
+        <skos:prefLabel xml:lang="en">pepper</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q3143131"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_eggs"/>
+        <skos:narrower
+            rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_Sugarandsugarproducts"/>
+        <skos:narrower
+            rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_ediblefatsandoils"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beverage"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_staplefood"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_meat"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fruitvegetable"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_starch"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_foodcoloring"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fish"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pastry"/>
+        <skos:prefLabel xml:lang="en">food</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2095"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_eggs">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">eggs</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_Sugarandsugarproducts">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_sugar"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_molasses"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_loafsugar"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lumpsugar"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">Sugar and sugar products</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q32106920"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_sugar">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader
+            rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_Sugarandsugarproducts"/>
+        <skos:prefLabel xml:lang="en">sugar</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q11002"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_molasses">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader
+            rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_Sugarandsugarproducts"/>
+        <skos:prefLabel xml:lang="en">molasses</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q154389"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_loafsugar">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader
+            rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_Sugarandsugarproducts"/>
+        <skos:prefLabel xml:lang="en">loaf sugar</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q227864"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lumpsugar">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader
+            rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_Sugarandsugarproducts"/>
+        <skos:prefLabel xml:lang="en">lump sugar</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1042920"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_ediblefatsandoils">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lard"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oil"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">edible fats and oils</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q912613"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lard">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hogslard"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_ediblefatsandoils"/>
+        <skos:prefLabel xml:lang="en">lard</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q72827"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hogslard">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lard"/>
+        <skos:prefLabel xml:lang="en">hogs lard</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oil">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_ediblefatsandoils"/>
+        <skos:prefLabel xml:lang="en">oil</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q42962"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beverage">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_nonalcoholic"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_alcoholic"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">beverage</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q40050"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_nonalcoholic">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_milk"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tea"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_coffee"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beverage"/>
+        <skos:prefLabel xml:lang="en">non alcoholic</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2647467"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_milk">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_nonalcoholic"/>
+        <skos:prefLabel xml:lang="en">milk</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q8495"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tea">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_nonalcoholic"/>
+        <skos:prefLabel xml:lang="en">tea</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_coffee">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_nonalcoholic"/>
+        <skos:prefLabel xml:lang="en">coffee</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q8486"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_alcoholic">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beers"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cider"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rum"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_gin"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_brandy"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beverage"/>
+        <skos:prefLabel xml:lang="en">alcoholic</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q154"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beers">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_alcoholic"/>
+        <skos:prefLabel xml:lang="en">beers</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q44"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cider">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_alcoholic"/>
+        <skos:prefLabel xml:lang="en">cider</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q167296"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rum">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_St.Rum"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_BRum"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_NERum"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_bestRum"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_alcoholic"/>
+        <skos:prefLabel xml:lang="en">rum</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q83376"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_St.Rum">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rum"/>
+        <skos:prefLabel xml:lang="en">St. Rum</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_BRum">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rum"/>
+        <skos:prefLabel xml:lang="en">B Rum</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_NERum">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rum"/>
+        <skos:prefLabel xml:lang="en">N E Rum</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_bestRum">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rum"/>
+        <skos:prefLabel xml:lang="en">best Rum</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_gin">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_HGin"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_wine"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_alcoholic"/>
+        <skos:prefLabel xml:lang="en">gin</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q959362"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_HGin">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_gin"/>
+        <skos:prefLabel xml:lang="en">H Gin</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_wine">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_gin"/>
+        <skos:prefLabel xml:lang="en">wine</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q282"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_brandy">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_alcoholic"/>
+        <skos:prefLabel xml:lang="en">brandy</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q146470"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_staplefood">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_flour"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_grain"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_potatoes"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rye"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_corn"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">staple food</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q736427"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_flour">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_staplefood"/>
+        <skos:prefLabel xml:lang="en">flour</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q36465"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_grain">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oats"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_staplefood"/>
+        <skos:prefLabel xml:lang="en">grain</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q2995529"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oats">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_grain"/>
+        <skos:prefLabel xml:lang="en">oats</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q24265484"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_potatoes">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_blackpotatoes"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_brownpotatoes"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_whitepotatoes"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_snowpotatoes"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_snowballpotatoes"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_s.b.potatoes"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinepotatoes"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_redpotatoes"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_staplefood"/>
+        <skos:prefLabel xml:lang="en">potatoes</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q16587531"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_blackpotatoes">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_potatoes"/>
+        <skos:prefLabel xml:lang="en">black potatoes</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_brownpotatoes">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_potatoes"/>
+        <skos:prefLabel xml:lang="en">brown potatoes</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_whitepotatoes">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_potatoes"/>
+        <skos:prefLabel xml:lang="en">white potatoes</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_snowpotatoes">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_potatoes"/>
+        <skos:prefLabel xml:lang="en">snow potatoes</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_snowballpotatoes">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_potatoes"/>
+        <skos:prefLabel xml:lang="en">snowball potatoes</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_s.b.potatoes">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_potatoes"/>
+        <skos:prefLabel xml:lang="en">s. b. potatoes</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pinepotatoes">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_potatoes"/>
+        <skos:prefLabel xml:lang="en">pine potatoes</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_redpotatoes">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_potatoes"/>
+        <skos:prefLabel xml:lang="en">red potatoes</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rye">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_springrye"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_staplefood"/>
+        <skos:prefLabel xml:lang="en">rye</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q12099"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_springrye">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rye"/>
+        <skos:prefLabel xml:lang="en">spring rye</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_corn">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_staplefood"/>
+        <skos:prefLabel xml:lang="en">corn</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q11575"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_meat">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_poultry"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_veal"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beef"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pork"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_ribs"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">meat</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q10990"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_poultry">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_chicken"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_turkeys"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_meat"/>
+        <skos:prefLabel xml:lang="en">poultry</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q178559"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_chicken">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_poultry"/>
+        <skos:prefLabel xml:lang="en">chicken</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q780"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_turkeys">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_poultry"/>
+        <skos:prefLabel xml:lang="en">turkeys</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q4200953"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_veal">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_meat"/>
+        <skos:prefLabel xml:lang="en">veal</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q957434"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beef">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_saltbeef"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_dryedbeef"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_meat"/>
+        <skos:prefLabel xml:lang="en">beef</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q192628"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_saltbeef">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beef"/>
+        <skos:prefLabel xml:lang="en">salt beef</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1682434"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_dryedbeef">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beef"/>
+        <skos:prefLabel xml:lang="en">dryed beef</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pork">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_ham"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_saltpork"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_bacon"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_meat"/>
+        <skos:prefLabel xml:lang="en">pork</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q191768"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_ham">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pork"/>
+        <skos:prefLabel xml:lang="en">ham</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q170486"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_saltpork">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pork"/>
+        <skos:prefLabel xml:lang="en">salt pork</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_bacon">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pork"/>
+        <skos:prefLabel xml:lang="en">bacon</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q11106"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_ribs">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_meat"/>
+        <skos:prefLabel xml:lang="en">ribs</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fruitvegetable">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_squash"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pome"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rhubarb"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_sarsparilla"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_driedfruit"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cabages"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_peas"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cranberry"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">fruit vegetable</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1470762"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_squash">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fruitvegetable"/>
+        <skos:prefLabel xml:lang="en">squash</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q7533"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pome">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_apples"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fruitvegetable"/>
+        <skos:prefLabel xml:lang="en">pome</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q41274"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_apples">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pome"/>
+        <skos:prefLabel xml:lang="en">apples</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q89"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rhubarb">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fruitvegetable"/>
+        <skos:prefLabel xml:lang="en">rhubarb</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q7535"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_sarsparilla">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fruitvegetable"/>
+        <skos:prefLabel xml:lang="en">sarsparilla</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_driedfruit">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rosin"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fruitvegetable"/>
+        <skos:prefLabel xml:lang="en">dried fruit</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q234901"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_rosin">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_driedfruit"/>
+        <skos:prefLabel xml:lang="en">rosin</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q13186"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cabages">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fruitvegetable"/>
+        <skos:prefLabel xml:lang="en">cabages</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_peas">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fruitvegetable"/>
+        <skos:prefLabel xml:lang="en">peas</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q25237"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_cranberry">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fruitvegetable"/>
+        <skos:prefLabel xml:lang="en">cranberry</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q21546387"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_starch">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">starch</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q41534"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_foodcoloring">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_skyblue"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">food coloring</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q753009"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_skyblue">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_foodcoloring"/>
+        <skos:prefLabel xml:lang="en">sky blue</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q420087"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fish">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_codfish"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">fish</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q152"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_codfish">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_fish"/>
+        <skos:prefLabel xml:lang="en">codfish</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q13194939"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pastry">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_bread"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_food"/>
+        <skos:prefLabel xml:lang="en">pastry</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q477248"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_bread">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_brownbread"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pastry"/>
+        <skos:prefLabel xml:lang="en">bread</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="Q7802"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_brownbread">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_bread"/>
+        <skos:prefLabel xml:lang="en">brown bread</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tobacco">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:prefLabel xml:lang="en">tobacco</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q1566"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_vinegar">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:prefLabel xml:lang="en">vinegar</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q41354"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_paper">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_postageofletter"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_book"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_bible"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_psalmbook"/>
+        <skos:prefLabel xml:lang="en">paper</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/wd:Q11472"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_postageofletter">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_paper"/>
+        <skos:prefLabel xml:lang="en">postage of letter</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_book">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_paper"/>
+        <skos:prefLabel xml:lang="en">book</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_bible">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_paper"/>
+        <skos:prefLabel xml:lang="en">bible</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_psalmbook">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_paper"/>
+        <skos:prefLabel xml:lang="en">psalm book</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_do"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_suet"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beefstock"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pumplog"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_chips"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_englishhay"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tallow"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_LoafTea"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_FineTassSeed"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_blackcrape"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_mushin"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_calica"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_padding"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_saleratus"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lace"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pins"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_blacking"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_Heiffer"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_steer"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_parts"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_scraper"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_quinacs"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_billowers"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oxframe"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_stuff"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_largeats"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_huck"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_redpairs"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hert"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pasturinghorse"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_booteas"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_blackball"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_DayBook"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_Tlound"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beefrye"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_edging"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pasturing"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_shutlink"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_use"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_crushing"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_milenary"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tickets"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_parsnips"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_subscription"/>
+        <skos:narrower rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beefcorn"/>
+        <skos:prefLabel xml:lang="en">unkown</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_do">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">do</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_suet">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">suet</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beefstock">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">beef stock</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pumplog">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">pump log</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_chips">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">chips</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_englishhay">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">english hay</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tallow">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">tallow</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_LoafTea">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">Loaf Tea</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_FineTassSeed">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">Fine Tass Seed</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_blackcrape">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">black crape</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_mushin">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">mushin</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_calica">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">calica</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_padding">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">padding</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_saleratus">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">saleratus</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_lace">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">lace</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pins">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">pins</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_blacking">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">blacking</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_Heiffer">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">Heiffer</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_steer">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">steer</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_parts">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">parts</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_scraper">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">scraper</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_quinacs">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">quinacs?</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_billowers">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">billowers</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_oxframe">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">ox frame</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_stuff">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">stuff</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_largeats">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">large ?ats</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_huck">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">huck</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_redpairs">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">red pairs?</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_hert">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">hert?</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pasturinghorse">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">pasturing horse</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_booteas">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">booteas</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_blackball">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">blackball</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_DayBook">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">Day Book</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_Tlound">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">T lound</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beefrye">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">beef rye</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_edging">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">edging</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_pasturing">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">pasturing</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_shutlink">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">shut link</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_use">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">use</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_crushing">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">crushing</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_milenary">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">milenary</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_tickets">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">tickets</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_parsnips">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">parsnips</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_subscription">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">subscription</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="https://gams.uni-graz.at/o:depcha.wheaton.1#c_beefcorn">
+        <skos:inScheme rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1"/>
+        <skos:broader rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_unkown"/>
+        <skos:prefLabel xml:lang="en">beef corn</skos:prefLabel>
+    </skos:Concept>
+</rdf:RDF>
