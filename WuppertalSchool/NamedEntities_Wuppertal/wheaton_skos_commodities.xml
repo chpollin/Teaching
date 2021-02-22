@@ -9,7 +9,7 @@
     xmlns:foaf="http://xmlns.com/foaf/spec/">
     <skos:ConceptScheme rdf:about="https://gams.uni-graz.at/context:depcha.wheaton">
         <dc:title xml:lang="en">Commodities</dc:title>
-        <skos:prefLabel xml:lang="en">Commodities/skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Commodities</skos:prefLabel>
         <skos:hasTopConcept
             rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_dairyproduct"/>
         <skos:hasTopConcept rdf:resource="https://gams.uni-graz.at/o:depcha.wheaton.1#c_service"/>
