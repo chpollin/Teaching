@@ -1136,6 +1136,101 @@
         </taxonomy>
       </classDecl>
     </encodingDesc>
+     <profileDesc>
+       <particDesc>
+         <listPerson ana="bk:Between">
+           <head>Prosopography: Wheaton Family Business and Financial Papers</head>
+           <desc> Built from names mentioned in documents in the Wheaton Family Papers MC001, Marion
+             B. Gebbie Archives and Special Collections at the Madeleine Clark Wallace Library,
+             Wheaton College. The first forty-one entries are based on Paine's biography of Eliza
+             Baylies Wheaton. Entries 42 through 92 are based on on EBWdiaback file that was created
+             by student researchers in 2005 and is used in Eliza Baylies Wheaton Diaries published in
+             TAPAS. Entries 93 through 134 are also based on work of 2005 student researchers.
+             Entries 135 and following are names from Laban Morey Wheaton's Day Book. The purpose of
+             the new file is to bring supporting files for the Wheaton College Digital History
+             Project into compatibility with TEI P5. Begun by <name type="person">Kathryn
+               Tomasek</name> in <date when="2010-04">April 2010</date>. </desc>
+           <person xml:id="pers_WCDH001">
+             <persName>
+               <forename type="first">Eliza</forename>
+               <forename type="middle">Baylies</forename>
+               <surname type="birth">Chapin</surname>
+               <surname type="married">Wheaton</surname>
+               <addName>Wife</addName>
+             </persName>
+             <birth when="1809-09-27">
+               <placeName>
+                 <geogName>Northbridge Hill</geogName>
+                 <settlement>Northbridge</settlement>
+                 <region>Massachusetts</region>
+               </placeName>
+             </birth>
+             <sex value="2"/>
+             <residence notBefore="1817">
+               <placeName>
+                 <settlement>Sutton</settlement>
+                 <region>Massachusetts</region>
+               </placeName>
+             </residence>
+             <residence notBefore="1823">
+               <placeName>
+                 <geogName>Baylies Hill</geogName>
+                 <settlement>Uxbridge</settlement>
+                 <region>Massachusetts</region>
+               </placeName>
+             </residence>
+             <education>
+               <orgName ref="#org_WCDH2">Uxbridge Academy</orgName>
+               <orgName ref="#org_WCDH3">Boston Young Ladies' Academy</orgName>
+             </education>
+             <faith>Congregational</faith>
+             <state notBefore="1829-06-25" type="married" notAfter="1865"/>
+             <residence notBefore="1829-06-25">
+               <settlement>Norton</settlement>
+               <region>Massachusetts</region>
+             </residence>
+             <death when="1905"/>
+           </person>
+           <person xml:id="pers_WCDH134">
+             <persName>
+               <roleName>Doctor</roleName>
+               <forename type="first">Asa</forename>
+               <forename type="middle"/>
+               <surname>Adams</surname>
+             </persName>
+             <birth cert="medium" when="1795">
+               <settlement>Natick</settlement>
+               <region>Massachusetts</region>
+             </birth>
+             <sex value="1"/>
+             <residence cert="medium" notBefore="1819">
+               <settlement>Norton</settlement>
+               <region>Massachusetts</region>
+             </residence>
+             <occupation>physician</occupation>
+             <residence cert="medium" notBefore="1841">
+               <settlement>Easton</settlement>
+               <region>Massachusetts</region>
+             </residence>
+             <residence notAfter="1852">
+               <settlement>Taunton</settlement>
+               <region>Massachusetts</region>
+             </residence>
+             <death when="1852-10-25">
+               <settlement>Taunton</settlement>
+               <region>Massachusetts</region>
+             </death>
+           </person>
+           <person xml:id="pers_WCDH596">
+             <persName>
+               <forename>Oliver</forename>
+               <surname>Sweet</surname>
+             </persName>
+             <sex value="1"/>
+           </person>
+         </listPerson>
+       </particDesc>
+     </profileDesc>
    </teiHeader>
    <text>
       <body>
