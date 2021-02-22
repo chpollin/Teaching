@@ -52,4 +52,4 @@
 
 ### Winter School. Digitale Editionen Masterclass. Wuppertal (22.-26.2.2021)
 
-+ [Named Entities - Web of Data](https://github.com/chpollin/Teaching/tree/master/WuppertalSchool/NamedEntities)
++ [Named Entities - Web of Data](https://github.com/chpollin/Teaching/tree/master/WuppertalSchool/NamedEntities_Wuppertal)
