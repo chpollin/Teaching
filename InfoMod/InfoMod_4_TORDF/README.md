@@ -1,5 +1,7 @@
-# Ways to create or transfer to RDF
+# TORDF
 
-## Literatur
+## via Python
 
-## Assignment
+* https://colab.research.google.com/drive/1cDU0A82mvMRR5Oths1yUa79eQtPiUfj1?usp=sharing
+
+## via XSLT
