@@ -1,0 +1,32 @@
+@prefix ex: <http://example.com#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>. 
+@prefix dcterms: <http://purl.org/dc/terms/>. 
+@prefix foaf: <http://xmlns.com/foaf/spec/>. 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<ex:SZDBIB.365>
+  a <ex:Book> ;
+    ex:hasAuthor <http://d-nb.info/gnd/12490310X>;
+  
+  dc:title "Proust : recherches sur la création intellectuelle" ;
+  ex:publishingStmt <ex:pub.1>;
+  ex:reihe "Maîtres des littératures 7";
+  dc:language "Französisch";
+  dcterms:extent "91, LX Seiten : illustriert. 8°, Broschur";
+  ex:widmung "Pour Stefan Zweig, | en sympathie et en admiration | Pierre Abraham";
+  ex:marginalie "Anmerkungen von Stefan Zweig in Bleistift";
+  ex:merkzeichen "Unterstreichungen in Bleistift";
+  ex:originalsignatur "B 3";
+  ex:standort "Erben Stefan Zweigs, London, A.I.01 Maîtres des littératures 7".
+  
+<ex:SZDPER.1>
+  a <foaf:Person>;
+  foaf:firstName "Pierre";
+  foaf:familyName "Abraham".
+  
+<ex:pub.1>
+  rdf:type <ex:PublishingStmt>;
+  dcterms:publisher "Rieder";
+  dc:spatial "Paris";
+  dc:date "1930".
+  
