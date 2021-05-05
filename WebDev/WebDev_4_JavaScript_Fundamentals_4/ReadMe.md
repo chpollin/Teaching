@@ -1,10 +1,27 @@
 # JavaScript Fundamentals 4
 
-JSON | DOM | BuildTable.js
+[Folien]()
 
-[Folien](https://docs.google.com/presentation/d/1nExqGjdahsTqpqV341ApXxPgMcw3QHFYbpzi7BzD6KI/edit?usp=sharing)
+### Javascript Objects and Keyword this (9 min)
 
-*One of my first videos at the beginning of the Corona crisis. At that time I still had a poor recording device:*
+Video: https://www.youtube.com/watch?v=qs3F-z6ridc
 
-[Video](https://www.youtube.com/watch?v=GL7PhAGwZaA)
+###  JavaScript Loops
 
+Video: https://www.youtube.com/watch?v=Kn06785pkJg
+
+###  JavaScript and Object-oriented Programming
+
+Video: https://www.youtube.com/watch?v=pTB0EiLXUC8
+
+### Arrow Functions
+
+Video: https://www.youtube.com/watch?v=h33Srr5J9nY (~10 min)
+
+###  Cookies, Local Storage, Session
+
+Video: https://www.youtube.com/watch?v=GihQAC1I39Q  (~15 min)
+
+### Fetch API
+
+Video: https://www.youtube.com/watch?v=cuEtnrL9-H0
