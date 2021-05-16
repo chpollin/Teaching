@@ -176,10 +176,21 @@ function buildTable(data) {
 
         //wenn du in der Spalte supherhero bist
         if (field == "superhero") {
-            cell.style.textAlign = "center";
+			
+            //cell.style.textAlign = "center";
+			// or
+			//cell.setAttribute("class", "text-center"); 
+			// or
+			//cell.setAttribute("style", "text-align: center;");
+
             cell.style.fontWeight = "bold";
             row.setAttribute("id", "superhero_" + object[field]);
             // wenn ein wiki key im JSON exisitiert erzeuge einen link
+
+			console.log(object["wiki"]);
+			// gibt undefined zurück wenn kein wiki existiert.
+			// Boolean value of undefined is false
+				
             if(object["wiki"]){
               let a = document.createElement('a');
               a.setAttribute("target", "_blank"); 
@@ -214,11 +225,15 @@ function getTabel() {
 }
 //////////////////////////////////////
 function destroyTabel() {
-  var list = document.getElementById("superheros");
+  let superheros = document.getElementById("superheros");
+  document.getElementById("superheros");
+
   if (superheros.hasChildNodes()) {
     superheros.removeChild(superheros.childNodes[0]);
   } else {
     console.log("Error: table is already destroyed");
   }
+  // kann man auch mit ternary operator ... ? ... : ... machen
+  //superheros.hasChildNodes() ? superheros.removeChild(superheros.childNodes[0]) : console.log("Error: table is already destroyed");
 }
 

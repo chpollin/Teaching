@@ -1,0 +1,87 @@
+@prefix ot:<http://wallscope.co.uk/resource/olympics/team/> .
+@prefix dbo:<http://dbpedia.org/ontology/> .
+@prefix dbp:<http://dbpedia.org/property/> .
+@prefix oa:<http://wallscope.co.uk/resource/olympics/athlete/> .
+@prefix oc:	<http://wallscope.co.uk/resource/olympics/city/> .
+@prefix o:<http://wallscope.co.uk/resource/olympics/> .
+@prefix foaf:<http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+
+###############################
+# Name, Sex, Age, Height, Weight, Team
+# Athlete
+
+oa:ChristineJacobaAaftink a foaf:Person ;
+    dbp:team ot:Netherlands ;
+    rdfs:label "Christine Jacoba Aaftink"@en ;
+    foaf:familyName "Aaftink" ;
+    foaf:firstName "Christine Jacoba" ;
+    dbp:height "185"^^xsd:int ;
+    dbp:weight "82"^^xsd:int ;
+    foaf:age "21"^^xsd:int;
+    foaf:gender o:F .
+
+###############################
+# Games, Year, Season, City
+# Games
+
+o:1988Winter a dbo:Olympics .
+    
+
+###############################
+# Season 
+ 
+o:Summer a dbo:TimePeriod ;
+	rdfs:label "Summer"@en .
+    
+o:Winter a dbo:TimePeriod ;
+    rdfs:label "Winter"@en .
+
+########################################
+# City
+
+oc:Calgary a dbo:City .
+
+
+########################################
+# Result
+o:Result_1 a o:Result ;
+    o:athlete oa:ChristineJacobaAaftink ; 
+    o:discipline o:SpeedSkatingWomen500metres ;
+    o:game o:1988Winter .
+  
+
+
+########################################
+# Sport
+
+o:SpeedSkating a dbp:Sport .
+o:Gymnastics a dbp:Sport .
+
+########################################
+# Discipline
+o:GymnasticsMenTeamAllAroundFreeSystem a o:Discipline .
+   
+########################################
+# medal
+o:Silver rdfs:label	"Silver"@en .    
+	
+	
+########################################
+# SportsTeam   
+ot:Norway a dbo:SportsTeam ;
+    rdfs:label	"Norway"@en .
+    
+ot:Netherlands a dbo:SportsTeam ;
+    rdfs:label	"Netherlands"@en .
+  
+########################################
+# gender     
+o:F a skos:Concept ;
+    rdfs:label "female"@en .
+    
+o:M a skos:Concept ;
+	rdfs:label	"male"@en .
+    

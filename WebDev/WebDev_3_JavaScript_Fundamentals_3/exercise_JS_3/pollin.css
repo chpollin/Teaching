@@ -4,3 +4,10 @@
 .hero_row{
   border-style: dotted;
 }
+
+ 
+tr[id] > td:first-child, th:first-child{
+    text-align: center;
+}
+
+

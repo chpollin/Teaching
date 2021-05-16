@@ -1,0 +1,149 @@
+@prefix ot:<http://wallscope.co.uk/resource/olympics/team/> .
+@prefix dbo:<http://dbpedia.org/ontology/> .
+@prefix dbp:<http://dbpedia.org/property/> .
+@prefix oa:<http://wallscope.co.uk/resource/olympics/athlete/> .
+@prefix oc:	<http://wallscope.co.uk/resource/olympics/city/> .
+@prefix o:<http://wallscope.co.uk/resource/olympics/> .
+@prefix foaf:<http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+
+###############################
+# Name, Sex, Age, Height, Weight, Team
+# Athlete
+
+oa:ChristineJacobaAaftink a foaf:Person ;
+    dbp:team ot:Netherlands ;
+    rdfs:label "Christine Jacoba Aaftink"@en ;
+    foaf:familyName "Aaftink" ;
+    foaf:firstName "Christine Jacoba" ;
+    dbp:height "185"^^xsd:int ;
+    dbp:weight "82"^^xsd:int ;
+    foaf:age "21"^^xsd:int;
+    foaf:gender o:F .
+
+oa:NilsEgilAaness a foaf:Person ;
+	dbp:team ot:Norway ;
+	rdfs:label "Nils Egil Aaness"@en ;
+    foaf:familyName "Aaness" ;
+    foaf:firstName "Nils Egil" ;
+    foaf:age "24"^^xsd:int;
+    foaf:gender o:M . 
+    
+oa:AlfLiedAanning a foaf:Person ;
+    rdfs:label "Alf Lied Aanning"@en ;
+    foaf:familyName "Aanning" ;
+    foaf:firstName "Alf Lied" ;
+    foaf:age "24"^^xsd:int;
+	dbp:team ot:Norway .
+
+###############################
+# Games, Year, Season, City
+# Games
+
+o:1988Winter a dbo:Olympics ;
+    rdfs:label "1988 Winter"@en ;
+    o:city oc:Calgary ;
+    o:season o:Winter .
+    
+o:1960Winter a dbo:Olympics ;
+    rdfs:label "1960 Winter"@en ;
+    o:city oc:SquawValley ; 
+    o:season o:Winter .   
+    
+o:1920Summer a dbo:Olympics ;
+    o:city oc:Antwerpen ; 
+    rdfs:label "1920 Summer"@en ;
+    o:season o:Summer . 
+  
+###############################
+# Season 
+ 
+o:Summer a dbo:TimePeriod ;
+	rdfs:label "Summer"@en .
+    
+o:Winter a dbo:TimePeriod ;
+    rdfs:label "Winter"@en .
+
+########################################
+# City
+
+oc:Calgary a dbo:City ;
+    rdfs:label "Calgary"@en .
+
+oc:SquawValley a dbo:City ;
+	rdfs:label "Squaw Valley"@en .
+    
+oc:Antwerpen a dbo:City ;
+	rdfs:label "Antwerpen"@en .  
+
+########################################
+# Result
+o:Result_1 a o:Result ;
+    o:athlete oa:ChristineJacobaAaftink ; 
+    o:discipline o:SpeedSkatingWomen500metres ;
+    o:game o:1988Winter .
+    
+o:Result_2 a o:Result ;
+    o:athlete oa:NilsEgilAaness ; 
+    o:discipline o:SpeedSkatingMen500metres ;
+    o:game o:1960Winter .
+    
+o:Result_3 a o:Result ;
+    o:athlete oa:NilsEgilAaness ; 
+    o:discipline o:SpeedSkatingMens1500metres;
+    o:game o:1960Winter .
+    
+o:Result_4 a o:Result ;
+    o:athlete oa:AlfLiedAanning ; 
+    o:medal o:Silver ;
+    o:discipline o:GymnasticsMenTeamAllAroundFreeSystem ;
+    o:game o:1920Summer.
+
+
+########################################
+# Sport
+o:SpeedSkating a dbp:Sport .
+o:Gymnastics a dbp:Sport .
+
+########################################
+# Discipline
+o:GymnasticsMenTeamAllAroundFreeSystem a o:Discipline ;
+    o:sport o:Gymnastics;
+	rdfs:label "Gymnastics Men's Team All-Around, Free System"@en .
+
+o:SpeedSkatingMens1500metres a o:Discipline  ;
+    o:sport o:SpeedSkating;
+	rdfs:label "Speed Skating Men's 1,500 metres"@en .
+
+o:SpeedSkatingWomen500metres a o:Discipline  ;
+    o:sport o:SpeedSkating ;
+	rdfs:label "Speed Skating Women's 500 metres"@en .
+
+o:SpeedSkatingMen500metres a o:Discipline  ;
+    o:sport o:SpeedSkating ;
+	rdfs:label "Speed Skating Men's 500 metres"@en .
+
+   
+########################################
+# medal
+o:Silver rdfs:label	"Silver"@en .    
+	
+	
+########################################
+# SportsTeam   
+ot:Norway a dbo:SportsTeam ;
+    rdfs:label	"Norway"@en .
+    
+ot:Netherlands a dbo:SportsTeam ;
+    rdfs:label	"Netherlands"@en .
+  
+########################################
+# gender     
+o:F a skos:Concept ;
+    rdfs:label "female"@en .
+    
+o:M a skos:Concept ;
+	rdfs:label	"male"@en .
+    
