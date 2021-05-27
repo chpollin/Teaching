@@ -104,8 +104,8 @@ o:Result_4 a o:Result ;
 
 ########################################
 # Sport
-o:SpeedSkating a dbp:Sport .
-o:Gymnastics a dbp:Sport .
+o:SpeedSkating a dbo:Sport .
+o:Gymnastics a dbo:Sport .
 
 ########################################
 # Discipline

@@ -1,0 +1,16 @@
+prefix ns0: <http://wallscope.co.uk/resource/olympics/team/> 
+prefix ns1: <http://dbpedia.org/ontology/> 
+prefix ns2: <http://wallscope.co.uk/resource/olympics/athlete/> 
+prefix ns3: <http://xmlns.com/foaf/0.1/> 
+prefix ns4: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix ns5: <http://www.w3.org/2001/XMLSchema#> 
+prefix ns6: <http://wallscope.co.uk/resource/olympics/gender/>
+SELECT ?athlete (strlen(str(?name)) As ?name_length) ?name
+WHERE
+{
+  ?athlete a ns3:Person.
+  ?athlete ns4:label ?name.
+  FILTER(strlen(str(?name)) > 20) 
+}
+ORDER BY DESC(?name_length)
+LIMIT 20

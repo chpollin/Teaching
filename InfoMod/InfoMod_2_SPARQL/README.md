@@ -12,4 +12,38 @@
 
 ## Literatur
 
-## Assignment
+## Exercise
+
+Installiere einen Triplestore: Blazegraph oder GraphDB. Die Anleitung dafür findest du in den Folien.
+
+Lade folgende Datensätze (RDF/turtle) herunter und importiere sie in deiner Graphendatenbank: 
+
+- https://github.com/wallscope/olympics-rdf/blob/master/data/olympics-ttl-nodup.zip
+- https://github.com/wallscope/superhero-rdf/blob/master/data/superhero-ttl.zip 
+
+Stelle sicher, dass du die Daten ingestiert hast mit einer simplen SPARQL-Query:
+
+*select \* where { 
+   ?s ?p ?o .
+} limit 100 
+*
+
+Jetzt kannst du auch alle SPARQL aus den Folien/Screencast selber ausprobieren. 
+
+**SPARQL 1**
+
+Ermittele wie viele Medaillen die einzelnen Länder (genauer gesagt: NOCs) bisher gewonnen haben.
+Lassen Sie sich die Liste absteigend nach der Zahl der Medaillen sortieren.
+Das Ergebnis soll so aussehen: [wie eine der SQL Übungen]
+
+"United States"@en  5371
+"Soviet Union"@en   2618
+...
+
+**SPARQL 2**
+
+Gib die 20 längsten names der athlete aus.
+
+- In der ersten Spalte soll die athlete URI stehen, in der zweiten Spalte  die Zahl der Zeichen stehen und in der zweiten Spalte der Name.
+- Sortieren Sie absteigend nach der Zahl der Zeichen und aufsteigend nach fullname.
+- Gib nur die ersten 20 Ergebniszeilen aus.

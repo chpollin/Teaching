@@ -1,0 +1,15 @@
+PREFIX ns13: <http://wallscope.co.uk/ontology/olympics/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix ns1: <http://dbpedia.org/ontology/>
+prefix ns3: <http://xmlns.com/foaf/0.1/> 
+SELECT ?team_name (COUNT(?team) As ?noOfMedals)
+WHERE 
+{
+  ?instance ns13:athlete ?athlete ;
+          ns13:medal   ?medal .
+  ?athlete  rdfs:label     ?name .
+  ?athlete ns1:team ?team.
+  ?team rdfs:label ?team_name.
+}
+GROUP BY ?team_name
+ORDER BY DESC(?noOfMedals)
