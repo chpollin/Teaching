@@ -1,0 +1,27 @@
+PREFIX ot:<http://wallscope.co.uk/resource/olympics/team/> 
+PREFIX dbo:<http://dbpedia.org/ontology/> 
+PREFIX dbp:<http://dbpedia.org/property/> 
+PREFIX oa:<http://wallscope.co.uk/resource/olympics/athlete/> 
+PREFIX oc:<http://wallscope.co.uk/resource/olympics/city/> 
+PREFIX o:<http://wallscope.co.uk/resource/olympics/> 
+PREFIX foaf:<http://xmlns.com/foaf/0.1/> 
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#> 
+PREFIX skos:<http://www.w3.org/2004/02/skos/core#> 
+
+CONSTRUCT {
+  ?URI a foaf:Person;
+       foaf:name ?Name;
+	   foaf:age ?Age;
+	   foaf:gender ?Sex_uri;
+	   dbp:height ?Height_fixed;
+	   dbp:weight ?Weigth_fixed.
+	
+} 
+FROM <file:olympics_snippet.csv> 
+WHERE {
+  BIND (URI(CONCAT('http://wallscope.co.uk/resource/olympics/athlete/', STR(?ID))) AS ?URI)
+  BIND (IF(?Height != 'NA', ?Height, ?nothing) AS ?Height_fixed)
+  BIND (IF(?Weigth != 'NA', ?Weigth, ?nothing) AS ?Weigth_fixed)
+  BIND (IRI(CONCAT('http://wallscope.co.uk/resource/olympics/', STR(?Sex))) AS ?Sex_uri)
+}
