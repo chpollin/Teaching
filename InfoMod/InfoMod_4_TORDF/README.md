@@ -1,8 +1,8 @@
 # TORDF
 
-## CSV to RDF via Python
+## CSV to RDF via Python + rdflib
 
-## CSV to RDF via tarql (Windows 10)
+## CSV to RDF via tarql (Windows 10, tarql-1.2)
 
 * https://tarql.github.io/
 * Download [tarql-1.2.zip](https://github.com/tarql/tarql/releases/download/v1.2/tarql-1.2.zip) + entzippen
@@ -84,6 +84,10 @@ WHERE {
   BIND (IRI(CONCAT('http://wallscope.co.uk/resource/olympics/', STR(?Sex))) AS ?Sex_uri)
 }
 ```
+
+## CSV to RDF via OpenRefinde + RDF Extension
+
+* https://medium.com/wallscope/creating-linked-data-31c7dd479a9e 
 
 ## XML to RDF via XSLT
 

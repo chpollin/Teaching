@@ -1,0 +1,492 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://infomod-vertieft/olympians#"
+     xml:base="https://infomod-vertieft/olympians"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://infomod-vertieft/olympians">
+        <rdfs:comment xml:lang="en">olympians</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://infomod-vertieft/olympians#affiliation -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#affiliation">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Affiliation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#athlete -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#athlete">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Result"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:comment>Connection of a result to an athlete.</rdfs:comment>
+        <rdfs:label>athlete</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#discipline -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#discipline">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Result"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Disciplin"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#game -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#game">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Result"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Games"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#isIn -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#isIn">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Country"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Place"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Region"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Continent"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Country"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#is_father_of -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#is_father_of">
+        <rdfs:subPropertyOf rdf:resource="https://infomod-vertieft/olympians#is_related_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#is_related_to -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#is_related_to">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#is_son_of -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#is_son_of">
+        <rdfs:subPropertyOf rdf:resource="https://infomod-vertieft/olympians#is_related_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#noc -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#noc">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#NOC"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#took_place_in -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#took_place_in">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Games"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/gender -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians/gender">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/place_of_birth -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians/place_of_birth">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/place_of_death -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians/place_of_death">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/firstName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>The first name of a person.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>firstName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/lastName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>The last name of a person.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>lastName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#are -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians#are">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#elevation -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians#elevation">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#geoname_id -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians#geoname_id">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#GeographicRegion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#latitude -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians#latitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#longitude -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians#longitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#population -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians#population">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Country"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#sport -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians#sport">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Disciplin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#year -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians#year">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Games"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/dateOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians/dateOfBirth">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/dateofDeath -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians/dateofDeath">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/fullname -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians/fullname">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/heigth -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians/heigth">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Defines heigth of an athlete.</rdfs:comment>
+        <rdfs:label xml:lang="en">heigth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/name -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians/name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Affiliation"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Disciplin"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#GeographicRegion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/originalname -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians/originalname">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/title -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians/title">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians/weight -->
+
+    <owl:DatatypeProperty rdf:about="https://infomod-vertieft/olympians/weight">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Defines weight of an athlete.</rdfs:comment>
+        <rdfs:label xml:lang="en">weight</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://infomod-vertieft/olympian#Female -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympian#Female">
+        <rdfs:subClassOf rdf:resource="https://infomod-vertieft/olympians#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Affiliation -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Affiliation"/>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Athlete -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Athlete">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://infomod-vertieft/olympians/place_of_birth"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://infomod-vertieft/olympians#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://infomod-vertieft/olympians/place_of_death"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://infomod-vertieft/olympians#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Continent -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Continent">
+        <rdfs:subClassOf rdf:resource="https://infomod-vertieft/olympians#GeographicRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Country -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Country">
+        <rdfs:subClassOf rdf:resource="https://infomod-vertieft/olympians#GeographicRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Disciplin -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Disciplin">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://infomod-vertieft/olympians#discipline"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Games -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Games">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://infomod-vertieft/olympians#game"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://infomod-vertieft/olympians#Games"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Gender -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Gender"/>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#GeographicRegion -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#GeographicRegion"/>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Male -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Male">
+        <rdfs:subClassOf rdf:resource="https://infomod-vertieft/olympians#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#NOC -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#NOC"/>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Place -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Place">
+        <rdfs:subClassOf rdf:resource="https://infomod-vertieft/olympians#GeographicRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Region -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Region">
+        <rdfs:subClassOf rdf:resource="https://infomod-vertieft/olympians#GeographicRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Result -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Result">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://infomod-vertieft/olympians#athlete"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
