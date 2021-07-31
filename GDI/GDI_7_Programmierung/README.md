@@ -2,7 +2,7 @@
 
 [Folien](https://docs.google.com/presentation/d/1WBCxSS84iDArrbYUP5ybT-jiFkaE67arz2ghEvuzYeU/edit?usp=sharing)
 
-[Video](https://www.youtube.com/watch?v=0Te9S22fPcs&feature=youtu.be)
+[Screencast](https://www.youtube.com/watch?v=0Te9S22fPcs&feature=youtu.be)
 
 [C_Examples](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_7_Programmierung/C_Examples)
 
