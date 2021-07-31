@@ -12,7 +12,7 @@
 
 
 
-## Assignment
+## Assignment 5
 
 **Gegeben ist die Turingmaschine mit dem Eingabeband und dem Programm** **aus folgender Tabelle.  Die Bewegungsrichtungen sind rechts (>) und links (<). Weiters ist folgendes gegeben:**
 
