@@ -5,7 +5,9 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:olympians="https://infomod-vertieft/olympians/">
     <owl:Ontology rdf:about="https://infomod-vertieft/olympians">
         <rdfs:comment xml:lang="en">olympians</rdfs:comment>
     </owl:Ontology>
@@ -20,6 +22,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://dbpedia.org/property/team -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/property/team">
+        <owl:equivalentProperty rdf:resource="https://infomod-vertieft/olympians#affiliation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -40,6 +51,15 @@
         <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
         <rdfs:comment>Connection of a result to an athlete.</rdfs:comment>
         <rdfs:label>athlete</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#city -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#city">
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Games"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Place"/>
     </owl:ObjectProperty>
     
 
@@ -106,6 +126,16 @@
     <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#noc">
         <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#NOC"/>
         <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#season -->
+
+    <owl:ObjectProperty rdf:about="https://infomod-vertieft/olympians#season">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://infomod-vertieft/olympians#Games"/>
+        <rdfs:range rdf:resource="https://infomod-vertieft/olympians#Season"/>
     </owl:ObjectProperty>
     
 
@@ -352,6 +382,22 @@
     
 
 
+    <!-- http://dbpedia.org/ontology/SportsTeam -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SportsTeam">
+        <rdfs:subClassOf rdf:resource="https://infomod-vertieft/olympians#Affiliation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TimePeriod -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TimePeriod">
+        <owl:equivalentClass rdf:resource="https://infomod-vertieft/olympians#Season"/>
+    </owl:Class>
+    
+
+
     <!-- https://infomod-vertieft/olympian#Female -->
 
     <owl:Class rdf:about="https://infomod-vertieft/olympian#Female">
@@ -406,13 +452,7 @@
     <!-- https://infomod-vertieft/olympians#Disciplin -->
 
     <owl:Class rdf:about="https://infomod-vertieft/olympians#Disciplin">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://infomod-vertieft/olympians#discipline"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://infomod-vertieft/olympians#Result"/>
     </owl:Class>
     
 
@@ -420,13 +460,7 @@
     <!-- https://infomod-vertieft/olympians#Games -->
 
     <owl:Class rdf:about="https://infomod-vertieft/olympians#Games">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://infomod-vertieft/olympians#game"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://infomod-vertieft/olympians#Games"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://infomod-vertieft/olympians#Result"/>
     </owl:Class>
     
 
@@ -483,7 +517,132 @@
                 <owl:onClass rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://infomod-vertieft/olympians#discipline"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://infomod-vertieft/olympians#Disciplin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://infomod-vertieft/olympians#game"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://infomod-vertieft/olympians#Games"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://infomod-vertieft/olympians#Season"/>
     </owl:Class>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Season -->
+
+    <owl:Class rdf:about="https://infomod-vertieft/olympians#Season"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Calgary -->
+
+    <owl:NamedIndividual rdf:about="https://infomod-vertieft/olympians#Calgary">
+        <rdf:type rdf:resource="https://infomod-vertieft/olympians#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#ChristineJacobaAaftink -->
+
+    <owl:NamedIndividual rdf:about="https://infomod-vertieft/olympians#ChristineJacobaAaftink">
+        <rdf:type rdf:resource="https://infomod-vertieft/olympians#Athlete"/>
+        <rdf:type rdf:resource="https://infomod-vertieft/olympians#Male"/>
+        <foaf:firstName>Aaftink</foaf:firstName>
+        <foaf:firstName>Christine Jacoba</foaf:firstName>
+        <olympians:heigth rdf:datatype="http://www.w3.org/2001/XMLSchema#int">185</olympians:heigth>
+        <olympians:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#int">82</olympians:weight>
+        <rdfs:label xml:lang="en">Christine Jacoba Aaftink</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Netherlands -->
+
+    <owl:NamedIndividual rdf:about="https://infomod-vertieft/olympians#Netherlands">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+        <rdfs:label xml:lang="en">Netherlands</rdfs:label>
+        <rdfs:label xml:lang="de">Niederlande</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Result_1 -->
+
+    <owl:NamedIndividual rdf:about="https://infomod-vertieft/olympians#Result_1">
+        <rdf:type rdf:resource="https://infomod-vertieft/olympians#Result"/>
+        <athlete rdf:resource="https://infomod-vertieft/olympians#ChristineJacobaAaftink"/>
+        <discipline rdf:resource="https://infomod-vertieft/olympians#SpeedSkatingWomen500metres"/>
+        <game rdf:resource="https://infomod-vertieft/olympians#1988Winter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#SpeedSkatingWomen500metres -->
+
+    <owl:NamedIndividual rdf:about="https://infomod-vertieft/olympians#SpeedSkatingWomen500metres">
+        <rdf:type rdf:resource="https://infomod-vertieft/olympians#Disciplin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#Winter -->
+
+    <owl:NamedIndividual rdf:about="https://infomod-vertieft/olympians#Winter">
+        <rdf:type rdf:resource="https://infomod-vertieft/olympians#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://infomod-vertieft/olympians#1988Winter -->
+
+    <owl:NamedIndividual rdf:about="https://infomod-vertieft/olympians#1988Winter">
+        <rdf:type rdf:resource="https://infomod-vertieft/olympians#Games"/>
+        <city rdf:resource="https://infomod-vertieft/olympians#Calgary"/>
+        <season rdf:resource="https://infomod-vertieft/olympians#Winter"/>
+        <rdfs:label>1988 Winter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://infomod-vertieft/olympians#Calgary"/>
+            <rdf:Description rdf:about="https://infomod-vertieft/olympians#ChristineJacobaAaftink"/>
+            <rdf:Description rdf:about="https://infomod-vertieft/olympians#Netherlands"/>
+            <rdf:Description rdf:about="https://infomod-vertieft/olympians#Result_1"/>
+            <rdf:Description rdf:about="https://infomod-vertieft/olympians#SpeedSkatingWomen500metres"/>
+            <rdf:Description rdf:about="https://infomod-vertieft/olympians#Winter"/>
+            <rdf:Description rdf:about="https://infomod-vertieft/olympians#1988Winter"/>
+        </owl:distinctMembers>
+    </rdf:Description>
 </rdf:RDF>
 
 

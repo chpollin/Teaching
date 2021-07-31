@@ -1,0 +1,273 @@
+@prefix : <https://infomod-vertief.at#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://infomod-vertief.at> .
+
+<https://infomod-vertief.at> rdf:type owl:Ontology ;
+                              rdfs:comment "Ontology for Atheltete blabla" ;
+                              rdfs:label "Olympia"@en ;
+                              owl:versionInfo "Version 1" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://infomod-vertief.at#affiliation
+:affiliation rdf:type owl:ObjectProperty ;
+             rdfs:domain :Athlete ;
+             rdfs:range :Affiliation .
+
+
+###  https://infomod-vertief.at#athlete
+:athlete rdf:type owl:ObjectProperty ;
+         rdfs:domain :Result ;
+         rdfs:range :Athlete .
+
+
+###  https://infomod-vertief.at#discipline
+:discipline rdf:type owl:ObjectProperty ;
+            rdfs:domain :Result ;
+            rdfs:range :Discipline .
+
+
+###  https://infomod-vertief.at#game
+:game rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf owl:topObjectProperty ;
+      rdfs:domain :Result ;
+      rdfs:range :Game .
+
+
+###  https://infomod-vertief.at#gender
+:gender rdf:type owl:ObjectProperty ;
+        rdfs:domain :Athlete ;
+        rdfs:range :Gender .
+
+
+###  https://infomod-vertief.at#is_father
+:is_father rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :is_parent .
+
+
+###  https://infomod-vertief.at#is_mother
+:is_mother rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :is_parent .
+
+
+###  https://infomod-vertief.at#is_parent
+:is_parent rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :is_related_to .
+
+
+###  https://infomod-vertief.at#is_related_to
+:is_related_to rdf:type owl:ObjectProperty ;
+               rdfs:domain :Athlete ;
+               rdfs:range :Athlete .
+
+
+###  https://infomod-vertief.at#is_sibbling
+:is_sibbling rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :is_related_to .
+
+
+###  https://infomod-vertief.at#place_of_birth
+:place_of_birth rdf:type owl:ObjectProperty ;
+                rdfs:domain :Athlete ;
+                rdfs:range :Place .
+
+
+###  https://infomod-vertief.at#place_of_death
+:place_of_death rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/firstName
+<http://xmlns.com/foaf/0.1/firstName> rdf:type owl:DatatypeProperty ;
+                                      owl:equivalentProperty :fistname .
+
+
+###  https://infomod-vertief.at#fistname
+:fistname rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Athlete ;
+          rdfs:range xsd:string .
+
+
+###  https://infomod-vertief.at#geoname_id
+:geoname_id rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Geo ;
+            rdfs:range rdfs:Literal .
+
+
+###  https://infomod-vertief.at#height
+:height rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Athlete ;
+        rdfs:range xsd:int .
+
+
+###  https://infomod-vertief.at#lastname
+:lastname rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Athlete ;
+          rdfs:range xsd:string .
+
+
+###  https://infomod-vertief.at#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Affiliation ,
+                  :Geo ;
+      rdfs:range rdfs:Literal .
+
+
+###  https://infomod-vertief.at#place
+:place rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Affiliation ;
+       rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   owl:equivalentClass :Athlete .
+
+
+###  https://infomod-vertief.at#Affiliation
+:Affiliation rdf:type owl:Class .
+
+
+###  https://infomod-vertief.at#Athlete
+:Athlete rdf:type owl:Class ;
+         rdfs:comment "blablabla" ;
+         rdfs:label "Athlete" .
+
+
+###  https://infomod-vertief.at#Continent
+:Continent rdf:type owl:Class ;
+           rdfs:subClassOf :Geo .
+
+
+###  https://infomod-vertief.at#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :Geo .
+
+
+###  https://infomod-vertief.at#Discipline
+:Discipline rdf:type owl:Class ;
+            owl:disjointWith :Result .
+
+
+###  https://infomod-vertief.at#Female
+:Female rdf:type owl:Class ;
+        rdfs:subClassOf :Gender .
+
+
+###  https://infomod-vertief.at#Game
+:Game rdf:type owl:Class .
+
+
+###  https://infomod-vertief.at#Gender
+:Gender rdf:type owl:Class .
+
+
+###  https://infomod-vertief.at#Geo
+:Geo rdf:type owl:Class .
+
+
+###  https://infomod-vertief.at#Male
+:Male rdf:type owl:Class ;
+      rdfs:subClassOf :Gender .
+
+
+###  https://infomod-vertief.at#Place
+:Place rdf:type owl:Class ;
+       rdfs:subClassOf :Geo .
+
+
+###  https://infomod-vertief.at#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf :Geo .
+
+
+###  https://infomod-vertief.at#Result
+:Result rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :athlete ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Athlete
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :discipline ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Discipline
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :game ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Game
+                        ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://infomod-vertief.at#ChristineJacobaAaftink
+:ChristineJacobaAaftink rdf:type owl:NamedIndividual ,
+                                 :Athlete ,
+                                 :Female ;
+                        owl:sameAs :chrisi ;
+                        :fistname "Christine Jacoba" ;
+                        :height "185"^^xsd:int ;
+                        rdfs:label "Christine Jacoba Aaftink"@en .
+
+
+###  https://infomod-vertief.at#NilsEgilAaness
+:NilsEgilAaness rdf:type owl:NamedIndividual ,
+                         :Athlete .
+
+
+###  https://infomod-vertief.at#Result_1
+:Result_1 rdf:type owl:NamedIndividual ,
+                   :Result ;
+          :athlete :ChristineJacobaAaftink ;
+          :discipline :SpeedSkatingWomen500metres ;
+          :game <https://infomod-vertief.at#1988Winter> .
+
+
+###  https://infomod-vertief.at#SpeedSkatingWomen500metres
+:SpeedSkatingWomen500metres rdf:type owl:NamedIndividual ,
+                                     :Discipline .
+
+
+###  https://infomod-vertief.at#chrisi
+:chrisi rdf:type owl:NamedIndividual .
+
+
+###  https://infomod-vertief.at#1988Winter
+<https://infomod-vertief.at#1988Winter> rdf:type owl:NamedIndividual ,
+                                                 :Game .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :ChristineJacobaAaftink
+                        :NilsEgilAaness
+                        :Result_1
+                        :SpeedSkatingWomen500metres
+                        <https://infomod-vertief.at#1988Winter>
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
