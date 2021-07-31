@@ -2,7 +2,7 @@
 
 # Courses
 
-[ Copyright 2020 by the author, except as otherwise noted. This work is placed under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence. https://creativecommons.org/licenses/by/4.0/]
+[ Copyright 2021 by the author, except as otherwise noted. This work is placed under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence. https://creativecommons.org/licenses/by/4.0/]
 
 ## Introduction to Computer Science (VU)  / **Selected Questions of Computer Science** (KV)
 
@@ -15,7 +15,8 @@
 * [GDI_6_Turingmaschine](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_6_Turingmaschine)
 * [GDI_7_Programmierung](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_7_Programmierung)
 * [GDI_8_Datenstrukturen und Algorithmen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_8_DatenAlgo) 
-* [GDI_9_Internet und Web](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_9_Internet)                   
+* [GDI_9_Internet und Web](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_9_Internet)             
+* [GDI_10_Hardware](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_10_Hardware)        
 
 ## Web Development  (VU)       
 
