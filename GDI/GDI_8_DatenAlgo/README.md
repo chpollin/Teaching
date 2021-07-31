@@ -11,7 +11,7 @@
 * [Programming Loops vs Recursion - Computerphile](https://www.youtube.com/watch?v=HXNhEYqFo0o)
 * [Getting Sorted & Big O Notation - Computerphile](https://www.youtube.com/watch?v=kgBjXUE_Nwc)
 
-## Assignment
+## Assignment 7 (Datenstrukturen und Algorithmen)
 
 **1.1) Zwerge und Schneewittchen beschuldigen sich gegenseitig**
 
