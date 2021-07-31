@@ -10,7 +10,7 @@
 
 
 
-## Assignment 3 (Aussagenlogik)
+## Assignment 2 (Aussagenlogik)
 
 **1.) Formalisiere jede der folgenden Aussagen durch eine aussagenlogische Formel:**
 
