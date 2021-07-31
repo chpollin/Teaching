@@ -15,7 +15,7 @@
 * [Tutorial für x86 Assembly](https://www.youtube.com/watch?v=75gBFiFtAb8)
 * [Compiling a C program:- Behind the Scenes](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)
 
-## Assignment
+## Assignment 6 (C und Assembler)
 
 **1.1) Kompiliere und führe alle C-Programme in deiner Konsole aus.** 
 
