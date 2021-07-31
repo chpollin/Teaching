@@ -1,4 +1,4 @@
-# Reguläre Sprachen (RegEx)
+# Formale Sprache
 [Folien](https://docs.google.com/presentation/d/1TcEmapxsaebBDcY73URAaE1AieseT_XzoDLhpZQNxJA/edit?usp=sharing)
 
 [Video](https://www.youtube.com/watch?v=eTFsb7qROt0)
@@ -10,8 +10,7 @@
 * [Prokop, Lukas: Grundlagen der Informatik, 2014, S.69-83](https://github.com/chpollin/Teaching/blob/master/GDI/Literature/PROKOP_GDI_Skriptum.pdf)
 
 
-
-## Assignment
+## Assignment 4 (Formale Sprachen)
 
 **1) Konstruiere einen RegEx der auf folgende Terme matcht**
 
