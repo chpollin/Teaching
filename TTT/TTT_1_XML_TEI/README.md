@@ -28,7 +28,7 @@ Befülle den teiHeader mit den Metadaten, beschriebe die äußere Struktur  des 
 
 Nutze den XML-Editor Oxygen dafür. Das XML/TEI muss wohlgeformt und valide sein.
 
-## Assignment 
+## Assignment 1 - XML, TEI und RELAX NG für den Stuwwelpeter
 
 Du bist moderne Pädagogin/moderner Pädagoge und findest was im [Stuwwelpeter](https://de.wikipedia.org/wiki/Struwwelpeter) vermittelt wird so gar nicht zeitgemäß. Du hast dir überlegt eine digitale Edition des Stuwwelpeter zu erstellen, in der du  bestimmte Textpassagen versuchst zu kommentieren. Auf https://de.wikipedia.org/wiki/Struwwelpeter findet man recht viel Informationen dazu. Versuche unter diesem Gesichtspunkt und dem möglichen (fiktiven) Forschungsinteresse einer Pädagogin/eines Pädagogen folgende Aufgaben durchzuführen: 
 
