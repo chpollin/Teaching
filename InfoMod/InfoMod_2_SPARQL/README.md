@@ -12,6 +12,9 @@
 
 ## Literatur
 
+* [Video: Rebecca Kahn - Wikidata, Linked Data… all the data! Knowledge representation for everybody (50 min)](https://www.youtube.com/watch?v=wkPcUO6eZ5k)
+* [Example: Olympische Spiele Wikidata](https://docs.google.com/document/d/1TzNxRI__vmbafV9JFD-acBV_td5RCepnV0cuUjAHvMo/edit?usp=sharing)
+
 ## Exercise
 
 Installiere einen Triplestore: Blazegraph oder GraphDB. Die Anleitung dafür findest du in den Folien.
