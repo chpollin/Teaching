@@ -12,4 +12,13 @@
 
 ## Literatur
 
-## Assignment
+* Reading: Oyvind Eide,  Christian-Emil, Smith Ore: Ontologies and data modeling, S.179-196.
+* [Video: Introduction to CIDOC CRM [Bruseker, George\]](https://www.youtube.com/watch?v=lVQFciW7V4I)
+
+## Tools 
+
+* [protégé](https://protege.stanford.edu/)
+* [WebVOWL - Web-based Visualization of Ontologies](http://vowl.visualdataweb.org/webvowl.html)
+
+## Exercise
+
