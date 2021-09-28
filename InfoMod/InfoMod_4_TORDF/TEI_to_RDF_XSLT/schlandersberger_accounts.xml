@@ -1216,11 +1216,11 @@
                </name>hat <span ana="bk:tax">zinst <measure ana="bk:commodity" commodity="Gerste"
                      quantity="5" unit="Muett">5 mütt gersten</measure></span>. </span><lb/>
             <span ana="bk:entry">Item <name ref="pers_SR016" type="person" ana="bk:from">Hans
-               eicdrant</name> hat <span ana="bk:tax">zinst <measure ana="bk:commodity"
+                  eicdrant</name> hat <span ana="bk:tax">zinst <measure ana="bk:commodity"
                      commodity="Gerste" quantity="5" unit="Muett">5 mütt
                gersten</measure></span>.<lb/></span>
             <span ana="bk:entry">Item <name ref="pers_SR017" type="person" ana="bk:from">micl von
-               <placeName ana="bk:where" ref="Ulten">ulten</placeName></name> hat <span
+                     <placeName ana="bk:where" ref="Ulten">ulten</placeName></name> hat <span
                   ana="bk:tax">zinst <measure ana="bk:commodity" commodity="Gerste" quantity="5"
                      unit="Muett">13 mut gersten</measure><lb/>
                   <date ana="bk:when" when="1402-10-14">Am frenig nach martini
