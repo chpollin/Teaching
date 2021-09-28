@@ -1,0 +1,2105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Digitale Edition der Schlandersberger Rechnungen</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Zentrum für Informationsmodellierung - Universität Graz</publisher>
+            <idno type="PID">o:depcha.schlandersberger.1</idno>
+            <ref target="context:depcha.schlandersberger" type="context">Schlandersberger
+               Rechungen</ref>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier xml:lang="de">
+                  <country>Italien</country>
+                  <settlement>Bozen</settlement>
+                  <institution>Südtiroler Landesarchiv</institution>
+                  <idno>Archiv Kasten, Codex 3,2</idno>
+                  <msName>Schlandersberger Rechungen</msName>
+               </msIdentifier>
+            </msDesc>
+            <listPlace ana="bk:Index">
+               <place xml:id="SchlossKasten">
+                  <placeName>Kasten</placeName>
+                  <location>
+                     <country>Italien</country>
+                     <settlement>Kastelbell</settlement>
+                     <geo>46.63455486353947, 10.91606818862674</geo>
+                  </location>
+               </place>
+               <place xml:id="Lantsch">
+                  <placeName>Läntsch/Lentsch</placeName>
+                  <location>
+                     <country>Schweiz</country>
+                     <settlement>Lantsch/Lenz</settlement>
+                     <geo>46.68601239991107, 9.563410565279455</geo>
+                  </location>
+               </place>
+               <place xml:id="Ulten">
+                  <placeName>Ulten</placeName>
+                  <location>
+                     <country>Italien</country>
+                     <settlement>Ulten</settlement>
+                     <geo>46.53119205075228, 10.960305786473015</geo>
+                  </location>
+               </place>
+               <place xml:id="Mals">
+                  <placeName>Mals</placeName>
+                  <location>
+                     <country>Italien</country>
+                     <settlement>Mals</settlement>
+                     <geo>46.68795740074884, 10.544645401958956</geo>
+                  </location>
+               </place>
+               <place xml:id="Salento">
+                  <placeName>Salen</placeName>
+                  <location>
+                     <country>Italien</country>
+                     <settlement/>
+                     <geo>40.446455786920694, 17.95105647523414</geo>
+                  </location>
+               </place>
+               <place xml:id="Kaltern">
+                  <placeName>Kaltÿrn</placeName>
+                  <location>
+                     <country>Italien</country>
+                     <settlement>Kaltern/Kaltern am See</settlement>
+                     <geo>46.41298165141999, 11.239989233643714</geo>
+                  </location>
+               </place>
+               <place xml:id="Sulden">
+                  <placeName>Sulden</placeName>
+                  <location>
+                     <country>Italien</country>
+                     <settlement>Sulden</settlement>
+                     <geo>46.51798631727475, 10.59568151717194</geo>
+                  </location>
+               </place>
+            </listPlace>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="bk" matchPattern="([(a-z)|(A-Z)]+)"
+               replacementPattern="https://gams.uni-graz.at/o:depcha.bookkeeping#$1">
+               <p> Analytical descriptors are considered to represent concepts from the DEPCHA
+                  bookkeeping ontology and can be extended to respective URIs. </p>
+            </prefixDef>
+            <prefixDef ident="wd" matchPattern="([(a-z)|(A-Z)]+)"
+               replacementPattern="http://www.wikidata.org/wiki/$1">
+               <p>
+                  <ref target="https://www.wikidata.org/wiki/Help:Namespaces"/>
+               </p>
+            </prefixDef>
+         </listPrefixDef>
+         <unitDecl>
+            <unitDef ref="wd:Q159505" type="currency" xml:id="groschen">
+               <label xml:lang="de">Groschen</label>
+            </unitDef>
+            <unitDef ref="wd:Q4281830" type="currency" xml:id="mark">
+               <label xml:lang="de">Mark</label>
+            </unitDef>
+            <unitDef type="weight" xml:id="purd">
+               <label xml:lang="de">Purd</label>
+            </unitDef>
+            <unitDef ref="wd:Q100995" type="weight" xml:id="pfund">
+               <label xml:lang="de">Pfund</label>
+            </unitDef>
+            <unitDef type="weight" xml:id="puntzen">
+               <label xml:lang="de">Puntzen</label>
+            </unitDef>
+            <unitDef ref="wd:Q137958" type="weight" xml:id="muett">
+               <label xml:lang="de">Mütt</label>
+            </unitDef>
+            <unitDef type="weight" xml:id="wagen">
+               <label xml:lang="de">Wagen</label>
+            </unitDef>
+            <unitDef type="weight" xml:id="ammer">
+               <label xml:lang="de">Ammer</label>
+            </unitDef>
+            <unitDef type="weight" xml:id="schoet">
+               <label xml:lang="de">Schöt</label>
+            </unitDef>
+            <unitDef ref="wd:Q2360918" type="weight" xml:id="Stueck">
+               <label xml:lang="de">Stück</label>
+            </unitDef>
+         </unitDecl>
+         <classDecl>
+            <taxonomy ana="bk:Index">
+               <gloss>Commodities</gloss>
+               <category xml:id="Getreide">
+                  <catDesc><term ref="wd:Q2995529" xml:lang="de">Getreide</term></catDesc>
+                  <category xml:id="Roggen">
+                     <catDesc><term ref="wd:Q12099" xml:lang="de">Roggen</term></catDesc>
+                  </category>
+                  <category xml:id="Weizen">
+                     <catDesc><term ref="wd:Q15645384" xml:lang="de">Weizen</term></catDesc>
+                  </category>
+               </category>
+               <category xml:id="Gerste">
+                  <catDesc><term ref="wd:Q11577" xml:lang="de">Gerste</term></catDesc>
+               </category>
+               <category xml:id="Mehl">
+                  <catDesc><term ref="wd:Q36465" xml:lang="de">Mehl</term></catDesc>
+               </category>
+               <category xml:id="Weizenmehl">
+                  <catDesc><term ref="wd:Q2249305" xml:lang="de">Weizenmehl</term></catDesc>
+               </category>
+               <category xml:id="Roggenmehl">
+                  <catDesc><term ref="wd:Q10658708" xml:lang="de">Roggenmehl</term></catDesc>
+               </category>
+               <category xml:id="Tier">
+                  <catDesc><term ref="wd:Q729" xml:lang="de">Tier</term></catDesc>
+               </category>
+               <category xml:id="Gans">
+                  <catDesc><term ref="wd:Q3736439" xml:lang="de">Gans</term></catDesc>
+               </category>
+               <category xml:id="Schaf">
+                  <catDesc><term ref="wd:Q7368" xml:lang="de">Schaf</term></catDesc>
+               </category>
+               <category xml:id="Lamm">
+                  <catDesc><term ref="wd:Q4575936" xml:lang="de">Lamm</term></catDesc>
+               </category>
+               <category xml:id="Osterlamm">
+                  <catDesc><term ref="wd:Q201171" xml:lang="de">Osterlamm</term></catDesc>
+               </category>
+               <category xml:id="Huhn">
+                  <catDesc><term ref="wd:Q2201314" xml:lang="de">Huhn</term></catDesc>
+               </category>
+               <category xml:id="Schwein">
+                  <catDesc><term ref="wd:Q10798" xml:lang="de">Schwein</term></catDesc>
+               </category>
+               <category xml:id="TierichesProdukt">
+                  <catDesc><term ref="wd:Q629103" xml:lang="de">Tieriches Produkt</term></catDesc>
+               </category>
+               <category xml:id="Gaensefleisch">
+                  <catDesc><term ref="wd:Q2995529" xml:lang="de">Gänsefleisch</term></catDesc>
+               </category>
+               <category xml:id="Eier">
+                  <catDesc><term ref="wd:Q93189" xml:lang="de">Eier</term></catDesc>
+               </category>
+               <category xml:id="Kaese">
+                  <catDesc><term ref="wd:Q10943" xml:lang="de">Käse</term></catDesc>
+               </category>
+               <category xml:id="Schmalz">
+                  <catDesc><term ref="wd:Q72827" xml:lang="de">Schmalz</term></catDesc>
+               </category>
+               <category xml:id="Schulter">
+                  <catDesc><term xml:lang="de">Schulter</term></catDesc>
+               </category>
+               <category xml:id="Sonstiges">
+                  <catDesc><term xml:lang="de">Sonstiges</term></catDesc>
+               </category>
+               <category xml:id="Eisen">
+                  <catDesc><term ref="wd:Q677" xml:lang="de">Eisen</term></catDesc>
+               </category>
+               <category xml:id="Sain">
+                  <catDesc><term ref="wd:Q2995529" xml:lang="de">Sain</term></catDesc>
+               </category>
+               <category xml:id="Tuchwolle">
+                  <catDesc><term ref="wd:Q5849500" xml:lang="de">Tuchwolle</term></catDesc>
+               </category>
+               <category xml:id="Lemper">
+                  <catDesc><term xml:lang="de">Lemper</term></catDesc>
+               </category>
+               <category xml:id="Kitz">
+                  <catDesc><term xml:lang="de">Kitz</term></catDesc>
+               </category>
+               <category xml:id="Zieger">
+                  <catDesc><term xml:lang="de">Zieger</term></catDesc>
+               </category>
+               <category xml:id="Handlir">
+                  <catDesc><term xml:lang="de">Handlir</term></catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson ana="bk:Index">
+               <head>Prosopographie</head>
+               <desc>Personen, die in den Schlandersberger Rechungen namentlicht erwähnt
+                  werden.</desc>
+               <person xml:id="pers_SR001">
+                  <persName>
+                     <forename>Hans</forename>
+                     <surname>Kelner</surname>
+                     <addName>Buchhalter/Verwalter</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR002">
+                  <persName>
+                     <forename>Hans</forename>
+                     <surname>Radurnr</surname>
+                     <!--  wenn N/A heißt, dass es keinen   -->
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR003">
+                  <persName>
+                     <forename>Hans</forename>
+                     <surname>Raduim</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR004">
+                  <persName>
+                     <forename>Hans</forename>
+                     <surname>Püdd</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR005">
+                  <persName>
+                     <forename>Karl</forename>
+                     <surname>Jenott</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR006">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>Lichtnek</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR007">
+                  <persName>
+                     <forename>Hans</forename>
+                     <surname>Rudel</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR008">
+                  <persName>
+                     <forename>Minig</forename>
+                     <surname>von Zobrist</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR009">
+                  <persName>
+                     <forename>Michel</forename>
+                     <surname>Unterwag</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR010">
+                  <persName>
+                     <forename>Michel</forename>
+                     <surname>Vaelveye</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR011">
+                  <persName>
+                     <forename>Jacob </forename>
+                     <surname> Ehinisner</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR012">
+                  <persName>
+                     <forename>Maier </forename>
+                     <surname>von Ulten </surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR013">
+                  <persName>
+                     <forename>Michel </forename>
+                     <surname> won von Mals</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR014">
+                  <persName>
+                     <forename>Hans </forename>
+                     <surname>Getrawt</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR015">
+                  <persName>
+                     <forename>Hans </forename>
+                     <surname>von Mals</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR016">
+                  <persName>
+                     <forename>Hans </forename>
+                     <surname>Eicdrant</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR017">
+                  <persName>
+                     <forename>Micl </forename>
+                     <surname>von Ulten</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR018">
+                  <persName>
+                     <forename>hann </forename>
+                     <surname>letr</surname>
+                     <addName>von Mals</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR019">
+                  <persName>
+                     <forename>micla </forename>
+                     <surname>sneider </surname>
+                     <addName>sün Von zebert</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR020">
+                  <persName>
+                     <forename>nikel </forename>
+                     <surname>N/A</surname>
+                     <addName>engeleins prueder</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR021">
+                  <persName>
+                     <forename>engel </forename>
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR022">
+                  <persName> !!! gleiche Person wie 002??? <forename>Herauf </forename>
+                     <surname>Radwinr</surname>
+                     <addName>Herr von Hans Kelner</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR023">
+                  <persName>
+                     <forename>nicel </forename>
+                     <surname>von Zörs</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR024">
+                  <persName> !!! gleiche Person wie 013??? <forename>michel </forename>
+                     <surname> won </surname>
+                     <addName> N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR025">
+                  <persName>
+                     <forename>homirer</forename>
+                     <surname>N/A</surname>
+                     <addName>leten sün</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR026">
+                  <persName>
+                     <forename>egen </forename>
+                     <surname>tampnÿ </surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR027">
+                  <persName>
+                     <forename>florin </forename>
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR028">
+                  <persName>
+                     <forename>hans </forename>
+                     <surname> von wernis</surname>
+                     <addName>von wurnis</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR029">
+                  <persName>
+                     <forename>mesner</forename> !!! <surname>von tariph</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR030">
+                  <persName>
+                     <forename>jandl </forename>
+                     <surname>von Mals</surname> !!! <addName> N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR031">
+                  <persName>
+                     <forename>nicla </forename>
+                     <surname>von ulten</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR032">
+                  <persName>
+                     <forename>serfrid</forename>
+                     <surname>von ulten</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR034">
+                  <persName>
+                     <forename>michel </forename>
+                     <surname>am platz</surname>
+                     <addName>von Mals</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR035">
+                  <persName>
+                     <forename> nicla </forename>
+                     <surname>von läntsch </surname>
+                     <addName>Mesner</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR036">
+                  <persName>
+                     <forename>nesella</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR037">
+                  <persName>
+                     <forename>jacob</forename>
+                     <surname>thursuer</surname>
+                     <addName>von lantsch</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR038">
+                  <persName>
+                     <forename>jager</forename>
+                     <surname>von purgäurs</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR039">
+                  <persName>
+                     <forename>maie </forename>
+                     <surname>von seles</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR040">
+                  <persName>
+                     <forename>larentz </forename>
+                     <surname>ab tmpin</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR041">
+                  <persName>
+                     <forename>Haug </forename>
+                     <surname>von Mals</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR042">
+                  <persName>
+                     <forename>maier</forename>
+                     <surname>aus dem widem </surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR043">
+                  <persName>
+                     <forename>maier </forename>
+                     <surname>an der gazz von slands </surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR044">
+                  <persName>
+                     <forename>maier</forename>
+                     <surname>im spital</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR045">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>hüber</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR046">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>wein zürl</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR047">
+                  <persName>
+                     <forename>thomas </forename>
+                     <surname>smid</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR048">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>maier </surname>
+                     <addName>von hoff</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR049">
+                  <persName>
+                     <forename>Eerngel </forename>
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR050">
+                  <persName>
+                     <forename>niclas </forename>
+                     <surname>N/A</surname>
+                     <addName>Fischer</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR051">
+                  <persName>
+                     <forename>anderlein </forename>
+                     <surname>N/A</surname>
+                     <addName>Fischer</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR052">
+                  <persName>
+                     <forename>herr</forename>
+                     <surname>Kaspar</surname>
+                     <addName>Herr von Hans Kelner</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR053">
+                  <persName>
+                     <forename>herr </forename>
+                     <surname>hainreich</surname>
+                     <addName>Herr von Hans Kelner</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR054">
+                  <persName>
+                     <forename>sauser </forename>
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR055">
+                  <persName>
+                     <forename>grnebe </forename>
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR056">
+                  <persName>
+                     <forename>grucher </forename>
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR057">
+                  <persName>
+                     <forename>hofmaister</forename>
+                     <surname>von Kaltÿrn</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR058">
+                  <persName>
+                     <forename>Christoffel </forename>
+                     <surname>von Slans</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR059">
+                  <persName>
+                     <forename>uler </forename>
+                     <surname>von pidnal</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR060">
+                  <persName>
+                     <forename>mulner </forename>
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR061">
+                  <persName>
+                     <forename>pissler </forename>
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR062">
+                  <persName>
+                     <forename>linhart </forename>
+                     <surname>im dorff </surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR063">
+                  <persName>
+                     <forename>minig </forename>
+                     <surname>mawrer</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR064">
+                  <persName>
+                     <forename>nicla </forename>
+                     <surname>maiers </surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR065">
+                  <persName>
+                     <forename>nicel </forename>
+                     <surname>trawten </surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR066">
+                  <persName>
+                     <forename>hans </forename>
+                     <surname>im pach</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR067">
+                  <persName>
+                     <forename>minig </forename>
+                     <surname>von von zebrist </surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR068">
+                  <persName>
+                     <forename>alber </forename>
+                     <surname>von der eken </surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR069">
+                  <persName>
+                     <forename>chugel </forename>
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR070">
+                  <persName>
+                     <forename>degen </forename>
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR0071">
+                  <persName>
+                     <forename>der parott</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR072">
+                  <persName>
+                     <forename>peter Faust</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR073">
+                  <persName>
+                     <forename>peterschoso</forename>
+                     <surname/>
+                     <addName>peter schoso</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR074">
+                  <persName>
+                     <forename>michel unter weg von mals</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR075">
+                  <persName>
+                     <forename>swaim dawimm von tartsch</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR076">
+                  <persName>
+                     <forename>hans Schräut</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR077">
+                  <persName>
+                     <forename>minng prawn von släus</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR078">
+                  <persName>
+                     <forename>Ohmstaus aÿdem von zobrist</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR0079">
+                  <persName>
+                     <forename>edgen tampüy von pürgäwz</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR080">
+                  <persName>
+                     <forename>Hans Margreten</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR081">
+                  <persName>
+                     <forename>michel under wag von mals</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR082">
+                  <persName>
+                     <forename>Albrecht</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR083">
+                  <persName>
+                     <forename>michel unter der gazz von mals</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR084">
+                  <persName>
+                     <forename>minig jandleins sün von mals</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR085">
+                  <persName>
+                     <forename>nicel von Rotaÿ</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR086">
+                  <persName>
+                     <forename>Abraham</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR087">
+                  <persName>
+                     <forename>albrecht von der Eken</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR088">
+                  <persName>
+                     <forename>ains der alben</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR089">
+                  <persName>
+                     <forename>nicel mesner</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR090">
+                  <persName>
+                     <forename>nïcel aus fehn pei der thanichen</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR091">
+                  <persName>
+                     <forename>tomel aus zinnisto</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR092">
+                  <persName>
+                     <forename>hans michel leten sur von mals</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR093">
+                  <persName>
+                     <forename>thristan von zobrist</forename>
+                     <surname/>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR094">
+                  <persName>
+                     <forename>Abraham</forename>
+                     <surname>aus Sulden</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR095">
+                  <persName>
+                     <forename>Chinitz</forename>
+                     <!-- chinitz = name? -->
+                     <surname>von ober stokerath</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR096">
+                  <persName>
+                     <forename>Alex</forename>
+                     <surname>Ablug</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR097">
+                  <persName>
+                     <forename>Chinitz</forename>
+                     <surname>Purdeller</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR098">
+                  <persName>
+                     <forename>Luetzy</forename>
+                     <!-- y mit 2 Punkten! -->
+                     <surname>N/A</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR099">
+                  <persName>
+                     <forename>Chüntz</forename>
+                     <surname> Chramer</surname>
+                     <addName>Krämer</addName>
+                     <!-- ? -->
+                  </persName>
+               </person>
+               <person xml:id="pers_SR100">
+                  <persName>
+                     <forename>Teomel</forename>
+                     <surname>aus Zinrist</surname>
+                     <!-- zweites i mit 2 Punkten! -->
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR101">
+                  <persName>
+                     <forename>Christian</forename>
+                     <surname>von Pisel</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR102">
+                  <persName>
+                     <forename>Stolztel</forename>
+                     <!-- Name? -->
+                     <surname>von Puntseil</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR103">
+                  <persName>
+                     <forename>Hannes</forename>
+                     <surname>vor Mals</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR104">
+                  <persName>
+                     <forename>Florin</forename>
+                     <surname>Platt</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR105">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>N/A</surname>
+                     <addName>Maier ab der Gazzl</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR106">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>N/A</surname>
+                     <addName>Maier ab Greist</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR107">
+                  <persName>
+                     <forename>Smid</forename>
+                     <surname>von Lantsch</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR108">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>Hrrer Kainer</surname>
+                     <!-- Name? -->
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR109">
+                  <persName>
+                     <forename>Hans</forename>
+                     <surname>Mesner</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR110">
+                  <persName>
+                     <forename>Michel</forename>
+                     <surname>Leten</surname>
+                     <!-- Nachname? -->
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR111">
+                  <persName>
+                     <forename>Cainel</forename>
+                     <surname>Sneider</surname>
+                     <!-- Beruf? -->
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR112">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>N/A</surname>
+                     <addName>Engelems Pruder</addName>
+                     <!-- auch als ID vergeben? -->
+                  </persName>
+               </person>
+               <person xml:id="pers_SR113">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>andre</surname>
+                     <!-- andere oder Name?-->
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR114">
+                  <persName>
+                     <forename>allesch</forename>
+                     <surname>ab lueg</surname>
+                     <!-- Name? -->
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR115">
+                  <persName>
+                     <forename>Nariz</forename>
+                     <surname>ab greist</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR116">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>N/A</surname>
+                     <addName>Chonig von Pontneil</addName>
+                     <!-- König? -->
+                  </persName>
+               </person>
+               <person xml:id="pers_SR117">
+                  <persName>
+                     <forename>Pedrusch</forename>
+                     <surname>von Sand Maria</surname>
+                     <!-- Geistlicher? -->
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR118">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>N/A</surname>
+                     <addName>Goltsmid</addName>
+                     <!-- Goldschmied? -->
+                  </persName>
+               </person>
+               <person xml:id="pers_SR119">
+                  <persName>
+                     <forename>N/A</forename>
+                     <surname>N/A</surname>
+                     <addName>Schuster von pidnal</addName>
+                  </persName>
+               </person>
+               <person xml:id="pers_SR120">
+                  <persName>
+                     <forename>Nikel</forename>
+                     <surname>aus Sulden</surname>
+                     <addName>N/A</addName>
+                  </persName>
+               </person>
+            </listPerson>
+            <listOrg ana="bk:Index">
+               <head> Orgographie </head>
+               <desc> </desc>
+               <org xml:id="org_SR001">
+                  <orgName>Haus Schlandersberg</orgName>
+                  <settlement>Schlanders</settlement>
+                  <region>Südtirol</region>
+               </org>
+            </listOrg>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="Cod_3,2_1r.JPG"/>
+   </facsimile>
+   <text>
+      <body>
+         <pb n="1r"/>
+         <p> Nota das ist die zetel<lb/> Raigister 1 des <name ref="pers_SR001" type="person"
+               ana="bk:to"> hans <damage><supplied reason="missing"
+               >[kelner]</supplied></damage></name><lb/> Das ich <name ref="pers_SR001"
+               type="person"> hans kelnar </name>in g <supplied reason="illegible"
+            >[eb]</supplied><lb/> en han in dem jar <date ana="bk:when" when="1402">anno
+            2</date>[...]<lb/> auch <date ana="bk:when" when="1403"> tertio </date> vom <measure
+               ana="bk:commodity" commodity="Getreide">Korn</measure> von <damage>[...]</damage><lb/>
+            <measure ana="bk:commodity" commodity="Roggen">Roken </measure> von <measure
+               ana="bk:commodity" commodity="Weizen">waitz </measure> von <measure
+               ana="bk:commodity" commodity="Gerste">gersten </measure><lb/> Und dar nach von
+            allerlay zins<lb/> das diz <name ref="pers_SR002" type="person">hans Radurnr </name> hat
+            jarl.<lb/> Item das ist das Raigister das ich<lb/>
+            <name ref="pers_SR001" type="person">hans kelner </name> gemacht hann wann<lb/> dastot
+            an all der zins dan ich ain<lb/> genömen han von der zeit und<lb/> ich kelner gewessen
+            pin.<lb/>
+         </p>
+
+         <pb n="1v"/>
+
+         <p>
+            <!--In diesem Abschnitt ist nicht ganz klar wo ana="bk:to" und wo ana="bk:from" richtig ist-->
+            <damage>[...]</damage> ist was ewissen kump <damage>[...]</damage><lb/>
+            <name ref="pers_SR003" type="person">hans Raduim</name><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR004" type="person" ana="bk:from">hans Püdd
+               </name> hat geben <measure ana="bk:commodity" commodity="Eisen" quantity="1"
+                  unit="Purd">1 purd Eÿsen</measure><lb/> für ussassen zinss üm <measure
+                  ana="bk:commodity" commodity="Gaensefleisch" quantity="6" unit="Pfund">6 lb perner
+                  von<lb/> aine Gans</measure> das es von meine herrn hat.</span><lb/>
+            <span ana="bk:entry">Item ez ist zewissen daz man geben hat dem<lb/>
+               <name ref="pers_SR005" type="person"> jenott karl</name><measure ana="bk:commodity"
+                  commodity="Weizen" quantity="22" unit="Muett">22 mutt waitz</measure> jeden mutt umb<lb/>
+               <measure ana="bk:money" quantity="14" unit="Groschen">14 gr </measure>und hat im auch
+               geben <measure ana="bk:commodity" commodity="Wolle" quantity="9" unit="Wagen">9
+                  wagen<lb/> woll</measure> iede wagen umb <measure ana="bk:money" quantity="16"
+                  unit="Groschen">16 gr </measure>daran hat<lb/> er geben<measure ana="bk:commodity"
+                  commodity="Eisen" quantity="5" unit="Purd"> 5 purd eisen </measure> da pluzt<lb/>
+               <measure ana="bk:commodity" commodity="Sain" quantity="11" unit="Pfund"> sain 11
+                  lb</measure> und da ist [...] seh<lb/> dapernn <measure ana="bk:commodity"
+                  commodity="Tuchwolle"> tuchwoll </measure> und<measure ana="bk:commodity"
+                  commodity="Weizen" quantity="38" unit="Pfund"> waitz 38<lb/> lb </measure>
+                  m<measure ana="bk:money" quantity="4" unit="Groschen">4 gr </measure>und da hat er
+               auch<lb/> dem <name ref="pers_SR006" type="person">lichtnek</name> geben <measure
+                  ana="bk:money" quantity="26" unit="Groschen"> 26 gr </measure>die<lb/> seind
+                  dem<name ref="pers_SR006" type="person">lichtnek</name> gerait worden<lb/> Und
+               auch das selben <measure ana="bk:commodity" commodity="Eisen" quantity="3"
+                  unit="Purd">eisens sind<lb/> 3 purd </measure>zü dem <placeName ana="bk:where"
+                  ref="SchlossKasten">kasten</placeName> chinnen</span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR007" type="person">hans Rudel </name>
+               <measure ana="bk:commodity" commodity="Eisen" quantity="2" unit="Purd">1 purd
+                  eisen</measure>kenhardÿ.</span>
+         </p>
+
+         <pb n="2r"/>
+
+         <p> Nota hie stat alder zins von korn waitz<lb/> Token vild gersten den ich <name
+               ref="pers_SR001" type="person" ana="bk:to"> Hans Kelner </name><lb/> in gechömen han
+            In dem <date ana="bk:when" when="1402">jar dominis 1402 </date>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR008" type="person" ana="bk:from">minig von
+                  zobrist</name> hat <span ana="bk:tax"> zinst <measure ana="bk:commodity"
+                     commodity="Roggen" quantity="1" unit="Muett">1 mut Roken</measure><lb/> ...ÿ
+                  und <measure ana="bk:commodity" commodity="Gerste" quantity="1" unit="Muett">1 mut
+                     gersten</measure></span></span>.<lb/>
+            <!-- stimmt hier pers_SR068?-->
+            <span ana="bk:entry">Item <name ref="pers_SR068" type="person" ana="bk:from">alber ab
+                  der eken </name> hat <span ana="bk:tax"> zinst <measure ana="bk:commodity"
+                     commodity="Roggen" quantity="1" unit="Muett"> 1 mütt<lb/> Roken </measure> am
+                     <date ana="bk:when" when="1402-05-24"> m<supplied reason="missing"
+                        >[i]</supplied>twochn sa. urbani <supplied>[24.Mai]</supplied></date> und<lb/>
+                  <measure ana="bk:commodity" commodity="Gerste" quantity="1" unit="Muett">1 mütt
+                     gersten</measure></span></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR009" type="person" ana="bk:from"> michel
+                  unter wag </name>hat geben <measure ana="bk:commodity" commodity="Gerste"
+                  quantity="5" unit="Muett">5 mütt gersten </measure><lb/> zw preÿ Erasmi</span>.<lb/>
+            <span ana="bk:entry">Item so hat do <name ref="pers_SR010" type="person" ana="bk:from"
+                  >michel vaelveye</name> geben <measure ana="bk:commodity" commodity="Roggen"
+                  quantity="2" unit="Muett"> 2 mütt<lb/> Roken </measure>die gab der parott umb 1
+               mütt<lb/> arbaid daz kam zw dem kassten in der <lb/> fasten [?]</span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR011" type="person" ana="bk:from">Jacob
+                  Ehinisner </name>von <placeName ana="bk:where" ref="Lantsch">Lantsch
+               </placeName>hat geben 1 mut<lb/> waitz das gab der prett umb ainen prhosen<lb/> dem
+               chüne choch aber der waitz kam nit<lb/> her in das haus</span>.<lb/>
+            <span ana="bk:entry">Item so hat der <name ref="pers_SR012" type="person" ana="bk:from"
+                  >maier von<placeName ana="bk:where" ref="Ulten">ulten </placeName></name> geben
+                  <measure ana="bk:commodity" commodity="Gerste" quantity="8" unit="Muett">8
+                  mütt<lb/> gersten</measure> dÿ hat paratt in den aker geseert und<lb/> gab aus dem
+               haus auch <measure ana="bk:commodity" commodity="Roggen" quantity="1" unit="Muett"
+                  >ainen mut gersten</measure> daz<lb/> man mit den acht mutten in dem aker sätkori
+               ...</span><lb/>
+            <!-- raimsserm = name oder org? -->
+            <span ana="bk:entry">Item die raimsserm hat geben <measure ana="bk:commodity"
+                  commodity="Gerste" quantity="8" unit="Muett">2 mütt gersten</measure><lb/> zw preÿ
+               machei äppler am herbst und<lb/> aber 3 von gerstpreÿ</span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR013" type="person" ana="bk:from">Michel won
+                  von <placeName ana="bk:where" ref="Mals">Mals</placeName></name> hat <span
+                  ana="bk:tax">zinst<lb/>
+                  <measure ana="bk:commodity" commodity="Weizen" quantity="1" unit="Ammer">1 ammer
+                     waitz </measure> dez <date ana="bk:when" when="1402-10-02"> nachsten mantag
+                     nach<lb/> sand michels tag
+               <supplied>[2.Oktober]</supplied></date></span></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR014" type="person" ana="bk:from">Hans
+                  getrawt </name>hat <span ana="bk:tax">zinst am<lb/>
+                  <date ana="bk:when" when="1402-10-14"> samptzag vor galli
+                        <supplied>[14.Oktober]</supplied></date><measure ana="bk:commodity"
+                     commodity="Weizen" quantity="2" unit="Muett">2 mut waitz</measure></span><lb/>
+               <measure ana="bk:commodity" commodity="Pön" quantity="1" unit="Muett">1 mut
+                  pön</measure> gab er für den <measure ana="bk:commodity" commodity="Weizen"
+                  quantity="1" unit="Muett">ainen mut waitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR015" type="person" ana="bk:from">hang vor
+                  nals</name><measure ana="bk:commodity" commodity="Weizen" quantity="2"
+                  unit="Muett">2 mut waitz</measure></span><lb/>
+            <!-- supplied? -->
+            <span ana="bk:entry">Item<name ref="pers_SR030" type="person" ana="bk:from"
+                  >jandl</name><measure ana="bk:commodity" commodity="Weizen" quantity="1.5"
+                  unit="Muett">1 1/2 müt waitz </measure> 1 müt [...]<measure ana="bk:commodity"
+                  commodity="Gerste" quantity="5" unit="Muett">5 mit gersten</measure>.<lb/> Summa
+               [...]<lb/> juds</span>
+         </p>
+
+         <pb n="2v"/>
+
+         <p>
+            <!-- wen "hat zinst" heißt, dass er "5 mütt gersten" als abgabe geleistet hat: -->
+            <span ana="bk:entry">Item <name ref="pers_SR015" type="person" ana="bk:from">Hans von
+                     <placeName ana="bk:where" ref="Mals"> mals</placeName>
+               </name>hat <span ana="bk:tax">zinst <measure ana="bk:commodity" commodity="Gerste"
+                     quantity="5" unit="Muett">5 mütt gersten</measure></span>. </span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR016" type="person" ana="bk:from">Hans
+               eicdrant</name> hat <span ana="bk:tax">zinst <measure ana="bk:commodity"
+                     commodity="Gerste" quantity="5" unit="Muett">5 mütt
+               gersten</measure></span>.<lb/></span>
+            <span ana="bk:entry">Item <name ref="pers_SR017" type="person" ana="bk:from">micl von
+               <placeName ana="bk:where" ref="Ulten">ulten</placeName></name> hat <span
+                  ana="bk:tax">zinst <measure ana="bk:commodity" commodity="Gerste" quantity="5"
+                     unit="Muett">13 mut gersten</measure><lb/>
+                  <date ana="bk:when" when="1402-10-14">Am frenig nach martini
+                        <supplied>[17.November]</supplied></date></span>.<lb/></span>
+            <span ana="bk:entry">Item <name ref="pers_SR018" type="person" ana="bk:from">hann
+                  letr</name> sain von<placeName ana="bk:where" ref="Mals"> mals </placeName>
+               unterwey<lb/> hat <span ana="bk:tax">zinst <measure ana="bk:commodity"
+                     commodity="Gerste" quantity="5" unit="Muett">5 mut gersten </measure> un
+                     <measure ana="bk:commodity" commodity="Weizen" quantity="2.5" unit="Muett"> 2 ½
+                     mut<lb/> waitz </measure> und <measure ana="bk:commodity" commodity="Roggen"
+                     quantity="5" unit="Muett">5 mut Roken</measure></span>. </span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR019" type="person" ana="bk:from">micla
+                  sneider </name>sün Von zebert <measure ana="bk:commodity" commodity="Gerste"
+                  quantity="5" unit="Muett">4 mt<lb/> gerster</measure> und <measure
+                  ana="bk:commodity" commodity="Roggen" quantity="6" unit="Muett">6 mu
+                  Roken</measure>.</span><lb/>
+            <!-- parstadl = name oder org? -->
+            <span ana="bk:entry">Item aus dem parstadl <measure ana="bk:commodity"
+                  commodity="Gerste" quantity="5" unit="Muett">24 mut<lb/> Huntäs gersten
+               </measure>und <measure ana="bk:commodity" commodity="Huntäs" quantity="13"
+                  unit="Muett">13 mut huntäs </measure> und<lb/>
+               <!--LBH_Suppl? und hier gibts noch ein BK to/From-->6 m[u]tt gabt man dem jorgin<lb/>
+               die het parott gelihn von d<lb/> do der haubtman hiewas<lb/>
+               <!-- LBH: Hier sind noch zwei namen, oder?-->
+               <!--LBH_Suppl? und hier gibts noch ein BK to/From-->Ze kitern und 1 m [u]t gab
+               man<lb/> dem panchnei.<lb/></span>
+            <span ana="bk:entry">Item pislaer <measure ana="bk:commodity" commodity="Gerste"
+                  quantity="5" unit="Muett">6 müt gerstn </measure>minlay. </span>
+         </p>
+
+         <pb n="3r"/>
+
+         <pb n="7r"/>
+
+         <p>
+            <span ana="bk:entry">Item was ich <measure ana="bk:commodity" commodity="Wein"
+                  >wain</measure> vand<lb/> Nota<lb/> Als ich <name ref="pers_SR001" type="person"
+                  ana="bk:to">hans Kelner</name> ward 3 wochen vor<lb/> annunciationis maier in
+                  der<placeName ana="bk:where" ref="SchlossKasten"> kasten </placeName> do fand<lb/>
+               ich in dem untern keler <measure ana="bk:commodity" commodity="Wein" quantity="6"
+                  unit="Puntzen"> 6 puntzen wein</measure><lb/> salenwein Und in dem obrn cheler
+                  <measure ana="bk:commodity" commodity="Wein" quantity="6" unit="Puntzen">4
+                     puntzen<placeName ana="bk:where" ref="Salento">salen</placeName><lb/>
+                  wein</measure>und vir perfas <date ana="bk:when" when="1402">anno domini 1402
+               </date>.<lb/> Nota hie ist ze wissen wie vil puntzen<lb/> alter wein von dem
+                  <placeName ana="bk:where" ref="SchlossKasten">kasten</placeName> chumen seind<lb/>
+               dÿ weil ich kelner gewesen pin</span>.<lb/>
+            <span ana="bk:entry">Item Ez pracht <name ref="pers_SR020" type="person" ana="bk:from"
+                  >nikel engeleins prueder</name><lb/>
+               <measure ana="bk:commodity" commodity="Wein" quantity="7" unit="Urnen">7 urn
+                  weines</measure> von dem <placeName ana="bk:where" ref="SchlossKasten"
+                  >kasten</placeName>an <date ana="bk:when" when="1402-06-08"> sand<lb/> medarden
+                  tag <supplied>[8.Juni]</supplied></date></span>.<lb/>
+            <span ana="bk:entry">Item so pracht der <name ref="pers_SR021" type="person"
+                  ana="bk:from">engel</name><measure ana="bk:commodity" commodity="Wein"
+                  quantity="7" unit="Urnen">7 urn wein</measure><lb/> von dem <placeName
+                  ana="bk:where" ref="SchlossKasten">kasten</placeName> am <date ana="bk:when"
+                  when="1402-07-18">Eritag vor Maria=<lb/> Magdalene <supplied>[18.
+                  Juli]</supplied></date></span>.<lb/>
+            <span ana="bk:entry">Item so pracht der <name ref="pers_SR021" type="person"
+                  ana="bk:from">Engel</name><measure ana="bk:commodity" commodity="Wein"
+                  quantity="8" unit="Urnen"> 8 urn wein</measure><lb/> von dem <placeName
+                  ana="bk:where" ref="SchlossKasten">kasten</placeName> an <date ana="bk:when"
+                  when="1402-08-05">sand eswaltztag <supplied>[5. August]</supplied></date></span>.<lb/>
+            <span ana="bk:entry">Item so pracht <name ref="pers_SR020" type="person" ana="bk:from"
+                  >nicel dez engeleins pruerder</name><lb/>
+               <measure ana="bk:commodity" commodity="Wein" quantity="1" unit="Puntze">ain puntzen
+                  wein</measure> am <date ana="bk:when" when="1402-06-08">freitag nach said<lb/>
+                  lalortzentag <supplied>[]</supplied></date> von sedor urn vom <placeName
+                  ana="bk:where" ref="SchlossKasten">kasten</placeName>.</span>
+         </p>
+
+         <pb n="7v"/>
+
+         <!-- Der Herr schickt etwas nach Radwinr? -->
+         <p>
+            <!-- entweder pers_SR052 0der pers_SR053 -->Nota das ist der newwem denn mein<lb/> mein
+            Genedig <name ref="pers_SR052" type="person" ana="bk:from">herr </name><name
+               ref="pers_SR022" type="person">herauf Radwinr</name> schikedt<lb/> in dem iär<date
+               ana="bk:when" when="1402">anno [...] dë 2</date>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR021" type="person" ana="bk:to"
+                  >engel</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 wagenlait</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR023" type="person" ana="bk:to">nicel von
+                  Zörs</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR024" type="person" ana="bk:to">michel
+                  won</name><measure ana="bk:commodity" commodity="Newwem" quantity="1" unit="Wagen"
+                  > 1 wa</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR025" type="person" ana="bk:to">homirer leten
+                  sün</name><measure ana="bk:commodity" commodity="Newwem" quantity="1" unit="Wagen"
+                  > 1 w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR026" type="person" ana="bk:to">egen
+                  tampnÿ</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 wa</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR027" type="person" ana="bk:to"
+                  >florin</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 wa.</measure></span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR028" type="person" ana="bk:to">hans von
+                  wernis</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 wa</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR029" type="person" ana="bk:to">mesner von
+                  tariph</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 wa</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR030" type="person" ana="bk:to"
+                  >jandl</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 wa</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR031" type="person" ana="bk:to">nicla von
+                     <placeName ana="bk:where" ref="Ulten">ulten</placeName></name><measure
+                  ana="bk:commodity" commodity="Newwem" quantity="1" unit="Wagen"> 1
+               w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR032" type="person" ana="bk:to">serfrid von
+                     <placeName ana="bk:where" ref="Ulten">ulten</placeName></name><measure
+                  ana="bk:commodity" commodity="Newwem" quantity="1" unit="Wagen"> 1
+               w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR014" type="person" ana="bk:to">hans
+                  getrawt</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR034" type="person" ana="bk:to">michel am
+                  platz</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR035" type="person" ana="bk:to">mesner von
+                     <placeName ana="bk:where" ref="Lantsch">lantsch</placeName></name><measure
+                  ana="bk:commodity" commodity="Newwem" quantity="1" unit="Wagen"> 1
+               w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR036" type="person" ana="bk:to"
+                  >nesella</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR037" type="person" ana="bk:to">jacob
+                  thursuer von <placeName ana="bk:where" ref="Lantsch"
+                  >lantsch</placeName></name><measure ana="bk:commodity" commodity="Newwem"
+                  quantity="1" unit="Wagen"> 1 w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR038" type="person" ana="bk:to">jager von
+                  purgäurs</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR039" type="person" ana="bk:to">maie von
+                  seles</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR040" type="person" ana="bk:to">larentz ab
+                  tmpin</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 wag</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR041" type="person" ana="bk:to">haug von
+                     <placeName ana="bk:where" ref="Mals">mals</placeName></name><measure
+                  ana="bk:commodity" commodity="Newwem" quantity="1" unit="Wagen"> 1
+               wagen</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR042" type="person" ana="bk:to">maier aus dem
+                  widem</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR043" type="person" ana="bk:to">maier an der
+                  gazz von <placeName ana="bk:where" ref="Schlanders">slands</placeName></name><lb/>
+               <measure ana="bk:commodity" commodity="Newwem" quantity="1" unit="Wagen"> 1
+                  wagenlait</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR044" type="person" ana="bk:to">maier im
+                  spital</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 w</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR045" type="person" ana="bk:to"
+                  >hüber</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 wagen</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR046" type="person" ana="bk:to">wein
+                  zürl</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 wag</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR047" type="person" ana="bk:to">thomas
+                  smid</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen"> 1 wa</measure>.</span><lb/>
+         </p>
+
+         <pb n="8r"/>
+
+         <p>
+            <span ana="bk:entry">Item <name ref="pers_SR048" type="person" ana="bk:to">maier von
+                  hoff</name><measure ana="bk:commodity" commodity="Newwem" quantity="1"
+                  unit="Wagen">1 waig</measure>. </span>Item <name ref="pers_SR049" type="person"
+               ana="bk:to">Eerngel </name><measure ana="bk:commodity" commodity="Newwem"
+               quantity="1" unit="Wagen">ain wagelait</measure> von oberdorffol. <supplied
+               reason="illegible"> hey u gab wag.[Durchgestrichen] </supplied>
+         </p>
+
+         <pb n="8v"/>
+
+
+         <p>
+            <!-- CP: nur das auszeichnen was auch wirklich teil einer transaktion ist: das "Visch" hier ist ja nicht teil einer transaktion, nehem ich an, oder? -->
+            Visch<lb/> Nota was visch in das<name ref="org_SR001" ana="bk:to"> haus </name>
+               ch<supplied reason="missing">[o]</supplied>mmend<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR050" type="person" ana="bk:from"
+                  >niclas</name> und <name ref="pers_SR051" type="person" ana="bk:from"
+                  >anderlein</name> dÿ zwen vischer<lb/> prachten<measure ana="bk:commodity"
+                  commodity="Fisch" quantity="13" unit="Pfund">13 lb visch</measure> als mein
+               genediger<lb/> herr <name ref="pers_SR052" type="person">herr kaspar</name> kam.
+               Tibnreÿ meris<lb/></span>
+            <span ana="bk:entry">Item am <date ana="bk:when" when="1402-01-01">s<supplied
+                     reason="missing">[o]</supplied>nntag nach Eibnitÿ []</date> prachten dÿ<lb/>
+               <name ref="pers_SR050" type="person" ana="bk:from">
+                  <name ref="pers_SR051" type="person" ana="bk:from">obgeschriben
+                  visser</name></name><measure ana="bk:commodity" commodity="Fisch" quantity="18"
+                  unit="Pfund"> 18 lb visch </measure>und<lb/> am<date ana="bk:when"
+                  when="1402-01-01"> mitwoch dar nach</date> Rait <name ref="pers_SR052"
+                  type="person">herr Kaspar</name><lb/> gen <placeName ana="bk:where" ref="XXX"
+                  >phenïs</placeName></span>.<lb/>
+            <span ana="bk:entry">Item am <date ana="bk:when" when="1402-01-01">mitwochen nach
+                  philippi jacobi</date> []<lb/> das was am anffart abuetz pracht der<lb/>
+               <!-- solz von den vischern = name? -->
+               <name ref="pers_SRXXX" type="person" ana="bk:from">sloz von den vischern</name>
+               <measure ana="bk:commodity" commodity="Fisch" quantity="10" unit="Pfund"> 10 lb visch
+               </measure>und<lb/> was<name ref="pers_SR053" type="person"> herr hainreich</name>
+               hie</span>.<lb/>
+            <span ana="bk:entry">Item am <date ana="bk:when" when="1402-01-01">freitag nach sand
+                  veiteztag []</date><lb/> pracht der <name ref="pers_SR054" type="person"
+                  ana="bk:from">sauser</name><measure ana="bk:commodity" commodity="Fisch"
+                  quantity="6" unit="Pfund">6 lb visch von</measure><lb/> den vischern das schuff
+                  <name ref="pers_SR053" type="person">herr hainreich</name></span>.<lb/>
+            <span ana="bk:entry">Item das nach pracht der <name ref="pers_SR054" type="person"
+                  ana="bk:from">sauser</name><measure ana="bk:commodity" commodity="Fisch"
+                  quantity="1" unit="Pfund">1 lb visch</measure></span>.<lb/>
+            <span ana="bk:entry">Item Ez pracht der <name ref="pers_SR055" type="person"
+                  ana="bk:from">grnebe</name> auch <measure ana="bk:commodity" commodity="Fisch"
+                  quantity="3" unit="Pfund">3<lb/> lb visch</measure></span>.<lb/>
+            <span ana="bk:entry">Item ab <name ref="pers_SR056" type="person" ana="bk:from"
+                  >grucher</name><measure ana="bk:commodity" commodity="Fisch" quantity="3"
+                  unit="Pfund">3 lb visch</measure>.<lb/> Itdem dez <name ref="pers_SR050"
+                  type="person" ana="bk:from">nicel vischer </name>sein auch<measure
+                  ana="bk:commodity" commodity="Fisch" quantity="2.5" unit="Pfund"> 2 1/2 lb
+                  visch</measure></span>.<lb/>
+            <span ana="bk:entry">Item Ez pracht<name ref="pers_SR050" type="person" ana="bk:from">
+                  nicel vischer</name> von<lb/> Erräwn<measure ana="bk:commodity" commodity="Fisch"
+                  quantity="8" unit="Pfund"> 8 lb visch</measure> am<date ana="bk:when"
+                  when="1402-01-01"> ergtag<lb/> als mein genediger herr hie waz<lb/> vor
+                  wartholomei []</date> Und dir <name ref="pers_SR057" type="person">hofmaister<lb/>
+                  von <placeName ana="bk:where" ref="Kaltern">Kaltÿrn</placeName></name></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR050" type="person" ana="bk:from">nikel
+                  vischer</name><measure ana="bk:commodity" commodity="Fisch" quantity="5"
+                  unit="Pfund">5 lb visch</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR051" type="person" ana="bk:from"
+                  >anderl</name><measure ana="bk:commodity" commodity="Fisch" quantity="3"
+                  unit="Pfund">3 lb visch</measure>.</span>
+         </p>
+
+         <pb n="12r"/>
+
+
+         <pb n="12v"/>
+
+         <p> Nota Die zehent <measure ana="bk:commodity" commodity="Kitz">kitz</measure><measure
+               ana="bk:commodity" commodity="Lempel">lempel</measure> und <measure
+               ana="bk:commodity" commodity="Eier">aier</measure><lb/>
+            <span ana="bk:entry">Item <measure ana="bk:commodity" commodity="Kitz" quantity="10"
+                  unit="Stueck">10 kitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <measure ana="bk:commodity" commodity="Lemper" quantity="16"
+                  unit="Stueck">16 lemper</measure></span>.<lb/>
+            <span ana="bk:entry">Item <measure ana="bk:commodity" commodity="Eier" quantity="58"
+                  unit="Stueck">58 aier</measure>.<lb/> Bunamrüniger der aÿer</span><lb/>
+            <span ana="bk:entry">Item überall <measure ana="bk:commodity" commodity="Eier"
+                  quantity="500" unit="Stueck">5 hundert aier</measure>.</span><lb/> Schankchüng der
+               <measure ana="bk:commodity" commodity="Kitz" quantity="1" unit="Stueck">kitz
+               ez</measure><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR058" type="person" ana="bk:from">Christoffel
+                  von Slans</name><measure ana="bk:commodity" commodity="Lemper" quantity="1"
+                  unit="Stueck">1 lempel</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR059" type="person" ana="bk:from">uler von
+                  pidnal</name><measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  unit="Stueck">1 kitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR060" type="person" ana="bk:from"
+                  >mulner</name><measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  unit="Stueck">1 kitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR061" type="person" ana="bk:from">pissler
+                  </name><measure ana="bk:commodity" commodity="Kitz" quantity="1" unit="Stueck">1
+                  kitz</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR062" type="person" ana="bk:from">linhart im
+                  dorff</name><measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  unit="Stueck">1 kitz</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR063" type="person" ana="bk:from">minig
+                  mawrer</name><measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  unit="Stueck">1 kitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR064" type="person" ana="bk:from">nicla
+                  maiers</name> aÿdem<measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  unit="Stueck">kitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR065" type="person" ana="bk:from">nicel
+                  trawten</name> man<measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  unit="Stueck">1 kitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR066" type="person" ana="bk:from">hans im
+                  pach</name><measure ana="bk:commodity" commodity="Kitz" quantity="1" unit="Stueck"
+                  >1 kitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR067" type="person" ana="bk:from">minig von
+                  von zebrist</name><measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  unit="Stueck">1 kitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR068" type="person" ana="bk:from">alber von
+                  der eken</name><measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  unit="Stueck">1 kitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR069" type="person" ana="bk:from"
+                  >chugel</name><measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  unit="Stueck">1 kitz</measure></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR070" type="person" ana="bk:from"
+                  >degen</name><measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  unit="Stueck">ain kitzlamp</measure></span>.<lb/>
+            <!-- sind Herr Kaspar UND Herr Hainrich die Herren von Hans Kelnar -->
+            <span ana="bk:entry">Item die schankchung ist peschehen als mein<lb/> Genedig Herr <name
+                  ref="pers_SR052" type="person">Herr Kaspar</name> und <name ref="pers_SR053"
+                  type="person">Herr Hainrich</name> hie waz<lb/> als sy kamen in die Eiben eÿ vor
+               sand jorigen<lb/>
+               <!-- LBH Datum vor sand?-->
+               <date ana="bk:when" when="1402">tag [] anno 2°</date>.</span>
+         </p>
+         <pb n="13r"/>
+         <p> [fol. 13r] <!-- von phunas = Ort? Person? Org.? -->
+            <span ana="bk:entry">Item <name ref="pers_SR001" type="person" ana="bk:to">mïr</name>
+               ist von phuns kumen <measure ana="bk:commodity" commodity="Lempt" quantity="4">4
+                  lempt</measure> vnd <lb/>
+               <measure ana="bk:commodity" commodity="Schaf" quantity="2">2 schaff </measure><date
+                  ana="bk:when" when="1402-06-08">am murtag nach johanis ante porta<lb/> latinam
+                  [8.Juni] anno domini 1402</date></span>.<lb/>
+            <span ana="bk:entry">Item so ist am herbst chommen <date ana="bk:when" when="1402">an
+                  sand mathias<lb/> tag [24. Februar (aber nicht Herbst, hä?)  vll. Matthäustag im
+                  Herbst, 21. September?] </date><measure ana="bk:commodity" commodity="Schaf"
+                  quantity="34">34 schaff</measure> und <measure ana="bk:commodity"
+                  commodity="Schaf" quantity="5">5 schaff</measure> von zobrist.<lb/>
+               <name ref="pers_SR038" type="person">Jager von purgäurs</name></span>
+            <lb/> Nota: hie is ze wissen das der <name ref="pers_SR038" type="person" ana="bk:from"
+               >jager von<lb/> purgawz</name><measure ana="bk:commodity" commodity="Schwein"
+               quantity="2">2 swein</measure> geben hat<date ana="bk:when" when="1402-05-28">am
+               suntag nach<lb/> urbani pape [28.Mai]</date> disselben <measure ana="bk:commodity"
+               commodity="Schwein" quantity="2">zwaÿ swein</measure> hat der<lb/>
+            <!-- hauben = Person? --> haubem und <name ref="pers_SR071" type="person" ana="bk:from"
+               >der parott</name> und <name ref="pers_SR072" type="person" ana="bk:from">peter
+               Faust</name>her<lb/> und <name ref="pers_SR013" type="person">michel wan von
+                  <placeName ana="bk:where" ref="Mals">mals</placeName></name> geschatz umb <measure
+               ana="bk:commodity" commodity="Perner" quantity="6.5" unit="pfund">6 ½<lb/> lb
+               perner</measure> und das hat man im ab gezogen an seiner<lb/>
+            <!-- LBH ?.?--> zinses ? <measure ana="bk:commodity" commodity="Kaese" quantity="7.5"
+               unit="Schoet">7 ½ schöt käs</measure> und <measure ana="bk:commodity"
+               commodity="Weizen" quantity="2.5" unit="Muett">2 ½ mütt waitz</measure><lb/> das hat
+            er alsso mit <measure ana="bk:commodity" commodity="Schwein" quantity="2">den Sweinen
+               pezalt.</measure><date ana="bk:when" when="1402">anno 1402</date>.<lb/> weisät<lb/>
+            Nota: das senid dÿ weissat die in das haüs<lb/> kumen seind die weil ich kelnar gewesen
+            pin<lb/> von kitz von aier von schulerer und waz weisat<lb/> seind und von hüner.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR035" type="person" ana="bk:from">nicla
+                  mesner von <placeName ana="bk:where" ref="Lantsch"
+                  >läntsch</placeName></name><measure ana="bk:commodity" commodity="XXX"
+                  quantity="2">2 weiset</measure> zwïr<lb/>
+               <measure ana="bk:commodity" commodity="Eier" quantity="60">60 aier</measure> am <date
+                  ana="bk:when" when="1402">suntag nach Conati ejpiscopi</date> zwuntervasten
+               [].</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR073" type="person" ana="bk:from"
+                  >peterschoso</name> hat geben <measure ana="bk:commodity" commodity="Eier"
+                  quantity="60">60 aier</measure> für<measure ana="bk:commodity" commodity="XXX"
+                  quantity="1">ain weisat</measure><lb/>
+               <date ana="bk:when" when="1402-03-19">am palmabent acht tag vor unßr frawentag
+                  [19.März]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR034" type="person" ana="bk:from">michel am
+                  platz von <placeName ana="bk:where" ref="Mals">mals</placeName></name> hat geben
+                  <measure ana="bk:commodity" commodity="Kitz" quantity="1">1 kitz</measure><lb/> am
+               ergtag in den estrern das was der nachst</span><lb/>
+            <date ana="bk:when" when="1402-03-28">ergtag nach unßr frauemtag [28. März]</date>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR073" type="person" ana="bk:from">peter
+                  schoso</name><measure ana="bk:commodity" commodity="Kitz" quantity="1">1
+                  chitz</measure> am <date ana="bk:when" when="1402-03-31">freitag auch nach
+                  unßr<lb/> frawen tag annuntiationis [31. März]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR074" type="person" ana="bk:from">michel
+                  unter weg von <placeName ana="bk:where" ref="Mals">mals</placeName></name><measure
+                  ana="bk:commodity" commodity="Kitz" quantity="1">an kitz</measure> am<lb/>
+               <date ana="bk:when" when="1402-03-26">suntag nach dem ostrertag daz was nach
+                  unßr<lb/> frawen tag annunciationis [26. März]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR075" type="person" ana="bk:from">swaim
+                  dawimm von tartsch</name> hat geben <measure ana="bk:commodity" commodity="Eier"
+                  quantity="60">60<lb/> aier</measure> am <date ana="bk:when" when="1402-03-20"
+                  >mantag vor unser frawentag annuciationis [20. März]</date>.</span>
+         </p>
+
+         <pb n="13v"/>
+         <p> [fol. 13v] <span ana="bk:entry">Item <name ref="pers_SR008" type="person" ana="bk:from"
+                  >minig von zobrist</name> hat geben <measure ana="bk:commodity"
+                  commodity="Osterlamm" quantity="1">ain osterlamp.</measure></span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR028" type="person" ana="bk:from">hans von
+                  wurnis</name>hat geben <measure ana="bk:commodity" commodity="Eier" quantity="78"
+                  >78 äer</measure><lb/> und <measure ana="bk:money" commodity="currency"
+                  quantity="4" unit="Groschen">4 g</measure> für <measure ana="bk:commodity"
+                  commodity="XXX" quantity="2">2 weiset.</measure></span><lb/>
+            <span ana="bk:entry">Item Ez hat geben <name ref="pers_SR076" type="person"
+                  ana="bk:from">hans Schräut</name><measure ana="bk:commodity" commodity="Lempel"
+                  quantity="2">2 lempel</measure><lb/> für <measure ana="bk:commodity"
+                  commodity="XXX" quantity="2">zwaÿ weiset</measure><date ana="bk:when"
+                  when="1402-04-22">am samptzag vor sand<lb/> jorgentag [22.April].</date></span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR077" type="person" ana="bk:from">minng prawn
+                  von släus</name> hat geben <measure ana="bk:commodity" commodity="Kitz"
+                  quantity="1">1 kitz</measure><lb/> am <date ana="bk:when" when="1402-04-22">samtag
+                  vor sand jorgentag [22. April]</date></span>.<lb/>
+            <span ana="bk:entry">Item Es hat geben der <name ref="pers_SR038" type="person"
+                  ana="bk:from">jager von Purgawz</name><lb/>
+               <measure ana="bk:commodity" commodity="Lamm" quantity="1">ain lamp</measure><date
+                  ana="bk:when" when="1402-04-16">am sunntag vor sand jorgentag
+               [16.April]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR078" type="person" ana="bk:from">Ohmstaus
+                  aÿdem von zobrist</name><measure ana="bk:commodity" commodity="Kitz" quantity="1"
+                  >1 kitz</measure><date ana="bk:when" when="1402-04-16">am<lb/> suntag vor sand
+                  jorgentag [16.April]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR079" type="person" ana="bk:from">edgen
+                  tampüy von pürgäwz</name> hat geben<lb/>
+               <measure ana="bk:commodity" commodity="Schultrn" quantity="2">zwo schultrn</measure>
+               für <measure ana="bk:commodity" commodity="XXX" quantity="1">ain
+                  weissat</measure><date ana="bk:when" when="1402-04-16">am suntag<lb/> vürtzabentag
+                  vor sand jorgentag [16. April]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR037" type="person" ana="bk:from">jacob
+                  chursner von <placeName ana="bk:where" ref="Lantsch">lantsch</placeName></name>
+               hat geben <measure ana="bk:commodity" commodity="Eier" quantity="60">60
+                  aier</measure><lb/> für <measure ana="bk:commodity" commodity="XXX" quantity="1"
+                  >ain weiset </measure> In die johannis ante portam latinam <date ana="bk:when"
+                  when="1402-05-06">[6. Mai]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR041" type="person" ana="bk:from">haug von
+                     <placeName ana="bk:where" ref="Mals">mals</placeName></name><measure
+                  ana="bk:commodity" commodity="Lamm" quantity="1">1 lamp</measure><date
+                  ana="bk:when" when="1402-05-07">am suntag nach Gothardi [7. Mai]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR024" type="person" ana="bk:from">michel won
+                  von <placeName ana="bk:where" ref="Mals">mals</placeName></name><measure
+                  ana="bk:commodity" commodity="Lamm" quantity="1">1 lamp</measure></span><date
+               ana="bk:when" when="1402-05-07">am suntag<lb/> nach Gothardi [7. Mai]</date>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR024" type="person" ana="bk:from">michel won
+                  von <placeName ana="bk:where" ref="Mals">mals</placeName></name><measure
+                  ana="bk:commodity" commodity="Lamm" quantity="1">1 lampt</measure><date
+                  ana="bk:when" when="1402-05-28">am<lb/> suntag nach Urbani [28.Mai]</date>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR080" type="person" ana="bk:from">Hans
+                  Margreten</name> sün<measure ana="bk:commodity" commodity="Lamm" quantity="1">ain
+                  lamp</measure><date ana="bk:when" when="1402-06-04">am<lb/> suntag nach Erasmÿ
+                  [4.Juni]</date>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR081" type="person" ana="bk:from">michel
+                  under wag von <placeName ana="bk:where" ref="Mals">mals</placeName></name> hat
+               geben <lb/>
+               <measure ana="bk:commodity" commodity="Handlir" quantity="4">4 junge
+                  handlïr</measure> für <measure ana="bk:commodity" commodity="XXX" quantity="1">ain
+                  weisat</measure><date ana="bk:when" when="1402-07-20">an sand<lb/> margaretentag
+                  [20.Juli]</date>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR082" type="person" ana="bk:from"
+                  >albrecht</name><measure ana="bk:commodity" commodity="Handlir" quantity="2">2
+                  junige handlir</measure> zeweiset<lb/>
+               <date ana="bk:when" when="1402-07-30">am suntag nach jabobi [30. Juli]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR083" type="person" ana="bk:from">michel
+                  unter der gazz von <placeName ana="bk:where" ref="Mals"
+               >mals</placeName></name><lb/> hat geben <measure ana="bk:commodity"
+                  commodity="Handlir" quantity="4">4 junge handlïr</measure> für <measure
+                  ana="bk:commodity" commodity="XXX" quantity="1">ain <lb/> weisat</measure><date
+                  ana="bk:when" when="1402-08-05">an sand oswals tag [5.August]</date>.</span>
+         </p>
+         <pb n="14r"/>
+         <p> [fol. 14r] <span ana="bk:entry">Item <name ref="pers_SR084" type="person" ana="bk:from"
+                  >minig jandleins sün von <placeName ana="bk:where" ref="Mals"
+                  >mals</placeName></name><lb/> hat geben für <measure ana="bk:commodity"
+                  commodity="XXX" quantity="1">ain weissert</measure><measure ana="bk:commodity"
+                  commodity="Huhn" quantity="2"> 2 hennen</measure><lb/>
+               <date ana="bk:when" when="1402-08-20">am suntag von sand purtlomenstag
+                  [20.August]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR085" type="person" ana="bk:from">nicel von
+                  Rotaÿ</name> hat geben <measure ana="bk:commodity" commodity="Schaf" quantity="1"
+                  >1 schaff</measure> für<lb/>
+               <measure ana="bk:commodity" commodity="XXX" quantity="2">zwaÿ weisat</measure><date
+                  ana="bk:when" when="1402-08-20">am suntag vor sand partholo
+               [20.August]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR086" type="person" ana="bk:from">abraham
+               </name>hat geben,<measure ana="bk:commodity" commodity="Schaffel" quantity="000"
+                  >innig schaffel</measure> für<lb/>
+               <measure ana="bk:commodity" commodity="XXX" quantity="1"> ain weisat </measure><date
+                  ana="bk:when" when="1402-08-20">am sunt[ag] vor sand ptholomo
+               [20.August]</date></span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR030" type="person" ana="bk:from">jandl von
+                     <placeName ana="bk:where" ref="Mals">mals</placeName></name><measure
+                  ana="bk:commodity" commodity="Huhn" quantity="2">2 hennen</measure> für<measure
+                  ana="bk:commodity" commodity="XXX" quantity="1">ain<lb/> weisät</measure><date
+                  ana="bk:when" when="1402">[Sumois jude? 28. Oktober]</date>.</span>
+         </p>
+         <pb n="14v"/>
+         <p> [fol. 14v] <supplied reason="empty">[leer]</supplied><lb/>
+         </p>
+
+         <p> [fol. 15r] <supplied reason="empty">[leer]</supplied><lb/>
+         </p>
+         <pb n="15v"/>
+         <p> [fol. 15v] Nota das ist der käs zïnss<lb/> Den <name ref="pers_SR001" type="person"
+               ana="bk:to">ich</name> eingenömen han in dem <date ana="bk:when" when="1402">jar anno
+               2°.</date><lb/>
+            <span ana="bk:entry">Item Es hat geben <name ref="pers_SR087" type="person"
+                  ana="bk:from">albrecht von der Eken</name><measure ana="bk:commodity"
+                  commodity="Kaese" quantity="4.5" unit="Schoet">4 ½<lb/> schöt käs</measure><date
+                  ana="bk:when" when="1402-01-01">an sand achatÿabend []</date></span>.<lb/>
+            <span ana="bk:entry">Item [...]ich han emphangen <name ref="pers_SR088" type="person"
+                  ana="bk:from">ains der alben</name><lb/>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="13.5" unit="Schoet">13 1/2
+                  schöt käis</measure> und <measure ana="bk:commodity" commodity="Schmalz"
+                  quantity="4.5" unit="Schoet">4 1/2 schöt smaltz</measure><lb/> und <measure
+                  ana="bk:commodity" commodity="Zieger" quantity="7" unit="Schoet">7 schöt
+                  ziger</measure><date ana="bk:when" when="1402-01-01">am erntag vor<lb/> dez
+                  heiligen Kunz tag [] Anno secundo</date></span>.<lb/>
+            <span ana="bk:entry">Item ez hat gezïnst <name ref="pers_SR009" type="person"
+                  ana="bk:from">michel unterweg</name><lb/>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="11" unit="Schoet">11 schö
+                  käs</measure> und <measure ana="bk:money" commodity="currency" quantity="3"
+                  unit="Mark">3 mark</measure> das sol alt<lb/> käs sein von dem vordern iär<lb/>
+               <date ana="bk:when" when="1402-09-24">am süntag vor sand michels tag
+                  [24.September]<lb/> anno secundo</date></span>.<lb/>
+            <span ana="bk:entry">Item ez hat zïnst <name ref="pers_SR089" type="person"
+                  ana="bk:from">nicel mesner</name><measure ana="bk:commodity" commodity="Kaese"
+                  quantity="17" unit="Schoet">17 schöt<lb/> käs</measure> und <measure
+                  ana="bk:money" commodity="currency" quantity="2" unit="Mark">2 markch</measure>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="30" unit="Schoet">30 schöt
+                  kas</measure> für<lb/> risti</span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR090" type="person" ana="bk:from">nïcel aus
+                  fehn pei der thanichen</name> hat<lb/> Zïnst <measure ana="bk:commodity"
+                  commodity="Kaese" quantity="40" unit="Schoet">40 schöt käs</measure> und <measure
+                  ana="bk:commodity" commodity="Schmalz" quantity="5" unit="Schoet">5 <lb/> schöt
+                  smältz</measure>francisci</span>.<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR091" type="person" ana="bk:from">tomel aus
+                  zinnisto</name>hat zinst <measure ana="bk:commodity" commodity="Kaese"
+                  quantity="50" unit="Schoet">50<lb/> schöt käs</measure> und <measure
+                  ana="bk:money" commodity="currency" quantity="2" unit="Mark">2 mark
+                  </measure><measure ana="bk:commodity" commodity="Schmalz" quantity="4"
+                  unit="Schoet"> 4 schöt smaltz</measure><lb/>
+               <!--LBH ??-->die 3 pawren zinsten mit ain ander <date ana="bk:when" when="1402-09-28"
+                  >an sand<lb/> michels abn [28. September] anno secundo.</date></span><lb/>
+            <span ana="bk:entry">Item so hat zinst <name ref="pers_SR092" type="person"
+                  ana="bk:from">hans michel leten sur<lb/> von <placeName ana="bk:where" ref="Mals"
+                     >mals</placeName></name><measure ana="bk:commodity" commodity="Kaese"
+                  quantity="13" unit="Schoet">13 schöt käs</measure><date ana="bk:when"
+                  when="1402-09-29">an sand michels<lb/> tag [29.September]</date></span>.<lb/>
+            <span ana="bk:entry">Item so hat zinst <name ref="pers_SR008" type="person"
+                  ana="bk:from">minig von zobrist</name><lb/>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="13" unit="Schoet">13 schöt
+                  käs</measure><date ana="bk:when" when="1402">an sand jeroman tag [].</date></span><lb/>
+            <span ana="bk:entry">Item so hat zinst <name ref="pers_SR093" type="person"
+                  ana="bk:from">thristan von zobrist</name><lb/>
+               <date ana="bk:when" when="1402">am sand jeromins tag</date><measure
+                  ana="bk:commodity" commodity="Kaese" quantity="18" unit="Schoet">18 schöt
+                  käs</measure><lb/> vis 3 nik vgd <measure ana="bk:commodity" commodity="Schmalz"
+                  quantity="1" unit="Schoet">1 schöt smaltz</measure> und <measure
+                  ana="bk:commodity" commodity="Kaese" quantity="30" unit="Schoet">30<lb/> schöt käs
+               </measure> martini [].</span>
+         </p>
+
+
+         <pb n="16r"/>
+
+         <!-- Wie umgehen mit den Anmerkungen der Hilfskräfte, z.B. Datum in Klammern -->
+         <p>
+            <span ana="bk:entry">Item <name ref="pers_SR032" type="person" ana="bk:from">serfrid von
+                     <placeName ana="bk:where" ref="Ulten">ulten</placeName></name>hat zinst dez nachsten<lb/>
+               <date ana="bk:when" when="1402-10-07">samptzagts nach sand franzisken tag
+                  [7.Oktober]</date><lb/>
+               <!-- Datum überprüfen -->
+               <measure ana="bk:commodity" commodity="Kaese" quantity="53" unit="Schoet">53 schöt
+                  kes</measure> und <measure ana="bk:commodity" commodity="mäuth" quantity="2">2
+                  mäuth</measure> und <measure ana="bk:commodity" commodity="Schmalz" quantity="4.5"
+                  unit="Schoet">4 1/2 schöt<lb/> smaltz</measure>.</span><lb/>
+            <!-- schöt? mäuth? -->
+            <span ana="bk:entry">Item so hat zïnst <name ref="pers_SR017" type="person"
+                  ana="bk:from">micl von <placeName ana="bk:where" ref="Ulten"
+                  >ulten</placeName></name> auch an <date ana="bk:when" when="1402-10-04">sand<lb/>
+                  frantzisken tag [4. Oktober]</date><measure ana="bk:commodity" commodity="march"
+                  quantity="52.5">52 1/2</measure> und<measure ana="bk:commodity" commodity="march"
+                  quantity="2">2 march</measure> und <measure ana="bk:commodity" commodity="Schmalz"
+                  quantity="3" unit="Schoet">3<lb/> schöt smaltz</measure> und <measure
+                  ana="bk:commodity" commodity="Mark" quantity="4">4 mark</measure>.</span><lb/>
+            <span ana="bk:entry">Item so hat zinst <name ref="pers_SR094" type="person"
+                  ana="bk:from">abraham aus sulden</name><lb/>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="15" unit="Schoet">15 schöt
+                  käs</measure> und <measure ana="bk:commodity" commodity="francisci" quantity="18"
+                  unit="m">18 m francisci</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR095" type="person" ana="bk:from">chinitz von
+                  ober stokerath</name> hat zinst<lb/> an <date ana="bk:when" when="1402-10-04">sand
+                  francisten tag [4. Oktober]</date><measure ana="bk:commodity" commodity="Kaese"
+                  quantity="33.5" unit="Schoet">33 1/2 schöt käs</measure><lb/> und <measure
+                  ana="bk:commodity" commodity="Schmalz" quantity="2" unit="Schmalz">2 schöt
+                  smaltz</measure> von <measure ana="bk:commodity" commodity="Kaese" quantity="40"
+                  unit="Schoet">40 schöt käs</measure><lb/> octana martini.</span><lb/>
+            <!-- Datum? -->
+            <!-- minig ab lüg = name? -->
+            <span ana="bk:entry">Item minig ab lüg hat zïnst am <date ana="bk:when"
+                  when="1402-10-09">mantag<lb/> nach sand francisti [9. Oktober]</date><measure
+                  ana="bk:commodity" commodity="Kaese" quantity="30" unit="Schoet">30 schöt
+                  käs</measure> und<lb/>
+               <measure ana="bk:commodity" commodity="Schmalz" quantity="4" unit="Schoet">4 schöt
+                  smaltz</measure> und <measure ana="bk:commodity" commodity="Kaese" quantity="50"
+                  unit="Schoet">50 schöt käs</measure>.</span><lb/>
+            <!-- ablug = ab lug? -->
+            <span ana="bk:entry">Item <name ref="pers_SR096" type="person" ana="bk:from">alex
+                  ablug</name> hat zïnst am <date ana="bk:when" when="1402">mantag nach<lb/>
+                  <!-- Datum? --> francisti</date><measure ana="bk:commodity" commodity="Kaese"
+                  quantity="36" unit="Schoet">36 schöt käs</measure> und <measure ana="bk:commodity"
+                  commodity="Schmalz" quantity="50" unit="Schoet">4 schöt<lb/> smaltz</measure>
+                  und<measure ana="bk:commodity" commodity="Kaese" quantity="50" unit="Schoet">50
+                  schöt käs</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR097" type="person" ana="bk:from">chinitz
+                  purdeller</name>ab dem kampen<lb/> aus sulden hat zïnst am <date ana="bk:when"
+                  when="1402-10-13">Freitag vor<lb/> galli [13. Oktober]</date><measure
+                  ana="bk:commodity" commodity="Kaese" quantity="50" unit="Schoet">50 schöt
+                  käs</measure> und <measure ana="bk:commodity" commodity="Kaese" quantity="4"
+                  unit="Schoet">4 schöt smaltz</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR118" type="person" ana="bk:from"
+                  >goltsmid</name> hat zinst<measure ana="bk:commodity" commodity="Kaese"
+                  quantity="10" unit="Schoet">10 schöt käs</measure><lb/>
+               <!-- name? --> am <date ana="bk:when" when="1402-10-11">mitwochen vor galli
+                  [11.Oktober]</date>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR014" type="person" ana="bk:from">hans
+                  getraut</name> hat zinst am<lb/>
+               <date ana="bk:when" when="1402-10-14">samptzag vor galli [14. Oktober]</date><measure
+                  ana="bk:commodity" commodity="Kaese" quantity="13" unit="Schoet">13 schöt
+                  käs</measure>.</span>
+         </p>
+
+
+
+         <pb n="16v"/>
+
+         <p>
+            <span ana="bk:entry">Item <name ref="pers_SR033" type="person" ana="bk:from">chuntz von
+                  alsokch</name>hat zïnst am <date ana="bk:when" when="1402-10-14">samptz<lb/> ag
+                  vor galli [14.Oktober]</date><measure ana="bk:commodity" commodity="Kaese"
+                  quantity="22.5" unit="Schoet">22 1/2 schö käs</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR098" type="person" ana="bk:from"
+                  >Luetzÿ</name> hat zïnst am <date ana="bk:when" when="1402-10-14">samptzag<lb/>
+                  vor galli [14. Oktober]</date><measure ana="bk:commodity" commodity="Kaese"
+                  quantity="8" unit="Schoet">8 schöt käs</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR099" type="person" ana="bk:from">chüntz
+                  chramer</name> hat zïnst am<lb/>
+               <date ana="bk:when" when="1402-10-14">samtzag vor galli [14. Oktober]</date><measure
+                  ana="bk:commodity" commodity="Kaese" quantity="6" unit="Schoet">6 schöt
+                  käs</measure>.</span><lb/>
+            <span ana="bk:entry">Item so hat zïnst <name ref="pers_SR094" type="person"
+                  ana="bk:from">Abraham Aüs<lb/>
+                  <!-- wie Name definieren bei lb? --> Sulden</name><measure ana="bk:commodity"
+                  commodity="Kaese" quantity="28.5" unit="Schoet">28 1/2 schöt käs</measure> und<lb/>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="4" unit="Schoet">4 schöt
+                  smaltz</measure> minder <measure ana="bk:commodity" commodity="Mark" quantity="2"
+                  >2 mark</measure><lb/>
+               <!-- minder 2 Mark?--> am <date ana="bk:when" when="1402-10-18">mitwochen nach galli
+                  [18. Oktober]</date>.</span><lb/>
+            <span ana="bk:entry">Item Es hat zïnst <name ref="pers_SR089" type="person"
+                  ana="bk:from">nikel mesner</name> aus<lb/> Sulden <measure ana="bk:commodity"
+                  commodity="Kaese" quantity="30" unit="Schoet">30 schöt käs</measure>
+               francisci.</span><lb/>
+            <!-- Datum? -->
+         </p>
+
+         <p>
+            <span ana="bk:entry">Item Es hat zïnst <name ref="pers_SR120" type="person"
+                  ana="bk:from">nikel aus Sulden</name><lb/> pei der chirichen <measure
+                  ana="bk:commodity" commodity="Kaese" quantity="40" unit="Schoet">40 schöt<lb/>
+                  käs</measure> und <measure ana="bk:commodity" commodity="Schmalz" quantity="5"
+                  unit="Schoet">5 schöt smaltz</measure> francisci.</span><lb/>
+            <!-- Datum? -->
+            <span ana="bk:entry">Item <name ref="pers_SR100" type="person" ana="bk:from">Teomel aus
+                  zinrïst</name>hat zïnst<lb/>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="50" unit="Schoet">50 schöt
+                  käs</measure> und <measure ana="bk:commodity" commodity="Schmalz" quantity="4"
+                  unit="Schoet">4 schöt smaltz</measure><lb/> francisci.</span><lb/>
+            <!-- Datum? -->
+            <!-- minig mänrer? -->
+            <span ana="bk:entry">Item ez hat zïnst minig mänrer 16<lb/>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="16" unit="Schoet">schöt
+                  käs</measure> am <date ana="bk:when" when="1402-10-21">samptzag nach gallÿ
+                  [21.Oktober]</date>.</span><lb/>
+            <span ana="bk:entry">Item ÿz hät zinst <name ref="pers_SR101" type="person"
+                  ana="bk:from">christan von pisel</name><lb/>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="6" unit="Schoet">6 schöt
+                  käs</measure> und <measure ana="bk:commodity" commodity="Schmalz" quantity="2"
+                  unit="Schoet">2 schöt smaltz</measure><lb/> am <date ana="bk:when"
+                  when="1402-10-21">samptzag nach galli [21. Oktober]</date>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR102" type="person" ana="bk:from">stoltzel
+                  von puntseil</name> hat zïnst<lb/> am <date ana="bk:when" when="1402-10-23">mantag
+                  vor sÿmoisen &amp; jude [23. Oktober]</date> 9<lb/>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="9" unit="Schoet">schöt
+                  käs</measure>.</span>
+         </p>
+
+
+
+         <pb n="17r"/>
+
+         <p>
+            <span ana="bk:entry">Item <name ref="pers_SR008" type="person" ana="bk:from">minig ab
+                  zobrist</name>hat zïnst<lb/>
+               <!-- minig ab zobrist?-->
+               <measure ana="bk:commodity" commodity="Kaese" quantity="30" unit="Schoet">30 schöt
+                  käs</measure><date ana="bk:when" when="1402-10-16">galli
+               [16.Oktober]</date>.</span><lb/>
+            <span ana="bk:entry">Item Ez hat zinst <name ref="pers_SR060" type="person"
+                  ana="bk:from">jändl von <placeName ana="bk:where" ref="Mals"
+                  >mals</placeName></name> am <date ana="bk:when" when="1402">johintzag<lb/>
+                  <!-- vor/von mals? | Datum? --> vor sermois []</date> ____ <!-- LBH ???--><measure
+                  ana="bk:commodity" commodity="Kaese" quantity="13" unit="Schoet">13 schöt
+                  käs</measure>.</span><lb/>
+            <!-- Datum? | leeres Feld -->
+            <span ana="bk:entry">Item Ez hat zinst <name ref="pers_SR103" type="person"
+                  ana="bk:from">hannes vor <placeName ana="bk:where" ref="Mals"
+                  >mals</placeName></name><measure ana="bk:commodity" commodity="Mehl" quantity="12"
+                  unit="Schoet">12 schö<lb/>
+                  <!-- vor/von mals? fehlt hier ein t?--> käs</measure> und</span><lb/>
+            <!-- Zeile endet hier -->
+            <span ana="bk:entry">Item <name ref="pers_SR104" type="person" ana="bk:from">florin
+                  platt</name> hat zinst <measure ana="bk:commodity" commodity="Kaese"
+                  quantity="6.5" unit="schät">6 ½ schät käs</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR044" type="person" ana="bk:from">maier im
+                  spital</name> hat zïnst <measure ana="bk:commodity" commodity="Kaese"
+                  quantity="30" unit="Schoet">30 schöt<lb/>
+                  <!-- LBH Commodity Käse??? ? --> käs</measure> und <measure ana="bk:commodity"
+                  commodity="Käse???" quantity="10" unit="Schoet">10 schöt</measure> vom <name>maier
+                  ab der gazz</name><lb/>
+               <!-- Name oder Beruf? --> von slanders.</span><lb/>
+            <!-- placename? -->
+            <span ana="bk:entry">Item <name ref="pers_SR060" type="person" ana="bk:from"
+                  >mülner</name> hat zinst<measure ana="bk:commodity" commodity="Kaese" quantity="6"
+                  unit="Schoet">6 schöt käs</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR106" type="person" ana="bk:from">maier ab
+                  greist</name> hat zinst am <date ana="bk:when" when="1402">freitag<lb/> nach lucie
+                  []</date><measure ana="bk:commodity" commodity="Kaese" quantity="12.5"
+                  unit="Schoet">12 ½ schöt käs</measure>.</span><lb/>
+            <!-- Datum? -->
+         </p>
+
+
+
+         <pb n="19r"/>
+
+         <p> : mel :<lb/>
+            <!-- Bedeutung? --> Nota hier ist ze wissen was ich <name ref="pers_SR001" type="person"
+               ana="bk:to">hans<lb/> kelner</name> von mel enphangen han in das <name
+               ref="org_SR001">haüs</name>.<lb/>
+            <span ana="bk:entry">Item ich han vorerst enphangen von dem <name ref="pers_SR060"
+                  type="person" ana="bk:from">mulner</name><lb/>
+               <!-- mulner/mülner als occupation? -->
+               <measure ana="bk:commodity" commodity="Mehl" quantity="53" unit="Muett">53 müt
+                  mel</measure> am <date ana="bk:when" when="1402">mitwoch vor tibürtÿ []</date> mer is<lb/>
+               <!--  Datum? --> und das <measure ana="bk:commodity" commodity="Korn">korn</measure>
+               was von <placeName ana="bk:where" ref="Ulten">ulten</placeName>.</span><lb/>
+            <!-- Korn = Getreide? -->
+            <span ana="bk:entry">Item sohann <name ref="pers_SR001" type="person">ich</name>
+               enphangen vom <name ref="pers_SR060" type="person" ana="bk:from">mulner</name> am
+                  <date ana="bk:when" when="1402">mitwoch vor tiburtÿ []</date><lb/>
+               <!-- hans kelner | Datum?-->
+               <measure ana="bk:commodity" commodity="Mehl" quantity="5" unit="Muett">5 müt
+                  mel</measure> das korn waz von <name ref="pers_SR038" type="person">jager von
+                  purgawz</name>.</span><lb/>
+            <span ana="bk:entry">Item so hann ich eremphangen von <name ref="pers_SR060"
+                  type="person" ana="bk:from">mulner</name> am <date ana="bk:when" when="1402"
+                  >mitwoch vor<lb/> tiburtÿ []</date><measure ana="bk:commodity" commodity="Mehl"
+                  quantity="3" unit="Muett">3 mut mel</measure> das korn was von <name
+                  ref="pers_SR107" type="person">smid<lb/>
+                  <!-- Datum? --> von <placeName ana="bk:where" ref="Lantsch"
+                  >lantsch</placeName></name>.</span><lb/>
+            <span ana="bk:entry">Item so hann ich enphangen von <name ref="pers_SR060" type="person"
+                  ana="bk:from">mulner</name> am <date ana="bk:when" when="1402">freitag<lb/> vor
+                  benedicti[]</date><measure ana="bk:commodity" commodity="huntäs" quantity="5"
+                  unit="Muett">5 mut huntäs</measure> die <measure ana="bk:commodity"
+                  commodity="Gerste">gersten</measure> was<lb/>
+               <!-- Datum? --> von <name ref="pers_SR038" type="person">jager von
+               pürgawz</name>.</span><lb/>
+            <!-- Beruf oder Name? -->
+            <span ana="bk:entry">Item so han ich enphangen von <name ref="pers_SR060" type="person"
+                  ana="bk:from">mulner</name><measure ana="bk:commodity" commodity="huntäs"
+                  quantity="5" unit="Muett">5 mütt<lb/> huntäs</measure>am<date ana="bk:when"
+                  when="1402">samptzag vor sand jorgen tag []</date> dïe<lb/>
+               <!-- was ist huntäs? | Datum?-->
+               <measure ana="bk:commodity" commodity="Gerste">gersten</measure> gab der <name
+                  ref="pers_SR012" type="person" ana="bk:from">maier von <placeName ana="bk:where"
+                     ref="Ulten">ulten</placeName></name>.</span><lb/>
+            <span ana="bk:entry">Item so han ich enphangen an <date ana="bk:when" when="1402-04-25"
+                  >sand marxtag [25. April]</date> vom<lb/>
+               <name ref="pers_SR060" type="person" ana="bk:from">mulner</name><measure
+                  ana="bk:commodity" commodity="Mehl" quantity="27" unit="Muett">27 mut
+                  mel</measure> das <measure ana="bk:commodity" commodity="Korn">korin</measure> kam von<lb/>
+               <!-- Korn? --> ainem zehend von äwrs.</span><lb/>
+            <!-- was ist das? -->
+            <span ana="bk:entry">Item sohanich enphangen vom <name ref="pers_SR060" type="person"
+                  ana="bk:from">mulner</name> an <date ana="bk:when" when="1402-04-25">sand<lb/>
+                  marchstag [25.April]</date><measure ana="bk:commodity" commodity="Mehl"
+                  quantity="3" unit="Muett">3 mut mel</measure> das <measure ana="bk:commodity"
+                  commodity="Korn">korn</measure> kam vom<lb/>
+               <!-- Korn verzeichnen? -->
+               <name ref="pers_SR119" type="person">schuster von pidnal</name>.</span><lb/>
+            <!-- occupation und Name? -->
+            <!-- vom kasten = vom Schloss Kasten also Org.?  --><span ana="bk:entry">Item so kam von
+               dem kasten <measure ana="bk:commodity" commodity="Mehl" quantity="18" unit="Muett">18
+                  mütt mel</measure><lb/> Gestrichen am <date ana="bk:when" when="1402-06-05">mantag
+                  nach Erasmi [5. Juni]</date> und<lb/>
+               <measure ana="bk:commodity" commodity="?" quantity="1">1 lägel mit pheil</measure> dÿ
+               stat inmeis hrrer kainer.</span><lb/>
+            <!-- name? was ist das?-->
+            <!-- LBH:7 mit huntäs COmmoditiy --><span ana="bk:entry">Item so han ich enphangen
+                  <measure ana="bk:commodity" commodity="?">7 mit huntäs</measure><lb/>
+               <!-- was ist das? --> von der kaninsser in wegen.</span><lb/>
+            <!-- Organisation? -->
+            <span ana="bk:entry">Item <name ref="pers_SR105" type="person" ana="bk:from">maier ab
+                  der gazz</name> von slanders<lb/>
+               <!-- placename? -->
+               <measure ana="bk:commodity" commodity="Mehl" quantity="12" unit="Muett">12 müt
+                  mel</measure><measure ana="bk:commodity" commodity="Weizenmehl" quantity="2"
+                  unit="Müz">2 müt waitzen mel</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR060" type="person" ana="bk:from"
+                  >mülner</name> hat geben<measure ana="bk:commodity" commodity="Roggenmehl"
+                  quantity="10" unit="Muett">10 müt Roken mel</measure>.</span><lb/>
+            <span ana="bk:entry">Item <measure ana="bk:commodity" commodity="Mehl" quantity="26"
+                  unit="Muett">26 mütt mel</measure> von dem panstadl<lb/>
+               <!-- Beruf? --> pracht der <name ref="pers_SR060" type="person" ana="bk:from"
+                  >müllner</name>.</span><lb/>
+            <!-- Beruf? -->
+            <span ana="bk:entry">Item <name ref="pers_SR030" type="person" ana="bk:from">jandl von
+                     <placeName ana="bk:where" ref="Mals">mals</placeName></name><measure
+                  ana="bk:commodity" commodity="Mehl" quantity="5" unit="Muett">5 mut mel</measure>
+               pracht der<lb/>
+               <name ref="pers_SR060" type="person">müllner</name>.</span><lb/>
+            <span ana="bk:entry">Item so paracht der <name ref="pers_SR060" type="person"
+                  ana="bk:from">müllner</name><measure ana="bk:commodity" commodity="Mehl"
+                  quantity="10" unit="Muett">10 müt mel</measure><lb/> vom <name ref="pers_SR109"
+                  type="person">hans mesner</name> von <placeName ana="bk:where" ref="Mals"
+                  >mals</placeName>.</span>
+         </p>
+
+         <pb n="19v"/>
+
+
+         <p>
+            <span ana="bk:entry">Item <name ref="pers_SR014" type="person" ana="bk:from">hans
+                  getraut</name> hat geben <measure ana="bk:commodity" commodity="Mehl" quantity="5"
+                  unit="Muett">5 mut mel</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR110" type="person" ana="bk:from">michel
+                  leten</name> sün<measure ana="bk:commodity" commodity="Mehl" quantity="5"
+                  unit="Muett">5 müt mel</measure> pracht<lb/> auch der <name ref="pers_SR060"
+                  type="person" ana="bk:from">müller</name>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR111" type="person" ana="bk:from">Cainel
+                  sneider</name> von purgawz gab<lb/>
+               <!-- placename? -->
+               <measure ana="bk:commodity" commodity="Mehl" quantity="6" unit="Muett">6 mutt
+                  mel</measure>.</span><lb/>
+            <span ana="bk:entry">Item nicel <name ref="pers_SR112" type="person" ana="bk:from"
+                  >Engelems pruder</name> gab <measure ana="bk:commodity" commodity="Mehl"
+                  quantity="6" unit="Muett">6 mut<lb/>
+                  <!-- Bruder auch als Person? --> mel</measure>.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR027" type="person" ana="bk:from"
+                  >Florin</name> platt<measure ana="bk:commodity" commodity="Mehl" quantity="3"
+                  unit="Muett">3 mütt</measure> mel gab auch.</span><lb/>
+            <!-- Mehl? -->
+            <!-- panstadl = name oder Org.? -->
+            <span ana="bk:entry"> Item<measure ana="bk:commodity" commodity="huntäs" quantity="13"
+                  unit="Muett">13 müt huntäs</measure> vom panstadl.</span><lb/>
+         </p>
+
+         <p>
+            <!-- leöömer? -->
+            <date ana="bk:when" when="1402">ÿar anno vitesimo domini</date>.<lb/>
+            <!-- Datum --> Auf lug<lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR0113" type="person" ana="bk:from"
+                  >andre</name> hat gezinst<measure ana="bk:commodity" commodity="Kaese"
+                  quantity="40" unit="schot">40 schot käs</measure><measure ana="bk:commodity"
+                  commodity="Kaese" quantity="2" unit="Schoet">2 sch[öt]<lb/>
+                  <!-- name? --> Smalz</measure> und hat gar gezinst auf <date ana="bk:when"
+                  when="1402">diz ÿar</date>.</span><lb/>
+            <!-- Datum? -->
+            <span ana="bk:entry">Item <name ref="pers_SR114" type="person" ana="bk:from">allesch ab
+                  lueg</name>hat gezinst <measure ana="bk:commodity" commodity="Kaese" quantity="60"
+                  unit="schot">60 schot käs</measure><lb/>
+               <!-- name? -->
+               <measure ana="bk:commodity" commodity="Schmalz" quantity="4" unit="schot">4 schot
+                  smalz</measure> und hat gar gezinst<lb/> auf <date ana="bk:when" when="1402">diz
+                  ÿar</date>.</span><lb/>
+            <!-- Datum? -->
+            <span ana="bk:entry">Auf greist<lb/> [...] <name ref="pers_SR115" type="person"
+                  ana="bk:from">nariz ab greist</name> hat gezinst <measure ana="bk:commodity"
+                  commodity="Kaese" quantity="13" unit="Schoet">13<lb/>
+                  <!-- name? --> [schöt] käs</measure> und hat gar gezinst auf<lb/>
+               <date ana="bk:when" when="1402">[diz] ÿar</date>.</span><lb/>
+            <!-- Achtung Datumseinfügung | Datum?--> ponttueill<lb/>
+            <!-- was ist das? -->
+            <span ana="bk:entry">Item <name ref="pers_SR116" type="person" ana="bk:from">chonig von
+                  pontueil</name> hat gezinst<lb/> hat gezinst <measure ana="bk:commodity"
+                  commodity="Kaese" quantity="9" unit="schot">9 schot käs</measure> und <measure
+                  ana="bk:commodity" commodity="Gerste" quantity="3" unit="Muett">3 mutt<lb/>
+                  <!-- lb --> gersten</measure> und hat gar gezinst.</span><lb/>
+            <span ana="bk:entry">Item <name ref="pers_SR117" type="person" ana="bk:from">pedrusch
+                  von sand maria</name> hat gezinst<lb/>
+               <measure ana="bk:commodity" commodity="Kaese" quantity="16" unit="schot">16 schot
+                  käs</measure> und hat die kes gar gezinst<lb/> auf <date ana="bk:when" when="1402"
+                  >diz ÿar.</date></span><lb/>
+            <!-- Datum? -->
+         </p>
+
+      </body>
+   </text>
+</TEI>
