@@ -16,7 +16,7 @@
     
     <!-- GLOBAL VARIABLES -->
     <!-- we define a base url for building our uris -->
-    <xsl:variable name="BASE_URL" select="'https://example.com/'"/>
+    <xsl:variable name="BASE_URL" select="'https://example.com#'"/>
     
 
     <xsl:template match="/">

@@ -140,82 +140,88 @@
                   </category>
                   <category xml:id="Weizen">
                      <catDesc><term ref="wd:Q15645384" xml:lang="de">Weizen</term></catDesc>
+                     <category xml:id="guterWeizen">
+                        <catDesc><term xml:lang="de">Guter Weizen</term></catDesc>
+                     </category>
+                     <category xml:id="schlechterWeizen">
+                        <catDesc><term xml:lang="de">Schlechter Weizen</term></catDesc>
+                     </category>
                   </category>
-               </category>
-               <category xml:id="Gerste">
-                  <catDesc><term ref="wd:Q11577" xml:lang="de">Gerste</term></catDesc>
+                  <category xml:id="Gerste">
+                     <catDesc><term ref="wd:Q11577" xml:lang="de">Gerste</term></catDesc>
+                  </category>
                </category>
                <category xml:id="Mehl">
                   <catDesc><term ref="wd:Q36465" xml:lang="de">Mehl</term></catDesc>
-               </category>
-               <category xml:id="Weizenmehl">
-                  <catDesc><term ref="wd:Q2249305" xml:lang="de">Weizenmehl</term></catDesc>
-               </category>
-               <category xml:id="Roggenmehl">
-                  <catDesc><term ref="wd:Q10658708" xml:lang="de">Roggenmehl</term></catDesc>
+                  <category xml:id="Weizenmehl">
+                     <catDesc><term ref="wd:Q2249305" xml:lang="de">Weizenmehl</term></catDesc>
+                  </category>
+                  <category xml:id="Roggenmehl">
+                     <catDesc><term ref="wd:Q10658708" xml:lang="de">Roggenmehl</term></catDesc>
+                  </category>
                </category>
                <category xml:id="Tier">
                   <catDesc><term ref="wd:Q729" xml:lang="de">Tier</term></catDesc>
-               </category>
-               <category xml:id="Gans">
-                  <catDesc><term ref="wd:Q3736439" xml:lang="de">Gans</term></catDesc>
-               </category>
-               <category xml:id="Schaf">
-                  <catDesc><term ref="wd:Q7368" xml:lang="de">Schaf</term></catDesc>
-               </category>
-               <category xml:id="Lamm">
-                  <catDesc><term ref="wd:Q4575936" xml:lang="de">Lamm</term></catDesc>
-               </category>
-               <category xml:id="Osterlamm">
-                  <catDesc><term ref="wd:Q201171" xml:lang="de">Osterlamm</term></catDesc>
-               </category>
-               <category xml:id="Huhn">
-                  <catDesc><term ref="wd:Q2201314" xml:lang="de">Huhn</term></catDesc>
-               </category>
-               <category xml:id="Schwein">
-                  <catDesc><term ref="wd:Q10798" xml:lang="de">Schwein</term></catDesc>
+                  <category xml:id="Gans">
+                     <catDesc><term ref="wd:Q3736439" xml:lang="de">Gans</term></catDesc>
+                  </category>
+                  <category xml:id="Schaf">
+                     <catDesc><term ref="wd:Q7368" xml:lang="de">Schaf</term></catDesc>
+                  </category>
+                  <category xml:id="Lamm">
+                     <catDesc><term ref="wd:Q4575936" xml:lang="de">Lamm</term></catDesc>
+                     <category xml:id="Osterlamm">
+                        <catDesc><term ref="wd:Q201171" xml:lang="de">Osterlamm</term></catDesc>
+                     </category>
+                  </category>
+                  <category xml:id="Huhn">
+                     <catDesc><term ref="wd:Q2201314" xml:lang="de">Huhn</term></catDesc>
+                  </category>
+                  <category xml:id="Schwein">
+                     <catDesc><term ref="wd:Q10798" xml:lang="de">Schwein</term></catDesc>
+                  </category>
                </category>
                <category xml:id="TierichesProdukt">
                   <catDesc><term ref="wd:Q629103" xml:lang="de">Tieriches Produkt</term></catDesc>
-               </category>
-               <category xml:id="Gaensefleisch">
-                  <catDesc><term ref="wd:Q2995529" xml:lang="de">Gänsefleisch</term></catDesc>
-               </category>
-               <category xml:id="Eier">
-                  <catDesc><term ref="wd:Q93189" xml:lang="de">Eier</term></catDesc>
-               </category>
-               <category xml:id="Kaese">
-                  <catDesc><term ref="wd:Q10943" xml:lang="de">Käse</term></catDesc>
-               </category>
-               <category xml:id="Schmalz">
-                  <catDesc><term ref="wd:Q72827" xml:lang="de">Schmalz</term></catDesc>
-               </category>
-               <category xml:id="Schulter">
-                  <catDesc><term xml:lang="de">Schulter</term></catDesc>
+                  <category xml:id="Eier">
+                     <catDesc><term ref="wd:Q93189" xml:lang="de">Eier</term></catDesc>
+                  </category>
+                  <category xml:id="Kaese">
+                     <catDesc><term ref="wd:Q10943" xml:lang="de">Käse</term></catDesc>
+                  </category>
+                  <category xml:id="Schmalz">
+                     <catDesc><term ref="wd:Q72827" xml:lang="de">Schmalz</term></catDesc>
+                  </category>
+                  <category xml:id="Schulter">
+                     <catDesc><term xml:lang="de">Schulter</term></catDesc>
+                  </category>
+                  <category xml:id="Gaensefleisch">
+                     <catDesc><term ref="wd:Q2995529" xml:lang="de">Gänsefleisch</term></catDesc>
+                  </category>
                </category>
                <category xml:id="Sonstiges">
                   <catDesc><term xml:lang="de">Sonstiges</term></catDesc>
-               </category>
-               <category xml:id="Eisen">
-                  <catDesc><term ref="wd:Q677" xml:lang="de">Eisen</term></catDesc>
-               </category>
-               <category xml:id="Sain">
-                  <catDesc><term ref="wd:Q2995529" xml:lang="de">Sain</term></catDesc>
-               </category>
-               <category xml:id="Tuchwolle">
-                  <catDesc><term ref="wd:Q5849500" xml:lang="de">Tuchwolle</term></catDesc>
-               </category>
-               <category xml:id="Lemper">
-                  <catDesc><term xml:lang="de">Lemper</term></catDesc>
-               </category>
-               <category xml:id="Kitz">
-                  <catDesc><term xml:lang="de">Kitz</term></catDesc>
-               </category>
-               <category xml:id="Zieger">
-                  <catDesc><term xml:lang="de">Zieger</term></catDesc>
-               </category>
-               <category xml:id="Handlir">
-                  <catDesc><term xml:lang="de">Handlir</term></catDesc>
+                  <category xml:id="Lemper">
+                     <catDesc><term xml:lang="de">Lemper</term></catDesc>
+                  </category>
+                  <category xml:id="Kitz">
+                     <catDesc><term xml:lang="de">Kitz</term></catDesc>
+                  </category>
+                  <category xml:id="Zieger">
+                     <catDesc><term xml:lang="de">Zieger</term></catDesc>
+                  </category>
+                  <category xml:id="Handlir">
+                     <catDesc><term xml:lang="de">Handlir</term></catDesc>
+                  </category>
+                  <category xml:id="Eisen">
+                     <catDesc><term ref="wd:Q677" xml:lang="de">Eisen</term></catDesc>
+                  </category>
+                  <category xml:id="Sain">
+                     <catDesc><term ref="wd:Q2995529" xml:lang="de">Sain</term></catDesc>
+                  </category>
+                  <category xml:id="Tuchwolle">
+                     <catDesc><term ref="wd:Q5849500" xml:lang="de">Tuchwolle</term></catDesc>
+                  </category>
                </category>
             </taxonomy>
          </classDecl>
