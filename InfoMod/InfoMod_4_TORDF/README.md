@@ -2,6 +2,8 @@
 
 ## CSV to RDF via Python + rdflib
 
+https://colab.research.google.com/drive/1BWLXoEmgbMWclX7CW3eeFJKW3d6l_k_5?usp=sharing 
+
 ## CSV to RDF via tarql (Windows 10, tarql-1.2)
 
 * https://tarql.github.io/
