@@ -381,7 +381,8 @@
                   </persName>
                </person>
                <person xml:id="pers_SR022">
-                  <persName> !!! gleiche Person wie 002??? <forename>Herauf </forename>
+                  <persName>
+                     <forename>Herauf </forename>
                      <surname>Radwinr</surname>
                      <addName>Herr von Hans Kelner</addName>
                   </persName>
@@ -394,7 +395,8 @@
                   </persName>
                </person>
                <person xml:id="pers_SR024">
-                  <persName> !!! gleiche Person wie 013??? <forename>michel </forename>
+                  <persName>
+                     <forename>michel </forename>
                      <surname> won </surname>
                      <addName> N/A</addName>
                   </persName>
@@ -429,14 +431,16 @@
                </person>
                <person xml:id="pers_SR029">
                   <persName>
-                     <forename>mesner</forename> !!! <surname>von tariph</surname>
+                     <forename>mesner</forename>
+                     <surname>von tariph</surname>
                      <addName>N/A</addName>
                   </persName>
                </person>
                <person xml:id="pers_SR030">
                   <persName>
                      <forename>jandl </forename>
-                     <surname>von Mals</surname> !!! <addName> N/A</addName>
+                     <surname>von Mals</surname>
+                     <addName> N/A</addName>
                   </persName>
                </person>
                <person xml:id="pers_SR031">
