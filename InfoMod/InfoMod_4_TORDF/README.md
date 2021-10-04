@@ -2,8 +2,6 @@
 
 ## CSV to RDF via Python + rdflib
 
-https://colab.research.google.com/drive/1BWLXoEmgbMWclX7CW3eeFJKW3d6l_k_5?usp=sharing 
-
 ## CSV to RDF via tarql (Windows 10, tarql-1.2)
 
 * https://tarql.github.io/
@@ -93,5 +91,13 @@ WHERE {
 
 ## XML to RDF via XSLT
 
-## 
+* [Oxygen XML Editor installieren](https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html) 
+* Transformationsszenario einrichten
+
+
+## Exercise
+
+Wenn man nun mit [TEI_to_RDF_listPerson_to_schema_foaf.xsl](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_listPerson_to_schema_foaf.xsl) die Daten [szd_personenliste.xml](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/data/szd_personenliste.xml) oder
+[wheaton_accounts.xml](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/data/wheaton_accounts.xml) transformiert, sieht das Ergebnis noch nicht schön aus.
+Überlege inwieweit du [TEI_to_RDF_listPerson_to_schema_foaf.xsl](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_listPerson_to_schema_foaf.xsl) anpassen musst.
 
