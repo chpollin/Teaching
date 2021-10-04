@@ -92,8 +92,31 @@ WHERE {
 ## XML to RDF via XSLT
 
 * [Oxygen XML Editor installieren](https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html) 
-* Transformationsszenario einrichten
+* Transformationsszenario einrichten, wie im folgenden Screenshot. Unter dem reiter Output muss noch unter "save as" der Pfad und Dateiname angegeben werden.
+![grafik](https://user-images.githubusercontent.com/30200424/135826810-114585f9-805c-428f-9d40-70c4188ace0f.png)
 
+### TEI_to_RDF_get_started.xsl 
+
+* Erzeugt die Grundstruktur, `<rdf:RDF>` und Namespaces
+* `void:Dataset`, das es erlaubt Metadaten zu einem LOD-Datensatz hinzuzügen. Dinge wie: wo ist der RDF-dump, welche Vokabularien wurden verwendet, wieviele Triples...
+```
+<void:Dataset rdf:about="https://example.com#o:depcha.schlandersberger.1">
+        <dcterms:title>Digitale Edition der Schlandersberger Rechnungen</dcterms:title>
+        <dcterms:publisher>Zentrum für Informationsmodellierung - Universität
+            Graz</dcterms:publisher>
+        <void:vocabulary rdf:resoruce="https://gams.uni-graz.at/o:depcha.bookkeeping#"/>
+</void:Dataset>
+```
+* Und ein `bk:Transaction`, das eine data property `bk:entry` 
+``` 
+<bk:Transaction rdf:about="https://example.com#d1e2396">
+  <bk:entry>Item hans Püdd hat geben 1 purd Eÿsen für ussassen zinss üm 6 lb perner von aine Gans das es von meine herrn hat.</bk:entry>
+</bk:Transaction>    
+```
+
+### TEI_to_RDF_taxonomy_to_SKOS.xsl
+
+### TEI_to_RDF_taxonomy_to_SKOS.xsl
 
 ## Exercise
 
