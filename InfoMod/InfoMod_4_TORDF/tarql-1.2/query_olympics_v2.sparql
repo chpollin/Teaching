@@ -23,5 +23,5 @@ WHERE {
   BIND (URI(CONCAT('http://wallscope.co.uk/resource/olympics/athlete/', STR(?ID))) AS ?URI)
   BIND (IF(?Height != 'NA', ?Height, ?nothing) AS ?Height_fixed)
   BIND (IF(?Weigth != 'NA', ?Weigth, ?nothing) AS ?Weigth_fixed)
-  BIND (IRI(CONCAT('http://wallscope.co.uk/resource/olympics/', STR(?Sex))) AS ?Sex_uri)
+  BIND (URI(CONCAT('http://wallscope.co.uk/resource/olympics/', STR(?Sex))) AS ?Sex_uri)
 }

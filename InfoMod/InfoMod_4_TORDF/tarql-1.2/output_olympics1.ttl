@@ -1,0 +1,37 @@
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix oa:  <http://wallscope.co.uk/resource/olympics/athlete/> .
+@prefix dbp:  <http://dbpedia.org/property/> .
+@prefix oc:  <http://wallscope.co.uk/resource/olympics/city/> .
+@prefix ot:  <http://wallscope.co.uk/resource/olympics/team/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix o:  <http://wallscope.co.uk/resource/olympics/> .
+
+oa:5    rdf:type     foaf:Person ;
+        foaf:name    "Christine Jacoba Aaftink" ;
+        foaf:age     "21" ;
+        foaf:gender  o:F ;
+        dbp:height   "185" .
+
+oa:24   rdf:type     foaf:Person ;
+        foaf:name    "Nils Egil Aaness" ;
+        foaf:age     "24" ;
+        foaf:gender  o:M ;
+        rdf:type     foaf:Person ;
+        foaf:name    "Nils Egil Aaness" ;
+        foaf:age     "24" ;
+        foaf:gender  o:M .
+
+oa:25   rdf:type     foaf:Person ;
+        foaf:name    "Alf Lied Aanning" ;
+        foaf:age     "24" ;
+        foaf:gender  o:M .
+
+oa:26   rdf:type     foaf:Person ;
+        foaf:name    "Agnes Erika Aanonsen (-Eyde)" ;
+        foaf:age     "17" ;
+        foaf:gender  o:F ;
+        dbp:height   "169" .
