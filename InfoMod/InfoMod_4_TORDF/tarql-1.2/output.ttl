@@ -1,37 +1,213 @@
-@prefix dbo:  <http://dbpedia.org/ontology/> .
-@prefix oa:  <http://wallscope.co.uk/resource/olympics/athlete/> .
-@prefix dbp:  <http://dbpedia.org/property/> .
-@prefix oc:  <http://wallscope.co.uk/resource/olympics/city/> .
-@prefix ot:  <http://wallscope.co.uk/resource/olympics/team/> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix o:  <http://wallscope.co.uk/resource/olympics/> .
+@prefix ex:  <http://ex.org/a#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-oa:5    rdf:type     foaf:Person ;
-        foaf:name    "Christine Jacoba Aaftink" ;
-        foaf:age     "21" ;
-        foaf:gender  o:F ;
-        dbp:height   "185" .
+<http://ex.org/companies/lifelock>
+        rdf:type           ex:Organization ;
+        ex:permalink       "lifelock" ;
+        ex:name            "LifeLock" ;
+        ex:category        "web" ;
+        ex:city            "Tempe" ;
+        ex:state           "AZ" ;
+        ex:fundationDate   "1-May-07" ;
+        ex:raisedAmt       "6850000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "http://example.com/b" ;
+        rdf:type           ex:Organization ;
+        ex:permalink       "lifelock" ;
+        ex:name            "LifeLock" ;
+        ex:category        "web" ;
+        ex:city            "Tempe" ;
+        ex:state           "AZ" ;
+        ex:fundationDate   "1-Oct-06" ;
+        ex:raisedAmt       "6000000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "<http://example.com/a>" ;
+        rdf:type           ex:Organization ;
+        ex:permalink       "lifelock" ;
+        ex:name            "LifeLock" ;
+        ex:category        "web" ;
+        ex:city            "Tempe" ;
+        ex:state           "AZ" ;
+        ex:fundationDate   "1-Jan-08" ;
+        ex:raisedAmt       "25000000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "c" .
 
-oa:24   rdf:type     foaf:Person ;
-        foaf:name    "Nils Egil Aaness" ;
-        foaf:age     "24" ;
-        foaf:gender  o:M ;
-        rdf:type     foaf:Person ;
-        foaf:name    "Nils Egil Aaness" ;
-        foaf:age     "24" ;
-        foaf:gender  o:M .
+<http://ex.org/companies/mycityfaces>
+        rdf:type           ex:Organization ;
+        ex:permalink       "mycityfaces" ;
+        ex:name            "MyCityFaces" ;
+        ex:employees       7 ;
+        ex:category        "web" ;
+        ex:city            "Scottsdale" ;
+        ex:state           "AZ" ;
+        ex:fundationDate   "1-Jan-08" ;
+        ex:raisedAmt       "50000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "seed" .
 
-oa:25   rdf:type     foaf:Person ;
-        foaf:name    "Alf Lied Aanning" ;
-        foaf:age     "24" ;
-        foaf:gender  o:M .
+<http://ex.org/companies/flypaper>
+        rdf:type           ex:Organization ;
+        ex:permalink       "flypaper" ;
+        ex:name            "Flypaper" ;
+        ex:category        "web" ;
+        ex:city            "Phoenix" ;
+        ex:state           "AZ" ;
+        ex:fundationDate   "1-Feb-08" ;
+        ex:raisedAmt       "3000000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "a" .
 
-oa:26   rdf:type     foaf:Person ;
-        foaf:name    "Agnes Erika Aanonsen (-Eyde)" ;
-        foaf:age     "17" ;
-        foaf:gender  o:F ;
-        dbp:height   "169" .
+<http://ex.org/companies/infusionsoft>
+        rdf:type           ex:Organization ;
+        ex:permalink       "infusionsoft" ;
+        ex:name            "Infusionsoft" ;
+        ex:employees       105 ;
+        ex:category        "software" ;
+        ex:city            "Gilbert" ;
+        ex:state           "AZ" ;
+        ex:fundationDate   "1-Oct-07" ;
+        ex:raisedAmt       "9000000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "a" .
+
+<http://ex.org/companies/gauto>
+        rdf:type           ex:Organization ;
+        ex:permalink       "gauto" ;
+        ex:name            "gAuto" ;
+        ex:employees       4 ;
+        ex:category        "web" ;
+        ex:city            "Scottsdale" ;
+        ex:state           "AZ" ;
+        ex:fundationDate   "1-Jan-08" ;
+        ex:raisedAmt       "250000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "seed" .
+
+<http://ex.org/companies/chosenlist-com>
+        rdf:type           ex:Organization ;
+        ex:permalink       "chosenlist-com" ;
+        ex:name            "ChosenList.com" ;
+        ex:employees       5 ;
+        ex:category        "web" ;
+        ex:city            "Scottsdale" ;
+        ex:state           "AZ" ;
+        ex:fundationDate   "1-Oct-06" ;
+        ex:raisedAmt       "140000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "seed" ;
+        rdf:type           ex:Organization ;
+        ex:permalink       "chosenlist-com" ;
+        ex:name            "ChosenList.com" ;
+        ex:employees       5 ;
+        ex:category        "web" ;
+        ex:city            "Scottsdale" ;
+        ex:state           "AZ" ;
+        ex:fundationDate   "25-Jan-08" ;
+        ex:raisedAmt       "233750"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "angel" .
+
+<http://ex.org/companies/digg>
+        rdf:type           ex:Organization ;
+        ex:permalink       "digg" ;
+        ex:name            "Digg" ;
+        ex:employees       60 ;
+        ex:category        "web" ;
+        ex:city            "San Francisco" ;
+        ex:state           "CA" ;
+        ex:fundationDate   "1-Dec-06" ;
+        ex:raisedAmt       "8500000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "b" ;
+        rdf:type           ex:Organization ;
+        ex:permalink       "digg" ;
+        ex:name            "Digg" ;
+        ex:employees       60 ;
+        ex:category        "web" ;
+        ex:city            "San Francisco" ;
+        ex:state           "CA" ;
+        ex:fundationDate   "1-Oct-05" ;
+        ex:raisedAmt       "2800000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "a" .
+
+<http://ex.org/companies/facebook>
+        rdf:type           ex:Organization ;
+        ex:permalink       "facebook" ;
+        ex:name            "Facebook" ;
+        ex:employees       450 ;
+        ex:category        "web" ;
+        ex:city            "Palo Alto" ;
+        ex:state           "CA" ;
+        ex:fundationDate   "1-Sep-04" ;
+        ex:raisedAmt       "500000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "angel" ;
+        rdf:type           ex:Organization ;
+        ex:permalink       "facebook" ;
+        ex:name            "Facebook" ;
+        ex:employees       450 ;
+        ex:category        "web" ;
+        ex:city            "Palo Alto" ;
+        ex:state           "CA" ;
+        ex:fundationDate   "1-May-05" ;
+        ex:raisedAmt       "12700000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "a" ;
+        rdf:type           ex:Organization ;
+        ex:permalink       "facebook" ;
+        ex:name            "Facebook" ;
+        ex:employees       450 ;
+        ex:category        "web" ;
+        ex:city            "Palo Alto" ;
+        ex:state           "CA" ;
+        ex:fundationDate   "1-Apr-06" ;
+        ex:raisedAmt       "27500000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "b" ;
+        rdf:type           ex:Organization ;
+        ex:permalink       "facebook" ;
+        ex:name            "Facebook" ;
+        ex:employees       450 ;
+        ex:category        "web" ;
+        ex:city            "Palo Alto" ;
+        ex:state           "CA" ;
+        ex:fundationDate   "1-Oct-07" ;
+        ex:raisedAmt       "300000000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "c" ;
+        rdf:type           ex:Organization ;
+        ex:permalink       "facebook" ;
+        ex:name            "Facebook" ;
+        ex:employees       450 ;
+        ex:category        "web" ;
+        ex:city            "Palo Alto" ;
+        ex:state           "CA" ;
+        ex:fundationDate   "1-Mar-08" ;
+        ex:raisedAmt       "40000000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "c" ;
+        rdf:type           ex:Organization ;
+        ex:permalink       "facebook" ;
+        ex:name            "Facebook" ;
+        ex:employees       450 ;
+        ex:category        "web" ;
+        ex:city            "Palo Alto" ;
+        ex:state           "CA" ;
+        ex:fundationDate   "15-Jan-08" ;
+        ex:raisedAmt       "15000000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "c" ;
+        rdf:type           ex:Organization ;
+        ex:permalink       "facebook" ;
+        ex:name            "Facebook" ;
+        ex:employees       450 ;
+        ex:category        "web" ;
+        ex:city            "Palo Alto" ;
+        ex:state           "CA" ;
+        ex:fundationDate   "1-May-08" ;
+        ex:raisedAmt       "100000000"^^xsd:decimal ;
+        ex:raisedCurrency  "USD" ;
+        ex:round           "debt_round" .
