@@ -7,7 +7,7 @@ You can find all the sample files for these tutorials in the [Code section](http
 ## CSV to RDF via Python + rdflib
 
 * All the important files for this tutorial can be found in the folder [CSV_to_RDF_Python](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/CSV_to_RDF_Python/)
-* Open jupyter notebook (if you don't have it yet, download it from the [Jupyter-Website](https://jupyter.org/)) OR create a new notebook on [Google Colab](https://colab.research.google.com/)
+* Open a jupyter notebook (if you don't have it yet, download it from the [Jupyter-Website](https://jupyter.org/)) OR create a new notebook on [Google Colab](https://colab.research.google.com/)
 * You may use the provided jupyter notebook and execute it directly or you can go through the following code snippets step by step and copy them into your notebook
 * At first we have to install rdflib and pandas:
   * If you are sure about having installed one or both requirements, you can skip this step
