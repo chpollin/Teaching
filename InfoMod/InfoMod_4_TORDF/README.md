@@ -205,7 +205,7 @@ You can find all the sample files for these tutorials in the [Code section](http
 * All the important files for this tutorial can be found in the folder [tarql-1.2](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_4_TORDF/tarql-1.2)
 * You can either:
   * get all you need from the code section of this Teaching repository and continue directly in your Windows terminal; or
-  * download [tarql-1.2.zip](https://github.com/tarql/tarql/releases/download/v1.2/tarql-1.2.zip), unzip it and put the [TechCrunchcontinentalUSA.csv](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/TechCrunchcontinentalUSA.csv) and [query.sparql](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/query.sparql) from the code section of this repository into your local tarql-1.2 folder 
+  * download [tarql-1.2.zip](https://github.com/tarql/tarql/releases/download/v1.2/tarql-1.2.zip), unzip it and put the TechCrunchcontinentalUSA.csv and query.sparql from the code section of this repository into your local tarql-1.2 folder 
 * Use the Windows terminal to navigate to your tarql-1.2 folder
 * We can now generate an RDF from the CSV (TechCrunchcontinentalUSA.csv) with the tarql mapping (query.sparql) by using the following command:
   ```
@@ -216,6 +216,7 @@ You can find all the sample files for these tutorials in the [Code section](http
   bin\tarql query.sparql TechCrunchcontinentalUSA.csv > output.ttl
   ```
   The output file will be saved automatically in your tarql-1.2 folder and will look like [this](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/output.ttl).
+  
   *Please note:* for further information on this example see also [Example #1](https://tarql.github.io/examples/) from the tarql website
 
 * Let's try to do the same now with our olympics data:
@@ -425,8 +426,7 @@ You can find all the sample files for these tutorials in the [Code section](http
 ``` 
 ## Transformation of person lists from XML to RDF (Exercise)
 
-* When transforming the data from the file [szd_personenliste.xml](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/data/szd_personenliste.xml) or from
-[wheaton_accounts.xml](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/data/wheaton_accounts.xml) with [TEI_to_RDF_listPerson_to_schema_foaf.xsl](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_listPerson_to_schema_foaf.xsl), the result does not look very appealing yet. 
+* When transforming the data from the file szd_personenliste.xml or from wheaton_accounts.xml with [TEI_to_RDF_listPerson_to_schema_foaf.xsl](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_listPerson_to_schema_foaf.xsl), the result does not look very appealing yet. 
 * Think about how you would have to adapt the stylesheet for a better output.
 
 
