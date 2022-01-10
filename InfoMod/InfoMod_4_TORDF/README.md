@@ -1,6 +1,6 @@
 # TORDF
 
-Here you can find some tutorials for different options to convert your CSV files to RDF. 
+Here you can find some tutorials for different options to convert your CSV or XML files to RDF. 
 You can find all the sample files for these tutorials in the [Code section](https://github.com/chpollin/Teaching) of this respository.
 
 **Author: Christopher Pollin, Sabrina Strutz**
