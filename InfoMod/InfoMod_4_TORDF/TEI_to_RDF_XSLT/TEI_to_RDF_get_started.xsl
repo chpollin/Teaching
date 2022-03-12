@@ -36,7 +36,7 @@
                         </dcterms:publisher>
                     </xsl:if>
                     <!-- define all used vocabularies -->
-                    <void:vocabulary rdf:resoruce="https://gams.uni-graz.at/o:depcha.bookkeeping#"/>
+                    <void:vocabulary rdf:resource="https://gams.uni-graz.at/o:depcha.bookkeeping#"/>
                 </void:Dataset>
             </xsl:if>
             
