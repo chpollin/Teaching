@@ -51,6 +51,9 @@
             <bk:entry>
                 <xsl:value-of select="normalize-space(.)"/>
             </bk:entry>
+        	<rdfs:label>
+        		<xsl:value-of select="normalize-space(.)"/>
+        	</rdfs:label>
         </bk:Transaction>
     </xsl:template>
     
