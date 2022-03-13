@@ -18,7 +18,6 @@
 
         <rdf:RDF>
             <xsl:apply-templates select="//tei:taxonomy"/>
-
         </rdf:RDF>
 
     </xsl:template>
@@ -87,5 +86,8 @@
         <!-- /// -->
         <xsl:apply-templates select="tei:category"/>
     </xsl:template>
+	
+	<!--  -->
+	<xsl:template match="tei:gloss"/>
 
 </xsl:stylesheet>

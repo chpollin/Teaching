@@ -48,10 +48,11 @@
             
             <!-- bk:money -->
             <xsl:for-each select=".//.[tokenize(@ana, ' ') = 'bk:money']">
+            	<xsl:variable name="TRANSFER_URI" select="concat($BASE_URL, generate-id())"/>
                 <bk:consistsOf>
-                    <bk:Transfer rdf:about="{concat($BASE_URL, generate-id())}">
+                	<bk:Transfer rdf:about="{$TRANSFER_URI}">
                         <bk:transfers>
-                            <bk:Money rdf:about="{concat($BASE_URL, generate-id(), position())}">
+                        	<bk:Money rdf:about="{concat($TRANSFER_URI, position())}">
                                 <xsl:call-template name="print_unit_quantity"/>
                             </bk:Money>
                         </bk:transfers>
@@ -61,10 +62,11 @@
             
             <!-- bk:commodity -->
             <xsl:for-each select=".//.[tokenize(@ana, ' ') = 'bk:commodity']">
+            	<xsl:variable name="TRANSFER_URI" select="concat($BASE_URL, generate-id())"/>
                 <bk:consistsOf>
-                    <bk:Transfer rdf:about="{concat($BASE_URL, generate-id())}">
+                	<bk:Transfer rdf:about="{$TRANSFER_URI}">
                         <bk:transfers>
-                            <bk:Commodity rdf:about="{concat($BASE_URL, generate-id(), position())}">
+                        	<bk:Commodity rdf:about="{concat($TRANSFER_URI, position())}">
                                 <xsl:call-template name="print_unit_quantity"/>
                                 <xsl:if test="@commodity">
                                     <bk:quantity>
@@ -97,7 +99,7 @@
                         <xsl:value-of select="//tei:fileDesc/tei:publicationStmt/tei:publisher"/>
                     </dcterms:publisher>
                 </xsl:if>
-                <void:vocabulary rdf:resoruce="https://gams.uni-graz.at/o:depcha.bookkeeping#"/>
+                <void:vocabulary rdf:resource="https://gams.uni-graz.at/o:depcha.bookkeeping#"/>
             </void:Dataset>
         </xsl:if>
     </xsl:template>

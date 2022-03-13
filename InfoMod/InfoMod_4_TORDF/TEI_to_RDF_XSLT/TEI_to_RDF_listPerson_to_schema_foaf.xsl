@@ -7,6 +7,7 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:bk="https://gams.uni-graz.at/o:depcha.bookkeeping#" 
     xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:owl ="http://www.w3.org/2002/07/owl#"
     exclude-result-prefixes="xs" version="2.0">
 
     <!-- GLOBAL VARIABLES -->
@@ -99,5 +100,18 @@
             <xsl:value-of select="normalize-space(.)"/>
         </schema:affiliation>
     </xsl:template>
+	
+	<!-- //////////////////////////////////// -->
+	<!-- skip -->
+	<xsl:template match="tei:note"/>
+	
+	<!-- //////////////////////////////////// -->
+	<!-- skip -->
+	<xsl:template match="tei:idno[@type='wikidata']">
+		<owl:sameAs rdf:resource="{.}"/>
+	</xsl:template>
+	
+	
+	
 
 </xsl:stylesheet>
