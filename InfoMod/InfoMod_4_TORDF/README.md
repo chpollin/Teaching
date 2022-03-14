@@ -1,5 +1,6 @@
 # TORDF
 
+<<<<<<< Updated upstream
 Here you can find some tutorials for different options to convert your CSV or XML files to RDF. 
 You can find all the sample files for these tutorials in the [Code section](https://github.com/chpollin/Teaching) of this respository.
 
@@ -13,6 +14,21 @@ You can find all the sample files for these tutorials in the [Code section](http
 * At first we have to install rdflib and pandas:
   * If you are sure about having installed one or both requirements, you can skip this step
   * If you are not sure and you run this code eventhough you already have both requirements, it's very likely you get some messages like "Requirement already satisfied" or an upgrade warning about another pip version available. You may ignore those messages.
+=======
+Here you can find some tutorials for different possibilities to convert your CSV files to RDF. 
+There are also some example files available to try out the following tutorials.
+You can find all the files for these tutorials in the [Code section](https://github.com/chpollin/Teaching) of this respository.
+
+
+## CSV to RDF via Python + rdflib
+
+* All the important files for this tutorial can be found in [CSV_to_RDF_Python](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/CSV_to_RDF_Python/)
+* Open a Jupyter Notebook (or if you don't have it yet, download it from [Jupyter-Website](https://jupyter.org/)) OR use [Google Colab](https://colab.research.google.com/)
+* You may use the [jupyter file](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/CSV_to_RDF_Python/CSV_to_RDF.ipynb) and execute it directly or you can go through the following code snippets step by step
+* At first we have to install rdflib and pandas:
+  * If you are sure about having installed one or both requirements, you can skip this step
+  * If you are not sure and you run this code eventhough you have both requirements already, it's very likely you get some messages like "Requirement already satisfied" or an upgrade warning about another pip version available. You may ignore those messages.
+>>>>>>> Stashed changes
   ```
   #installing rdflib and panda
   !pip install rdflib
@@ -27,7 +43,11 @@ You can find all the sample files for these tutorials in the [Code section](http
     import urllib
     ```
 * Now we have to generate the graph and create namespaces and prefixes:
+<<<<<<< Updated upstream
   * The variabel result_graph contains the rdf graph we want to generate and serialize in a new output file. So, now we have to predefine all needed namespaces and add them to result_graph.   
+=======
+  * The variabel result_graph contains the rdf graph we want to generate and serialize in a new output file. So, now you have to predefine all needed namespaces and add them to result_graph.   
+>>>>>>> Stashed changes
   ```
   #generating a graph
   result_graph = Graph()
@@ -63,16 +83,26 @@ You can find all the sample files for these tutorials in the [Code section](http
 
   BASE_URL = "http://wallscope.co.uk/resource/olympics/athlete/"    
     ```
+<<<<<<< Updated upstream
 * Download athlete_events_smaller.csv, adapt the path to the file in your code and print it: 
   * The CSV contains 2500 athletes and for each athlete multiple rows can exist. 
   * The header of the CSV looks like the following: "ID","Name","Sex","Age","Height","Weight","Team","NOC","Games","Year","Season","City","Sport","Event","Medal"
   * *Please note:* If you are using Google Colab, you first have to upload the CSV file into the sample_data folder (located in the content folder). If you have difficulties uploading the CSV into the sample_data folder directly, try uploading the CSV file into the content folder and then drag it into the sample_data folder.
+=======
+* Download [athlete_events_smaller.csv](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/CSV_to_RDF_Python/data/athlete_events_smaller.csv), adapt the path to the file in your code and print it: 
+  * The CSV contains 2500 athletes and for each athlete multiple rows can exist. 
+  * The header of the CSV looks like the following: "ID","Name","Sex","Age","Height","Weight","Team","NOC","Games","Year","Season","City","Sport","Event","Medal"
+  * *Please note:* If you are using Google Colab, you first have to upload the CSV file into the sample_data folder (located in the content folder). If you have difficulties uploading the CSV into the sample_data folder directly - you can try uploading the CSV file into the content folder and then dragging it into the sample_data folder.
+>>>>>>> Stashed changes
   ```
   #loading the CSV and printing it
   df = pd.read_csv("sample_data/athlete_events_smaller.csv", encoding="utf8") 
   ```
 * Now we have to get all distinct teams, cities, games, names etc. to create our triples (most of them with rdfs:label):
+<<<<<<< Updated upstream
   * *By the way:* the quote() function will [URL encode](https://de.wikipedia.org/wiki/URL-Encoding) your string generating "%27" instead of apostrophes or "%20" instead of empty spaces etc., so your URL stays valid.
+=======
+>>>>>>> Stashed changes
   ```
   #making sure the URIs are valid
   def normalizeAndEncodeString(string):
@@ -126,7 +156,12 @@ You can find all the sample files for these tutorials in the [Code section](http
   result_graph.add(( male , RDFS.label, Literal("male", lang='en') ))
   result_graph.add(( male , RDFS.label, Literal("männlich", lang='de') ))
   ``` 
+<<<<<<< Updated upstream
     
+=======
+  By the way: the quote() function will [URL encode](https://de.wikipedia.org/wiki/URL-Encoding) your string generating "%27" instead of apostrophes etc., so your URL stays valid.
+  
+>>>>>>> Stashed changes
 * Our next step is to create athletes and group them by their ID connecting them with some characteristics and their results:
   ```
   #creating athletes like <ol:Athlete rdf:about="https://gams.uni-graz.at/olympia.1#9792"/>
@@ -163,6 +198,7 @@ You can find all the sample files for these tutorials in the [Code section](http
       #team - dbp:team ot:Netherlands
       if(row["Team"]):
         result_graph.add(( athlete_uri, DBP.team, URIRef("http://wallscope.co.uk/resource/olympics/team/" + normalizeAndEncodeString(row["Team"]) )))
+<<<<<<< Updated upstream
 
       #game - o:Game o:2004Summer with rfd:label (combining it with city, and season)
       if(row["Games"]):
@@ -201,12 +237,58 @@ You can find all the sample files for these tutorials in the [Code section](http
 
 
 
+=======
+
+      #game - o:Game o:2004Summer with rfd:label (combining it with city, and season)
+      if(row["Games"]):
+        game_uri = URIRef("http://wallscope.co.uk/resource/olympics/" + str(row["Games"]).replace(" ", ""))
+        result_graph.add((game_uri, RDF.type, DBO.Olympics))
+        #adding @en to data literal via lang param
+        result_graph.add((game_uri , RDFS.label, Literal( row["Games"], lang='en' ) ))
+        result_graph.add((game_uri , O.city, URIRef("http://wallscope.co.uk/resource/olympics/city/" + str(row["City"]).replace(" ", "")) ))
+        result_graph.add((game_uri , O.season, URIRef("http://wallscope.co.uk/resource/olympics/" + str(row["Season"]).replace(" ", "")) ))
+ 
+      #sport - o:NordicCombined a dbo:Sport 
+      #discipline - :NordicCombinedMen%27sTeam a o:Discipline with rdfs:label
+      discipline_string = urllib.parse.quote(str(row["Event"]).replace(" ", ""))
+      discipline_uri = URIRef("http://wallscope.co.uk/resource/olympics/" + discipline_string )
+      result_graph.add((discipline_uri , O.sport, URIRef("http://wallscope.co.uk/resource/olympics/" + str(row["Sport"]).replace(" ", "")) ))
+
+      #results - o:result.1 a o:Result (combining it with athlete, discipline and game)
+      result_uri = URIRef("http://wallscope.co.uk/resource/olympics/" + "result." + str(ID))
+      result_graph.add((result_uri, RDF.type, O.Result))
+      result_graph.add((result_uri, O.athlete, athlete_uri)) 
+      result_graph.add((result_uri, O.discipline, discipline_uri)) 
+      result_graph.add((result_uri, O.game, game_uri)) 
+    ```
+* When creating a new file with your output, you have the following options:
+  * format="xml" - creates plain xml/rdf
+  * format="pretty-xml" - abbreviated RDF/XML syntax
+  * format="turtle" - creates a turtle file
+  * *Please note:* In Google Colab you will find your output in the content folder.
+  ```
+  #creating an output file
+  result_graph.serialize(destination = "olympia_output.ttl", format="turtle")
+  ```
+* Your output should look like [this](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/CSV_to_RDF_Python/olympia_output.ttl)
+  
+* You can now adapt the jupyter file to your data. Have fun! :)
+
+
+
+>>>>>>> Stashed changes
 ## CSV to RDF via tarql (Windows 10, tarql-1.2)
 
 * All the important files for this tutorial can be found in the folder [tarql-1.2](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_4_TORDF/tarql-1.2)
 * You can either:
+<<<<<<< Updated upstream
   * get all you need from the code section of this Teaching repository and continue directly in your Windows terminal; or
   * download [tarql-1.2.zip](https://github.com/tarql/tarql/releases/download/v1.2/tarql-1.2.zip), unzip it and put the TechCrunchcontinentalUSA.csv and query.sparql from the code section of this repository into your local tarql-1.2 folder 
+=======
+  * get all you need from the code section of this Teaching repository and skip the next steps (continue directly in your Windows terminal); or
+  * download [tarql-1.2.zip](https://github.com/tarql/tarql/releases/download/v1.2/tarql-1.2.zip), unzip it and put the [TechCrunchcontinentalUSA.csv](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/TechCrunchcontinentalUSA.csv) and [query.sparql](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/query.sparql) from the code section of this repository into your local tarql-1.2 folder 
+* *Please note:* to get an overview of the content of the CSV and the sparql file see also [Example #1 from the tarql website](http://tarql.github.io/examples/) 
+>>>>>>> Stashed changes
 * Use the Windows terminal to navigate to your tarql-1.2 folder
 * We can now generate an RDF from the CSV (TechCrunchcontinentalUSA.csv) with the tarql mapping (query.sparql) by using the following command:
   ```
@@ -217,11 +299,17 @@ You can find all the sample files for these tutorials in the [Code section](http
   bin\tarql query.sparql TechCrunchcontinentalUSA.csv > output.ttl
   ```
   The output file will be saved automatically in your tarql-1.2 folder and will look like [this](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/output.ttl).
+<<<<<<< Updated upstream
   
   *Please note:* for further information on this example see also [Example #1](https://tarql.github.io/examples/) from the tarql website
 
 * Let's try to do the same now with our olympics data:
   * Put the olympics_snippet.csv and also the query_olympics_v1.sparql into your local tarql-1.2 folder.
+=======
+
+* Let's try to do the same now with our olympics data:
+  * Put the [olympics_snippet.csv](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/olympics_snippet.csv) and also the [query_olympics_v1.sparql](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/query_olympics_v1.sparql) into your local tarql-1.2 folder.
+>>>>>>> Stashed changes
   * Our sparql query mapping looks like this:
     ```
     PREFIX ot:<http://wallscope.co.uk/resource/olympics/team/>
@@ -249,7 +337,11 @@ You can find all the sample files for these tutorials in the [Code section](http
     ```
     This mapping will generate URIs for every athlete and every athlete will be defined as foaf:Person.
     
+<<<<<<< Updated upstream
     However, in our output you will find `rdf:type  foaf:Person` twice for oa:24, because there are two rows in the CSV for this athlete.
+=======
+    However, in our [output file](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/output_olympics1.ttl) you will find `rdf:type  foaf:Person` twice for oa:24, because there are two rows in the CSV for this athlete.
+>>>>>>> Stashed changes
     
     ```
     oa:5    rdf:type  foaf:Person .
@@ -265,8 +357,13 @@ You can find all the sample files for these tutorials in the [Code section](http
     * We can add name, age, gender, height and weight.
     * Using BIND ?Sex can be transformed to ?Sex_uri to generate an object property. 
     * Moreover, with BIND we are able to get hold of all “NA” (empty strings) for height and weight.
+<<<<<<< Updated upstream
     * We still have the duplicate entries for foaf:age und foaf:Person, because for some persons there is more than one row as they competed in several olympic games. (One way to avoid this, is to have your data separated in several CSV files without having any duplicate columns or rows in the single CSV files. Whenever you might come up with a better solution to get rid of those duplicates, please let me know!)
   * Our adapted sparql query mapping (query_olympics_v2.sparql) looks like this now:
+=======
+    * We still have the duplicate entries for foaf:age und foaf:Person, because for some persons there are more than one row as they competed in several olympic games. (One way to avoid this, is to have your data separated in several CSV files without having any duplicate columns or rows in the single CSV files. But whenever you might come up with a better solution to get rid of those duplicates, please let me know!)
+  * Our adapted sparql query mapping ([query_olympics_v2.sparql](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/query_olympic_v2.sparql)) looks like this now:
+>>>>>>> Stashed changes
     ```SPARQL
     PREFIX ot:<http://wallscope.co.uk/resource/olympics/team/>
     PREFIX dbo:<http://dbpedia.org/ontology/>
@@ -296,11 +393,19 @@ You can find all the sample files for these tutorials in the [Code section](http
       BIND (IRI(CONCAT('http://wallscope.co.uk/resource/olympics/', STR(?Sex))) AS ?Sex_uri)
     }
     ```
+<<<<<<< Updated upstream
 * Adapt the command in your terminal and check your new output file that will look like [this](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/output_olympics2.ttl):
   ```
   bin\tarql query_olympics_v2.sparql olympics_snippet.csv > output_olympics2.ttl
   ```
 * To become acquainted with all the editing options of Tarql you can read through the full [Tarql documentation](https://tarql.github.io).
+=======
+* Adapt the command in your terminal and check your new [output file](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/tarql-1.2/output_olympics2.ttl):
+  ```
+  bin\tarql query_olympics_v2.sparql olympics_snippet.csv > output_olympics2.ttl
+  ```
+* To become acquainted with all the editing possibilities of Tarql read through the full [Tarql documentation](https://tarql.github.io).
+>>>>>>> Stashed changes
 * Have fun adapting the sparql query mapping to your data! :)
 
 
@@ -308,8 +413,13 @@ You can find all the sample files for these tutorials in the [Code section](http
 ## XML to RDF via XSLT
 
 * Download the [Oxygen XML Editor](https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html) and install it.
+<<<<<<< Updated upstream
 * Get the example files from the code section of the repository folder [TEI_to_RDF_XSLT](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT)
 * Open the XML file schlandersberger_accounts.xml or the XSL file TEI_to_RDF_get_started.xsl.
+=======
+* Get the example files from the code section of this repository - [TEI_to_RDF_XSLT](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT)
+* Open the XML file [schlandersberger_accounts](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/data/schlandersberger_accounts.xml) or the XSL file [TEI_to_RDF_get_started](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_get_started.xsl).
+>>>>>>> Stashed changes
 * Configure the Transformation Scenario as shown in the screenshot below. 
   * In the tab _XSLT_ choose your source XML file with your data and use the TEI_to_RDF_get_started.xsl for the transformation.
   * Switch to the tab _Output_ and go to _Save as_ where you can enter the path and the file name.
@@ -319,11 +429,19 @@ You can find all the sample files for these tutorials in the [Code section](http
 
 ### Transformation with TEI_to_RDF_get_started.xsl 
 
+<<<<<<< Updated upstream
 * When you apply the transformation scenario with the TEI_to_RDF_get_started.xsl, it will generate an output file showing a basic structure with the root element `<rdf:RDF>` with some namespaces. The output format is XML/RDF.
 ```
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:schema="https://schema.org/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:bk="https://gams.uni-graz.at/o:depcha.bookkeeping#" xmlns:void="http://rdfs.org/ns/void#"><...></rdf:RDF>
 ```
 * The stylesheet also generates the element `void:Dataset` which allows you to add metadata to an LOD dataset (you may want to describe where the RDF dump is, which vocabularies were used, how many triples...).
+=======
+* When you apply the transformation scenario with the TEI_to_RDF_get_started.xsl, it will generate an [output file](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/result.xml) showing a basic structure with the root element `<rdf:RDF>` with some namespaces. The output format is XML/RDF.
+```
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:schema="https://schema.org/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:bk="https://gams.uni-graz.at/o:depcha.bookkeeping#" xmlns:void="http://rdfs.org/ns/void#"><...></rdf:RDF>
+```
+* The stylesheet also generates the element `void:Dataset` which allows you to add metadata to a LOD dataset (like where is the RDF dump, which vocabularies were used, how many triples...).
+>>>>>>> Stashed changes
 ```
 <void:Dataset rdf:about="https://example.com#o:depcha.schlandersberger.1">
         <dcterms:title>Digitale Edition der Schlandersberger Rechnungen</dcterms:title>
@@ -368,7 +486,11 @@ You can find all the sample files for these tutorials in the [Code section](http
   </taxonomy>
 <classDecl>
 ``` 
+<<<<<<< Updated upstream
 * If we now apply the transformation scenario using the TEI_to_RDF_taxonomy_to_SKOS.xsl to the schlandersberger_accounts.xml, we will get the following output (snippet):
+=======
+* If we now apply the transformation scenario using the [TEI_to_RDF_taxonomy_to_SKOS.xsl](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_taxonomy_to_SKOS.xsl) to the schlandersberger_accounts.xml, we will get the following output (snippet):
+>>>>>>> Stashed changes
 ``` 
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -427,8 +549,14 @@ You can find all the sample files for these tutorials in the [Code section](http
 ``` 
 ## Transformation of person lists from XML to RDF (Exercise)
 
+<<<<<<< Updated upstream
 * When transforming the data from the file szd_personenliste.xml or from wheaton_accounts.xml with [TEI_to_RDF_listPerson_to_schema_foaf.xsl](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_listPerson_to_schema_foaf.xsl), the result does not look very appealing yet. 
 * Think about how you would have to adapt the stylesheet for a better output.
+=======
+* When transforming the data from the file [szd_personenliste.xml](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/data/szd_personenliste.xml) or from
+[wheaton_accounts.xml](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/data/wheaton_accounts.xml) with [TEI_to_RDF_listPerson_to_schema_foaf.xsl](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_listPerson_to_schema_foaf.xsl), the result does not look very appealing yet. 
+* Think about how you would have to adapt the stylesheet [TEI_to_RDF_listPerson_to_schema_foaf.xsl](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_listPerson_to_schema_foaf.xsl) for a better output.
+>>>>>>> Stashed changes
 
 
 ## Other ways to get your data into RDF

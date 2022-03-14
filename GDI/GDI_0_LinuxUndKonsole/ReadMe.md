@@ -8,8 +8,8 @@
 
 ### `ls` 
 
-+ Akronym für Liste
-+ Dient zum Anzeigen einer Liste der aktuellen Verzeichnisse
++ Akronym für "list"
++ Dient zum Anzeigen einer Liste der aktuellen Verzeichnisse/Dateien innerhalb des Verzeichnisses, in dem man sich gerade befindet
 
 `ls -l h*` 
 
