@@ -341,7 +341,7 @@ You can find all the files for these tutorials in the [Code section](https://git
         <dcterms:title>Digitale Edition der Schlandersberger Rechnungen</dcterms:title>
         <dcterms:publisher>Zentrum für Informationsmodellierung - Universität
             Graz</dcterms:publisher>
-        <void:vocabulary rdf:resoruce="https://gams.uni-graz.at/o:depcha.bookkeeping#"/>
+        <void:vocabulary rdf:resource="https://gams.uni-graz.at/o:depcha.bookkeeping#"/>
 </void:Dataset>
 ```
 * You will also find the entity `bk:Transaction` with its data property `bk:entry`. Every `bk:Transaction` corresponds to a transaction in the schlandersberger accounts and is anotated with @ana="bk:entry" in the TEI/XML. 
