@@ -48,6 +48,7 @@
     
     <xsl:template match="*[tokenize(@ana, ' ') = 'bk:entry']">
         <bk:Transaction rdf:about="{concat($BASE_URL, generate-id())}">
+        	<bk:consostOf rdf:ressource="www.ecmapl...d"></bk:consostOf>
             <bk:entry>
                 <xsl:value-of select="normalize-space(.)"/>
             </bk:entry>
