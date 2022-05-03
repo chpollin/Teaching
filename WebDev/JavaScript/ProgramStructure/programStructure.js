@@ -7,6 +7,7 @@
 ////////////////////
 //Looping a triangle
 
+/* 
 let count = 0;
 let hash = "#";
 
@@ -15,6 +16,27 @@ for(count; count <= 6; count++)
     console.log(hash);
     hash = hash + "#";
 }
+ */
+ 
+let leer = 'o';
+let voll = '#';
+
+let große = prompt("Bitte eine gerade Zahl eingeben:");
+alert("Deine Zahl ist \n" + große)
+
+let gitter = [];
+let folgt = false;
+for (let reihe = 0; reihe < große; reihe++) {
+    gitter[reihe] = [];
+        for (let spalte = 0; spalte < große; spalte++) {
+         gitter[reihe][spalte] = (folgt = !folgt) ? leer : voll;
+        }
+    folgt = !folgt;
+}
+
+console.log(gitter)
+
+
 
 ////////////////////
 //Haverbeke’s Lösung
