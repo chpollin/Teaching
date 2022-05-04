@@ -3,7 +3,7 @@
 // 3
 
 /*
-  * 
+  * grouping with  reduce   https://www.tutorialspoint.com/most-efficient-method-to-groupby-on-an-array-of-objects-in-javascript
   * 
 */
 const BASE_URL = "https://gams.uni-graz.at"
@@ -16,12 +16,14 @@ fetch(BASE_URL + QUERY + PARAM_1 + PARAM_2, {method: 'get'})
 	.then(function(data)
 	{
         const container = document.getElementById('container');
-        console.log(data)
-        for (element in data)
+        
+        const groupedData = groupBy(data, 're');
+        console.log(groupedData)
+
+        for (element in groupedData)
         {
             const p = document.createElement("p");
-            // re is a variable in the sparql
-            p.textContent = data[element].re + " - " + data[element].t;
+            p.textContent = groupedData[element][1].re + " - " + groupedData[element][1].t;
             container.appendChild(p)
         }
 	})
@@ -35,3 +37,14 @@ fetch(BASE_URL + QUERY + PARAM_1 + PARAM_2, {method: 'get'})
 //////////////////////////////////////
 // FUNCTIONS
 //////////////////////////////////////
+function groupBy(objectArray, property) {
+    return objectArray.reduce((acc, obj) => {
+       const key = obj[property];
+       if (!acc[key]) {
+          acc[key] = [];
+       }
+       // Add object to list for given key's value
+       acc[key].push(obj);
+       return acc;
+    }, {});
+ }
