@@ -53,28 +53,24 @@ function buildTable(data) {
     
     for (element in data)
     {
-        const current = data[element];
+        // the current array containing all grouped results
+        const array = data[element];
         const row = document.createElement("tr");
-        
-        let fields = Object.keys(current[1]);
-        fields.forEach(function(field) {
-            let cell = document.createElement("th");
+        // ?re, ?s, ?f from a result
+        let fields = Object.values(array[1]);
+        for (field in fields)
+        {
+            const cell = document.createElement("cell");
             cell.textContent = field;
             row.appendChild(cell);
-        }); 
-        table.appendChild(row);
-
-
-        /*
-        for (entry in current)
-        {
-            const cell = document.createElement("td");
-            cell.textContent = current[entry].t;
-            row.appendChild(cell);
-
         }
+        
+    
+    
+        
+ 
         table.appendChild(row);
-        */
+
     }
 
 /*
