@@ -31,9 +31,3 @@ fetch(BASE_URL + QUERY + PARAM_1 + PARAM_2, {method: 'get'})
 	{
 		console.log('Request failed', error)  
 	});  
-
-
-
-//////////////////////////////////////
-// FUNCTIONS
-//////////////////////////////////////

@@ -1,9 +1,10 @@
 // author: Christopher Pollin 
 // 2022
-// 4
+// 5 - not yet a datatable 
 
 /*
-  * buildTable()
+  * DataTable() and id
+  * we need a fixed width for our datatable. therefore we need to determine the maximum width (number of variables) and use that to generate the cells. 
 */
 const BASE_URL = "https://gams.uni-graz.at"
 const QUERY = "/archive/objects/query:szd.fulltext/methods/sdef:Query/getJSON?params="
@@ -15,9 +16,7 @@ fetch(BASE_URL + QUERY + PARAM_1 + PARAM_2, {method: 'get'})
 	.then(function(data)
 	{
         const container = document.getElementById('container');
-
         container.appendChild(buildTable( groupBy(data, 're') ));
-
 	})
 	.catch(function(error) 
 	{
@@ -51,9 +50,27 @@ function groupBy(objectArray, property) {
 function buildTable(data) {
     const table = document.createElement("table");
     table.className = "table";
+    table.id = "data_table";
+    
+    ////////////////////////
+    // build table header
+    let thead = document.createElement("thead");
+    let headRow = document.createElement("tr");
+
+    for(let count = 0; count<= 14; count++)
+    {
+        let headCell = document.createElement("th");
+        headCell.textContent = "header" + count;
+        headRow.appendChild(headCell);
+    }
+    thead.appendChild(headRow);
+    table.appendChild(thead);
+    
+    ////////////////////////
+    // build table body
     const tbody = document.createElement("tbody");
     table.appendChild(tbody)
-
+    
     for (grouped_result in data)
     {
         // the current array containing all grouped results
@@ -70,5 +87,11 @@ function buildTable(data) {
         });
         tbody.appendChild(row);
     }
+
+    // this must be defined somewhere after the id was added to <table> 
+    $(document).ready(function() {
+        $('#data_table').DataTable();
+    } );
+
     return table;
 }

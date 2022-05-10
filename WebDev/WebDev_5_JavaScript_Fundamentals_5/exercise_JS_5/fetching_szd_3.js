@@ -4,7 +4,6 @@
 
 /*
   * grouping with  reduce   https://www.tutorialspoint.com/most-efficient-method-to-groupby-on-an-array-of-objects-in-javascript
-  * 
 */
 const BASE_URL = "https://gams.uni-graz.at"
 const QUERY = "/archive/objects/query:szd.fulltext/methods/sdef:Query/getJSON?params="
@@ -31,7 +30,6 @@ fetch(BASE_URL + QUERY + PARAM_1 + PARAM_2, {method: 'get'})
 	{
 		console.log('Request failed', error)  
 	});  
-
 
 
 //////////////////////////////////////
