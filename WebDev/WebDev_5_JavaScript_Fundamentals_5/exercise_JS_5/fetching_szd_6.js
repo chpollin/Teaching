@@ -52,14 +52,19 @@ function buildTable(data) {
     table.className = "table";
     table.id = "data_table";
     
+   
     // create new array with all length of oll objects of all arrays (=grouped result)
     let length_array = [];
+    let variable_array = [];
     for(element in data)
     {
         length_array.push(Object.keys(data[element][1]).length);
+        variable_array.push(Object.keys(data[element][1]));
     }
-   
+    //todo: get the one array with the max length
+    const variable_names = variable_array[1];
     const max_table_width = Math.max(...length_array);
+    console.log(variable_names);
 
     ////////////////////////
     // build table header
