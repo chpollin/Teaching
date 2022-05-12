@@ -1,0 +1,11 @@
+@prefix ex: <http://example.com#> .
+
+<ex:book.2>   ex:hatTitel   "The Big Switch" ;
+              ex:hatAutor   <ex:author.2> .
+
+<ex:book.3>   ex:hatTitel  "Wer bin ich wenn ich online bin" ;
+              ex:hatAutor   <ex:author.2> .
+
+
+<ex:author.2> ex:hatZuname  "Carr" ;
+              ex:hatVorname "Nicholas" .

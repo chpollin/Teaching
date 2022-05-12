@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ex: <http://example.com#> .
+
+<ex:friendOf>
+  a owl:ObjectProperty ;
+  rdfs:label "is friend Of" ;
+  rdfs:domain <ex:Agent>;
+  rdfs:range <ex:Agent>.
+
+<ex:hasName>
+  a owl:DatatypeProperty ;
+  rdfs:label "has Name" ;
+  rdfs:domain <ex:Agent>;
+  rdfs:range rdfs:Literal .
+
+<ex:hasRole>
+  a owl:ObjectProperty ;
+  rdfs:label "has role" ;
+  rdfs:domain <ex:Agent>;
+  rdfs:range <ex:Role>.
+
+<ex:Role>
+  a rdfs:Class ;
+  rdfs:label "Role" .
+
+<ex:Wizard>
+  a rdfs:Class ;
+  rdfs:subClassOf <ex:Role> ;
+  rdfs:label "Wizard" .
+
+<ex:Warrior>
+  a rdfs:Class ;
+  rdfs:subClassOf <ex:Role> ;
+  rdfs:label "Warrior" .
+
+<ex:Archer>
+  a rdfs:Class ;
+  rdfs:subClassOf <ex:Role> ;
+  rdfs:label "Archer" .
+
+<ex:Agent>
+  a rdfs:Class ;
+  rdfs:label "Agent" .
+
+<ex:Human>
+  a rdfs:Class ;
+  rdfs:subClassOf <ex:Agent> ;
+  rdfs:label "Human" .
+
+<ex:Dwarf>
+  a rdfs:Class ;
+  rdfs:subClassOf <ex:Agent> ;
+  rdfs:label "Dwarf" .
+
+<ex:Elb>
+  a rdfs:Class ;
+  rdfs:subClassOf <ex:Agent> ;
+  rdfs:label "Elb" .
+
+<ex:Istar>
+  a rdfs:Class ;
+  rdfs:subClassOf <ex:Agent> ;
+  rdfs:label "Istar" .
+
+<ex:Hobbit>
+  a rdfs:Class ;
+  rdfs:subClassOf <ex:Agent> ;
+  rdfs:label "Hobbit" .

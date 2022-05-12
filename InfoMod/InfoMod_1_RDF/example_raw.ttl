@@ -1,0 +1,6 @@
+<http://example.com#book.2>   <http://example.com#hatTitel>   "The Big Switch" .
+<http://example.com#book.2>   <http://example.com#hatAutor>   <http://example.com#author.2> .
+<http://example.com#book.3>   <http://example.com#hatTitel>   "Wer bin ich wenn ich online bin" .
+<http://example.com#book.3>   <http://example.com#hatAutor>   <http://example.com#author.2> .
+<http://example.com#author.2> <http://example.com#hatZuname>  "Carr" .
+<http://example.com#author.2> <http://example.com#hatVorname> "Nicholas" .

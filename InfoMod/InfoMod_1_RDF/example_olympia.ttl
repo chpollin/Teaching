@@ -1,0 +1,29 @@
+@prefix ex:    <http://example.com#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+
+<ex:pers.1> a <ex:Person>;
+    ex:age 21;
+    ex:heigth 185;
+    ex:weigth 82;
+    ex:name "Christine Jacoba Aaftink";
+    ex:team <ex:team.1> ;
+    ex:sex <ex:female>.
+
+<ex:pers.2> a <ex:Person>;
+    ex:age 24;
+    ex:name "Nils";
+    ex:team <ex:team.1> ;
+    ex:sex <ex:male>.
+
+<ex:male> a <ex:Gender>;
+    rdfs:label "male"@en;
+    rdfs:label "männlich"@de.
+
+<ex:female> a <ex:Gender>;
+    rdfs:label "female"@en;
+    rdfs:label "weiblich"@de.
+
+<ex:team.1> a <ex:Team>;
+    ex:noc "NOR";
+    rdfs:label "Norway".
