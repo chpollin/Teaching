@@ -1,0 +1,171 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Starter Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="pollin.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+
+      <div class="starter-template">
+        <h1 class="mt-5">JS Fundamentals 3</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Select Day</th>
+                    <th scope="col">Article Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Words</th>
+                    <th scope="col">Shares</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                        <input onclick="getData(this)" type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">1</label>
+                    </div>
+                    </td>
+                    <td>Bootstrap 4 CDN and Starter Template</td>
+                    <td>Cristina</td>
+                    <td>913</td>
+                    <td>2.846</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                          <input onclick="getData(this)" type="checkbox" class="custom-control-input" id="customCheck2">
+                          <label class="custom-control-label" for="customCheck2">2</label>
+                      </div>
+                    </td>
+                    <td>Bootstrap Grid 4 Tutorial and Examples</td>
+                    <td>Cristina</td>
+                    <td>1.434</td>
+                    <td>3.417</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                          <input onclick="getData(this)" type="checkbox" class="custom-control-input" id="customCheck3">
+                          <label class="custom-control-label" for="customCheck3">3</label>
+                      </div>
+                    </td>
+                    <td>Bootstrap Flexbox Tutorial and Examples</td>
+                    <td>Cristina</td>
+                    <td>1.877</td>
+                    <td>1.234</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <h3> jQuery</h3>
+            <div class="col-12">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Select Day</th>
+                    <th scope="col">Article Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Words</th>
+                    <th scope="col">Shares</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4">4</label>
+                    </div>
+                    </td>
+                    <td>Bootstrap 4 CDN and Starter Template</td>
+                    <td>Cristina</td>
+                    <td>913</td>
+                    <td>2.846</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck5">
+                          <label class="custom-control-label" for="customCheck5">5</label>
+                      </div>
+                    </td>
+                    <td>Bootstrap Grid 4 Tutorial and Examples</td>
+                    <td>Cristina</td>
+                    <td>1.434</td>
+                    <td>3.417</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck6">
+                          <label class="custom-control-label" for="customCheck6">6</label>
+                      </div>
+                    </td>
+                    <td>Bootstrap Flexbox Tutorial and Examples</td>
+                    <td>Cristina</td>
+                    <td>1.877</td>
+                    <td>1.234</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="databasket.js"></script>
+  </body>
+</html>
