@@ -14,8 +14,8 @@ fetch("https://gams.uni-graz.at/archive/objects/query:szd.fulltext/methods/sdef:
 	.then(function(data)
 	{
 		console.log(data);
-    const container = document.getElementById('container');
-    container.textContent = data;
+    	const container = document.getElementById('container');
+    	container.textContent = data;
 	})
 	.catch(function(error) 
 	{
