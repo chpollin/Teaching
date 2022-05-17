@@ -1,15 +1,15 @@
 // author: Christopher Pollin 
 // 2022
-// 5 - not yet a datatable 
+// 6
 
 /*
   * DataTable() and id
   * we need a fixed width for our datatable. therefore we need to determine the maximum width (number of variables) and use that to generate the cells. 
 */
-const BASE_URL = "https://gams.uni-graz.at"
-const QUERY = "/archive/objects/query:szd.fulltext/methods/sdef:Query/getJSON?params="
-const PARAM_1 = encodeURIComponent("$1|Angst;")
-const PARAM_2 = encodeURIComponent("$2|de")
+const BASE_URL = "https://gams.uni-graz.at";
+const QUERY = "/archive/objects/query:szd.fulltext/methods/sdef:Query/getJSON?params=";
+const PARAM_1 = encodeURIComponent("$1|Angst;");
+const PARAM_2 = encodeURIComponent("$2|de");
 
 fetch(BASE_URL + QUERY + PARAM_1 + PARAM_2, {method: 'get'})
 	.then((response) => response.json())
@@ -53,7 +53,7 @@ function buildTable(data) {
     table.id = "data_table";
     
    
-    // create new array with all length of oll objects of all arrays (=grouped result)
+    // create new array with all length of all objects of all arrays (=grouped result)
     let length_array = [];
     let variable_array = [];
     for(element in data)

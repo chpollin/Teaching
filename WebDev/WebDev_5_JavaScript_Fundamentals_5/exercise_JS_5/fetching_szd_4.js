@@ -1,14 +1,14 @@
 // author: Christopher Pollin 
 // 2022
-// 4
+// 4 - fetching json and print it in a table via buildTable()
 
 /*
   * buildTable()
 */
-const BASE_URL = "https://gams.uni-graz.at"
-const QUERY = "/archive/objects/query:szd.fulltext/methods/sdef:Query/getJSON?params="
-const PARAM_1 = encodeURIComponent("$1|Angst;")
-const PARAM_2 = encodeURIComponent("$2|de")
+const BASE_URL = "https://gams.uni-graz.at";
+const QUERY = "/archive/objects/query:szd.fulltext/methods/sdef:Query/getJSON?params=";
+const PARAM_1 = encodeURIComponent("$1|Angst;");
+const PARAM_2 = encodeURIComponent("$2|de");
 
 fetch(BASE_URL + QUERY + PARAM_1 + PARAM_2, {method: 'get'})
 	.then((response) => response.json())
@@ -25,10 +25,10 @@ fetch(BASE_URL + QUERY + PARAM_1 + PARAM_2, {method: 'get'})
 	});  
 
 
-
 //////////////////////////////////////
 // FUNCTIONS
 //////////////////////////////////////
+
 
 //////////////////////////////////////
 //
@@ -39,7 +39,7 @@ function groupBy(objectArray, property) {
        if (!acc[key]) {
           acc[key] = [];
        }
-       // Add object to list for given key's value
+       // add object to list for given key's value
        acc[key].push(obj);
        return acc;
     }, {});

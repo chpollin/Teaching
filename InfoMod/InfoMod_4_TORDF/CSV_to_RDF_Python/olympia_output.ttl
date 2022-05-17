@@ -14886,7 +14886,6 @@ oa:1005 a foaf:Person ;
 oa:1006 a foaf:Person ;
     rdfs:label "Ador" ;
     dbp:team ot:France ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ador" .
 
@@ -14981,7 +14980,6 @@ oa:1015 a foaf:Person ;
 oa:1016 a foaf:Person ;
     rdfs:label "J. Adriaenssens" ;
     dbp:team ot:Belgium ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "J. Adriaenssens" .
 
@@ -15018,7 +15016,6 @@ oa:1019 a foaf:Person ;
 oa:102 a foaf:Person ;
     rdfs:label "Sayed Fahmy Abaza" ;
     dbp:team ot:Egypt ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Sayed Fahmy Abaza" .
 
@@ -15239,7 +15236,6 @@ oa:1040 a foaf:Person ;
 oa:1041 a foaf:Person ;
     rdfs:label "Max Aeberli" ;
     dbp:team ot:Switzerland ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Max Aeberli" .
 
@@ -15648,7 +15644,6 @@ oa:1082 a foaf:Person ;
 oa:1083 a foaf:Person ;
     rdfs:label "Gharib Afifi" ;
     dbp:team ot:Egypt ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Gharib Afifi" .
 
@@ -15841,7 +15836,6 @@ oa:1100 a foaf:Person ;
 oa:1101 a foaf:Person ;
     rdfs:label "Mohammad Anwar Afzal" ;
     dbp:team ot:Afghanistan ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohammad Anwar Afzal" .
 
@@ -16494,7 +16488,6 @@ oa:1167 a foaf:Person ;
 oa:1168 a foaf:Person ;
     rdfs:label "Umberto Agliorini" ;
     dbp:team ot:Italy ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Umberto Agliorini" .
 
@@ -16778,7 +16771,6 @@ oa:1197 a foaf:Person ;
     dbp:height 1.68e+02 ;
     dbp:team ot:Turkey ;
     dbp:weight 7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Seyyit Ahmet Aral" .
 
@@ -16893,7 +16885,6 @@ oa:1207 a foaf:Person ;
 oa:1208 a foaf:Person ;
     rdfs:label "Ioannis Agrimis" ;
     dbp:team ot:Largeboat%2CCentralNavalPrepSchool%22Poros%22-1 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ioannis Agrimis" .
 
@@ -16969,7 +16960,6 @@ oa:1215 a foaf:Person ;
 oa:1216 a foaf:Person ;
     rdfs:label "Albino Manuel Agero" ;
     dbp:team ot:Argentina ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Albino Manuel Agero" .
 
@@ -17183,7 +17173,6 @@ oa:1237 a foaf:Person ;
 oa:1238 a foaf:Person ;
     rdfs:label "Dario Aguilar Gonzlez" ;
     dbp:team ot:Mexico ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Dario Aguilar Gonzlez" .
 
@@ -17356,7 +17345,6 @@ oa:1254 a foaf:Person ;
 oa:1255 a foaf:Person ;
     rdfs:label "Mariano I. Aguilar" ;
     dbp:team ot:Mexico ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mariano I. Aguilar" .
 
@@ -17650,14 +17638,12 @@ oa:1284 a foaf:Person ;
     rdfs:label "Jess Aguirre Delgado" ;
     dbp:height 1.75e+02 ;
     dbp:team ot:Mexico ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Jess Aguirre Delgado" .
 
 oa:1285 a foaf:Person ;
     rdfs:label "Jorge S. Aguirre Martin" ;
     dbp:team ot:Mexico ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Jorge S. Aguirre Martin" .
 
@@ -18102,7 +18088,6 @@ oa:1329 a foaf:Person ;
 oa:133 a foaf:Person ;
     rdfs:label "Franz Abb" ;
     dbp:team ot:Germany ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Franz Abb" .
 
@@ -18118,7 +18103,6 @@ oa:1330 a foaf:Person ;
 oa:1331 a foaf:Person ;
     rdfs:label "Jahan Ahir" ;
     dbp:team ot:India ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Jahan Ahir" .
 
@@ -18444,7 +18428,6 @@ oa:1366 a foaf:Person ;
 oa:1367 a foaf:Person ;
     rdfs:label "Abbas Ahmad" ;
     dbp:team ot:Egypt ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abbas Ahmad" .
 
@@ -18615,7 +18598,6 @@ oa:1383 a foaf:Person ;
     dbp:height 1.75e+02 ;
     dbp:team ot:Somalia ;
     dbp:weight 5.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abdul Lahij Ahmed" .
 
@@ -18674,7 +18656,6 @@ oa:1389 a foaf:Person ;
 oa:139 a foaf:Person ;
     rdfs:label "George \"Ioannis\" Abbot" ;
     dbp:team ot:Thessalonki-1 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "George \"Ioannis\" Abbot" .
 
@@ -18726,14 +18707,12 @@ oa:1395 a foaf:Person ;
     dbp:height 1.84e+02 ;
     dbp:team ot:Iraq ;
     dbp:weight 7.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Hadi Ahmed Basheer" .
 
 oa:1396 a foaf:Person ;
     rdfs:label "Hamid Ahmed" ;
     dbp:team ot:Iraq ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Hamid Ahmed" .
 
@@ -18756,7 +18735,6 @@ oa:1398 a foaf:Person ;
 oa:1399 a foaf:Person ;
     rdfs:label "A. Hussain Ahmed" ;
     dbp:team ot:India ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "A. Hussain Ahmed" .
 
@@ -18812,7 +18790,6 @@ oa:1402 a foaf:Person ;
 oa:1403 a foaf:Person ;
     rdfs:label "Masood Mirza Ahmed" ;
     dbp:team ot:Pakistan ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Masood Mirza Ahmed" .
 
@@ -19057,7 +19034,6 @@ oa:1428 a foaf:Person ;
 oa:1429 a foaf:Person ;
     rdfs:label "Pascal Aho" ;
     dbp:team ot:Benin ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Pascal Aho" .
 
@@ -19238,7 +19214,6 @@ oa:1445 a foaf:Person ;
 oa:1446 a foaf:Person ;
     rdfs:label "Guillermo Ahrens Valdivia" ;
     dbp:team ot:Peru ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Guillermo Ahrens Valdivia" .
 
@@ -19335,7 +19310,6 @@ oa:1455 a foaf:Person ;
 oa:1456 a foaf:Person ;
     rdfs:label "Antonio Ahumada Ruiz" ;
     dbp:team ot:Colombia ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Antonio Ahumada Ruiz" .
 
@@ -19357,7 +19331,6 @@ oa:1458 a foaf:Person ;
 oa:1459 a foaf:Person ;
     rdfs:label "Ren Ahumada Rodrguez" ;
     dbp:team ot:Mexico ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ren Ahumada Rodrguez" .
 
@@ -19690,7 +19663,6 @@ oa:1491 a foaf:Person ;
 oa:1492 a foaf:Person ;
     rdfs:label "Ambrosio Aimar" ;
     dbp:team ot:Argentina ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ambrosio Aimar" .
 
@@ -19705,7 +19677,6 @@ oa:1493 a foaf:Person ;
 oa:1494 a foaf:Person ;
     rdfs:label "Mongkol Aimmanolrom" ;
     dbp:team ot:Thailand ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mongkol Aimmanolrom" .
 
@@ -20694,14 +20665,12 @@ oa:1592 a foaf:Person ;
 oa:1593 a foaf:Person ;
     rdfs:label "Fahrettin Akba" ;
     dbp:team ot:Turkey ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Fahrettin Akba" .
 
 oa:1594 a foaf:Person ;
     rdfs:label "Fuat Akba" ;
     dbp:team ot:Turkey ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Fuat Akba" .
 
@@ -20710,14 +20679,12 @@ oa:1595 a foaf:Person ;
     dbp:height 1.67e+02 ;
     dbp:team ot:Turkey ;
     dbp:weight 5.7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Hseyin Akba" .
 
 oa:1596 a foaf:Person ;
     rdfs:label "Raif Akbulut" ;
     dbp:team ot:Turkey ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Raif Akbulut" .
 
@@ -21045,14 +21012,12 @@ oa:1629 a foaf:Person ;
 oa:163 a foaf:Person ;
     rdfs:label "Ismail Abdallah" ;
     dbp:team ot:UnitedArabRepublic ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ismail Abdallah" .
 
 oa:1630 a foaf:Person ;
     rdfs:label "Nikolaos Akestoridis" ;
     dbp:team ot:Greece ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Nikolaos Akestoridis" .
 
@@ -21096,7 +21061,6 @@ oa:1634 a foaf:Person ;
 oa:1635 a foaf:Person ;
     rdfs:label "Avni Akgn" ;
     dbp:team ot:Turkey ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Avni Akgn" .
 
@@ -21447,7 +21411,6 @@ oa:1669 a foaf:Person ;
 oa:167 a foaf:Person ;
     rdfs:label "Ould Lamine Abdallah" ;
     dbp:team ot:France ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ould Lamine Abdallah" .
 
@@ -21539,7 +21502,6 @@ oa:1678 a foaf:Person ;
 oa:1679 a foaf:Person ;
     rdfs:label "Erdoan Akn" ;
     dbp:team ot:Turkey ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Erdoan Akn" .
 
@@ -21806,7 +21768,6 @@ oa:1703 a foaf:Person ;
 oa:1704 a foaf:Person ;
     rdfs:label "Alego Akomi" ;
     dbp:team ot:Sudan ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Alego Akomi" .
 
@@ -21999,7 +21960,6 @@ oa:1724 a foaf:Person ;
     rdfs:label "Aristidis Akratopoulos" ;
     dbp:team ot:Greece,
         ot:Greece-3 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Aristidis Akratopoulos" .
 
@@ -22007,7 +21967,6 @@ oa:1725 a foaf:Person ;
     rdfs:label "Konstantinos \"Kostas\" Akratopoulos" ;
     dbp:team ot:Greece,
         ot:Greece-3 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Konstantinos \"Kostas\" Akratopoulos" .
 
@@ -22052,7 +22011,6 @@ oa:173 a foaf:Person ;
     dbp:height 1.7e+02 ;
     dbp:team ot:Sudan ;
     dbp:weight 6.9e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Abdel Fatah" .
 
@@ -22123,7 +22081,6 @@ oa:1737 a foaf:Person ;
     dbp:height 1.86e+02 ;
     dbp:team ot:Turkey ;
     dbp:weight 9.7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Bekir Aksu" .
 
@@ -22341,7 +22298,6 @@ oa:1759 a foaf:Person ;
 oa:176 a foaf:Person ;
     rdfs:label "Mahmoud Atter Abdel Fattah" ;
     dbp:team ot:UnitedArabRepublic ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mahmoud Atter Abdel Fattah" .
 
@@ -22357,7 +22313,6 @@ oa:1760 a foaf:Person ;
 oa:1761 a foaf:Person ;
     rdfs:label "Mohamed Al Moukdad" ;
     dbp:team ot:Lebanon ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Al Moukdad" .
 
@@ -22409,7 +22364,6 @@ oa:1767 a foaf:Person ;
     dbp:height 1.7e+02 ;
     dbp:team ot:Qatar ;
     dbp:weight 6.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Jamal Al-Abdullah Sulaiman Sultan" .
 
@@ -22428,7 +22382,6 @@ oa:1769 a foaf:Person ;
     dbp:height 1.77e+02 ;
     dbp:team ot:UnitedArabEmirates ;
     dbp:weight 6.2e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ali Al-Abed" .
 
@@ -22444,7 +22397,6 @@ oa:177 a foaf:Person ;
 oa:1770 a foaf:Person ;
     rdfs:label "Hassan Abdullah Al-Absi" ;
     dbp:team ot:SaudiArabia ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Hassan Abdullah Al-Absi" .
 
@@ -22504,7 +22456,6 @@ oa:1777 a foaf:Person ;
     dbp:height 1.68e+02 ;
     dbp:team ot:Iraq ;
     dbp:weight 6.7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abbas Murshid Al-Aibi" .
 
@@ -22556,7 +22507,6 @@ oa:1782 a foaf:Person ;
     dbp:height 1.7e+02 ;
     dbp:team ot:Qatar ;
     dbp:weight 6.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mubarak Anber Aman Al-Ali" .
 
@@ -22628,7 +22578,6 @@ oa:179 a foaf:Person ;
     dbp:height 1.76e+02 ;
     dbp:team ot:Sudan ;
     dbp:weight 7.3e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ibrahim Saad Abdel Galil" .
 
@@ -22646,7 +22595,6 @@ oa:1791 a foaf:Person ;
     dbp:height 1.55e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 7.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abdel Aziz Khalid Al-Anjri" .
 
@@ -22655,7 +22603,6 @@ oa:1792 a foaf:Person ;
     dbp:height 1.75e+02 ;
     dbp:team ot:UnitedArabEmirates ;
     dbp:weight 6.1e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Bassam Al-Ansari" .
 
@@ -22671,7 +22618,6 @@ oa:1794 a foaf:Person ;
     dbp:height 1.87e+02 ;
     dbp:team ot:SaudiArabia ;
     dbp:weight 8.3e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Safaq Qaed Al-Anzi" .
 
@@ -22688,7 +22634,6 @@ oa:1795 a foaf:Person ;
 oa:1796 a foaf:Person ;
     rdfs:label "Ahmed Abdulrahman Al-Arbeed" ;
     dbp:team ot:Kuwait ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ahmed Abdulrahman Al-Arbeed" .
 
@@ -22704,7 +22649,6 @@ oa:1797 a foaf:Person ;
 oa:1798 a foaf:Person ;
     rdfs:label "Sayed Mohamed Al-Asibi" ;
     dbp:team ot:SaudiArabia ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Sayed Mohamed Al-Asibi" .
 
@@ -23026,7 +22970,6 @@ oa:1829 a foaf:Person ;
 oa:183 a foaf:Person ;
     rdfs:label "Abdel Sattar Abdel Hadj" ;
     dbp:team ot:UnitedArabRepublic ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abdel Sattar Abdel Hadj" .
 
@@ -23035,7 +22978,6 @@ oa:1830 a foaf:Person ;
     dbp:height 1.61e+02 ;
     dbp:team ot:Oman ;
     dbp:weight 6.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abdullah Salim Al-Barwani" .
 
@@ -23324,7 +23266,6 @@ oa:1859 a foaf:Person ;
 oa:186 a foaf:Person ;
     rdfs:label "Mohamed Abdel Hafiz" ;
     dbp:team ot:UnitedArabRepublic ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Abdel Hafiz" .
 
@@ -23333,7 +23274,6 @@ oa:1860 a foaf:Person ;
     dbp:height 1.6e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 8.6e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Jasem Muhammad Al-Deyab" .
 
@@ -23450,7 +23390,6 @@ oa:1872 a foaf:Person ;
 oa:1873 a foaf:Person ;
     rdfs:label "Nassar Ali Al-Dosari" ;
     dbp:team ot:SaudiArabia ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Nassar Ali Al-Dosari" .
 
@@ -23532,7 +23471,6 @@ oa:1881 a foaf:Person ;
     dbp:height 1.9e+02 ;
     dbp:team ot:Bahrain ;
     dbp:weight 6.9e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ahmed Al-Doseri" .
 
@@ -23613,7 +23551,6 @@ oa:189 a foaf:Person ;
     dbp:height 1.62e+02 ;
     dbp:team ot:Sudan ;
     dbp:weight 5.7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Hwad Ibrahim Abdel Hamid Lumomba" .
 
@@ -23622,7 +23559,6 @@ oa:1890 a foaf:Person ;
     dbp:height 1.6e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 8.7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ahmad Abdallah Al-Emran" .
 
@@ -23709,7 +23645,6 @@ oa:19 a foaf:Person ;
 oa:190 a foaf:Person ;
     rdfs:label "Ibrahim Abdel Hamid" ;
     dbp:team ot:Egypt ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ibrahim Abdel Hamid" .
 
@@ -23737,7 +23672,6 @@ oa:1902 a foaf:Person ;
     dbp:height 1.8e+02 ;
     dbp:team ot:Libya ;
     dbp:weight 6e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Bashir Ali Al-Fellah" .
 
@@ -23849,7 +23783,6 @@ oa:1914 a foaf:Person ;
     dbp:height 1.53e+02 ;
     dbp:team ot:Oman ;
     dbp:weight 6.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ali Sultan Al-Ghafiri" .
 
@@ -23858,7 +23791,6 @@ oa:1915 a foaf:Person ;
     dbp:height 1.78e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 7.2e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Adel Al-Ghaith" .
 
@@ -23874,7 +23806,6 @@ oa:1916 a foaf:Person ;
 oa:1917 a foaf:Person ;
     rdfs:label "Ali Sulaiman Al-Ghazawi" ;
     dbp:team ot:SaudiArabia ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ali Sulaiman Al-Ghazawi" .
 
@@ -23958,7 +23889,6 @@ oa:1925 a foaf:Person ;
 oa:1926 a foaf:Person ;
     rdfs:label "Ahmad Al-Hahdoud" ;
     dbp:team ot:Kuwait ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ahmad Al-Hahdoud" .
 
@@ -24092,7 +24022,6 @@ oa:194 a foaf:Person ;
     dbp:height 1.76e+02 ;
     dbp:team ot:UnitedArabRepublic ;
     dbp:weight 6.7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Moustafa Mounib Abdel Kader" .
 
@@ -24137,7 +24066,6 @@ oa:1944 a foaf:Person ;
     dbp:height 1.67e+02 ;
     dbp:team ot:Oman ;
     dbp:weight 6.7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Handhal Mohamed Al-Harithy" .
 
@@ -24165,7 +24093,6 @@ oa:1947 a foaf:Person ;
     dbp:height 1.66e+02 ;
     dbp:team ot:SaudiArabia ;
     dbp:weight 6.8e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Khuwaled Al-Harthi" .
 
@@ -24174,7 +24101,6 @@ oa:1948 a foaf:Person ;
     dbp:height 1.5e+02 ;
     dbp:team ot:SaudiArabia ;
     dbp:weight 6.3e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Matar Al-Harthi" .
 
@@ -24330,7 +24256,6 @@ oa:1964 a foaf:Person ;
     dbp:height 1.63e+02 ;
     dbp:team ot:Oman ;
     dbp:weight 6.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abdullah Salim Saif Al-Hussini" .
 
@@ -24421,7 +24346,6 @@ oa:1974 a foaf:Person ;
     dbp:height 1.78e+02 ;
     dbp:team ot:Iraq ;
     dbp:weight 6.8e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Nazzar Al-Jamali" .
 
@@ -24430,7 +24354,6 @@ oa:1975 a foaf:Person ;
     dbp:height 1.65e+02 ;
     dbp:team ot:Oman ;
     dbp:weight 7.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Zaher Salim Al-Jamudi" .
 
@@ -24449,7 +24372,6 @@ oa:1977 a foaf:Person ;
     dbp:height 1.71e+02 ;
     dbp:team ot:UnitedArabEmirates ;
     dbp:weight 6.1e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Rashid Ismail Al-Jirbi" .
 
@@ -24560,7 +24482,6 @@ oa:1989 a foaf:Person ;
     dbp:height 1.71e+02 ;
     dbp:team ot:Qatar ;
     dbp:weight 6e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Said Al-Hussain Al-Karbi" .
 
@@ -24636,7 +24557,6 @@ oa:1996 a foaf:Person ;
     dbp:height 1.75e+02 ;
     dbp:team ot:Bahrain ;
     dbp:weight 6.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ali Al-Khalifa" .
 
@@ -24645,7 +24565,6 @@ oa:1997 a foaf:Person ;
     dbp:height 1.67e+02 ;
     dbp:team ot:Bahrain ;
     dbp:weight 6.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Salman Al-Khalifa" .
 
@@ -24654,7 +24573,6 @@ oa:1998 a foaf:Person ;
     dbp:height 1.7e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 7.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Majid Sultan Al-Khamis" .
 
@@ -24729,7 +24647,6 @@ oa:2003 a foaf:Person ;
     dbp:height 1.32e+02 ;
     dbp:team ot:Oman ;
     dbp:weight 6.6e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Said Mubarak Marhoon Al-Khatry" .
 
@@ -25025,7 +24942,6 @@ oa:2033 a foaf:Person ;
     dbp:height 1.78e+02 ;
     dbp:team ot:Libya ;
     dbp:weight 5.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Enemri Najem Al-Marghani" .
 
@@ -25120,7 +25036,6 @@ oa:2043 a foaf:Person ;
     dbp:height 1.71e+02 ;
     dbp:team ot:Qatar ;
     dbp:weight 7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Faraj Al-Mass" .
 
@@ -25247,7 +25162,6 @@ oa:2056 a foaf:Person ;
 oa:2057 a foaf:Person ;
     rdfs:label "Nahedh Al-Murdh" ;
     dbp:team ot:Kuwait ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Nahedh Al-Murdh" .
 
@@ -25284,7 +25198,6 @@ oa:2060 a foaf:Person ;
     dbp:height 1.72e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 7.7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Faraj Mubarak Al-Mutairi" .
 
@@ -25342,7 +25255,6 @@ oa:2066 a foaf:Person ;
     dbp:height 1.68e+02 ;
     dbp:team ot:SaudiArabia ;
     dbp:weight 6.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Manhi Hamd Al-Mutairy" .
 
@@ -25573,7 +25485,6 @@ oa:2089 a foaf:Person ;
 oa:209 a foaf:Person ;
     rdfs:label "Ibrahim Abdel Rahman" ;
     dbp:team ot:UnitedArabRepublic ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ibrahim Abdel Rahman" .
 
@@ -25654,7 +25565,6 @@ oa:2098 a foaf:Person ;
     dbp:height 1.68e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 7.8e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Jasem Abdullatif Al-Qassar" .
 
@@ -25663,7 +25573,6 @@ oa:2099 a foaf:Person ;
     dbp:height 1.75e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 7.4e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Abdullatif Al-Qassar" .
 
@@ -25689,7 +25598,6 @@ oa:2100 a foaf:Person ;
     dbp:height 1.7e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 8.7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abdullah Abdulrahman Al-Qenai" .
 
@@ -25733,7 +25641,6 @@ oa:2105 a foaf:Person ;
     dbp:height 1.53e+02 ;
     dbp:team ot:Oman ;
     dbp:weight 5.7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Juma Sulaiman Al-Rahbi" .
 
@@ -25751,7 +25658,6 @@ oa:2107 a foaf:Person ;
     dbp:height 1.75e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 7.4e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Musa'ed Mubarak Al-Randi" .
 
@@ -25765,7 +25671,6 @@ oa:2108 a foaf:Person ;
 oa:2109 a foaf:Person ;
     rdfs:label "Khaled Fahd Al-Rasheed" ;
     dbp:team ot:SaudiArabia ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Khaled Fahd Al-Rasheed" .
 
@@ -25781,7 +25686,6 @@ oa:211 a foaf:Person ;
 oa:2110 a foaf:Person ;
     rdfs:label "Rashid Fahd Al-Rasheed" ;
     dbp:team ot:SaudiArabia ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Rashid Fahd Al-Rasheed" .
 
@@ -25979,7 +25883,6 @@ oa:213 a foaf:Person ;
 oa:2130 a foaf:Person ;
     rdfs:label "Ahmed Issa Al-Saleh" ;
     dbp:team ot:SaudiArabia ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ahmed Issa Al-Saleh" .
 
@@ -26182,7 +26085,6 @@ oa:2151 a foaf:Person ;
     dbp:height 1.71e+02 ;
     dbp:team ot:Qatar ;
     dbp:weight 8e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Jadaan Tarjam Al-Shammari" .
 
@@ -26214,7 +26116,6 @@ oa:2154 a foaf:Person ;
 oa:2155 a foaf:Person ;
     rdfs:label "Ali Mohammed Al-Shanqiti" ;
     dbp:team ot:SaudiArabia ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ali Mohammed Al-Shanqiti" .
 
@@ -26280,7 +26181,6 @@ oa:2161 a foaf:Person ;
 oa:2162 a foaf:Person ;
     rdfs:label "Abdullah Al-Shaye" ;
     dbp:team ot:SaudiArabia ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abdullah Al-Shaye" .
 
@@ -26333,7 +26233,6 @@ oa:2168 a foaf:Person ;
     dbp:height 1.7e+02 ;
     dbp:team ot:Kuwait ;
     dbp:weight 8.3e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Fawzi Ibrahim Al-Shuwairbat" .
 
@@ -26397,7 +26296,6 @@ oa:2174 a foaf:Person ;
     dbp:height 1.32e+02 ;
     dbp:team ot:Oman ;
     dbp:weight 5.8e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Khamis Mohamed Saif Al-Subhi" .
 
@@ -26433,7 +26331,6 @@ oa:2178 a foaf:Person ;
     dbp:height 1.68e+02 ;
     dbp:team ot:Qatar ;
     dbp:weight 6e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ibrahim Alawi Ahmed Al-Taher" .
 
@@ -26556,7 +26453,6 @@ oa:2190 a foaf:Person ;
     dbp:height 1.8e+02 ;
     dbp:team ot:SaudiArabia ;
     dbp:weight 7.3e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abdullah Mohsin Al-Usaimi" .
 
@@ -26649,7 +26545,6 @@ oa:22 a foaf:Person ;
 oa:220 a foaf:Person ;
     rdfs:label "Mohamed Abdel Sami" ;
     dbp:team ot:UnitedArabRepublic ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Abdel Sami" .
 
@@ -26882,7 +26777,6 @@ oa:2222 a foaf:Person ;
 oa:2223 a foaf:Person ;
     rdfs:label "Edoardo Alaimo" ;
     dbp:team ot:Italy ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Edoardo Alaimo" .
 
@@ -27042,7 +26936,6 @@ oa:2239 a foaf:Person ;
 oa:224 a foaf:Person ;
     rdfs:label "Mohamed Abdel-El" ;
     dbp:team ot:Egypt ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Abdel-El" .
 
@@ -27130,7 +27023,6 @@ oa:2248 a foaf:Person ;
 oa:2249 a foaf:Person ;
     rdfs:label "Jos Guadalupe Alanis Tamez" ;
     dbp:team ot:Mexico ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Jos Guadalupe Alanis Tamez" .
 
@@ -27241,7 +27133,6 @@ oa:2259 a foaf:Person ;
 oa:226 a foaf:Person ;
     rdfs:label "Sanad Bushara Abdel-Nadif" ;
     dbp:team ot:Sudan ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Sanad Bushara Abdel-Nadif" .
 
@@ -27291,7 +27182,6 @@ oa:2264 a foaf:Person ;
 oa:2265 a foaf:Person ;
     rdfs:label "E. Martn Alarcn Isidro" ;
     dbp:team ot:Mexico ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "E. Martn Alarcn Isidro" .
 
@@ -27510,7 +27400,6 @@ oa:2287 a foaf:Person ;
 oa:2288 a foaf:Person ;
     rdfs:label "Julio Alba" ;
     dbp:team ot:Argentina ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Julio Alba" .
 
@@ -27551,7 +27440,6 @@ oa:2291 a foaf:Person ;
 oa:2292 a foaf:Person ;
     rdfs:label "Aristidis Albanopoulos" ;
     dbp:team ot:Greece ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Aristidis Albanopoulos" .
 
@@ -27636,7 +27524,6 @@ oa:23 a foaf:Person ;
 oa:230 a foaf:Person ;
     rdfs:label "Moustafa Abdelal" ;
     dbp:team ot:Egypt ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Moustafa Abdelal" .
 
@@ -27798,7 +27685,6 @@ oa:2315 a foaf:Person ;
 oa:2316 a foaf:Person ;
     rdfs:label "A. Albert" ;
     dbp:team ot:UniondesSocitsFranaisdeSportsAthletiques ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "A. Albert" .
 
@@ -27806,7 +27692,6 @@ oa:2317 a foaf:Person ;
     rdfs:label "Auguste Albert" ;
     dbp:team ot:Martha-1,
         ot:Martha-27 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Auguste Albert" .
 
@@ -27822,7 +27707,6 @@ oa:2318 a foaf:Person ;
 oa:2319 a foaf:Person ;
     rdfs:label "Charles Albert" ;
     dbp:team ot:France ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Charles Albert" .
 
@@ -27867,7 +27751,6 @@ oa:2322 a foaf:Person ;
 oa:2323 a foaf:Person ;
     rdfs:label "Georges-Henri Albert" ;
     dbp:team ot:France-1 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Georges-Henri Albert" .
 
@@ -28030,7 +27913,6 @@ oa:234 a foaf:Person ;
 oa:2340 a foaf:Person ;
     rdfs:label "Mario Albertini" ;
     dbp:team ot:Italy ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mario Albertini" .
 
@@ -28277,7 +28159,6 @@ oa:2366 a foaf:Person ;
 oa:2367 a foaf:Person ;
     rdfs:label "mile Albrecht" ;
     dbp:team ot:Switzerland ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "mile Albrecht" .
 
@@ -28447,7 +28328,6 @@ oa:2383 a foaf:Person ;
 oa:2384 a foaf:Person ;
     rdfs:label "Lothar Albrich" ;
     dbp:team ot:Romania ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Lothar Albrich" .
 
@@ -28954,7 +28834,6 @@ oa:2433 a foaf:Person ;
 oa:2434 a foaf:Person ;
     rdfs:label "Cyril Albert Alden" ;
     dbp:team ot:GreatBritain ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Cyril Albert Alden" .
 
@@ -29168,7 +29047,6 @@ oa:2456 a foaf:Person ;
 oa:2457 a foaf:Person ;
     rdfs:label "Carlos Alegre Benavides" ;
     dbp:team ot:Peru ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Carlos Alegre Benavides" .
 
@@ -29734,7 +29612,6 @@ oa:26 a foaf:Person ;
 oa:260 a foaf:Person ;
     rdfs:label "Ahmed Abdo Mustafa" ;
     dbp:team ot:Sudan ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ahmed Abdo Mustafa" .
 
@@ -29935,7 +29812,6 @@ oa:280 a foaf:Person ;
 oa:281 a foaf:Person ;
     rdfs:label "S. Abdul Hamid" ;
     dbp:team ot:India ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "S. Abdul Hamid" .
 
@@ -29968,7 +29844,6 @@ oa:285 a foaf:Person ;
     rdfs:label "Talal Hassoun Abdul Kader" ;
     dbp:team ot:Iraq ;
     dbp:weight 8.2e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Talal Hassoun Abdul Kader" .
 
@@ -30054,7 +29929,6 @@ oa:294 a foaf:Person ;
     dbp:height 1.75e+02 ;
     dbp:team ot:Bahrain ;
     dbp:weight 8.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Ghulom Abdul Rahman" .
 
@@ -30126,7 +30000,6 @@ oa:300 a foaf:Person ;
     dbp:height 1.78e+02 ;
     dbp:team ot:Iraq ;
     dbp:weight 7e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "A. Abdul Razzak" .
 
@@ -30135,14 +30008,12 @@ oa:301 a foaf:Person ;
     dbp:height 1.77e+02 ;
     dbp:team ot:Iraq ;
     dbp:weight 6.8e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Abdul Razzak" .
 
 oa:302 a foaf:Person ;
     rdfs:label "Muhammad Abdul Razzaq" ;
     dbp:team ot:Pakistan ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Muhammad Abdul Razzaq" .
 
@@ -30151,7 +30022,6 @@ oa:303 a foaf:Person ;
     dbp:height 1.6e+02 ;
     dbp:team ot:Iraq ;
     dbp:weight 5.2e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Hazim Abdul Ridha" .
 
@@ -30357,7 +30227,6 @@ oa:326 a foaf:Person ;
     dbp:height 1.76e+02 ;
     dbp:team ot:UnitedArabEmirates ;
     dbp:weight 6.6e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Abdullah" .
 
@@ -30366,7 +30235,6 @@ oa:327 a foaf:Person ;
     dbp:height 1.65e+02 ;
     dbp:team ot:UnitedArabEmirates ;
     dbp:weight 6.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Samy Abdullah" .
 
@@ -30375,7 +30243,6 @@ oa:328 a foaf:Person ;
     dbp:height 1.8e+02 ;
     dbp:team ot:Iraq ;
     dbp:weight 7.6e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Abdullah" .
 
@@ -30426,7 +30293,6 @@ oa:333 a foaf:Person ;
     dbp:height 1.9e+02 ;
     dbp:team ot:Sudan ;
     dbp:weight 7.5e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Abdel Wahab Abdullah Salih" .
 
@@ -30678,7 +30544,6 @@ oa:358 a foaf:Person ;
     dbp:height 1.79e+02 ;
     dbp:team ot:Libya ;
     dbp:weight 7.6e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Fawzi Abdussalam" .
 
@@ -30885,7 +30750,6 @@ oa:377 a foaf:Person ;
 oa:378 a foaf:Person ;
     rdfs:label "Angelik Abebame" ;
     dbp:team ot:Congo%28Brazzaville%29 ;
-    foaf:age nan ;
     foaf:gender o:F ;
     foaf:name "Angelik Abebame" .
 
@@ -31945,7 +31809,6 @@ oa:486 a foaf:Person ;
 oa:487 a foaf:Person ;
     rdfs:label "Inni Aboubacar" ;
     dbp:team ot:Niger ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Inni Aboubacar" .
 
@@ -31999,7 +31862,6 @@ oa:491 a foaf:Person ;
 oa:492 a foaf:Person ;
     rdfs:label "Marwan Suhail Aboud" ;
     dbp:team ot:Iraq ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Marwan Suhail Aboud" .
 
@@ -32101,7 +31963,6 @@ oa:501 a foaf:Person ;
 oa:502 a foaf:Person ;
     rdfs:label "Ahmad Shah Abouwi" ;
     dbp:team ot:Afghanistan ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ahmad Shah Abouwi" .
 
@@ -32152,7 +32013,6 @@ oa:507 a foaf:Person ;
 oa:508 a foaf:Person ;
     rdfs:label "Bernhard Abraham" ;
     dbp:team ot:Germany ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Bernhard Abraham" .
 
@@ -32470,7 +32330,6 @@ oa:539 a foaf:Person ;
 oa:54 a foaf:Person ;
     rdfs:label "Mohamed Jamshid Abadi" ;
     dbp:team ot:Iran ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Jamshid Abadi" .
 
@@ -32865,7 +32724,6 @@ oa:579 a foaf:Person ;
 oa:58 a foaf:Person ;
     rdfs:label "Georgi Abadzhiev" ;
     dbp:team ot:Bulgaria ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Georgi Abadzhiev" .
 
@@ -33035,7 +32893,6 @@ oa:596 a foaf:Person ;
 oa:597 a foaf:Person ;
     rdfs:label "Mohamed Ahmed Abu Sobea" ;
     dbp:team ot:Egypt ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Ahmed Abu Sobea" .
 
@@ -33321,7 +33178,6 @@ oa:624 a foaf:Person ;
     dbp:height 1.7e+02 ;
     dbp:team ot:Turkey ;
     dbp:weight 7.8e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Srr Acar" .
 
@@ -33655,7 +33511,6 @@ oa:66 a foaf:Person ;
     dbp:height 1.56e+02 ;
     dbp:team ot:Sudan ;
     dbp:weight 4.8e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mohamed Abakkar" .
 
@@ -33819,7 +33674,6 @@ oa:675 a foaf:Person ;
 oa:676 a foaf:Person ;
     rdfs:label "Gaston Achille" ;
     dbp:team ot:France ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Gaston Achille" .
 
@@ -34016,7 +33870,6 @@ oa:695 a foaf:Person ;
 oa:696 a foaf:Person ;
     rdfs:label "Charles Acke" ;
     dbp:team ot:Belgium ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Charles Acke" .
 
@@ -34620,14 +34473,12 @@ oa:756 a foaf:Person ;
 oa:757 a foaf:Person ;
     rdfs:label "Adam" ;
     dbp:team ot:France ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Adam" .
 
 oa:758 a foaf:Person ;
     rdfs:label "Adam" ;
     dbp:team ot:France ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Adam" .
 
@@ -34712,7 +34563,6 @@ oa:766 a foaf:Person ;
 oa:767 a foaf:Person ;
     rdfs:label "Johannes \"Johann\" Adam" ;
     dbp:team ot:Germany ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Johannes \"Johann\" Adam" .
 
@@ -35175,7 +35025,6 @@ oa:813 a foaf:Person ;
 oa:814 a foaf:Person ;
     rdfs:label "Edward Adams" ;
     dbp:team ot:GreatBritain ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Edward Adams" .
 
@@ -35192,7 +35041,6 @@ oa:815 a foaf:Person ;
 oa:816 a foaf:Person ;
     rdfs:label "Frederick Thomas \"Fred\" Adams" ;
     dbp:team ot:GreatBritain ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Frederick Thomas \"Fred\" Adams" .
 
@@ -35456,7 +35304,6 @@ oa:842 a foaf:Person ;
 oa:843 a foaf:Person ;
     rdfs:label "William T. Adams" ;
     dbp:team ot:GreatBritain ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "William T. Adams" .
 
@@ -35738,7 +35585,6 @@ oa:871 a foaf:Person ;
 oa:872 a foaf:Person ;
     rdfs:label "Elie Adda" ;
     dbp:team ot:Egypt ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Elie Adda" .
 
@@ -35854,7 +35700,6 @@ oa:883 a foaf:Person ;
 oa:884 a foaf:Person ;
     rdfs:label "Eugene Addor" ;
     dbp:team ot:Switzerland ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Eugene Addor" .
 
@@ -36071,7 +35916,6 @@ oa:904 a foaf:Person ;
 oa:905 a foaf:Person ;
     rdfs:label "Alberto Adela" ;
     dbp:team ot:Philippines ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Alberto Adela" .
 
@@ -36382,7 +36226,6 @@ oa:936 a foaf:Person ;
 oa:937 a foaf:Person ;
     rdfs:label "Fatai Adeyemo" ;
     dbp:team ot:Nigeria-2 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Fatai Adeyemo" .
 
@@ -36588,7 +36431,6 @@ oa:958 a foaf:Person ;
     dbp:height 1.68e+02 ;
     dbp:team ot:Coted%27Ivoire ;
     dbp:weight 5.6e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Denos Adjima Beche" .
 
@@ -36832,7 +36674,6 @@ oa:983 a foaf:Person ;
     dbp:height 1.74e+02 ;
     dbp:team ot:Algeria ;
     dbp:weight 6.2e+01 ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Sad Admane" .
 
@@ -36875,7 +36716,6 @@ oa:988 a foaf:Person ;
     rdfs:label "Mustapha Adnane" ;
     dbp:height 1.68e+02 ;
     dbp:team ot:Morocco ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Mustapha Adnane" .
 
@@ -36900,7 +36740,6 @@ oa:99 a foaf:Person ;
 oa:990 a foaf:Person ;
     rdfs:label "Adogon" ;
     dbp:team ot:Coted%27Ivoire ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Adogon" .
 
@@ -36932,7 +36771,6 @@ oa:993 a foaf:Person ;
 oa:994 a foaf:Person ;
     rdfs:label "Ricardo Adolfo" ;
     dbp:team ot:Philippines ;
-    foaf:age nan ;
     foaf:gender o:M ;
     foaf:name "Ricardo Adolfo" .
 

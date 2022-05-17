@@ -17,14 +17,15 @@ fetch(BASE_URL + QUERY + PARAM_1 + PARAM_2, {method: 'get'})
 	.then((response) => response.json())
 	.then(function(data)
 	{
+        //const container = document.querySelector('#container');
         const container = document.getElementById('container');
         console.log(data)
         for (element in data)
         {
-            const p = document.createElement("p");
-            // re is a variable in the sparql
-            p.textContent = data[element].re + " - " + data[element].t;
-            container.appendChild(p)
+          const p = document.createElement("p");
+          // re is a variable in the sparql
+          p.textContent = data[element].re + " - " + data[element].t;
+          container.appendChild(p)
         }
 	})
 	.catch(function(error) 
