@@ -2,6 +2,19 @@
 // author: Christopher Pollin 
 // 2022
 
+// querySelector()
+const button = document.querySelector("#button")
+button.addEventListener("click", event => {
+  console.log(event);
+  console.log(event.target);
+})
+button.addEventListener("click", e => {
+  console.log("This runs second")
+})
+button.addEventListener("mousemove", e => {
+  console.log("mousemove")
+})
+
 
 
 
@@ -14,6 +27,7 @@
 ////////////////////////////
 // getData() 1
 
+/*
 function getData(input) 
 {
     console.log(input);
@@ -21,9 +35,11 @@ function getData(input)
     input.setAttribute("data-check", "checked");
 
     //add a mark as a class to the parent div
-    input.parentElement.classList.add("mark");
+    console.log(input.parentElement);
+    //input.parentElement.classList.add("mark");
+    input.parentElement.setAttribute("class", "mark");
 }
-
+*/
 
 /*
   * remove .mark
@@ -44,19 +60,17 @@ function getData(input)
         input.removeAttribute(input);
         input.parentElement.classList.remove("mark");
     }
-
 }
 */
-
 ////////////////////////////
 // jquery way to do it
-/*
 $('input:checkbox').change(function(){
     if($(this).is(":checked")) {
         console.log("jQuery: ");
         $(this).parent('div').addClass("mark");
         // select all cells of the ancestor row;
         const td_elements_of_tr = $(this).parents("tr").children();
+        console.log($(this).parents("tr").children());
         const article = td_elements_of_tr[1].textContent;
         const author = td_elements_of_tr[2].textContent;
         const words = td_elements_of_tr[3].textContent;
@@ -66,7 +80,6 @@ $('input:checkbox').change(function(){
         $(this).parent('div').removeClass("mark");
     }
 });
-*/
 
 
 ////////////////////////////
@@ -74,7 +87,7 @@ $('input:checkbox').change(function(){
 //adds the data from the data property attributs to the entry
 function addItem(id, article, author, words, shares) 
 {
-  let datenkorbArray = JSON.parse(localStorage.getItem('databasket_js_3')) || []; 
+  let datenkorbArray = JSON.parse(localStorage.getItem('databasket_js_1')) || []; 
   var newItem = 
   { 
 	"id" : id, 
@@ -87,7 +100,10 @@ function addItem(id, article, author, words, shares)
   //pushs item on a array
   datenkorbArray.push(newItem);
   //saves entry in the localStorage
-  localStorage.setItem('databasket_js_3', JSON.stringify(datenkorbArray));
+  localStorage.setItem('databasket_js_2', JSON.stringify(datenkorbArray));
 };
+
+
+
 
 
