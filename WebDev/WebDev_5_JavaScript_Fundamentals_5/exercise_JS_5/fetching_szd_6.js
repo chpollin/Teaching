@@ -7,11 +7,10 @@
   * we need a fixed width for our datatable. therefore we need to determine the maximum width (number of variables) and use that to generate the cells. 
 */
 const BASE_URL = "https://gams.uni-graz.at";
-const QUERY = "/archive/objects/query:szd.fulltext/methods/sdef:Query/getJSON?params=";
-const PARAM_1 = encodeURIComponent("$1|Angst;");
-const PARAM_2 = encodeURIComponent("$2|de");
+const QUERY = "/archive/objects/query:ufbas.volltext/methods/sdef:Query/getJSON?params=";
+const PARAM_1 = encodeURIComponent("$1|wyn;");
 
-fetch(BASE_URL + QUERY + PARAM_1 + PARAM_2, {method: 'get'})
+fetch(BASE_URL + QUERY + PARAM_1 , {method: 'get'})
 	.then((response) => response.json())
 	.then(function(data)
 	{
