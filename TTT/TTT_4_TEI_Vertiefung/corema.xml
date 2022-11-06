@@ -1,0 +1,896 @@
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Semantic annotation of the manuscript Augsburg, Universitätsbibl., Cod.III.1.2°43</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Semantic annotation of the manuscript Augsburg, Universitätsbibl., Cod.III.1.2°43</edition>
+        <editor>
+          <forename>Astrid</forename>
+          <surname>Böhm</surname>
+        </editor>
+        <principal>
+          <forename>Helmut W.</forename>
+          <surname>Klug</surname>
+        </principal>
+        <funder ref="https://www.fwf.ac.at/">FWF I 3614</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>
+          <ref target="https://informationsmodellierung.uni-graz.at"></ref>
+          <orgName ref="http://d-nb.info/gnd/1137284463">ZIM-ACDH, Universität Graz</orgName>
+        </publisher>
+        <authority>
+          <ref target="https://informationsmodellierung.uni-graz.at"></ref>
+          <orgName ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung -
+						Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
+        </authority>
+        <distributor>
+          <ref target="https://gams.uni-graz.at"></ref>
+          <orgName>GAMS - Geisteswissenschaftliches Asset Management System</orgName>
+        </distributor>
+        <availability>
+          <licence n="text" target="https://creativecommons.org/licenses/by/4.0">Creative Commons BY 4.0</licence>
+          <licence n="facsimile" target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 </licence>
+        </availability>
+        <date when="2022-01-31"></date>
+        <pubPlace>Graz</pubPlace>
+        <idno type="PID">o:corema.a1.recipes</idno>
+        <ref target="info:fedora/context:corema" type="context"></ref>
+        <ref target="info:fedora/context:corema.recipes" type="context"></ref>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <country>Deutschland</country>
+            <settlement>Augsburg</settlement>
+            <institution ref="https://www.uni-augsburg.de/de/organisation/bibliothek/">Universitätsbibl.</institution>
+            <idno>Cod.III.1.2°43</idno>
+            <altIdentifier type="abbr">
+              <idno>A1</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <textLang ana="manuscript">
+              <lang ana="main" n="Q29540">Bavarian</lang>
+              <lang ana="main" n="Q1163234">Medieval Latin</lang> Nordbairisch</textLang>
+          </msContents>
+          <physDesc>
+            <objectDesc form="composite-Manuscript">
+              <supportDesc>
+                <extent>
+                  <measure type="leavesCount" unit="leaf">84</measure>
+                  <dimensions type="block" unit="mm">
+                    <height>310</height>
+                    <width>216</width>
+                  </dimensions>
+                </extent>
+                <foliation>
+                  <ab type="completeness">Neue Blattzählung 1-84.</ab>
+                </foliation>
+                <collation>
+                  <formula style="chroust">(VI+1)^13 + 3 VI^49 + (VI-1)^60 + 2 VI^84</formula>
+                  <ab>Lagen, bis 60v gezählt <q>I-V</q>. </ab>
+                  <catchwords>Wortreklamanten meist abgeschnitten.</catchwords>
+                </collation>
+                <condition>
+                  <desc>Textverlust: 1 Blatt fehlt zwischen fol. 59-60.</desc>
+                  <material xml:lang="de">Papier</material>
+                  <material xml:lang="en">paper</material>
+                  <watermark xml:id="Ochsenkopf">  
+										Ochsenkopf, Piccard XV, 362 (Nürnberg, Tübingen, Tirol u.ö. 1479-81).
+									</watermark>
+                  <watermark xml:id="Dreiberg">Dreiberg, nur Bl. 1, nicht bei Br.</watermark>
+                </condition>
+              </supportDesc>
+              <layoutDesc>
+                <layout columns="1">
+                  <p ana="measure">225-230 x 142-148mm</p>
+                  <p ana="textblock">einspaltig</p>
+                  <p ana="lines">35-40</p>
+                  <p ana="text">rubrizierte Überschriften</p>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote>
+                <term>Bastarda</term> durchgehend von einer Hand; Nachträge einiger jüngerer Hände, um 1500/Anfang 16. Jh.: 23r, 35r, 73r-79r an den Rändern.</handNote>
+            </handDesc>
+            <scriptDesc facs="fol. 2r + 59r-70r" resp="Astrid Böhm">
+              <scriptNote>
+                <desc>allgemeine Beobachtung</desc>
+                <p>Klare Struktur, Überschriften abgesetzt, rubriziert</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Duktus</desc>
+                <p>geübte Hand, sauberes Schriftbild, Oberlängen orientieren sich am Mittelband</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Leitbuchstabe &lt;a&gt;</desc>
+                <p>einstöckiges &lt;a&gt;</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Leitbuchstabe &lt;l&gt;</desc>
+                <p>mit offener und geschlossener Schleife, Bogen reicht weit nach rechts außen</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Leitbuchstabe &lt;g&gt;</desc>
+                <p>geschlossene oder fast geschlossene Schleife, untere Punze weist relativ senkrechten Abstrich auf</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Leitbuchstabe &lt;e&gt;</desc>
+                <p>meist offene Punze</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Leitbuchstabe &lt;m&gt;, &lt;n&gt;</desc>
+                <p>Schaftverbindungen am unteren Ende angesetzt (wie bei ‚u‘)</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Langschäfte &lt;b&gt;, &lt;d&gt;, &lt;h&gt;, &lt;k&gt;, &lt;l&gt;</desc>
+                <p>&lt;h&gt; ohne Schleife, Hauptstrich reicht weit nach rechts außen, weist wenn überhaupt nur geringe Unterlänge auf / &lt;b&gt; mit und ohne Schleife, Bogen reicht weit nach rechts außen / &lt;k&gt; ohne Schleife, Hauptstrich reicht weit nach rechts außen</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>&lt;f&gt;, Schaft-s Unterlänge</desc>
+                <p>häufig noch langer Haarstrich an der Unterlänge anzutreffen</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Verschiedene r-Formen</desc>
+                <p>gerades und rundes &lt;r&gt;</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Verschiedene z-Formen</desc>
+                <p>geschwänztes &lt;z&gt;, rundes &lt;z&gt; in initialer Stellung Majuskelfunktion</p>
+                <p>
+                  <graphic facs="02r23" url="img/A1_02r23.jpg" xml:id="A1_02R23"></graphic>
+                </p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Bögen/Unterlänge von &lt;h&gt;, &lt;y&gt; und geschwänztem &lt;z&gt;</desc>
+                <p>Unterlänge beim &lt;y&gt; / &lt;z&gt;; kaum Unterlänge bei &lt;h&gt;</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Verwendung von Schaft-s und rundem &lt;s&gt;</desc>
+                <p>Schaft-s: initial + medial; rundes &lt;s&gt;: final</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Verwendung von geradem und rundem &lt;d&gt;</desc>
+                <p>rundes &lt;d&gt;, mit und ohne Schleife</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>i-Markierung</desc>
+                <p>i-Markierung</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Besonderheiten anderer Grapheme</desc>
+                <p>ß-Ligatur</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Zahlzeichen</desc>
+              </scriptNote>
+              <scriptNote>
+                <desc>Majuskeln (Verwendung)</desc>
+                <p>Majuskeln als Initialen, Satzanfang, Hervorhebung</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Verzierungen</desc>
+              </scriptNote>
+              <scriptNote>
+                <desc>Rubrizierung</desc>
+                <p>Überschriften, Initialen</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Diakritika</desc>
+                <p>punktförmig, &lt;e&gt;, &lt;o&gt; über Vokalen</p>
+                <p>fließender Übergang zwischen &lt;e&gt; und Punkten, Umlaute mit hochgestelltem &lt;e&gt; transkribiert</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Abbreviaturen</desc>
+                <p>Kürzungsstrich, r/er-Haken, en-Kürzung in Kombination mit &lt;d&gt;, daz-Kürzung</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Interpunktion</desc>
+                <p>Punkte, Virgel</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Terminatoren</desc>
+                <p>Paragraphenzeichen, Punkt-/Strich-Kombinationen</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Worttrennung</desc>
+                <p>Doppelstrich</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Korrekturen</desc>
+                <p>Streichung, Einfügung</p>
+              </scriptNote>
+              <scriptNote>
+                <desc>Offensichtliche Schreiberwechsel</desc>
+              </scriptNote>
+            </scriptDesc>
+            <bindingDesc>
+              <binding corresp="#Einband">
+                <condition>alter Einband, Kopert</condition>
+                <decoNote type="bindingMaterial">starker Pergamentumschlag mit übergreifendem Rückendeckel</decoNote>
+                <decoNote type="clasps">Schließband fehlt</decoNote>
+              </binding>
+            </bindingDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <origDate>
+                <date notAfter="1500" notBefore="1475" xml:lang="de">4. Viertel 15. Jh.</date>
+                <date notAfter="1500" notBefore="1475" xml:lang="en">4th quater of 15th c.</date>
+              </origDate>
+              <origPlace>
+                <placeName xml:lang="de">Entstehungsort unbekannt</placeName>
+                <placeName xml:lang="en">place of origin unknown</placeName>
+              </origPlace>
+            </origin>
+            <provenance>Alter Besitzvermerk fol. 1r durch Übermalen völlig getilgt; 
+							Erwerbung des Fürsten Ludwig, vgl. 1r <q>X</q> (?) <q>F.</q>, oettingisches Wappen und Erwerbsjahr <q>1813</q>; 
+							Bibliothekssignatur des 19. Jhs. <q>e.11.</q>
+            </provenance>
+          </history>
+          <msPart n="1v">
+            <msContents>
+              <msItem corresp="#leer" xml:id="a1.1v.1">
+                <locus ana="folio">1v</locus>
+                <title>leer</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart ana="cooking_recipes" n="2r">
+            <head>Kochrezepttexte</head>
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+                <lang ana="other" n="Q1163234">Medieval Latin</lang>
+              </textLang>
+              <msItem corresp="#cooking" xml:id="a1.2r.2">
+                <locus ana="folio">2r</locus>
+                <title>Rezepte und Notae (u.a. Kochrezepte für Lebzelten, Sauce)</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="2r-v">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+              </textLang>
+              <msItem corresp="#time #med_hum" xml:id="a1.2r-v.3">
+                <locus ana="folio">2r-v</locus>
+                <title>Jahreszeitenlehre, Secretum secretorum, dt. (Auszug)</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="2v-3r">
+            <msContents>
+              <textLang>             
+   <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+                <lang ana="other" n="Q1163234">Medieval Latin</lang>
+              </textLang>
+              <msItem corresp="#med_hum" xml:id="a1.2v-3r.4">
+                <locus ana="folio">2v-3r</locus>
+                <title>Medizinische Aufzeichnungen</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="3r-4v">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+              </textLang>
+              <msItem corresp="#med_hum" xml:id="a1.3r-4v.5">
+                <locus ana="folio">3r-4v</locus>
+                <title>Monatsregimen u.a. aus Meister Alexanders Monatsregeln</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="4v-32v">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+                <lang ana="other" n="Q1163234">Medieval Latin</lang>
+              </textLang>
+              <msItem corresp="#med_hum #med_pharm #eso" xml:id="a1.4v-32v.6">
+                <locus ana="folio">4v-32v</locus>
+                <title>Rezepte, Merkverse zu Gewürzen, Zaubersprüche, Wundarznei ohne erkennbare Ordnung; dt./lat.</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="33r-34v">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+              </textLang>
+              <msItem corresp="#med_hum" xml:id="a1.33r-34v.7">
+                <locus ana="folio">33r-34v</locus>
+                <title>Medizinische Wasser</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="34v">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+                <lang ana="other" n="Q1163234">Medieval Latin</lang>
+              </textLang>
+              <msItem corresp="#med_pharm" xml:id="a1.34v.8">
+                <locus ana="folio">34v</locus>
+                <title>Sechs Heilpflanzen dt./lat.</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="35r-36v">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+              </textLang>
+              <msItem corresp="#med_hum" xml:id="a1.35r-36v.9">
+                <locus ana="folio">35r-36v</locus>
+                <title>Medizinische Rezepte gegen Stein</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="36v-37v">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+              </textLang>
+              <msItem corresp="#med_pharm" xml:id="a1.36v-37v.10">
+                <locus ana="folio">36v-37v</locus>
+                <title>Branntweintraktat</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="37v">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+              </textLang>
+              <msItem corresp="#med_pharm" xml:id="a1.37v.11">
+                <locus ana="folio">37v</locus>
+                <title>Heilkraft des grünen Kalamus</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="38r-47v">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+              </textLang>
+              <msItem corresp="#med_hum" xml:id="a1.38r-47v.12">
+                <locus ana="folio">38r-47v</locus>
+                <title>Auszüge aus dem Arzneibuch des Ortolf von Baierland</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="48r-55v">    
+        <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+                <lang ana="other" n="Q1163234">Medieval Latin</lang>
+              </textLang>
+              <msItem corresp="#med_pharm" xml:id="a1.48r-55v.13">
+                <locus ana="folio">48r-55v</locus>
+                <title>Heilpflanzen dt./lat.: Bäume, Kräuter</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="56r-58v">
+            <msContents>
+              <textLang>
+                <lang ana="main" n="Q1163234">Medieval Latin</lang>
+              </textLang>
+              <msItem corresp="#med_hum" xml:id="a1.56r-58v.14">
+                <locus ana="folio">56r-58v</locus>
+                <title>Auszüge aus den pseudo-aristotelischen Problemata physica (lat.)</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart ana="cooking_recipes" n="59r-60v">
+            <head>Kochrezepttexte</head>
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+              </textLang>
+              <msItem corresp="#cooking" xml:id="a1.59r-60v.15">
+                <locus ana="folio">59r-60v</locus>
+                <title>Kochrezepttextsammlung Eberharts von Landshut</title>
+                <note>Hier fehlt ein Blatt, das vielleicht weitere Kochrezepttexte enthalten haben könnte.</note>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart ana="cooking_recipes" n="60v-69r">
+            <head>Nahrungsmitteldiätetik</head>
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+                <lang ana="other" n="Q1163234">Medieval Latin</lang>
+              </textLang>
+              <msItem corresp="#med_hum" xml:id="a1.60v-69r.16">
+                <locus ana="folio">60v-69r</locus>
+                <title>Nahrungsmitteldiätetik aus der Regel der Gesundheit des Konrad von Eichstätt (dt./lat.)</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="69r-70r">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="cg" n="Q704841">Central German</lang>
+              </textLang>
+              <msItem corresp="#med_pharm" xml:id="a1.69r-70r.17">
+                <locus ana="folio">69r-70r</locus>
+                <title>Medizinische Öle aus der Freiberger Arzneimittellehre</title>
+                <note>(mitteldeutsche Mundart)</note>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="70v-72v">
+            <msContents>
+              <msItem corresp="#leer" xml:id="a1.70v-72v.18">
+                <locus ana="folio">70v-72v</locus>
+                <title>leer</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="73r-79r">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+              </textLang>
+              <msItem corresp="#med_vet" xml:id="a1.73r-79r.19">
+                <locus ana="folio">73r-79r</locus>
+                <title>Meister Albrant: Roßarznei</title>
+              </msItem>
+            </msContents>
+          </msPart>
+          <msPart n="79v-83v">
+            <msContents>
+              <textLang>
+                <lang ana="main" corresp="ug" n="Q29540">Bavarian</lang>
+              </textLang>
+              <msItem corresp="#med_pharm" xml:id="a1.79v-83v.20">
+                <locus ana="folio">79v-83v</locus>
+                <title>Salben- und Pflasterrezepte</title>
+              </msItem>
+            </msContents>
+          </msPart>
+        </msDesc>
+        <listBibl type="catalogues">
+          <biblStruct corresp="http://zotero.org/groups/2455111/items/IS4KCLGN" type="webpage" xml:id="zoteroItem_IS4KCLGN">
+            <analytic>
+              <title level="a">Handschriftencensus | Augsburg, Universitätsbibl., Cod. III.1.2°
+								43</title>       
+     </analytic>
+            <monogr>
+              <title level="m">Handschriftencensus</title>
+              <imprint>
+                <date>2016</date>
+                <note type="accessed">2020-10-19T06:46:12Z</note>
+                <note type="url">https://handschriftencensus.de/11305</note>
+              </imprint>
+            </monogr>
+            <note type="display">
+              <hi rend="italic">Handschriftencensus | Augsburg, Universitätsbibl., Cod. III.1.2° 43</hi> (2016) <hi rend="italic">Handschriftencensus</hi>. Available at: <ref target="https://handschriftencensus.de/11305">https://handschriftencensus.de/11305</ref> (Accessed: 19 October 2020).</note>
+          </biblStruct>
+          <biblStruct corresp="http://zotero.org/groups/2455111/items/AP3E4LFV" type="book" xml:id="Schneider1988">
+            <monogr>
+              <title level="m">Deutsche mittelalterliche Handschriften der Universitätsbibliothek
+								Augsburg. Die Signaturengruppen Cod. I.3 und Cod. III.1</title>
+              <author>
+                <forename>Karin</forename>
+                <surname>Schneider</surname>
+              </author>
+              <imprint>
+                <pubPlace>Wiesbaden</pubPlace>
+                <date>1988</date>
+                <note type="url">http://bilder.manuscripta-mediaevalia.de/hs//kataloge/HSK0148.htm</note>
+              </imprint>
+            </monogr>
+            <series>
+              <title level="s">Die Handschriften der Universitätsbibliothek Augsburg
+							II,1.</title>
+            </series>
+            <citedRange unit="page">234-238</citedRange>
+            <note type="display">Schneider, K. (1988) <hi rend="italic">Deutsche mittelalterliche Handschriften der Universitätsbibliothek Augsburg. Die Signaturengruppen Cod. I.3 und Cod. III.1</hi>. Wiesbaden (Die Handschriften der Universitätsbibliothek Augsburg II,1.), cf. pp. 234-238. 
+							Available at: <ref target="http://bilder.manuscripta-mediaevalia.de/hs//kataloge/HSK0148.htm">http://bilder.manuscripta-mediaevalia.de/hs//kataloge/HSK0148.htm</ref>.</note>
+          </biblStruct>
+        </listBibl>
+        <listBibl type="transcriptions">
+          <biblStruct corresp="http://zotero.org/groups/2455111/items/C7CMUP8E" type="thesis" xml:id="Feyl1963">
+            <monogr>
+              <title level="m">Das Kochbuch Meister Eberhards. Ein Beitrag zur altdeutschen
+								Fachliteratur</title>
+              <idno type="callNumber">KBV 83;BV006220457</idno>
+              <author>
+                <forename>Anita</forename>
+                <surname>Feyl</surname>
+              </author>
+              <imprint>
+                <pubPlace>Freiburg im Breisgau</pubPlace>
+                <date>1963</date>
+                <note type="thesisType">Diss. Freiburg i. Br.</note>
+              </imprint>
+            </monogr>
+            <note type="display">Feyl, A. (1963) <hi rend="italic">Das Kochbuch Meister Eberhards. Ein Beitrag zur altdeutschen Fachliteratur</hi>. Diss.  Freiburg i. Br. Albert-Ludwigs-Universität.
+						</note>
+          </biblStruct>
+        </listBibl>
+        
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <facsimile>
+    <surface start="#A1_002r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_002r.jpg" xml:id="IMG.002r"></graphic>
+    </surface>
+    <surface start="#A1_059r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_059r.jpg" xml:id="IMG.059r"></graphic>
+    </surface>
+    <surface start="#A1_059v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_059v.jpg" xml:id="IMG.059v"></graphic>
+    </surface>
+    <surface start="#A1_060r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_060r.jpg" xml:id="IMG.060r"></graphic>
+    </surface>
+    <surface start="#A1_060v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_060v.jpg" xml:id="IMG.060v"></graphic>
+    </surface>
+    <surface start="#A1_061r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_061r.jpg" xml:id="IMG.061r"></graphic>
+    </surface>
+    <surface start="#A1_061v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_061v.jpg" xml:id="IMG.061v"></graphic>
+    </surface>
+    <surface start="#A1_062r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_062r.jpg" xml:id="IMG.062r"></graphic>
+    </surface>
+    <surface start="#A1_062v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_062v.jpg" xml:id="IMG.062v"></graphic>
+    </surface>
+    <surface start="#A1_063r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_063r.jpg" xml:id="IMG.063r"></graphic>
+    </surface>
+    <surface start="#A1_063v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_063v.jpg" xml:id="IMG.063v"></graphic>
+    </surface>
+    <surface start="#A1_064r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_064r.jpg" xml:id="IMG.064r"></graphic>
+    </surface>
+    <surface start="#A1_064v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_064v.jpg" xml:id="IMG.064v"></graphic>
+    </surface>
+    <surface start="#A1_065r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_065r.jpg" xml:id="IMG.065r"></graphic>
+    </surface>
+    <surface start="#A1_065v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_065v.jpg" xml:id="IMG.065v"></graphic>
+    </surface>
+    <surface start="#A1_066r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_066r.jpg" xml:id="IMG.066r"></graphic>
+    </surface>
+    <surface start="#A1_066v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_066v.jpg" xml:id="IMG.066v"></graphic>
+    </surface>
+    <surface start="#A1_067r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_067r.jpg" xml:id="IMG.067r"></graphic>
+    </surface>
+    <surface start="#A1_067v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_067v.jpg" xml:id="IMG.067v"></graphic>
+    </surface>
+    <surface start="#A1_068r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_068r.jpg" xml:id="IMG.068r"></graphic>
+    </surface>
+    <surface start="#A1_068v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_068v.jpg" xml:id="IMG.068v"></graphic>
+    </surface>
+    <surface start="#A1_069r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_069r.jpg" xml:id="IMG.069r"></graphic>
+    </surface>
+    <surface start="#A1_069v">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_069v.jpg" xml:id="IMG.069v"></graphic>
+    </surface>
+    <surface start="#A1_070r">
+      <graphic url="Augsburg_UB_Cod_III_1_2_43_070r.jpg" xml:id="IMG.070r"></graphic>
+    </surface>
+    <surface start="#">
+      <graphic url="cutouts/a1.jpg" xml:id="CUTOUT"></graphic>
+    </surface>
+  </facsimile>
+  <text>
+    <body xml:space="preserve"> <div> <pb n="002r" xml:id="A1_002r"></pb> <milestone n="a" unit="collection"></milestone> <title ana="chapter" corresp="#a1a.1 #a1a.2 #a1a.3 #a1a.4 #a1a.5 #a1a.6 #a1a.7" key="">Hienach volgenn Etlich <ingredient commodity="Q12140" en="medication">ertzney</ingredient> vonn mangerlay dingenn zu sammenn gesammet Als du danne hernach wol vindenn wurdest </title> 
+ 
+ <ab n="1" type="medicinal" xml:id="a1a.1" xml:lang="de-x-enh"> <title key="Medicine for all ailments in autumn">Ein purgatz Zu der zeytt des herbstes furr allenn gebrechenn </title> Nym <ingredient commodity="Q46740" en="rose hip">hieffenn</ingredient> die zeyttig sein vnd mit dem reyff wol beczwungenn vnd nym die mit <ingredient commodity="Q3121375" en="pip">kernn</ingredient> vnd mit all vnd derre die in eynem <tool commodity="Q36539" en="baking oven">ofenn</tool> vnd lege sie danne herauß vnd laß den windt dar durch genn vnd nym dann einen <tool commodity="Q45778" en="mortar">moerserr</tool> vnd stoß die <ingredient commodity="Q46740" en="rose hip">hieffenn</ingredient> vnd misch die mit <ingredient commodity="Q10987" en="honey">honig</ingredient> vnd das isse das des morgens nuechternn </ab>
+
+ <ab n="2" type="dietetics" xml:id="a1a.2" xml:lang="de-x-enh"> <title key="On moderation">Meßigkeit</title> Ist ein aufenthaltung des ganntzen leichnams . Vnd ein starck aller gelider . Vnd ein außderung aller boesenn duenst Wann meßigkeit ist ein zustoerung aller lasterr</ab>
+
+ <ab n="3" type="recipe" xml:id="a1a.3" xml:lang="de-x-enh"> <title key="Honey gingerbread">Wiltu gut lekuchenn machenn</title> Recipe zu einem seydlein <ingredient commodity="Q10987" en="honey">hoenigs</ingredient> 1/2 lot <ingredient commodity="Q15622897" en="clove">negelleyn</ingredient> 1/2 lot <ingredient commodity="Q83165" en="nutmeg apple">muscat</ingredient> 1/2 lot <ingredient commodity="Q15046077" en="ginger">Ingwerr</ingredient> 1/2 lot <ingredient commodity="Q3143131" en="pepper">pfeffers</ingredient> vnd stoß das zu sammenn vnd dar auß mach einen <ingredient commodity="Q178024" en="dough">teig</ingredient> vnd zu einer moß <ingredient commodity="Q10987" en="honey">honigs</ingredient> nym zwirr souil als vor bezeichent stett </ab>
+
+ <ab n="4" type="recipe" xml:id="a1a.4" xml:lang="de-x-enh"> <title key="Horseradish sauce">Wiltu ein gutte <dish commodity="Q178359" en="sauce">salsen</dish> machen in der fastenn</title> Nym <ingredient commodity="Q2964630" en="horse radish">merrech</ingredient> vnd <ingredient commodity="Q184357" en="almond">mandel kernn</ingredient> vnd stoß die in einem <tool commodity="Q45778" en="mortar">moerserr</tool> vnd thue <ingredient commodity="Q282" en="wine">wein</ingredient> dar zu das ist gut</ab>
+
+ <ab n="5" type="referral" xml:id="a1a.5" xml:lang="de-x-enh"> <title key="Four world empires, humors of the">Die vier kunigreich der werlt </title> <foreign xml:lang="la">Orientalis que est Calida et humida</foreign> <foreign xml:lang="la">Meridionalis que est Calida et sicca</foreign> <foreign xml:lang="la">Occidentalis que est frigida et humida</foreign> <foreign xml:lang="la">Septembrionalis que est Frigida et sicca</foreign> </ab>
+
+ <ab n="6" type="dietetics" xml:id="a1a.6" xml:lang="de-x-enh"> <title key="Spring, humor of">Der lentz ist hitzig vnd feucht</title> Die Zeit ist gemischet vnd dem lufft geleich . Vnd in der Zeit so wirt bewegt das plut . Vnd in der Zeit ist gesund alles das einen linden Complexion vnd naturr ist Als Iunge <ingredient commodity="Q864693" en="chicken">hunerr</ingredient> vnd <ingredient commodity="Q15260613" en="chicken egg">eyerr</ingredient> doch soltu ir auch nit zu vil niessenn Vnd <ingredient commodity="Q578052" en="lettuce">lactuken</ingredient> vnd <ingredient commodity="Q1060458" en="verjuice">agreste</ingredient> vnd <ingredient commodity="Q1418287" en="goat milk">geyß milch</ingredient> Es ist kein zeit des ganntzen Iars die nutzerr ist dem aderlassenn danne dise zeit vnd ist nutz die bewegung des leybes vnd die entschliessung des leybs vnd padenn Auch ist in diser Zeit gut <ingredient commodity="Q12140" en="medication">Ertzney</ingredient> vnd <dish commodity="Q40050" en="drink">getranck</dish> zu nemmen</ab>
+
+ <ab n="7" type="dietetics" xml:id="a1a.7" xml:lang="de-x-enh"> <title key="Summer, humor of">Der Summer Ist hitzig vnd durrr</title> In der Zeit wirt verzert das plut vnd wechst in dem menschen die rot Colera . Vnd in der Zeit soll man sich huttenn vor allenn dingenn die hitzig vnd durr sein Auch sol man sich huttenn vor uebrigem essenn vnd trinckenn das nit auß geleschet werd die naturlich hitze . Inn der zeyt des Summers soll man sich gerbrauchen aller ding die kalter naturr sein Als <ingredient commodity="Q957434" en="veal">kalb fleysch</ingredient> vnd <ingredient commodity="Q41354" en="vinegar">essig</ingredient><foreign xml:lang="la"> et <ingredient commodity="Q165308" en="calabash">cucurbite</ingredient></foreign> <foreign xml:lang="la">et <ingredient commodity="Q864693" en="chicken">pulli</ingredient> saginati ex farina ordeacea</foreign> Vnd von der <ingredient commodity="Q3314483" en="fruit">frucht</ingredient> die eins guttenn geschmacks ist <foreign xml:lang="la">Et <ingredient commodity="Q89" en="apple">mala</ingredient> atra et malignata similer aerea</foreign> Vnd die do sein in den</ab>
+
+ <pb n="059r" xml:id="A1_059r"></pb> <milestone n="b" unit="collection"></milestone> <title ana="collection" key="">Hienach volgt vonn dem kochenn vnd hat gemacht meyster Eberhart Ein koch herczog heinrichs zu lands hut </title> <ab n="1" type="recipe" xml:id="a1b.1" xml:lang="de-x-enh"> <title key="Sour cherry sauce">Zum Ein <dish commodity="Q178359" en="sauce">salsenn</dish> von <ingredient commodity="Q68438267" en="sour cherry">weichselnn</ingredient> zu machen</title> Item Wiltu machen ein gutte <dish commodity="Q178359" en="sauce">salsenn</dish> von <ingredient commodity="Q68438267" en="sour cherry">weichselnn</ingredient> So thue die <ingredient commodity="Q68438267" en="sour cherry">weichsell</ingredient> in einen <tool commodity="Q15711817" en="pot">hafen</tool> vnd setz die auff ein <tool commodity="Q177257" en="ember">glut</tool> vnd laß sie siedenn vnd laß dann wider erkaltenn vnd streich sie durch ein <tool commodity="Q2621157" en="cheesecloth">tuch</tool> vnd thue sie dann wider in den <tool commodity="Q15711817" en="pot">hafenn</tool> vnd setz sie auff ein <tool commodity="Q177257" en="ember">glut</tool> vnd laß sie wol sieden vnd rurr sie piß sie dick wirt vnd thue dann <ingredient commodity="Q10987" en="honey">honig</ingredient> dar an vnd geribens <ingredient commodity="Q7802" en="bread">prot</ingredient> vnd <ingredient commodity="Q15622897" en="clove">negellein</ingredient> vnd gut <ingredient commodity="Q42527" en="spice">gestuep</ingredient> vnd thue sie in ein <tool commodity="Q10289" en="barrel">feßlein</tool> sie pleibt dir gut drew oder vier iarr </ab>
+
+ <ab n="2" type="recipe" xml:id="a1b.2" xml:lang="de-x-enh"> <title key="Horseradish sauce">Ein gutte <dish commodity="Q178359" en="sauce">salsen</dish> zu machen in der fastenn</title> Item Nym <ingredient commodity="Q2964630" en="horse radish">merrich</ingredient> vnd zustoß den in einem <tool commodity="Q45778" en="mortar">moerserr</tool> vnd nym <ingredient commodity="Q184357" en="almond">mandelkernn</ingredient> oder <ingredient commodity="Q11009" en="nut">nuß</ingredient> vnd zustoß die auch vnd geuß ein <ingredient commodity="Q282" en="wine">wein</ingredient> dar an <ingredient commodity="Q2964630" en="horse radish">Merrich</ingredient> bricht den stein garr serr wenn man in isset in der kost </ab>
+
+ <ab n="3" type="recipe" xml:id="a1b.3" xml:lang="de-x-enh"> Item <title key="Green herb sauce">Ein andre <dish commodity="Q178359" en="sauce">salsenn</dish></title> <foreign xml:lang="la"><ingredient commodity="Q1111359" en="common sage">Saluia</ingredient> <ingredient commodity="Q25284" en="parsley">petrocilius</ingredient> <ingredient commodity="Q27640062" en="mint">menta</ingredient></foreign> vnd <ingredient commodity="Q3143131" en="pepper">pfefferr</ingredient> das soll man zustossenn mit <ingredient commodity="Q41354" en="vinegar">essig</ingredient> das ist ein <dish commodity="Q178359" en="sauce">salsen</dish> die macht lustig zu essenn</ab>
+
+ <ab n="4" type="recipe" xml:id="a1b.4" xml:lang="de-x-enh"> Item <title key="Peas, roasted on a skewer">Ein essenn von gebratenn <ingredient commodity="Q29472543" en="garden pea">arbeissenn</ingredient></title> Nym gesotenn <ingredient commodity="Q29472543" en="garden pea">arbeyß</ingredient> vnd slach sie durch ein <tool commodity="Q2621157" en="cheesecloth">tuch</tool> oder durch ein <tool commodity="Q381155" en="sieve">sib</tool> vnd slach vil <ingredient commodity="Q15260613" en="chicken egg">eyerr</ingredient> darzu als vil der <ingredient commodity="Q29472543" en="garden pea">arbeiß</ingredient> sein vnd seud es in <ingredient commodity="Q34172" en="butter">putternn</ingredient> vnd steck es an einen <tool commodity="Q20181361" en="spit">spiß</tool> vnd brot sie wol vnd beslach sie mit <ingredient commodity="Q15260613" en="chicken egg">eyernn</ingredient> vnd mit <ingredient commodity="Q207123" en="herb">kraut</ingredient> vnd gib es hin versaltz es nit </ab>
+
+ <ab n="5" type="recipe" xml:id="a1b.5" xml:lang="de-x-enh"> <title key="Elder flower puree">Ein <ingredient commodity="Q67778134" en="elder flower">holder</ingredient> <dish commodity="Q636056" en="puree">muß</dish> zu machenn</title> Nym <ingredient commodity="Q67778134" en="elder flower">holderplut</ingredient> vnd zureib die in <ingredient commodity="Q10988133" en="cow milk">kuee milch</ingredient> vnd nym <ingredient commodity="Q36465" en="flour">mel</ingredient> vnd mach ein <dish commodity="Q636056" en="puree">mus</dish> dar auß das ist gut zu dem haubt vnd den synnenn</ab>
+
+ <ab n="6" type="recipe" xml:id="a1b.6" xml:lang="de-x-enh"><title key="Nut puree" type="none"></title> Ein gut <dish commodity="Q636056" en="puree">mus</dish> zu machenn So nym <ingredient commodity="Q11009" en="nut">nuß kernn</ingredient> vnd stoß die clein vnd streich die durch mit einerr sussenn <ingredient commodity="Q8495" en="milk">milch</ingredient> vnd mit susser <ingredient commodity="Q107262394" en="white breadcrumb">semell brosem</ingredient> die wol gesotenn sein vnd thue <ingredient commodity="Q72827" en="lard">schmaltz</ingredient> dar an genug vnd rurr es ab mit <ingredient commodity="Q16336079" en="yolk">eyer totternn</ingredient> vnd <ingredient commodity="Q42527" en="spice">wurtz</ingredient> es wol vnd versaltz es nit</ab>
+
+ <ab n="7" type="recipe" xml:id="a1b.7" xml:lang="de-x-enh"> <title key="Roasted fish puree">Wiltu machen ein gebraten <dish commodity="Q636056" en="puree">muß</dish> vonn <ingredient commodity="Q600396" en="fish">vischennn</ingredient></title> So nym <ingredient commodity="Q0" en="unsolved">per visch</ingredient> die peyß in <ingredient commodity="Q41354" en="vinegar">essig</ingredient> vnd wurff die in ein <ingredient commodity="Q975953" en="almond milk">mandel milch</ingredient> die mit <ingredient commodity="Q5090" en="rice">reyß</ingredient> sein wol gemengt vnd ein wenig <ingredient commodity="Q72827" en="lard">schmaltz</ingredient> dar an das wellig sej versaltz es nit </ab>
+
+ <ab n="8" type="recipe" xml:id="a1b.8" xml:lang="de-x-enh"> Item <title key="Calf&apos;s liver roast">Ein essenn vonn einer <ingredient commodity="Q64065384" en="calf liver">lebernn eins kalbs</ingredient></title> Nym ein <ingredient commodity="Q64065384" en="calf liver">lebernn von einem kalb</ingredient> vnd hack sie clein vnd <ingredient commodity="Q42527" en="spice">wuertz</ingredient> sie wol vnd nym dann einen hewrigenn <ingredient commodity="Q11106" en="bacon">speck</ingredient> vnd <ingredient commodity="Q10978" en="grape">weinperr</ingredient> vnd leg das <ingredient commodity="Q662490" en="caul fat">netz</ingredient> furr dich vnd bestreich es wol mit <ingredient commodity="Q16336079" en="yolk">totternn</ingredient> vnd nym dann die <ingredient commodity="Q64065384" en="calf liver">lebernn</ingredient> vnd slach ein <ingredient commodity="Q662490" en="caul fat">netz</ingredient> dar veberr vnd verspeil das wol vnd leg sie auff ein <tool commodity="Q96279691" en="grate">rost</tool> vnd laß sie pratenn vnd beslach sie halb mit <ingredient commodity="Q16336079" en="yolk">totternn</ingredient> die rot sein dar <pb n="059v" xml:id="A1_059v"></pb> nach an der andernn seittenn mit grunen <ingredient commodity="Q16336079" en="yolk">totternn</ingredient> vnd <ingredient commodity="Q25284" en="parsley">peterlein</ingredient> vnd versaltz es nit</ab>
+
+ <ab n="9" type="recipe" xml:id="a1b.9" xml:lang="de-x-enh"> <title key="Mortar pancake, green">Wiltu machen ein <name>meyschen <dish commodity="Q13276" en="cake">kuchenn</dish></name></title> So nym auff zehen <ingredient commodity="Q15260613" en="chicken egg">eyer</ingredient> vnd zuslach sie wol vnd nym darzu <ingredient commodity="Q25284" en="parsley">peterlein</ingredient> vnd rurr es vndereinander vnd nym einen <tool commodity="Q45778" en="mortar">morserr</tool> vnd setz auff ein <tool commodity="Q177257" en="ember">kolenn</tool> vnd thue dar ein einen <tool commodity="Q81895" en="spoon">loeffel</tool> vol <ingredient commodity="Q72827" en="lard">schmaltz</ingredient> vnd laß es heyß werdenn vnd geuß die <ingredient commodity="Q15260613" en="chicken egg">eyerr</ingredient> darein vnd laß es kul pachen vnd thu es also gantz auff ein <tool commodity="Q153988" en="bowl">schussel</tool> versaltz es nit</ab>
+
+ <ab n="10" type="recipe" xml:id="a1b.10" xml:lang="de-x-enh"> Item Wiltu machen <title key="Fresh cheese pancake">ein essen in dem meyen das heyßt ein <name>gespoet</name></title> So nym einen fliessendenn <ingredient commodity="Q10943" en="cheese">keß</ingredient> vnd schneid den in vil schnittenn die duenn sein vnd nym darzu sechs <ingredient commodity="Q15260613" en="chicken egg">eyer</ingredient> vnd slach die auff den <ingredient commodity="Q10943" en="cheese">keß</ingredient> vnd nym meichßige <ingredient commodity="Q34172" en="butter">putternn</ingredient> in ein <tool commodity="Q127666" en="pan">pfannen</tool> vnd thue den <ingredient commodity="Q10943" en="cheese">keß</ingredient> mit den <ingredient commodity="Q15260613" en="chicken egg">eyernn</ingredient> vber das <tool commodity="Q177257" en="ember">fewrr</tool> vnd zeuch es <ingredient commodity="Q15260613" en="chicken egg">ey</ingredient> dar mit auff das es slecht werr vnd richte es an vnd versaltz es nicht </ab>
+
+ <ab n="11" type="recipe" xml:id="a1b.11" xml:lang="de-x-enh"> Item <title key="Fish flat cake">einen <dish commodity="Q0" en="flat cake">fladenn</dish> zu machenn von <ingredient commodity="Q600396" en="fish">fischenn</ingredient> velcherlej sie sind</title> So nym ein dicke <ingredient commodity="Q975953" en="almond milk">mandelmilch</ingredient> wol gemengt mit <ingredient commodity="Q1269205" en="rice flour">reiß mel</ingredient> vnd thue dar ein einen <ingredient commodity="Q89" en="apple">apffel</ingredient> oderr zwenn vnd ein wenig <ingredient commodity="Q42527" en="spice">wurtz</ingredient> vnd seud es in einem <tool commodity="Q36539" en="baking oven">ofen</tool> vnd laß es pachenn vnd versalcz es nit</ab>
+
+ <ab n="12" type="recipe" xml:id="a1b.12" xml:lang="de-x-enh"> <title key="Fake morels, at Christmas">Wiltu machen <ingredient ana="analogy" commodity="Q1129282" en="morel">morchen</ingredient> vmb weihennachtenn</title> So nym ein <ingredient commodity="Q29493" en="batter">teick</ingredient> auß <ingredient commodity="Q1501889" en="white bread">weissem brot</ingredient> vnd auß ein wenig <ingredient commodity="Q36465" en="flour">melbs</ingredient> vnd schla <ingredient commodity="Q15260613" en="chicken egg">eyer</ingredient> dar an vnd mach zwen <tool commodity="Q107272837" en="morel shaping tool">knebel</tool> vnd wurff die in den <ingredient commodity="Q29493" en="batter">teick</ingredient> vnd zeuch sie darInnen vmb vnd leg sie in ein <ingredient commodity="Q72827" en="lard">schmaltz</ingredient> das nit zu heyß sej vnd wenn es ein wenig gepack So nym es her wider auß vnd schneyd es dann mitten auff dem <tool commodity="Q107272837" en="morel shaping tool">knebel</tool> auff von einander vnd full es danne mit ein geruntenn <ingredient commodity="Q15260613" en="chicken egg">eyernn</ingredient> vnd zeuch es durch einen lindenn <ingredient commodity="Q107261752" en="funnel cake dough">straubenn teick</ingredient> leg es in ein <ingredient commodity="Q72827" en="lard">schmaltz</ingredient> vnd laß es pachenn vnd setz die <ingredient ana="analogy" commodity="Q1129282" en="morel">morchen</ingredient> dar ein vnd laß sie pachenn </ab>
+
+ <ab n="13" type="recipe" xml:id="a1b.13" xml:lang="de-x-enh"> <title key="Pastry, knitted">Wiltu machen ein <name>gestrocztes <dish commodity="Q477248" en="pastry">gepachens</dish></name></title> So mach ein <ingredient commodity="Q178024" en="dough">teyck</ingredient> von eytell <ingredient commodity="Q15260613" en="chicken egg">eyernn</ingredient> vnd <ingredient commodity="Q42527" en="spice">wurtz</ingredient> in wol vnd mach in <ingredient commodity="Q25434" en="saffron">gel</ingredient> vnd warmm du? ### gutter holmm in den <ingredient commodity="Q178024" en="dough">teick</ingredient> das sie naß werdenn vnd nym sie dann her auß vnd pack es in einem <ingredient commodity="Q72827" en="lard">schmaltz</ingredient> vnd versaltz nit</ab>
+
+ <ab n="14" type="recipe" xml:id="a1b.14" xml:lang="de-x-enh"> <title key="Egg cake with white bread">Wiltu machen gut <dish commodity="Q13276" en="cake">kuchenn</dish> vonn <ingredient commodity="Q15260613" en="chicken egg">eyernn</ingredient> </title> So nym <ingredient commodity="Q15260613" en="chicken egg">eyer</ingredient> wie vil du wilt vnd zu slach die wol vnd schneid <ingredient commodity="Q1501889" en="white bread">semel</ingredient> funf lot dar vnter vnd thue dar ein <ingredient commodity="Q10978" en="grape">weinperr</ingredient> vnd <ingredient commodity="Q72827" en="lard">schmaltz</ingredient> in ein <tool commodity="Q127666" en="pan">pfannen</tool> des genug sej vnd geuß die <ingredient commodity="Q15260613" en="chicken egg">eyer</ingredient> dar ein vnd laß es packenn ynnenn vnd aussenn do mit slach es auff ein <tool commodity="Q347690" en="workbench">panck</tool> vnd hack dar vnter gut <ingredient commodity="Q42527" en="spice">wurtz</ingredient> vnd schneid es zu scheubenn vnd richt es an </ab>
+
+ <ab n="15" type="recipe" xml:id="a1b.15" xml:lang="de-x-enh"> Item <title key="Milk cake">Ein essenn von <ingredient commodity="Q8495" en="milk">milch</ingredient> <dish commodity="Q13276" en="cake">kuchenn</dish></title> So soltu sie clein schneyden <note xml:lang="de">Rezept bricht hier ab.</note> <note xml:lang="en">Recipe ends here.</note></ab>
+
+ <pb n="060r" xml:id="A1_060r"></pb> <ab n="16" type="recipe" xml:id="a1b.16" xml:lang="de-x-enh"><title key="Chicken, whole in a pinch bottle" type="none"></title> <note xml:lang="de">Rezept beginnt mitten im Text: Rezept für Huhn in einer Glasflasche.</note> <note xml:lang="en">Recipe starts in the middle of the text: recipe for Chicken in a pinch bottle.</note> <tool commodity="Q15711817" en="pot">hafen</tool> vnd geuß ein <ingredient commodity="Q283" en="water">wasserr</ingredient> dar an vnd deck es zu vnd laß siedenn so wirt es sich strecken in dem <tool commodity="Q56297888" en="preserving jar">glaß</tool> das man sicht sein <ingredient commodity="Q107304871" en="chicken claw">fuß</ingredient> vnd <ingredient commodity="Q7196602" en="chicken wing">fluegel</ingredient> vnd den ganntzen poettich so ist es gerecht</ab>
+
+ <ab n="17" type="recipe" xml:id="a1b.17" xml:lang="de-x-enh"> <title key="Fish, prepared in three ways">Wiltu machenn dreyerlej essens an einem <ingredient commodity="Q83363026" en="northern pike">visch</ingredient></title> So nym ein <ingredient commodity="Q83363026" en="northern pike">hecht</ingredient> vnd slach vmb das mittel teyl ein naß <tool commodity="Q2621157" en="cheesecloth">tuch</tool> vnd leg in auff ein <tool commodity="Q96279691" en="grate">rost</tool> vnd <ingredient commodity="Q11254" en="table salt">saltz</ingredient> in vnd laß in pratenn vnd das foderr teil bespreng mit <ingredient commodity="Q36465" en="flour">melb</ingredient> vnd begeuß mit <ingredient commodity="Q72827" en="lard">schmaltz</ingredient> das heyß sej vnd das <tool commodity="Q2621157" en="cheesecloth">tuch</tool> begeuß mit heissem <ingredient commodity="Q282" en="wine">wein</ingredient> vnd das hinder teyl prett sich selbs auff dem <tool commodity="Q96279691" en="grate">rost</tool> </ab>
+
+ <ab n="18" type="kitchenTip" xml:id="a1b.18" xml:lang="de-x-enh"> <foreign xml:lang="la">Item <title key="Meat, how to cook">vt scito coquantur <ingredient commodity="Q10990" en="meat">carnes</ingredient></title> Recipe aliquas pecias de vitro ### Et pone in ollam ad carnes crudas et sic coquantur </foreign> </ab>
+
+ <ab n="19" type="kitchenTip" xml:id="a1b.19" xml:lang="de-x-enh"> <foreign xml:lang="la">Item <title key="Oversalted food, how to recover">ad extrahendum <ingredient commodity="Q11254" en="table salt">sal</ingredient> de cibo nimis salsato</title> Recipe de farina frumenti in vna pecia lini panni et dimitte bulire intus </foreign> </ab>
+
+ <ab n="20" type="medicinal" xml:id="a1b.20" xml:lang="de-x-enh"> <foreign xml:lang="la">Item <title key="For the appetite">Ad appetitum comedendi</title> valet illa <dish commodity="Q178359" en="sauce">salsa</dish> facta cum aleo Et appone piper ad triginta grana et hoc simul tunde Et Ieiunus per duos dies comede etiam appone de saluia tria folia cum sale modico Vel accipe aleum cum bibenella et fac succum</foreign> </ab>
+
+ <ab n="21" type="recipe" xml:id="a1b.21" xml:lang="de-x-enh"> Item Wiltu <title key="Fish, boiled, black">swartz <ingredient commodity="Q600396" en="fish">fisch</ingredient> machenn</title> So laß die <ingredient commodity="Q600396" en="fish">visch</ingredient> siedenn an die stat vnd nym dann gestossenn <ingredient commodity="Q15622897" en="clove">negellein</ingredient> vnd thue die dar an ? vnd laß sie dann noch ein guttenn wal thun </ab>
+
+ <ab n="22" type="kitchenTip" xml:id="a1b.22" xml:lang="de-x-enh"><title key="Pike makes fine aspic" type="none"></title> Item Vonn <ingredient commodity="Q83363026" en="northern pike">hechtenn</ingredient> wirt garr schoenns vnd lawters gestanndenn also das es durchsichtig wirt</ab>
+
+ <ab n="23" type="recipe" xml:id="a1b.23" xml:lang="de-x-enh"> <title key="Stockfish, boiled, with sauce">Wiltu einen gutten <ingredient commodity="Q213725" en="stockfish">stockfisch</ingredient> machenn</title> So laß in siedenn als ein <ingredient ana="comparison" commodity="Q957434" en="veal">kalb fleisch</ingredient> vnd laß in ein siedenn auff halben wogk vnd seig dann die <ingredient ana="exclusion" commodity="Q110611133" en="stockfish broth">brue</ingredient> dar vonn vnd schuet den <ingredient commodity="Q213725" en="stockfish">stockvisch</ingredient> herauß vnd erclaub in wol vnd nym dann ein <tool commodity="Q127666" en="pan">pfannen</tool> vnd thue <ingredient commodity="Q72827" en="lard">smaltz</ingredient> dar ein vnd laß es warmm werdenn vnd leg dann den <ingredient commodity="Q213725" en="stockfish">stockvisch</ingredient> in die <ingredient commodity="Q34172" en="butter">putternn</ingredient> vnd laß sie dar ynnen erhitzenn vnd nym dann <ingredient commodity="Q15046077" en="ginger">Ingwerr</ingredient> vnd <ingredient commodity="Q25434" en="saffron">saffran</ingredient> mit des <ingredient commodity="Q110611133" en="stockfish broth">visch brue</ingredient> vnd ferb das do mit ein vnd geuß es veber den <ingredient commodity="Q213725" en="stockfish">stock visch</ingredient> in die <tool commodity="Q127666" en="pan">pfannen</tool> vnd laß es ein wal oder drej thun so ist er gerecht </ab>
+
+ <ab n="24" type="recipe" xml:id="a1b.24" xml:lang="de-x-enh"> Item Hienach volgt <title key="Goose, roasted">wie man ein <ingredient commodity="Q83363022" en="goose">ganß</ingredient> pratenn soll</title> So laß sie vor zwenn oder drej tag wol hungernn das die boesen predenn die in ir sein her auß genn vnd soll sie dann nernn mit kornn vnd dar nach toette sie vnd prate sie pej dem <tool commodity="Q177257" en="ember">fewerr</tool> vnd du solt dar ein stossen <ingredient commodity="Q1111359" en="common sage">saluia</ingredient> vnd ander gut <ingredient commodity="Q42527" en="spice">wuertz</ingredient> das der safft dardurch gee vnd man soll sie besprengenn mit <ingredient commodity="Q282" en="wine">wein</ingredient> oder mit <ingredient commodity="Q41354" en="vinegar">essigk</ingredient> das daz <ingredient commodity="Q72827" en="lard">schmaltz</ingredient> <pb n="060v" xml:id="A1_060v"></pb> do vonn trieff Wann das <ingredient ana="exclusion" commodity="Q68187377" en="goose fat">genß schmaltz</ingredient> soll man nit essenn wann es macht den menschen krannck wann die feistenn kumbt vonn boeser feuchtigkeit vnd wer gesund ist der soll die <ingredient commodity="Q83363022" en="goose">gans</ingredient> also gebratenn essenn so schadt sie dester mynderr Wer aber krannck ist der soll wenig do von essenn Wenn man sie kocht vnd seudt in <ingredient commodity="Q283" en="water">wasser</ingredient> so ist sie vngesund wann dann so muegenn die boesen preden nit herauß genn von verhinderung wegen des <ingredient commodity="Q283" en="water">wassers</ingredient> </ab>
+
+ <title ana="chapter" corresp="#a1b.25 #a1b.26 #a1b.27 #a1b.28 #a1b.29 #a1b.30 #a1b.31 #a1b.32 #a1b.33 #a1b.34 #a1b.35 #a1b.36 #a1b.37 #a1b.38 #a1b.39 #a1b.40 #a1b.41 #a1b.42 #a1b.43 #a1b.44 #a1b.45 #a1b.46 #a1b.47 #a1b.48 #a1b.49 #a1b.50 #a1b.51 #a1b.52 #a1b.53 #a1b.54 #a1b.55 #a1b.56 #a1b.57" key=""> Hienach volgt vonn den kuchenspeisen warr zu sie gut sein</title> <ab n="25" type="dietetics" xml:id="a1b.25" xml:lang="de-x-enh"> Item <title key="Rice, dietetics"><ingredient commodity="Q5090" en="rice">Reyß</ingredient></title> kelt vnd hitzigt nit vnd speißt serr vnd wenn mans wol seudt mit <ingredient commodity="Q8495" en="milk">milch</ingredient> so macht es vil plutz vnd doch so schadt es den lewten die den grymmenn in dem leib habenn vnd stupfft vnd wirt nit schier verdewt </ab>
+
+ <ab n="26" type="dietetics" xml:id="a1b.26" xml:lang="de-x-enh"> <title key="Millet, dietetics"><ingredient commodity="Q259438" en="common millet">Hirß</ingredient></title> zu essenn kelt vnd derrt vnd stopffet vnd speist nit wol vnd das selb thut auch der <ingredient commodity="Q24265484" en="oats">habernn</ingredient> vnd <ingredient commodity="Q158767" en="spelt">spelt</ingredient></ab>
+
+ <ab n="27" type="dietetics" xml:id="a1b.27" xml:lang="de-x-enh"> <title key="Barley, dietetics"><ingredient commodity="Q27660203" en="barley">Gerstenn</ingredient></title> Blewet vnd keltet vnd speist nit wol vnd schadt allen den lewtenn die geprestenn habenn vnd von kalter natur kumbt oder das grymmenn in dem leib hat Aber hitzigenn lewtenn vnd die do gern cleiner wurdenn den ist sie gut vnd wenn man sie isset oderr trincket mit <ingredient commodity="Q27658833" en="fennel">venchel samenn</ingredient> so ist sie gut furr etlichenn gebresten an der brust vnd spricht Auicenna das <ingredient commodity="Q397762" en="barley water">gerstenn wasserr</ingredient> schadet dem magen der do kalt ist Es ist auch Rittigenn lewtenn garr nuetz </ab>
+
+ <ab n="28" type="dietetics" xml:id="a1b.28" xml:lang="de-x-enh"> <title key="Lentil, dietetics"><ingredient commodity="Q61505177" en="lentil">Linßenn</ingredient></title> Sein bescheidenlich heyß vnd derren vnd machenn vil plutz vnd so man sie seudt mit <ingredient commodity="Q41354" en="vinegar">essig</ingredient> so erleschenn sie die enzuendung des plutz Vnd wer sie dick isset dem machen sie vinsterr awgenn do vonn sie vast derrent Auicenna spricht das sie schadenn dem magenn vnd blewend vnd stopffend </ab>
+
+ <ab n="29" type="dietetics" xml:id="a1b.29" xml:lang="de-x-enh"> <title key="Chickpea, dietetics">Die <ingredient commodity="Q33832605" en="chickpea">kichernn</ingredient></title> Hitzenn vnd plewend vnd machenn pruntzen vnd machenn den frawenn ire Recht zu vier wochenn einß komenn als es sein soll vnd spricht Auerrois das sie prechenn den stein der do leyt in den lendenn oder der do leit in der blosenn vnd auch die <ingredient commodity="Q110611239" en="chickpea broth">bruee</ingredient> mit der sie gesotenn werdenn vnd darczu sein die swartzen <ingredient commodity="Q33832605" en="chickpea">kichernn</ingredient> pesserr dann die weissenn Vnd Galienus spricht das <ingredient commodity="Q110611239" en="chickpea broth">bru von kichernn</ingredient> so man sie seudt die ist der lebernn gut wann es reinigt sie vnd die nyren do der stein wechst den schleim vnd treibt vil vnflatz vonn dem menschenn</ab>
+
+ <ab n="30" type="dietetics" xml:id="a1b.30" xml:lang="de-x-enh"> <title key="Pea, dietetics"><ingredient commodity="Q29472543" en="garden pea">Arbeißenn</ingredient></title> <dish commodity="Q275068" en="broth">Bruee</dish> hat die selben krafft aber nit als krefftigklichenn do vonn so man <ingredient ana="exclusion" commodity="Q33832605" en="chickpea">kichernn</ingredient> nit hat so seudt man <ingredient commodity="Q29472543" en="garden pea">arbeiß</ingredient> <ingredient commodity="Q33832605" en="chickpea">kichernn</ingredient> oder <ingredient commodity="Q29472543" en="garden pea">arbeiß</ingredient> die grun sein so soll man nit essenn wann sie machenn em menschenn boese feuchtigkeit</ab>
+
+ <pb n="061r" xml:id="A1_061r"></pb> <ab n="31" type="dietetics" xml:id="a1b.31" xml:lang="de-x-enh"> <title key="Faba, dietetics"><ingredient commodity="Q61672189" en="broad bean">Ponn</ingredient></title> Bleen vnd machenn we in dem leib vnd den swindel in dem haubt vnd spricht Rasis der vil vnd dick isset die <ingredient commodity="Q61672189" en="broad bean">pon</ingredient> die werdenn irre in irenn synnen vnd etwenn vnsinig vnd erseufczenn garr tieff vnd wenenn das in etwas preste oderr vnrecht sej vnd verirren die lewt in irenn synnen vnd in irer constientz . Etwenn wissen die selben lewt nit warvmb sie allso tieff erseuffczenn Galienus spricht das <ingredient commodity="Q61672189" en="broad bean">ponn</ingredient> gut plut machenn do von so muegenn sie starck lewt wol essenn Aber man sol sie wol siedenn Oder werr sie isset mit <ingredient commodity="Q41354" en="vinegar">essig</ingredient> so sie wol gesotenn sein oder sie rohe isset dem machenn sie boese feuchtigkeit in dem magenn vnd in den dermen vnd bleen vnd do von kumbt grosser sichtag</ab>
+
+ <ab n="32" type="dietetics" xml:id="a1b.32" xml:lang="de-x-enh"> <title key="Turnip, dietetics"><ingredient commodity="Q3916957" en="turnip">Rubenn</ingredient></title> Spricht auerrois hitzigenn vnd machenn feuchte vnd machen wind in dem leib vnd vnkeusch vnd schoen awgenn</ab>
+
+ <ab n="33" type="dietetics" xml:id="a1b.33" xml:lang="de-x-enh"> <title key="Onion, dietetics"><ingredient commodity="Q3406628" en="onion">Czwiffel</ingredient></title> Sind heyß in dem vierdenn grad vnd feucht in dem dritten grad vnd machenn vnkeusch vnd thund we in dem haubt vnd so man sie roch isset so machenn sie boese feuchtigkeit vnd bringenn gros senn durst dem menschenn</ab>
+
+ <ab n="34" type="dietetics" xml:id="a1b.34" xml:lang="de-x-enh"> <title key="Garlic, dietetics"><ingredient commodity="Q21546392" en="garlic">Knoblauch</ingredient></title> Ist heyß vnd truckenn auff dem mittel des vierden grads vnd habenn die eigenschafft als <ingredient ana="comparison" commodity="Q3406628" en="onion">zwifel</ingredient> vnd dar zu vertreibt er die wind oder das bleen in dem leib vnd sein schad wenn man sie isset wann sie bringenn grosse hitz vnd boese feuchtigkeit vnd richenn auff in das haubt Doch schadt <ingredient commodity="Q21546392" en="garlic">knoblauch</ingredient> in den kaltenn lanndenn mynnder vnd so die zeit kalt ist dann in dem summerr oder heissenn landen als dann spricht der meysterr rasis</ab>
+
+ <ab n="35" type="dietetics" xml:id="a1b.35" xml:lang="de-x-enh"> <title key="Cabbage, dietetics">Als <ingredient commodity="Q190903" en="herbaceous plant">kraut</ingredient> macht boß plut</title> Das ist melancolei vnd traurigkeit vnd boß gedennckenn vnd trawm an <ingredient commodity="Q578052" en="lettuce">lattich</ingredient> vnd <ingredient commodity="Q27946" en="alkanet">ochsen zungenn</ingredient></ab>
+
+ <ab n="36" type="dietetics" xml:id="a1b.36" xml:lang="de-x-enh"> <title key="Lactuca, dietetics"><ingredient commodity="Q578052" en="lettuce">Lattich</ingredient></title> kelt vnd der in gesottenn isset dem macht sie pesser plut dann ander <ingredient ana="comparison" commodity="Q190903" en="herbaceous plant">kraut</ingredient> vnd macht schloffenn wie man in isset roch oder gesotenn vnd ist gut dem die Sonne we hat gemacht in seinem haubt oder die enczinndet magenn habenn Vnd wer sie isset mit <ingredient commodity="Q41354" en="vinegar">essig</ingredient> den macht sie hungrig vnd lustig nach der speyß Sie ist auch hitzig vnd derret vnd schadt dem haubt dem gesicht vnd dem magenn vnd macht vil boeser trawm man sol sie siedenn mit czweyenn <ingredient commodity="Q283" en="water">wassernn</ingredient> so schadend sie dester mynder also schreibt avicenna </ab>
+
+ <ab n="37" type="dietetics" xml:id="a1b.37" xml:lang="de-x-enh"> <title key="Cabbage, dietetics"><ingredient commodity="Q35051" en="cabbage">Koelkraut</ingredient> </title> Ist hitzig vnd derret vnd macht wol singenn das <ingredient commodity="Q0" en="cabbage juice">safft</ingredient> <pb n="061v" xml:id="A1_061v"></pb> das von im kumbt ist gut gedruncken trunckenn lewtenn vnd macht boes plut vnd spricht Rasis das sie macht schwerr poeß trawm Es macht zu stul gen vnd erweicht die prust vnd die kelenn vnd gepewtet orbasius den menschen die das gesuecht in den lendenn habenn auch an hendenn vnd an fussenn das sie sullen <ingredient commodity="Q35051" en="cabbage">koel</ingredient> essenn</ab>
+
+ <ab n="38" type="dietetics" xml:id="a1b.38" xml:lang="de-x-enh"> <title key="Chard and orache, dietetics"><ingredient commodity="Q157954" en="chard">Mangolt</ingredient> vnd <ingredient commodity="Q157801" en="orache">moelt</ingredient></title> Sein der eygenschafft das sie den leip weichen vnd zu stul machenn genn vnd speisen wol vnd sein gut furr die gelsucht vnd ist gut den lewtenn die entzundt lebernn haben vnd besunder <ingredient commodity="Q157801" en="orache">moelt</ingredient> kelt vnd macht feuchtigkeit Aber <ingredient commodity="Q157954" en="chard">mangolt</ingredient> ist pesserr vnd bringt nit alsouil feuchtigkeit in dem menschen <ingredient commodity="Q157954" en="chard">Mangolt pleter</ingredient> ziehenn serr auff die wundenn gelegt</ab>
+
+ <ab n="39" type="dietetics" xml:id="a1b.39" xml:lang="de-x-enh"> <title key="Spinach, dietetics"><ingredient commodity="Q36814998" en="spinach">Benet</ingredient></title> Ist gut vnd nuetz der kelenn der lungenn dem magen vnd auch der lebernn vnd macht bescheydenlich zu stul genn vnd ist garr ein gut vnd gesund speyß</ab>
+
+ <ab n="40" type="dietetics" xml:id="a1b.40" xml:lang="de-x-enh"> <title key="Almond, dietetics"><ingredient commodity="Q184357" en="almond">Mandel kernn</ingredient></title> Die do sueß sein die sein bescheydenlich hitzig vnd bringenn bescheydenlich feuchtigkeit von dem menschenn vnd spricht Auerrois das sie machen wachßenn das hirnn vnd sußlich schlaffenn do von sein sie nuetz den menschen die do serr studiren oder wachenn vnd durr sein wordenn zu sere man soll sie schelen vnd mit <ingredient commodity="Q1501889" en="white bread">weißemm prot</ingredient> essenn so man sust nit mer essenn wil vnd wer <ingredient commodity="Q57656231" en="unrefined cane sugar">zucker</ingredient> dar zu isset an <ingredient commodity="Q7802" en="bread">brot</ingredient> das ist noch pesserr wan so machenn sie vil plutes das gut ist Rasis spricht das sie salbenn die kelenn vnd machenn sie glat vnd sein gut den lewtenn die schneydet das <ingredient commodity="Q283" en="water">wasserr</ingredient> von hitz sie machenn den menschen wol pruntzen vnd das selb thut auch <ingredient commodity="Q975953" en="almond milk">mandelmilch</ingredient> doch werdenn sie kawm verdewet Auerrois spricht das <ingredient commodity="Q184357" en="almond">mandel</ingredient> garr rein vnd sauber macht die weg vnd die gelider do das wasserr auß von dem menschenn get vnd sein gar nuetz magernn lewtenn vnd das <ingredient commodity="Q72437444" en="almond oil">oel</ingredient> das do von kumbt ist gut furr den krampff vnd der den ruckgrat do mit salbet den behuet es vnder weilen das er an im in seinem alter nit krump wirt</ab>
+
+ <ab n="41" type="dietetics" xml:id="a1b.41" xml:lang="de-x-enh"> <title key="Pomegranate, dietetics"><ingredient commodity="Q13222088" en="pomegranate">Granat oepffel</ingredient></title> Nuechternn gessenn die leschen den durst vnd vertreyben vber gele ### vnd machent den menschenn hungernn Rasis spricht das sie vertreyben den ritenn vnd machenn den das in die speyß zu dem mund auß fert das im die speyß beleibt vnd kelt die lebernn Auerrois spricht welche zeit man ißt das sie dann die speiß nit lassenn verderben in dem magenn vnd der sie zu hinderst ißt so lassen sie die andernn speyß nicht auf richenn in das haubt</ab>
+
+ <pb n="062r" xml:id="A1_062r"></pb> <ab n="42" type="dietetics" xml:id="a1b.42" xml:lang="de-x-enh"> <title key="Nut, dietetics"><ingredient commodity="Q11009" en="nut">Nuße</ingredient></title> Hitzenn vnd derren vnd werden kawm verdewt sie schadenn dem magen vnd machenn die speyß zu dem mund auß faren vnd zu stul genn Aber die grunen die schadenn mynder Werr ir zu vil isset den slecht das parliß oder der slack an der zungenn wann sie machenn ein swere zungen Auicenna spricht sie schaden nicht so es garr kalt in dem winter ist Auerrois spricht meßlich gessenn schadenn allen lewtenn die do hitzig suecht oder gebrestenn furchten musen oder offt gewynnen Wer sie mit <ingredient commodity="Q2746643" en="fig">feigenn</ingredient> ißt so sein sie gut furr vergiffte luefte vnd furr alle gifft</ab>
+
+ <ab n="43" type="dietetics" xml:id="a1b.43" xml:lang="de-x-enh"> <title key="Hazelnut, dietetics"><ingredient commodity="Q578307" en="hazelnut">Haselnuß</ingredient></title> Machenn das hirnn wachßenn vnd thun dem haubt we Ipocras spricht vnd Auicenna Wenn sie gebratenn sein so sein sie gut furr den hustenn vnd machenn serr auß werffenn <ingredient commodity="Q578307" en="hazelnut">Haßelnuß</ingredient> pleen in dem leib vnd machen winde in dem gedermm vnd werden kawm verdewt dann recht <ingredient ana="comparison" commodity="Q11009" en="nut">nuß</ingredient> doch speysen sie wol </ab>
+
+ <ab n="44" type="dietetics" xml:id="a1b.44" xml:lang="de-x-enh"> <title key="Medlar, dietetics"><ingredient commodity="Q3092517" en="medlar">Nespel</ingredient></title> Machen veste in dem leib vnd vertreibenn ueber gele man soll sie essenn hindenn nach so man sust nit merr essenn wil</ab>
+
+ <ab n="45" type="dietetics" xml:id="a1b.45" xml:lang="de-x-enh"> <title key="Chestnut, dietetics"><ingredient commodity="Q773987" en="chestnut">Kesten</ingredient></title> Die thun auch gleich als die <ingredient ana="comparison" commodity="Q3092517" en="medlar">nespelnn</ingredient> Sie laßenn die speiß nit auff in das haupt riechenn das thun auch <ingredient ana="comparison" commodity="Q13099586" en="pear">pirnn</ingredient> vnd <ingredient ana="comparison" commodity="Q10943" en="cheese">keß</ingredient> so man sie an der letze hinden nach ißt</ab>
+
+ <ab n="46" type="dietetics" xml:id="a1b.46" xml:lang="de-x-enh"> <title key="Black mulberriy, dietetics"><ingredient commodity="Q161040" en="black mulberry">Maulperr</ingredient></title> Die schadenn serr dem magenn vnd allermeyst die dy nit wol zeittig sein Mann soll sie essenn ee das man anndre speyß nueczt so machenn sie zu stul genn vnd keltenn auch</ab>
+
+ <ab n="47" type="dietetics" xml:id="a1b.47" xml:lang="de-x-enh"> <title key="Plum, dietetics"><ingredient commodity="Q12372598" en="plum">Pflawmen</ingredient></title> Sein zweyerlej weiß vnd swartz vnd sein ped der natur das sie keltenn vnd feucht machenn so sie zeittig sind vnd vertreiben uebrige poese hitz die von hitziger vber gell kummet vnd machen zu stul genn . Aber sie krenckenn ein wenig des magens muet vnd die sein weyß vnd sein peßerr dann die swartzen Auicenna spricht So sie grosserr vnd veister sind so sie ye pesser sind man soll sie essen ee das man ander speiß ist vnd sunderlich so der mensch nit mag zu stul genn</ab>
+
+ <ab n="48" type="dietetics" xml:id="a1b.48" xml:lang="de-x-enh"> <title key="Sweet and sour cherries, dietetics"><ingredient commodity="Q196" en="cherry">Kirschen</ingredient> <ingredient commodity="Q68438267" en="sour cherry">amerellen</ingredient></title> habenn auch die natur vnd wesen als die <ingredient ana="comparison" commodity="Q12372598" en="plum">pflawmen</ingredient> vnd man soll sie am erstenn essenn</ab>
+
+ <ab n="49" type="dietetics" xml:id="a1b.49" xml:lang="de-x-enh"> <title key="Peach, dietetics"><ingredient commodity="Q13411121" en="peach">Pfirsing</ingredient></title> die kelten vnd machenn feucht die poeß vnd schedlich ist doch bringt sie lust zu der speyß vnd werr <ingredient commodity="Q13411121" en="peach">pfirsing</ingredient> nach ander speyß isset das verderbt die ersten speyß in dem magenn vnd dar vmb wer sie wil essenn der soll sie vor annderen speysen essenn so sein sie nuetz furr den boesenn gesmack des munds der do kumbt von dem magen <pb n="062v" xml:id="A1_062v"></pb> vnd der rauch der von in kumbt der sterckt das hertz vnd wer do <ingredient commodity="Q0" en="peach leaf water">wasser prent auß den pfirsing pleternn</ingredient> das toet die wurmm in den oren so man es dar ein tropfft Wer vil vnd offt <ingredient commodity="Q13411121" en="peach">pfirsing</ingredient> isset der wirt offt ritig doch sein sie nuetz den lewtenn die serr in dem magenn enczundet sein die serr genn oder serr arbeitten so soll man sie nuechternn vnd bescheidenlich essenn</ab>
+
+ <ab n="50" type="dietetics" xml:id="a1b.50" xml:lang="de-x-enh"> <title key="Quince, dietetics"><ingredient commodity="Q2751465" en="quince">Kuetenn</ingredient></title> Stopfft merr dann die <ingredient ana="comparison" commodity="Q13099586" en="pear">pirnn</ingredient> vnd sterckt den magenn vnd macht lustigk zu essen Wer sie aber nach ander speyß isset den machenn sie zu stul gen vnd der smack der von in get der sterckt das hertz vnd ist gut furr allen geprestenn des hertzen vnd wenn man sie prett spricht Auicenna so sein sie nutzer den lewtenn vnd der natur den die dy speyß nit muegen behaltenn den sie oben auß fert vnd truncken lewtenn vnd sterckenn den magenn der vil boeserr feuchtigkeit in im hat vnd macht den menschenn froelich Auicenna spricht vnd der ein <dish commodity="Q6584340" en="syrup">syroppel</dish> auß dem <ingredient commodity="Q107262467" en="quince juice">safft</ingredient> macht vnd den trinckt das bringt den gelust wider zu essenn der speyß ob er in miteinander verloren het</ab>
+
+ <ab n="51" type="dietetics" xml:id="a1b.51" xml:lang="de-x-enh"> <title key="Pear, uncooked, dietetics"><ingredient commodity="Q13099586" en="pear">Pyren</ingredient> die do roch sein</title> Die keltenn vnd derren vnd stopffen den leib vnd benemenn den durst Rasis spricht der sie vor ander speyß ißt So trueckenn sie die speiß nyder das sie nit außrichenn in das haubt Sind sie aber rauch vnd nit sueß so soltu sie bratenn aber zumol nit essenn</ab>
+
+ <ab n="52" type="dietetics" xml:id="a1b.52" xml:lang="de-x-enh"> <title key="Appes, dietetics"><ingredient commodity="Q89" en="apple">Oepffel</ingredient></title> Die do suß sein machenn natuerliche feuchtigkeit Aber sawerr <ingredient commodity="Q89" en="apple">oepffel</ingredient> die kelten vnd derrent ob du der naturlichenn hitz zu vil hast vnd ob du newrr dar an schmeckst so stercken sie das hertz vnd daz hirnn Auch machen sie wind in dem leib Auerrois spricht <ingredient commodity="Q618355" en="apple juice">oepffel safft</ingredient> sterckt den magenn doch wer vil <ingredient commodity="Q89" en="apple">oepffel</ingredient> isset dem werden sein zieh adernn gekrenckt vnd wirt Ritig Auicenna spricht Wer <ingredient commodity="Q89" en="apple">oepffel</ingredient> isset der sol nicht dann den <ingredient commodity="Q618355" en="apple juice">safft</ingredient> ein slindenn Alle <ingredient commodity="Q89" en="apple">oepffel</ingredient> die nit guttenn geschmack habenn sein schedlich</ab>
+
+ <ab n="53" type="dietetics" xml:id="a1b.53" xml:lang="de-x-enh"> <title key="Grapes, dietetics"><ingredient commodity="Q10978" en="grape">Weintraub</ingredient></title> Die so sueß sein vnd weyß vnd dunne pelg habenn die dewet man leichtiglichenn wenn sie suß sein vnd spricht Rais das sie schier veist machenn vnd pleen vnd hitzenn vnd macht vnkeusch sie schadenn der blosenn man soll sie auch nit essen sie sein dann vor dreyenn oder vier tagenn gebrochenn Alle merr <ingredient commodity="Q10978" en="grape">trawbenn</ingredient> sein nuecz den menschen den wee ist in irem gedermm vnd den nyren vnd die blosen reynigt sie vnd speißenn wol Auerrois spricht das sie hitz brengenn vnd feuch tigkeit vnd sein nuetz der lebernn</ab>
+
+ <ab n="54" type="dietetics" xml:id="a1b.54" xml:lang="de-x-enh"> <title key="Fig, dietetics"><ingredient commodity="Q2746643" en="fig">Veigenn</ingredient></title> Das pest obs spricht Auerrois sein <ingredient commodity="Q2746643" en="fig">veigenn</ingredient> wann sie reynigenn <pb n="063r" xml:id="A1_063r"></pb> den magenn vnd machenn zu stul genn vnd bringenn hitz vnd feuchtigkeit Auicenna spricht das sie boeß plut machenn vnd darvmb wer ir vil isset der wirt grindig vnd vol lewß doch so sein sie nuetz der lebernn vnd dem miltz so sie verstopfft sein vnd den nyeren vnd dye blosen renigt sie vnd thut den weg auff do die speyß soll ein genn So man sie isset mit <ingredient commodity="Q11009" en="nut">nussen</ingredient> oder mit <ingredient commodity="Q184357" en="almond">mandel</ingredient> lang dar vor ee man isset die sein nuetz der prust vnd furr die reuhen in der kelen So man sie in <ingredient commodity="Q283" en="water">wasser</ingredient> seudt vnd sie trucken ißt mit <ingredient commodity="Q11009" en="nut">nußenn</ingredient> so sein sie furr alle vergifft gut </ab>
+
+ <ab n="55" type="dietetics" xml:id="a1b.55" xml:lang="de-x-enh"> <title key="Egg, dietetics"><ingredient commodity="Q15260613" en="chicken egg">Eyer</ingredient></title> Die do frisch sein von einem hun die sein die pestenn Der <ingredient commodity="Q16336079" en="yolk">totter</ingredient> hicziget bescheidenlich vnd speißt wol Aber das <ingredient commodity="Q796758" en="egg white">weyß</ingredient> kelt vnd macht schleim vnd boeß plut vnd ein boese speyß Weiche <ingredient commodity="Q15260613" en="chicken egg">hennen eyerr</ingredient> gesotten in <ingredient commodity="Q283" en="water">wasserr</ingredient> sein dewig vnd sein nuetz den lewten die krafft los sein wordenn vnd den lewten vonn den vil pluts get Gebratennn <ingredient commodity="Q15260613" en="chicken egg">eyer</ingredient> manchenn den tampff in das haubt auff genn . Weich <ingredient commodity="Q15260613" en="chicken egg">hennen eyer</ingredient> gesotenn sein gut den lewtenn die das abnemenn haben die do heiser oder rauch in der kelenn sein vnd nicht wol etmennn mugenn oder die plut zu dem mund auß werffenn</ab>
+
+ <ab n="56" type="dietetics" xml:id="a1b.56" xml:lang="de-x-enh"> <title key="Cheese, dietetics"><ingredient commodity="Q10943" en="cheese">Keße</ingredient></title> Der do ist weder zu Iung oder zu alt ein wenig <ingredient commodity="Q11254" en="table salt">gesaltzenn</ingredient> vnd feist der ist gut Doch so der <ingredient commodity="Q10943" en="cheese">keß</ingredient> newer ist vnd nit <ingredient ana="exclusion" commodity="Q11254" en="table salt">gesaltzen</ingredient> so er pesser plut macht Galienus spricht doch sol man sein wenig vnd seltenn essenn wann er macht den stein pey den nyren vnd in der bloßenn Auicenna sprricht aller <ingredient commodity="Q10943" en="cheese">keß</ingredient> er sei alt oder new <ingredient commodity="Q11254" en="table salt">gesaltzenn</ingredient> oder vngesaltzenn schadt dem magenn . Doch der sein ein wenig isset nach der speyß spricht Rasis daß es des magens mund stercke vnd den menschen dar nach machet lustig zu essenn vnd dewet die ander speyß das sprechenn auch all annder meysterr </ab>
+
+ <ab n="57" type="dietetics" xml:id="a1b.57" xml:lang="de-x-enh"> <title key="Milk, dietetics"><ingredient commodity="Q8495" en="milk">Milch</ingredient></title> Die do suß ist und frisch die keltet vnd macht feucht vnd ist nuetz den lewtenn die das abnemenn haben oder die durren hustenn oder die do scheydet das wasserr so sie pruntzen vnd den lewtenn die do husten den soll man <ingredient commodity="Q10987" en="honey">honig</ingredient> dar czu thun wann das macht das die <ingredient commodity="Q8495" en="milk">milch</ingredient> schierr wirt gedewet Also spricht Auicenna <ingredient commodity="Q8495" en="milk">milch</ingredient> macht durren lewten gut plut vnd gut naturr vnd schadt allen den lewtenn die den Ritenn oderr das grymmenn in dem leib habenn oder kranck zu adernn oder andernn sichtagenn habenn die von kelten komet Auff <ingredient commodity="Q8495" en="milk">milch</ingredient> soll nyemand <ingredient ana="exclusion" commodity="Q282" en="wine">wein</ingredient> trinckenn er horr dann auff Es spricht Auicenna Auff <ingredient commodity="Q8495" en="milk">milch</ingredient> soll man nit ander speyß essenn sie sey dann verdewet Werr susse <ingredient commodity="Q8495" en="milk">milch</ingredient> isset der sall zu hant dar auff nit arbeitten noch schlaffenn sunder er soll <pb n="063v" xml:id="A1_063v"></pb> sust rwenn anders es wurd die <ingredient commodity="Q8495" en="milk">milch</ingredient> in im zu <ingredient commodity="Q41354" en="vinegar">essig</ingredient> vnd schadt dem magenn vnd allenn geliderenn Nymant soll <ingredient commodity="Q8495" en="milk">milch</ingredient> vnd <ingredient ana="exclusion" commodity="Q600396" en="fish">fisch</ingredient> veber ein mol essenn wann es bringt aussetzigkeit vnd vnder aller <ingredient commodity="Q8495" en="milk">milch</ingredient> ist keine pesserr dann <ingredient commodity="Q22728" en="breast milk">frawenn milch</ingredient> vnd darnach <ingredient commodity="Q1418287" en="goat milk">geyß milch</ingredient> Auerrois spricht vnd Auicenna darnach <ingredient commodity="Q10988133" en="cow milk">rinder milch</ingredient> Es spricht Rasis Iung lewt die hitzig sein den ist <ingredient commodity="Q8495" en="milk">milch</ingredient> schad wann sie wirt zu hant in in gelbe aber altenn lewtenn ist sie gesund <ingredient commodity="Q8495" en="milk">Milch</ingredient> mit <ingredient commodity="Q10987" en="honey">honig</ingredient> oder <ingredient commodity="Q57656231" en="unrefined cane sugar">zucker</ingredient> gemischet vnd die gessenn das ist gut wann die <ingredient commodity="Q8495" en="milk">milch</ingredient> wirt do von dester ee verdewet Avicenna spricht sie macht feucht vnd benymbt den grind an dem leib 
+    <ab n="1" subtype="subrecipe" type="dietetics" xml:id="a1b.57.1" xml:lang="de-x-enh"> <title key="Milk, dietetics"><ingredient commodity="Q8495" en="milk">Milch</ingredient></title> Ist gut allenn den die geprestenn haben an der lungenn <ingredient commodity="Q8495" en="milk">Milch</ingredient> von der die <ingredient ana="exclusion" commodity="Q34172" en="butter">putter</ingredient> benomen ist der dick dar ein ein glueend eysen stest vnd das trinckt es sterckt in hat er ein enczindete lebernn oder ist er wundt in dem gedermm oder get plut von im von vebriger hitz zu der nasenn oder anders wo vonn vebriger hitz er genist</ab>
+
+ <ab n="2" subtype="subrecipe" type="dietetics" xml:id="a1b.57.2" xml:lang="de-x-enh"> Item alle <title key="Sour milk, dietetics">grune sawre <ingredient commodity="Q8495" en="milk">milch</ingredient></title> ist vndewig vnd macht den menschenn vnlustig zu essenn</ab>
+
+ <ab n="3" subtype="subrecipe" type="dietetics" xml:id="a1b.57.3" xml:lang="de-x-enh"> Item <title key="Whey, dietetics"><ingredient commodity="Q185009" en="whey">molcken</ingredient></title> vertreibt hitz vnd vebergelle vnd ist gut grindigenn lewten vnd den die geswulst haben</ab>
+
+ <ab n="4" subtype="subrecipe" type="dietetics" xml:id="a1b.57.4" xml:lang="de-x-enh"> Item <title key="Butter, dietetics"><ingredient commodity="Q34172" en="butter">Putternn</ingredient></title> von der <ingredient commodity="Q8495" en="milk">milch</ingredient> gemacht krennckt den magenn vnd macht den menschen vnlustick zu essenn wer sein vil isset </ab>
+
+ </ab>
+
+ <title ana="chapter" corresp="#a1b.59 #a1b.60 #a1b.61 #a1b.62 #a1b.63 #a1b.64 #a1b.65 #a1b.66 #a1b.67 #a1b.68 #a1b.69 #a1b.70 #a1b.71 #a1b.72 #a1b.73 #a1b.74 #a1b.75 #a1b.76" key=""> Hienach volgt ein Capitell von den <ingredient commodity="Q600396" en="fish">vischenn</ingredient></title> 
+         <ab n="58" type="dietetics" xml:id="a1b.58" xml:lang="de-x-enh"> Item <title key="Fish from fresh waters, dietetics">die <ingredient commodity="Q600396" en="fish">fisch</ingredient> die do ganngenn sein in steinigenn vnd flissendenn wassernn</title> vnd vil schueppenn haben vnd weder zu groß noch zu clein sein vnd nicht zu feist als <ingredient commodity="Q79213588" en="eel">ele</ingredient> vnd salmm die suß sein vnd nicht uebel schmeckenn die sein die pestenn die do frisch vnd nit faul sein yedoch soltu wissenn das alle gruen <ingredient commodity="Q600396" en="fish">fisch</ingredient> kalt vnd feucht sein vnd vndewig vnd machen durst vnd boeses plut vnd machen einen boesen magen vnd vil schleims in dem magenn vnd schadenn allenn menschenn die do sichtagenn habenn die von kelten komenn doch sein sie nutz den lewten die hitzig vnd duerr sein Item alle <ingredient commodity="Q600396" en="fish">visch</ingredient> die in pfuczigenn oder stendenn wassernn gen die sein boeß Alle <ingredient commodity="Q838052" en="salted fish">gesaltzenn visch</ingredient> sein vngesund vnd man soll ir wenig essenn doch die <ingredient commodity="Q600396" en="fish">visch</ingredient> die newlich <ingredient commodity="Q11254" en="table salt">gesaltzenn</ingredient> sein die sein vnder den die pestenn Also spricht Auicenna frisch <ingredient commodity="Q600396" en="fish">fisch</ingredient> alls hie vor geschriben stet die sein die pestenn so man sie macht in ein <dish commodity="Q837480" en="aspic">sultzenn</dish> do ein wenig <ingredient commodity="Q41354" en="vinegar">essigs</ingredient> ynnen ist die sein gesund all <ingredient commodity="Q110611230" en="fish broth">visch brue</ingredient> die machen zu stul genn Item alle <ingredient commodity="Q210959" en="crayfish">krebs</ingredient> sein gut die in einem frischenn wasser gegangenn sein <pb n="064r" xml:id="A1_064r"></pb> vnd sein nuetz allenn den die das abnemen habenn oder sust verswinden ann dem leib vnd speyßt wol Item Alle <ingredient commodity="Q600396" en="fish">visch</ingredient> sein gesunder gebrotenn dann gesotenn die bringenn dem menschen den schloff als der <ingredient commodity="Q79213588" en="eel">oel</ingredient> Item Es spricht Gardianus spricht man soll alle <ingredient commodity="Q600396" en="fish">visch</ingredient> sieden mit <ingredient commodity="Q282" en="wine">wein</ingredient> oder <ingredient commodity="Q41354" en="vinegar">essig</ingredient> oder <ingredient commodity="Q42527" en="spice">wurtzenn</ingredient> wann das zeucht die boesen feuchtigkeit dar vonn</ab>
+
+ <title ana="chapter" corresp="#a1b.59 #a1b.60 #a1b.61 #a1b.62 #a1b.63 #a1b.64 #a1b.65 #a1b.66 #a1b.67 #a1b.68 #a1b.69 #a1b.70 #a1b.71 #a1b.72 #a1b.73 #a1b.74 #a1b.75 #a1b.76" key=""><foreign xml:lang="la"> <title key="">Sequitur de quibusdam piscibus et vtilitatibus corum in latino Et primo</title> </foreign></title> <ab n="59" type="dietetics" xml:id="a1b.59" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Northern pike, dietetics">de <ingredient commodity="Q83363026" en="northern pike">lucio</ingredient> </title> Item Lucius plus de calido aere quam de frigido atque in puritate et medietate aquarum libenter versatur et diem diligit et acer est et grim vel aliqua bestia in silua et vbicumque morantur pisces consumit et aquas illas pre alys pistibus euacuat Nam munda pascua querit Et duras ac sanas carnes habet tam infirmis quam sanis hominibus bene valent ad comedendum Et si homo sepius eius iecorem comedit sanam ac bonam digestionem facit Et valet contra vermes Si vermis hominem ac pecus comedit ossa piscis huius puluerisa et de tali puluere ad locum pone et vermes moriuntur Hoc idem facit fundula cum melle linita et liga supra diditum vel vulnus Si vermis est comedit sed si sanaris manet integer</foreign> </ab>
+
+ <ab n="60" type="dietetics" xml:id="a1b.60" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Barbel, dietetics"><ingredient commodity="Q83363029" en="common barbel">Barbo</ingredient></title> Est de calido aere magis quam de frigido diem diligit calorem libenter habet Et cum aliquod frigus senserit tunc quasdam cauernulas intrat ut in eis calorem habeat et in sole libenter est Et ideo caro eius mollis est Et si sanus homo eum frequenter comedit ei nec sanum sangwinem nec sanas carnes parat atque in stomacho simul coagulantur Et qui caput piscis huius frequenter comedit dolorem in capite eius parat et alias febres in ipso facit Et rogum eius quasi venenum est</foreign> </ab>
+
+ <ab n="61" type="dietetics" xml:id="a1b.61" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Carp, dietetics"><ingredient commodity="Q83355448" en="carp">Carpo</ingredient></title> Est plus calidus quam frigidus Et diem magis diligit quam noctem et calorem pallidum in se habet atque de palludibus molles et infirmas carnes tenet et in eis pascua querit Ac in spuma aquarum libenter versatur Et caro eus sano homini in comestione non nocet Infirmum autem ledit et nocet Et homo qui patiteur febribus et tedium habet comedendi Et quod cibus eius non in fastidio est piscem illum coquat et tunc caput eius aufferat et in medium diuidat et ad ignem ponat Et sic in vinum ponat Et huic tertiam partem acceti ponat addat et modicum mellis in hys perfudatur et sic paratum sepe comedat et febres in eo cessabunt et fastidium comedendi deponat Et cetera in eo ad medicinam non valent </foreign> 
+ 
+ <ab n="1" subtype="subrecipe" type="dietetics" xml:id="a1b.61.1" xml:lang="de-x-enh"><title key="Dolphin, dietetics" type="none"></title> <foreign xml:lang="la">Item Nota de quanto profundior et purior et mobilior de tanto pisces in eo nutriem est melior Per hoc patet quod porcus marino non valet homini ad comedendum</foreign> </ab>
+
+ <ab n="2" subtype="subrecipe" type="dietetics" xml:id="a1b.61.2" xml:lang="de-x-enh"><title key="Fish in muddy waters" type="none"></title> <foreign xml:lang="la">Item <ingredient commodity="Q600396" en="fish">pisces</ingredient> morantes in aqua meridionali non tantum valent sicut in septem drionali quia ista est magis agitata Et est velocioris cursus et refluxus</foreign> </ab>
+
+ </ab>
+
+ <pb n="064v" xml:id="A1_064v"></pb> <ab n="62" type="dietetics" xml:id="a1b.62" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Bream, dietetics"><ingredient commodity="Q144534" en="common bream">Breßma</ingredient></title> Est magis calida quam frigida Et succum terre in se habet Et eciam de terra calorem in se habet et circa fundum aquarum libenter versatur et terram interdum comedit noctem diligit Et nec sanis nec infirmis ad comedendum valet sed tamen eum superare possunt Contra stomachi indigestionem homo dolens stomacho eum piscem in aqua coquat et sic in acceto cyniaio addito condicit id est sulczt et comedat sic stomachum ab omne egritudine sanat</foreign> </ab>
+
+ <ab n="63" type="dietetics" xml:id="a1b.63" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="???, dietetics"><ingredient commodity="Q0" en="unsolved">Forula</ingredient></title> Est magis de calido quam de frigido aere noctem diligit et circa</foreign> <foreign xml:lang="la">fundum aque versatur sed tamen non multum munde pascuntur Et infirmis hominibus</foreign> <foreign xml:lang="la">ad comedendum non multum valent Sanos autem non ledit</foreign> </ab>
+
+ <ab n="64" type="dietetics" xml:id="a1b.64" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Berch, dietetics"><ingredient commodity="Q746136" en="berch">Persik</ingredient></title> Est magis de calido quam de frigido aere Et diem diligit atque in splendore solis semper est Et eciam in puritate aquarum libenter versatur Et ibi munda pascua querit et ideo caro eius sana est tam infirmus quam sanis Ascha Est magis de frigido quam de calido aere Et diem diligit eciam super lapides libenter quiescit Et carnes eius sane sunt tam sanis quam egrotis</foreign> </ab>
+
+ <ab n="65" type="dietetics" xml:id="a1b.65" xml:lang="de-x-enh"> <title key="Common roach, dietetics"><ingredient commodity="Q182976" en="common roach">Rotaug</ingredient></title> <foreign xml:lang="la">Plus de calido quam de frigido aere est diem diligit et sursum in spuma aquarum versatur Et bonus est tam infirmis quam sanis</foreign> </ab>
+
+ <ab n="66" type="dietetics" xml:id="a1b.66" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Common dace, dietetics"><ingredient commodity="Q143326" en="common dace">Haßela</ingredient></title> heßling plus de calido quam de frigido aere est Et diem ac calorem diligit ac in sumitate aquarum versatur atque in munda pascua querit Et bonus est ad comedendum tam infirmis quam sanis</foreign> </ab>
+
+ <ab n="67" type="dietetics" xml:id="a1b.67" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Common bleak, dietetics"><ingredient commodity="Q200473" en="common bleak">Blicka</ingredient></title> Blick plus est de calido aere quam de frigido diem et calorem diligit et in spuma ac sumitate aquarum libenter versatur et munda pascua co medit Et sanis hominibus valet Sed infirmi modicum de ea comedant quia molles carnes habet</foreign> </ab>
+
+ <ab n="68" type="dietetics" xml:id="a1b.68" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Tench, dietetics"><ingredient commodity="Q83363035" en="tench">Sleya</ingredient></title> De calore pallida est noctem diligit et circa fundum littus versatur Et magis inmundis quam mundis pascuis vesatur Et nulli homini valet pro comesci one siue infirmis aut sanis </foreign> </ab>
+
+ <ab n="69" type="dietetics" xml:id="a1b.69" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Common gudgeon, dietetics"><ingredient commodity="Q4468" en="common gudgeon">Grundula</ingredient></title> Caro eius sana non est comedendum Sed homines qui sani sunt eciam si comederint superare poterunt Sed infirmos homines et precipue gichtig maxime ledit Et omnis infirmitates hominis faciliter excitat</foreign> </ab>
+
+ <ab n="70" type="dietetics" xml:id="a1b.70" xml:lang="de-x-enh"> <title key="Spined loach, dietetics"><ingredient commodity="Q728408" en="spined loach">Steynpeiß</ingredient></title> <foreign xml:lang="la">Plus de frigido aere est quam de calido noctem diligit et que inmunda sunt comedit Et homini ad comedendum non est</foreign> </ab>
+
+ <ab n="71" type="dietetics" xml:id="a1b.71" xml:lang="de-x-enh"> <title key="???, dietetics"><ingredient commodity="Q0" en="unsolved">Rugelhaubt</ingredient></title> <foreign xml:lang="la">Magis de frigido quam de calido aere est diem diligit et in medietate et summitate aquarum versatur Et caput eius nocinum est eo quod omnia caput astendunt de pascuis eius non datur</foreign> </ab>
+
+ <ab n="72" type="dietetics" xml:id="a1b.72" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Freshwater crayfish, dietetics"><ingredient commodity="Q210959" en="crayfish">Cancerr</ingredient></title> Magis est calidus quam frigidus Et calorem plus de terra quam de aere habet diem ac lucem diligit sanos carnes habet tam sani quam eciam infirmi comedere possunt Exceptis illis quibus stomachus infrigidatus est <pb n="065r" xml:id="A1_065r"></pb> Et qui comesteos cibos vix digerere potest huic cancer ad esum nimis fortis est ita que eum dfficliter digerere potest Et ideo illi ad comedendum non valet</foreign> </ab>
+
+ <ab n="73" type="dietetics" xml:id="a1b.73" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Eel, dietetics"><ingredient commodity="Q79213588" en="eel">Oel</ingredient></title> Caro angwilla nundam est nec sano homini ad comedendum valet velud corpus porcorum sed sanos homines non multum ledit Infirmis autem in omnibus malis humoribus ac in cunctis infirmitatibus eorum conuertit et comedentes amaro animo et cistutos a malo facit Et fel eius valet contra oculorum caliginem cum illo oculi wenguntur per modum temperatus clareficiunt</foreign> </ab>
+
+ <ab n="74" type="dietetics" xml:id="a1b.74" xml:lang="de-x-enh"> <title key="Burbot, dietetics"><ingredient commodity="Q144700" en="burbot">Alrupp</ingredient></title> <foreign xml:lang="la">Fit ab vngwilla femina plus de frigido quam de calido aere est diem diligit ac in medietate aquarum versatur sed inmuda pascua plus querit quam munda Et nec sanis nec infirmis hominibus valet ad comedendum preterquam jecor que valet omnibus in comestione</foreign> </ab>
+
+ <ab n="75" type="dietetics" xml:id="a1b.75" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Lamprey, dietetics"><ingredient commodity="Q261485" en="lamprey">Lampreda</ingredient></title> Est plus de calido aere quam de frigido habet naturam piscium et serpentum quia aliquantulum venenosa est Et in cauda sua venenum gerit Et tamen duos habet oculos quia foramina que quasi oculi in eo videntur oculi non sunt sed tamen ceca foramina noctem diligit ac in cauernalis et in paludibus aquarum libenter moratur et in mundis pascuis vtitur Et tam sanis quam infirmis hominibus mala est Ac malam digestionem in stomacho parat atque in omnibus venis tempestates excitat nec vlla vtilitas in ea est </foreign> </ab>
+
+ <ab n="76" type="dietetics" xml:id="a1b.76" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Fish sauce, dietetics"><ingredient commodity="Q0" en="unsolved">Allec Assatum</ingredient></title> turiges est bene gratum ex solo capite facit tibi fercula quoque duering brithering trofhering do weinet duering Nam allec de frigido aere est sed instabilem et vagam naturam habet Et diem diligit infundo et sumitate aquarum versatur et munda pascua querit et cum capitur ita que recens est homini ita ad comedendum non valet quia eum faciliter intumescere facit Et ideo tam sanis quam infirmis cum nouiter captus est ad comedendum nocius Sed cum postea sale profunditur fetores que in eo sunt per sal minuuntur ita que tanto minus comedentem ledit et eo sanius est </foreign> </ab>
+
+ <title ana="chapter" corresp="#a1b.77 #a1b.78 #a1b.79 #a1b.80 #a1b.81 #a1b.82 #a1b.83 #a1b.84 #a1b.85 #a1b.86 #a1b.87" key="">Hienach volgt ein Capitell von dem <ingredient commodity="Q7802" en="bread">prot</ingredient></title> <ab n="77" type="dietetics" xml:id="a1b.77" xml:lang="de-x-enh"><title key="Bread, dietetics" type="none"></title> Es spricht Rasis das vnter allem <ingredient commodity="Q12117" en="cereal">kornn</ingredient> <ingredient commodity="Q15645384" en="wheat">weitz</ingredient> das pest ist vnd darvmb das <ingredient commodity="Q7802" en="bread">prot</ingredient> dastu isset das soll sein von <ingredient commodity="Q15645384" en="wheat">weitz</ingredient> vnd soll sein schoen vnd wolgepackenn vnd etwas <ingredient commodity="Q11254" en="table salt">gesaltzen</ingredient> vnd wol gedeßmet vnd soll eins oder zweyrr tag zu dem mynsten alt sein Doch wiß das daz schoen <ingredient commodity="Q7802" en="bread">prot</ingredient> das ein wenig cleyen hat macht zu stul genn Avicenna spricht . du solt nymmerr warmm <ingredient commodity="Q7802" en="bread">brot</ingredient> essenn wann es swebt oben in dem magenn vnd mag nit verdewet werdenn Ein yetlich <ingredient commodity="Q7802" en="bread">brot</ingredient> das im <ingredient commodity="Q283" en="water">wasser</ingredient> gesotenn ist vnd nit resem hat das macht den stein vnd we in dem leib vnd in der leberenn Auch <ingredient commodity="Q7802" en="bread">brot</ingredient> das in der <tool commodity="Q127666" en="pan">pfannen</tool> gepackenn ist als <dish ana="comparison" commodity="Q13276" en="cake">kuchlein</dish> das thut wee in dem leib vnd mag nit wol verdewet werdenn Als <ingredient commodity="Q7802" en="bread">brot</ingredient> das alt gepackenn ist das bringt grossenn sichtagenn <ingredient commodity="Q3893120" en="rye bread">Ruockenn prot</ingredient> das ist das pest nach dem weissenn vnd macht zu stul genn Ander <ingredient commodity="Q7802" en="bread">brot</ingredient> ist nit gesund noch gut wann es speyßt nit wol </ab>
+
+ <pb n="065v" xml:id="A1_065v"></pb> <ab n="78" type="dietetics" xml:id="a1b.78" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Wheat, dietetics"><ingredient commodity="Q15645384" en="wheat">Triticum</ingredient></title> Calidum est et plenus fructus Itaque in eo mullus defectus est Et cum recta farina de tritico fit Tunc panis ex eadem farina factus sanis et infirmis bonus Et rectum carnem et sangwinem in homine parat Sed qui drust medullam et symilaginem de eadem farina excutit et de eodem dunst panem facit Panis ille debilior est quam qui de ipsa recta farina factus est Et quia dunst vires suas aliquam tulum perdent et plus de slym in homine percit quam ipsa recta farina tritici Qui autem triticum absque integris granis coquit Et non in molendino tutum etsic velud alium cibum comedet iste nec bonam sangwinem nec carnem parat Et vix digeritur Et sic infirmis non valet Et si sanus hoc comestum superare potit Sed tum siquis vacuum terebrum habet et ob hoc ita in amnecia fatigatur velud freneticus Accipe integra grana tritici et ea in aqua coque et deinde toto capiti calidius supra pone et pannum de super liga Et sic cerebrum illius de succo illo ceplebitur vires suas et sanitatem recipiet Et sic fac donet ille ad mentem suam redeat Item Contra dolorem renum ex siccitate Et qui dolet in dorso et lumbis Recipe grana tritici et in aqua coque et ita calida super locum illum pone vbi dolent Et calore tritici vires illius pestis fugabit</foreign> </ab>
+
+ <ab n="79" type="dietetics" xml:id="a1b.79" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Winter wheat, dietetics"><ingredient commodity="Q6977574" en="winter wheat">Siligo</ingredient></title> Calidum est sed tamen frigidior est tritico Et multas vires habet Panis autem ex eo factus sanis hominibus bonus est et eos fortes facit Et illis eciam qui pingwes carnes habent bonus est quoniam carnes eorum minuit et eos fortes parat Sed illis qui frigidum stomachum habent et multum ex eo infirmantur grauis est quoque ipsorum debilitas illum ad digestionem superare non valet Et ideo plurimum tempestatem in eis parat quia eum vix digerere potent</foreign> </ab>
+
+ <ab n="80" type="dietetics" xml:id="a1b.80" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Oats, dietetics"><ingredient commodity="Q24265484" en="oats">Auena</ingredient></title> Calida acuti gustus excitit et fortis fumum letus ac sanus cibus Sanis hominibus valet et letam mentem puram ac clarum intelectum eis parat bonam calorem et bonos carnes eis facit Illis autem qui aliquamtulum infirmantur valet tam in pone quam in farina ad comedendum eos qui non ledit Isti autem qui multum frigidi et infirmi sunt ad comedendum non valet quia auena propter calorem querit Et si isti in pane aut farina comederint in ventre eorum se simul mollent et vires eis non dant quoniam frigide sunt Sed qui Amneciam habet ex hm?te? Et inde diuisam mentem et varias cogitationes habent ita que aliquantulum omnes efficitur In asso balneo tamen auena in aqua cocta totum corpus suum circumponat Et in eadem aqua in qua auena cocta est ignitos lapides perfundat hoc sepius faciat et ad se re uertetur et sanitatem recipiet </foreign> </ab>
+
+ <ab n="81" type="dietetics" xml:id="a1b.81" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Barley, dietetics"><ingredient commodity="Q25323983" en="barley">Ordeum</ingredient></title> frigidum est ita que frigidius et debilius est prefatis frugibus Et si comeditur aut in pane aut in farina tam sanos quam infirmos ledit quia tantas vires non habet ut cetera grana frugum <pb n="066r" xml:id="A1_066r"></pb> Sed infirmus qui iam toto corpore deficit ordeum in aqua fortiter coquat et aquam illam in doleum fundat ac in ipsam balneum recipiat et hoc sepe faciat dum sanetur Et carnes corporis sui recipiet ac ad sanitatem perveniet Qui eciam tantum infirmatur quod panem comedere non potest Ordeum et auenam equali pondere recipiat et modicum feniculi addat modicum que segiminis et simul in aqua coquat Et postquam coquitur succum illum colat Et ipsum velud vis pro comestione panis bibat Et faciat donec conualescat Item Contra duriciam faciei et quis apperam cutem habet Et cui venti nocent Ordeum in aqua coquat et tunc cum aqua illa perpannum colata et temperate calida in facie se leniter lauet et cutis eius sibi lenis et sanus erit et pulchrum colorem habebit Et si caput hominus frigus est aut infirmum tali iam dicta aqua sepius lauet et sanetur </foreign> </ab>
+
+ <ab n="82" type="dietetics" xml:id="a1b.82" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Spelt, dietetics"><ingredient commodity="Q158767" en="spelt">Spelta</ingredient></title> Optimum granum est calidum et pingwe vertuosum est et sanius alys granis Et cum comedenti rectam carnem et rectum sangwinem facit atque letam mentem Et gaudium in mente hominis facit Et quomodocumque comedatur siue in pane suce in alys cibis bona et suanis est Item Si quis adeo infirmus esset qui pre infirmitate comedere non posset Accipiat integra grana speltzenum et ea in aqua coque segimine addito et vitello oui Ita ut propter meliorem saporem libenter comedi posset Et detur infirmo ad comedendum Et eum ut bonum et sanum vngentum nutrius sanat</foreign> </ab>
+
+ <ab n="83" type="dietetics" xml:id="a1b.83" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Pea, dietetics"><ingredient commodity="Q29472543" en="pea">Pisa</ingredient></title> frigida et aliquantulum flegmatica exitit pulmonem aliquantulum dempffet sed tamen hominum qui calide nature est bona est ad comedendum et fortem illum facit Ille autem existens frigide nature et infirmus non valet ad digestionem quia multum in eo schleym parat </foreign> </ab>
+
+ <ab n="84" type="dietetics" xml:id="a1b.84" xml:lang="de-x-enh"> <foreign xml:lang="la"> <title key="Broad bean, dietetics"><ingredient commodity="Q61672189" en="broad bean">Faba</ingredient></title> Calida est sanis fortis que hominibus bona ad comedendum et melior quam pisa Nam si infirmi fabam comedunt eos non multum ledit quoque tantum linorem in eis non parat sicut pisa facit . Farina enim fabe bona est es vtilis tam infirmo quam sano homini quia lenis est et faciliter digeri potest Et quis in visteribus dolet fabam in aqua coquat modico segimine aut oleo addito et seperata faba prodium eius calide sorbeant et hoc sepe faciat et hominem internius sanat</foreign> </ab>
+
+ <ab n="85" type="dietetics" xml:id="a1b.85" xml:lang="de-x-enh"> <title key="Lentil, dietetics"><ingredient commodity="Q61505177" en="lentil">Lens</ingredient></title> <foreign xml:lang="la">Est frigida et comesta nec medullam hominis nec sangwinem nec carnem ei augmentat nec vires ei tribuit sed tantum vanitatem ventris implent infirmos humores ad procellam in hominibus excitat</foreign> </ab>
+
+ <ab n="86" type="dietetics" xml:id="a1b.86" xml:lang="de-x-enh"> <title key="Millet, dietetics"><ingredient commodity="Q259438" en="common millet">Hirsch</ingredient></title> <foreign xml:lang="la">Frigidum est et modicum calidum quia nec sangwinem nec carnem auget in homine nec vires eis tribuit sed tantumodo ventrem eius implet et tantum famem in eo minuit qui gustum refatilacionis non habent Sed et cerebrum hominis aquosum facit et stomachum eius tepidum ac tardum parat Et humoribus qui in homine sunt procellam incutit nec sanum est homini ad comedendum</foreign> </ab>
+
+ <ab n="87" type="dietetics" xml:id="a1b.87" xml:lang="de-x-enh"> <title key="Hemp, dietetics"><ingredient commodity="Q27595243" en="hemp">Haniff</ingredient></title> <foreign xml:lang="la">Calidum extitit et cum aer nec multum calidus nec frigidus est crescit . et ita eciam natura ipsius est et semen eius sanitatem habet et sanabile est <pb n="066v" xml:id="A1_066v"></pb> sanis hominibus ad comedendum Et in stomacho eorum lene est et vtile Itaque egritudines stomachu aliquantulum auffert et faciliter digeri potest atuqe malos humores minuit Et humores bonos confortat Sed tamen qui in capite infirmus est Et qui vacuum habet cerebrum Si comederit aliquantulum dolorem senciet in capite Sed qui sanum caput habet et bonum cerebrum non ledit Sed qui infirmatur huic eciam modicum dolerem in stomacho facit Qui autem moderate infirmus est non ledit hunc</foreign> </ab>
+
+ <title ana="chapter" corresp="#a1b.88 #a1b.89 #a1b.90 #a1b.91 #a1b.92 #a1b.93 #a1b.94 #a1b.95" key="">Hienach volgt ein Capittel vonn dem <ingredient commodity="Q10990" en="meat">fleisch</ingredient></title> <ab n="88" type="dietetics" xml:id="a1b.88" xml:lang="de-x-enh"><title key="Meat, dietetics" type="none"></title> Item <ingredient commodity="Q10990" en="meat">fleysch</ingredient> ist ein speyse do des menschenn leib allermeist von gespeißt wirt vnd in feist vnd starck machen Doch ist es nit gut den lewtenn die Ritig sein oder sust vol plutz sein Wiß das als <ingredient commodity="Q10990" en="meat">fleisch</ingredient> alter tier oder die do iunge tier in in tragenn vnd auch alter <ingredient commodity="Q178559" en="poultry">vogel</ingredient> als alte <ingredient commodity="Q864693" en="chicken">hunerr</ingredient> vnd alte <ingredient commodity="Q2216236" en="rooster">hannenn</ingredient> vnuetz ist Vnd als veists <ingredient commodity="Q10990" en="meat">fleisch</ingredient> wann das schavmet in dem magenn vnd macht den menschenn vnlustig zu essenn Als gepratenn <ingredient commodity="Q10990" en="meat">fleisch</ingredient> das speyst wol vnd ist gesund doch wirt es kawm verdewt vnd ist den mensche gut den vil plutz enget vnden an vnd man soll kein ander speiß essenn wenn man das selbig isset spricht Rasis Gebratenn <ingredient commodity="Q10990" en="meat">fleisch</ingredient> an dem das ist ein grobe speyß vnd macht sat vnd wirt kaum verdewet vnd macht veist in dem leib so es mager ist Gesottenn <ingredient commodity="Q10990" en="meat">fleisch</ingredient> ist das gesundest wie man das bereittenn mag Doch thut man ein wenig <ingredient commodity="Q41354" en="vinegar">essigs</ingredient> in das <ingredient commodity="Q283" en="water">wasserr</ingredient> darInnen es seudt so ist es nuetz den lewten die ein heisse lebernn habenn oder die zu vil <foreign xml:lang="la">Rubeam coleram</foreign> habenn oder das vbergel haben</ab>
+
+ <ab n="89" type="dietetics" xml:id="a1b.89" xml:lang="de-x-enh"> <title key="Chicken, young, dietetics"><ingredient commodity="Q864693" en="chicken">Junghuener</ingredient></title> Es spricht Auerrois das vnder allenn <ingredient commodity="Q178559" en="poultry">vogelnn</ingredient> ein Iunge <ingredient commodity="Q864693" en="chicken">henne</ingredient> die do feist ist der gesundest <ingredient commodity="Q178559" en="poultry">vogel</ingredient> ist vnd hat die eygenschafft das die machet gut naturr vnd die <ingredient commodity="Q68187791" en="poultry broth">brue</ingredient> do von thut daz selb vnd ist nuetz den aussetzigenn menschenn vnd vnder allen <ingredient commodity="Q864693" en="chicken">hennen</ingredient> die nye kein ey geleit die sein gut die anndernn sein nit gut Das <ingredient commodity="Q0" en="chicken brain">hirnn der Iungenn hennen</ingredient> macht wachßenn des menschen hirnn vnd macht gut synne vnd wert das plut von der nasen von dem gepresten des hirnes </ab>
+
+ <ab n="90" type="dietetics" xml:id="a1b.90" xml:lang="de-x-enh"> <title key="Partridge, dietetics"><ingredient commodity="Q26106" en="partridge">Rephun</ingredient></title> <foreign xml:lang="la">Est frigide nature atque domestica galina perdice frigidior est caro eus infirma non est sed fragilis Et comesta sanos non multum ledit Infimis autem non valet quia fat</foreign> sleymig <foreign xml:lang="la">Accipe fel eius et veteri aruine comisce Et in cuius cute pedicule exterius de sudore carnis crescunt illi se cum eo sepe pervngant et cutem eius pertransit et vlterius non crescunt</foreign> <ingredient commodity="Q26106" en="partridge">Rephuner</ingredient> sein gar gesund vnd spricht Rasis das sie die eygenschaft habenn wie man sie isset gesotenn oder gepratenn so vertreiben sie die boesen feuchtigkeit von dem magenn vnd all faul speyß vnd stopffenn sie den leib </ab>
+
+ <pb n="067r" xml:id="A1_067r"></pb> <ab n="91" type="dietetics" xml:id="a1b.91" xml:lang="de-x-enh"> <title key="Black grouse, dietetics"><ingredient commodity="Q155878" en="black grouse">Pirckhunn</ingredient></title> <foreign xml:lang="la">Eandem naturam habet sicut etiam dictum preter hoc quod caro ipsius melius valet tam infirmis quam sanis ad comedendum quam caro precedentis</foreign> </ab>
+
+ <ab n="92" type="dietetics" xml:id="a1b.92" xml:lang="de-x-enh"> <title key="Wood grouse, dietetics"><ingredient commodity="Q129059" en="capercaillie">Awerhun</ingredient></title> <foreign xml:lang="la">calidum et aliquantulum humidum est Et ideo tam infirmis quam sanis in comestione bonus est Et si maden aut aly vermes hominem comedunt Vesicam vehimes puluerisa et de tali puluere in locum vlterum pone et cum gutauerint morientur</foreign> </ab>
+
+ <ab n="93" type="dietetics" xml:id="a1b.93" xml:lang="de-x-enh"> <title key="European turtle dove, dietetics"><ingredient commodity="Q168514" en="european turtle dove">Durteltaub</ingredient></title> Ist ein edle speiß wann also spricht Averrois vnd Rasis sie machen gut synne vnd gut gedechtnuß Aber annder <ingredient ana="comparison" commodity="Q83363036" en="pigeon">taubenn</ingredient> machenn enczundt plut vnd den Ritenn Iung <ingredient commodity="Q168514" en="european turtle dove">taubenn</ingredient> spricht Rasis die stercken naturlich hitz Aber alt <ingredient commodity="Q168514" en="european turtle dove">tawben</ingredient> sein nuetz den menschenn die den boesen sichtagenn haben Oder die das parliß geschlagenn hat man soll sie mit <ingredient commodity="Q11106" en="bacon">speck</ingredient> mit <ingredient commodity="Q3251025" en="juniper berry">wachalternn</ingredient> vnd <ingredient commodity="Q1111359" en="common sage">salbej</ingredient> fullenn vnd pratenn</ab>
+
+ <ab n="94" type="dietetics" xml:id="a1b.94" xml:lang="de-x-enh"> Item <title key="Birds that feed on juniper berries, dietetics"><ingredient commodity="Q25469" en="common starling">Staren</ingredient> vnd <ingredient commodity="Q104093372" en="pheasant meat">fasant</ingredient></title> vnd alle <ingredient commodity="Q178559" en="poultry">vogel</ingredient> die <ingredient commodity="Q3251025" en="juniper berry">wachalternn</ingredient> essenn die sein alle gesund</ab>
+
+ <ab n="95" type="dietetics" xml:id="a1b.95" xml:lang="de-x-enh"><title key="??? and water flowl, dietetics" type="none"></title> <note xml:lang="de">Lücke im Text: Hier sollte noch der betreffende Vogelname eingetragen werden.</note> <note xml:lang="en">Space left blank: the respective bird name was meant to be added later.</note> Die sein hitzig vnd machenn vnlustigk zu essenn vnd boese materig vnd das thun auch alle <ingredient commodity="Q82592" en="waterfowl">wasser vogel</ingredient> die in dem wasser wonnent Als <ingredient commodity="Q3060012" en="egret">Reyger</ingredient> vnd <ingredient commodity="Q7556" en="wild duck">wild entenn</ingredient> vnd mancherley <ingredient commodity="Q178559" en="poultry">vogel</ingredient></ab>
+
+ <title ana="chapter" corresp="#a1b.96 #a1b.97 #a1b.98 #a1b.99 #a1b.100 #a1b.101 #a1b.102 #a1b.103 #a1b.104 #a1b.105 #a1b.106 #a1b.107 #a1b.108 #a1b.109 #a1b.110 #a1b.111 #a1b.112 #a1b.113 #a1b.114 #a1b.115" key="">Hienach volgt Ein capittel von allerley <ingredient commodity="Q10990" en="meat">fleisch</ingredient> der Tier</title> <ab n="96" type="dietetics" xml:id="a1b.96" xml:lang="de-x-enh"><title key="Goat meat and young chicken meat, dietetics" type="none"></title> Nun will ich sprechenn zu dem Erstenn das <ingredient commodity="Q449506" en="goat meat">zigenn fleisch</ingredient> vnd Iung <ingredient commodity="Q864693" en="chicken">hennen fleisch</ingredient> das aller pest ist Also spricht Averrois vnd Rasis das in im selber kein poßheit hat vnd macht gut plut vnd ist doch nit gut den lewtenn die groß arbeit haben noch kein ander zart speiß wann mang starcker arbeitter verdirbt do von in dem leib Als in muessig gengerrnn vnd krannckenn lewten verdirbt starck speyß</ab>
+
+ <ab n="97" type="dietetics" xml:id="a1b.97" xml:lang="de-x-enh"> <title key="Mutton, dietetics">Wideren</title> <ingredient commodity="Q14566073" en="mutton">fleysch</ingredient> vnd <ingredient commodity="Q14566073" en="mutton">hemlen fleisch</ingredient> die do Iung sein vnter ein Iarr oder Ierig sind die sein darnach die pestenn vnd <ingredient commodity="Q957434" en="veal">kalbfleysch</ingredient> daz do Iung ist vnder eim Iarr oder Ierig oder das do sawget </ab>
+
+ <ab n="98" type="dietetics" xml:id="a1b.98" xml:lang="de-x-enh"> Item <title key="Beef, dietetics"><ingredient commodity="Q192628" en="beef">Rindt fleysch</ingredient></title> speyst serr vnd macht dick vnd grob plut vnd ist nutz den lewtenn die do groß arbeit thun vnd schadt allen menschenn die do melancolici sein vnd vil trawriger trawm vnd gedencken haben </ab>
+
+ <ab n="99" type="dietetics" xml:id="a1b.99" xml:lang="de-x-enh"> <title key="Pork, dietetics"><ingredient commodity="Q191768" en="pork">Sweins fleisch</ingredient></title> Es sej wild oder zam das dewet man schierr vnd speist serr wol Aber es macht schleym vnd ist ein grobe speyß vnd das pest an dem <ingredient commodity="Q191768" en="pork">swein</ingredient> das sein die <ingredient commodity="Q17118905" en="pig&apos;s trotters">fuß</ingredient> das <ingredient commodity="Q107246703" en="pig&apos;s snout">maul</ingredient> die <ingredient commodity="Q2255814" en="pig&apos;s ear">oren</ingredient> vnd der <ingredient commodity="Q0" en="pig&apos;s tail">zagell</ingredient></ab>
+
+ <ab n="100" type="dietetics" xml:id="a1b.100" xml:lang="de-x-enh"> Item du solt kein <title key="Bone marrow, dietetics"><ingredient commodity="Q9606" en="bone marrow">marck</ingredient> es sej in vogelnn oder andernn tieren</title> essenn wann es macht den swindel in dem haubt vnd ein boese gedechtnuß dastu der ding vergissest die du vor gehoert oder geleszen hast</ab>
+
+ <pb n="067v" xml:id="A1_067v"></pb> <ab n="101" type="dietetics" xml:id="a1b.101" xml:lang="de-x-enh"> Vnder den <ingredient commodity="Q223930" en="game">wilden tieren</ingredient> ist kein gesunder tier nit dann <title key="Game, dietetics"><ingredient commodity="Q65244403" en="roe-deer meat">rechgeyß</ingredient> vnd <ingredient commodity="Q65244403" en="roe-deer meat">rechboeck</ingredient></title> wann sie behuetenn den menschenn vor dem Ritenn Als do spricht Albertus vnd treibt auß vnserem leib den regen wurmm</ab>
+
+ <ab n="102" type="dietetics" xml:id="a1b.102" xml:lang="de-x-enh"> Item <title key="Vension and rabbit, dietetics">Eins altenn <ingredient commodity="Q2296872" en="venison">hirschen fleysch</ingredient> vnd <ingredient commodity="Q3556748" en="rabbit">hasen fleisch</ingredient></title> macht melancolej poeß trawm vnd poeß gedennckenn Doch eins <ingredient commodity="Q3556748" en="rabbit">hasen</ingredient> gebrotenn genert den menschenn den das parliß geschlagenn hat </ab>
+
+ <ab n="103" type="dietetics" xml:id="a1b.103" xml:lang="de-x-enh"> Item <title key="Hedgehog, dietetics">Eins <ingredient commodity="Q6145" en="hedhehog meat">ygels fleysch</ingredient></title> ist gut aussetzigenn menschenn Wer seine dermm derret vnd zu puluer macht vnd sein ein wenig isset den macht es pruntzen ob er sust nit mag</ab>
+
+ <ab n="104" type="dietetics" xml:id="a1b.104" xml:lang="de-x-enh"> <title key="Squirrel, dietetics">Eichhornn</title> <ingredient commodity="Q4388" en="red squirrel">fleysch</ingredient> ist gesund Wiß auch daz yetzlich <ingredient commodity="Q4388" en="red squirrel">fleysch</ingredient> souil daz iunger ist alsouil ist es auch gesunderr es soll auch weder zu feist noch zu mager sein</ab>
+
+ <ab n="105" type="dietetics" xml:id="a1b.105" xml:lang="de-x-enh"> Item das <title key="Heart, dietetics"><ingredient commodity="Q1072" en="heart">hertz</ingredient> an einem yetlichenn tier</title> ist vndewig vnd speist nit wol Aber das hirnn kelt vnd macht vnlustig zu essenn vnd schadt dem magenn vnd soll man es nymmerr anders essenn dann vor ander speyß</ab>
+
+ <ab n="106" type="dietetics" xml:id="a1b.106" xml:lang="de-x-enh"> Item <title key="Head, dietetics">das <ingredient commodity="Q23640" en="head">haubt</ingredient></title> ist ein grobe speiß es speißt vast vnd hitzigt vast es bringt den grymmen in dem leib vnd den Ritenn vnd sterckt das plut vnd soll man es nymmerr essenn dann in dem wintter so grosse kelt ist </ab>
+
+ <ab n="107" type="dietetics" xml:id="a1b.107" xml:lang="de-x-enh"> Item <title key="Offal, dietetics">die <ingredient commodity="Q1470283" en="liver">lebernn</ingredient> das <ingredient commodity="Q9371" en="spleen">miltz</ingredient> vnd die <ingredient commodity="Q9377" en="kidney">nyren</ingredient> aller tier</title> die sein vndewig vnd bringenn dem menschenn vil sichtagenn</ab>
+
+ <ab n="108" type="dietetics" xml:id="a1b.108" xml:lang="de-x-enh"> <title key="On the four humors of food">Von viererley speyß soltu nuetzen oder essenn vnd du solt auch wissenn</title> yssest du hitzige speyß als <ingredient commodity="Q3143131" en="pepper">pfefferr</ingredient> <ingredient commodity="Q3406628" en="onion">czwifelnn</ingredient> vnd <ingredient commodity="Q21546392" en="garlic">knoblauch</ingredient> die verrprennenn dir dein plut auch <ingredient commodity="Q210959" en="crayfish">krebs</ingredient> Issestu aber dinck die serr kuelenn als <ingredient commodity="Q578052" en="lettuce">lattich</ingredient> vnd <ingredient commodity="Q190903" en="herbaceous plant">wurtzelnn</ingredient> vnd die dem geleich sein an kelten die toettenn dir dein plut vnd machenn es gerynnenn Sein aber die ding zu wesserig an in selbs die du issest Als <ingredient commodity="Q165308" en="calabash">kurbiß</ingredient> dy machenn dir faul plut in dem leib Sein sie aber vergifftig als swamenn so toetten sie dich machenn sie aber zu vil feuchtigkeit in dem menschenn so wirt faul materig in im Als <ingredient commodity="Q3406628" en="onion">czwifell</ingredient> <ingredient commodity="Q13411121" en="peach">pfirsing</ingredient> vnd dem geleich Item derrent aber die dinck zu serr Als <ingredient commodity="Q3143131" en="pepper">pfefferr</ingredient> <ingredient commodity="Q25284" en="parsley">peterlein</ingredient> vnd <ingredient commodity="Q158572" en="great yellow gentian">encian</ingredient> vnd <ingredient commodity="Q137931" en="hyssop">ysopp</ingredient> wiewol dise ding gut sein so man sie vermischent mit anndernn guttenn dingenn die feuchtigkeit bescheidenlich bringenn doch der sie vil vermischt so krencken sie des menschen krafft vnd speyßen auch nit Ist es aberr dastu issest zu feiste ding es sej <ingredient commodity="Q600396" en="fish">visch</ingredient> oder <ingredient commodity="Q10990" en="meat">fleysch</ingredient> so swymbt es dir oben in dem magenn vnd macht das sich die speyß nit verdewt <pb n="068r" xml:id="A1_068r"></pb> Issestu aber die speyß serr <ingredient commodity="Q11254" en="table salt">gesaltzenn</ingredient> so speist sie dir nit vnd verprennt dir dein plut vnd verderbt dir den magenn vnd die speyß darInnen vnd krenckt dir dein gesicht Ist sie aber zu suß so beschliessenn sie dir dein leib vnd andere gelider do von vil grosser schedenn kummenn Sein aber die ding pitter die du issest noch speissen sie dich nit vnd machen dir weder fleysch noch plut vnd kumbt dir zu schadenn Item Eßigt aber die speyß zu serr das zu vil <ingredient commodity="Q41354" en="vinegar">essigs</ingredient> darInnen ist oder ser schmeckt als <ingredient commodity="Q41354" en="vinegar">essig</ingredient> so macht sie dich alt vnd schier sterbenn Item Stopffet dich aberr die speyß zu sere die du issest vnd ist das nit seuerlet als <ingredient commodity="Q2751465" en="quince">kuetenn</ingredient> so ist es dir schad Dar von spricht ein grosser meyster die speyß die dem menschenn wol kummenn das ist eins <ingredient commodity="Q643419" en="lamb meat">lemleins fleysch</ingredient> das ein Iars alt ist oder darvnderr <ingredient commodity="Q449506" en="goat meat">zigen fleysch</ingredient> vnd <ingredient commodity="Q957434" en="veal">kalb fleisch</ingredient> vnd einß saugendenn <ingredient commodity="Q957434" en="veal">kelbleins</ingredient> vnd <ingredient commodity="Q864693" en="chicken">huner</ingredient> die etwas groß sein vnder einem Iarr vnd die keine eyer gelegt habenn vnd <ingredient commodity="Q594676" en="capon">koppawn</ingredient> <ingredient commodity="Q26106" en="partridge">Rephuner</ingredient> vnd weiche <ingredient commodity="Q15260613" en="chicken egg">eyerr</ingredient> vnd schueppet <ingredient commodity="Q600396" en="fish">fisch</ingredient> die in fließendenn wassernn sein ganngenn vnd all <ingredient commodity="Q107262076" en="small poultry">clein vogel</ingredient> die man gemeinglich isset vnd <ingredient commodity="Q1501889" en="white bread">weitzen brot</ingredient> das mit <ingredient commodity="Q13186" en="raisin">roßinenn</ingredient> ist gemacht vnd das czweijer oder dreyer tag alt sind vnd ein wenig <ingredient commodity="Q11254" en="table salt">gesaltzenn</ingredient> ist</ab>
+
+ <ab n="109" type="dietetics" xml:id="a1b.109" xml:lang="de-x-enh"> <title key="Beverage, dietetics">Hienach volget Ein Capittel vonn dem <dish commodity="Q40050" en="drink">getranck</dish></title> Item dein <dish commodity="Q40050" en="drink">Tranck</dish> soll sein alter <ingredient commodity="Q282" en="wine">wein</ingredient> der lautter sey vnd kein newenn <ingredient commodity="Q282" en="wine">wein</ingredient> der do trueb sej vnd solt den <ingredient commodity="Q282" en="wine">wein</ingredient> mit ein wenig <ingredient commodity="Q283" en="water">wasser</ingredient> ### mischenn Aber in dem winter laß den <ingredient commodity="Q282" en="wine">wein</ingredient> ein wenig warmm wernn Ee dann du in trinckest in dem winter das ist von sandt katherina tag piß zu sandt peters tag so die stoerch komenn Dein speyß soll auch warmm sein vnd nit kalt vnd solt dann essenn <ingredient commodity="Q10990" en="meat">fleysch</ingredient> vnd speiß die serr vnd fast speyßt Als <ingredient commodity="Q14566073" en="mutton">hamel fleisch</ingredient> eins iars alt Wiltu aber essenn <ingredient commodity="Q192628" en="beef">rintfleysch</ingredient> <ingredient commodity="Q3556748" en="rabbit">hasenn</ingredient> <ingredient commodity="Q2296872" en="venison">hirßenn</ingredient> vnd <ingredient commodity="Q191768" en="pork">sweynenn fleysch</ingredient> ob dir diser tier <ingredient commodity="Q10990" en="meat">fleysch</ingredient> anders nit schadenn Als vor geschriben stet vonn disen tieren nuetzen vnd schadenn Auch soltu zu der Zeit mer essenn dann zu keiner zeit des ganntzen Iars Wann von der ewsserenn kelt wirt die natuerlich hitz ynnen behaltenn in dem magenn vnd in dem hertzen in der lebernn vnd nymbt die dewende crafft zue vnd wirt starck </ab>
+
+ <ab n="110" type="dietetics" xml:id="a1b.110" xml:lang="de-x-enh"> Item <title key="Food suitable for summer">In dem summer</title> das ist vonn sandt vrbans tag piß auff vnserr frawenn tag den erstenn So soltu essenn die speyß die dich nit zuserr speyßt noch zu sat macht als <ingredient commodity="Q449506" en="goat meat">zigenn fleysch</ingredient> oder eins Iungen <ingredient commodity="Q643419" en="lamb meat">lemleins</ingredient> oder einß sawgendenn <ingredient commodity="Q957434" en="veal">kalbs</ingredient> oder eins <ingredient commodity="Q14566073" en="mutton">hemels</ingredient> der nit Ierig sey vnd Iungs cleins <ingredient commodity="Q190903" en="herbaceous plant">kraut</ingredient> als <ingredient commodity="Q36814998" en="spinach">penet</ingredient> oder <ingredient commodity="Q578052" en="lettuce">lattich</ingredient> gesotenn vnd etwenn <pb n="068v" xml:id="A1_068v"></pb> ein wenig zu vesper zeit so du wol magst essenn dar auff zu stund an rohenn <ingredient commodity="Q578052" en="lettuce">lattich</ingredient> mit <ingredient commodity="Q41354" en="vinegar">essig</ingredient> Item hastu nit ein zu kaltenn magenn So du anhebst zu essenn in dem fruemol so magstu <ingredient commodity="Q33669098" en="radish">rettich</ingredient> <ingredient commodity="Q196" en="cherry">kirschenn</ingredient> oder <ingredient commodity="Q68438267" en="sour cherry">amerellenn</ingredient> essenn vnd darauf ander speyß wann dise ding keltenn dich vnd machen dich feucht Als dich die zeit macht heyß vnd durr vnd machenn dich sweyssenn vnd die <ingredient commodity="Q196" en="cherry">kirschen</ingredient> verswendenn in dir die vbergelle Doch soltu ir nit zu vil essenn dastu den magenn nit zu serr keltest der besunder zu der selben zeit kalt vnd kranck ist </ab>
+
+ <ab n="111" type="dietetics" xml:id="a1b.111" xml:lang="de-x-enh"> <title key="Food suitable for Autumn">In dem herbst</title> das ist von vnserr frawen tag gepurt piß zu sandt katherina tag So soltu ein wenig <ingredient commodity="Q3314483" en="fruit">obs</ingredient> essenn vnd waß du von <ingredient commodity="Q3314483" en="fruit">obß</ingredient> issest das soll etwas messiger hitz bringenn als <ingredient commodity="Q184357" en="almond">mandel</ingredient> vnd gruen <ingredient commodity="Q11009" en="nut">nuß</ingredient> messig geessenn</ab>
+
+ <ab n="112" type="dietetics" xml:id="a1b.112" xml:lang="de-x-enh"> <title key="Food suitable for spring">In dem lentzenn</title> das ist vonn sandt peters tag so die stoerch komenn piß zu sandt vrbans tag So soltu messig sein mit essenn vnd zarte speyß essenn dann vor in dem winter hastu dich vberessenn</ab>
+
+ <ab n="113" type="dietetics" xml:id="a1b.113" xml:lang="de-x-enh"> Iten Du solt auch wissenn welche zeit in dem iarr <title key="Indigestion due to fat meat or fish">dir schad ist kummenn in deynen magen von <ingredient commodity="Q107262066" en="fatty meat">feistem fleisch</ingredient> oder <ingredient commodity="Q600396" en="fish">fischenn</ingredient></title> So soltu dar auff essenn <ingredient commodity="Q13099586" en="pear">pirnn</ingredient> oder <ingredient commodity="Q10943" en="cheese">keß</ingredient> Nach den <ingredient commodity="Q600396" en="fish">vischen</ingredient> <ingredient commodity="Q11009" en="nut">nueß</ingredient> vnd <ingredient commodity="Q13099586" en="pear">pirnn</ingredient> Nach dem <ingredient commodity="Q10990" en="meat">fleisch</ingredient> <ingredient commodity="Q10943" en="cheese">keß</ingredient> vnd <ingredient commodity="Q13099586" en="pear">pirnn</ingredient> Doch soltu nymmer essenn gruen <ingredient commodity="Q3314483" en="fruit">obs</ingredient> dann an dem tag so du serr gegangen hast vnd wenn du grosserr hitz in dem magenn enpfindest Vnd in dem summer soltu ir wenig essen oder ein gut weil dar auff nichts anders essenn Wann es spricht Avicenna wie wol das grun <ingredient commodity="Q3314483" en="fruit">obs</ingredient> als <ingredient commodity="Q12372598" en="plum">pflawmen</ingredient> vnd <ingredient commodity="Q149195" en="damson">krichenn</ingredient> vnd <ingredient commodity="Q196" en="cherry">kirschen</ingredient> die do sawer sein vnd <ingredient commodity="Q68438267" en="sour cherry">amerellen</ingredient> wie wol die nuetz sein vnd den lewten die do groß arbeit habenn vnd der vil Colera hat das hicziget den magen doch macht sie des menschenn plut wasserig vnd faul Dar vmb spricht er das die menschenn die mancherley vnd vil <ingredient commodity="Q3314483" en="fruit">obs</ingredient> essenn das sie dick den Rittenn gewynnen vnd das tut kein ander <ingredient commodity="Q3314483" en="fruit">obs</ingredient> dann das grun ist merr dan ich hie genent hab vnd ist nyemand gesund als der selbig meyster meynt wanne es macht alwegenn des menschen plut faul etc.</ab>
+
+ <ab n="114" type="dietetics" xml:id="a1b.114" xml:lang="de-x-enh"> Item wiß auch das <title key="Delicate food">zarte warme speyß</title> den menschenn lenger in gesuntheyt behelt dann grob kalt speyß Als <ingredient commodity="Q192628" en="beef">Rintfleisch</ingredient> <ingredient commodity="Q191768" en="pork">sweynenn fleisch</ingredient> vnd <ingredient commodity="Q2296872" en="venison">hirß</ingredient> die sein den schad wann man mag sie nit liederlich verdewenn Also ist einem starckenn menschenn der einen gutten magenn hatt vnd ser arbeit vnd zart speyß ist Iunge <ingredient commodity="Q864693" en="chicken">huner</ingredient> <ingredient commodity="Q449506" en="goat meat">zigenn</ingredient> vnd <ingredient commodity="Q957434" en="veal">kalpfleysch</ingredient> dick geessenn ist in vngesund wann es verdirbt vnd fault in<pb n="069r" xml:id="A1_069r"></pb>dem magenn</ab>
+
+ <ab n="115" type="dietetics" xml:id="a1b.115" xml:lang="de-x-enh"> Item <title key="Indigestion due to fat meat">hastu <ingredient commodity="Q107262066" en="fatty meat">feist fleysch</ingredient> gessenn das dir vebel bekummenn ist</title> so iß dar auff <ingredient commodity="Q13099586" en="pear">pirnn</ingredient> vnd <ingredient commodity="Q10943" en="cheese">keß</ingredient> Item hastu versaltzne speyß gessenn dar auff soltu essen suß <ingredient commodity="Q89" en="apple">oepffel</ingredient> Du solt nymmerr zart speiß vnd grob vber ein <tool commodity="Q14748" en="table">tisch</tool> essenn oder du solt die zartenn speyß vor essenn Als weiche <ingredient commodity="Q15260613" en="chicken egg">eyer</ingredient> Iunge <ingredient commodity="Q864693" en="chicken">huner</ingredient> vnd <ingredient commodity="Q107262076" en="small poultry">clein vogel</ingredient> wider <ingredient commodity="Q192628" en="beef">rintfleysch</ingredient> <ingredient commodity="Q191768" en="pork">sweine fleysch</ingredient> noch <ingredient commodity="Q19862498" en="game meat">wilpret</ingredient> gesotenn oder gepratenn <ingredient commodity="Q10990" en="meat">fleysch</ingredient> soltu nymmer essenn annders die zart speyß swymt ob der grobenn vnd fault dann in dem magenn Auicenna spricht nach grosser arbeit oder so der mensch fast ist gangenn vber felt so soll er keynen <ingredient commodity="Q600396" en="fish">visch</ingredient> darnach essenn Auch spricht Auicenna das kein ding schedlicherr vnd boser sej dann ob einem <tool commodity="Q14748" en="table">tisch</tool> mangerlej speyß essenn vnd lanng dar ob sitzenn Als <ingredient commodity="Q600396" en="fish">visch</ingredient> <ingredient commodity="Q10990" en="meat">fleysch</ingredient> vnd <ingredient commodity="Q210959" en="crayfish">krebs</ingredient> etc.</ab>
+
+ <title ana="chapter" corresp="#a1b.116 #a1b.117 #a1b.118 #a1b.119 #a1b.120 #a1b.121 #a1b.122 #a1b.123 #a1b.124 #a1b.125 #a1b.126 #a1b.127" key="">Hie nach volgen Etliche <dish commodity="Q42962" en="oil">oel</dish> warczu die gut sein vnd wie man die bereuten vnd machen soll </title> <ab n="116" type="recipe" xml:id="a1b.116" xml:lang="de-x-enh"> Item Also mach <title key="Rose oil"><ingredient commodity="Q34687" en="rose">Rosen</ingredient> <dish commodity="Q42962" en="oil">oel</dish></title> Nym iij libra <ingredient commodity="Q93165" en="olive oil">pawmoels</ingredient> vnd j libra <ingredient commodity="Q57655990" en="rose petal">rosen pleter</ingredient> vnd thue das in ein <tool commodity="Q56297888" en="preserving jar">glaß</tool> oder in einen <tool commodity="Q15711817" en="pot">hafen</tool> der glesen sey vnd mach das oben gantz eben zu vnd henck das an die sunnen dreyssig tage vnd darnach trueck es durch ein <tool commodity="Q2621157" en="cheesecloth">tuch</tool> Das <dish commodity="Q83054" en="rose oil">oel</dish> ist zumol gut furr alle hitz die dem menschen kumbt in der kranckheyt So man die wipron vnd die stirnn do mit bestreicht magstu nit gehaben <ingredient commodity="Q93165" en="olive oil">pawmol</ingredient> So nym gut meyen <ingredient commodity="Q34172" en="butter">putternn</ingredient> vnd ein vntz <ingredient commodity="Q124695" en="wax">wachs</ingredient> zu laß das allererst vnd thue es dann zusammenn mann sagt das es pesser sej dann das erste </ab>
+
+ <ab n="117" type="medicinal" xml:id="a1b.117" xml:lang="de-x-enh"> <title key="Lilly oil"><ingredient commodity="Q5194627" en="lily">Lilgen</ingredient> <dish commodity="Q42962" en="oil">oel</dish></title> Das hat geleich die selbenn krafft vnd ist auch gleich zu den dingen gut <ref target="#a1b.122">als das <ingredient ana="comparison" commodity="Q83054" en="rose oil">rosenoel</ingredient></ref> </ab>
+
+ <ab n="118" type="medicinal" xml:id="a1b.118" xml:lang="de-x-enh"> <title key="Borage oil"><ingredient commodity="Q147075" en="borage">Barrago</ingredient></title> heyßt <ingredient commodity="Q147075" en="borage">gruntletiche</ingredient> das macht man <ref target="#a1b.122">als das <ingredient ana="comparison" commodity="Q83054" en="rose oil">rosenoel</ingredient></ref> das hilfft furr aller hand seuchenn die von hitz komenn wann es ist vil kelter natur dann das <ingredient ana="comparison" commodity="Q72516437" en="violet oil">veiol oel</ingredient> oder <ingredient ana="comparison" commodity="Q83054" en="rose oil">rosen oel</ingredient> Item <ingredient commodity="Q147075" en="borage">Barrago</ingredient> heyßt <ingredient commodity="Q147075" en="borage">scharlay</ingredient> darvmb heyßt das <dish commodity="Q42962" en="oil">oel</dish> <ingredient commodity="Q147075" en="borage">Barragmatum</ingredient> <dish commodity="Q42962" en="oil">oleum</dish> von des <ingredient commodity="Q147075" en="borage">scharlas plumen</ingredient> das macht man geleich als vor geschriben stet das ist ein teyl wermerr dann das annder von naturr vnd ist gut den die an der quartan arbeittenn vnd alle des hertzenn tragkeit vnd das vnderstanden zweyfel an den synnenn vnd doch nit garr vnsinig sein </ab>
+
+ <ab n="119" type="medicinal" xml:id="a1b.119" xml:lang="de-x-enh"> <title key="Henbane oil"> <foreign xml:lang="la"><dish commodity="Q42962" en="oil">Oleum</dish> <ingredient commodity="Q161058" en="henbane">Iusquiani</ingredient></foreign> </title> Macht man also <foreign xml:lang="la"><ingredient commodity="Q161058" en="henbane">Iusquianum</ingredient></foreign> heyßt <ingredient commodity="Q161058" en="henbane">pilsenn</ingredient> Fuelle einen <tool commodity="Q15711817" en="pot">hafen</tool> mit dem <ingredient commodity="Q40763" en="seed">samenn</ingredient> der locher hab der new ist vnd die koeplichen vnd <ingredient commodity="Q161058" en="henbane">pleterr</ingredient> zu schnittenn Nym einen andernn <tool commodity="Q15711817" en="pot">hafen</tool> vnd grab den vnter die <tool commodity="Q36133" en="soil">erdenn</tool> vnd setz den ersten locheretten auff den die <tool commodity="Q36133" en="soil">erdenn</tool> vnd stopff es wol zu das nichtz dar ein felt vnd deck dann die <tool commodity="Q36133" en="soil">erden</tool> veber die Zwenn <pb n="069v" xml:id="A1_069v"></pb> <tool commodity="Q15711817" en="pot">hefen</tool> vnd laß die ein Iarr stenn Wenn das Iarr vmb kumbt so nyms her auß so vindestu schonn vnd lauterr <dish commodity="Q42962" en="oil">oel</dish> in dem vndersten <tool commodity="Q15711817" en="pot">hafen</tool> Das <dish commodity="Q42962" en="oil">oel</dish> ist garr gut zu allerley seuchenn die von hitz komenn wann es kelt serr Ich hab yeczund gesagt von den oelen die kalter natur sein Nun will ich sagen von den die heysser naturr sein </ab>
+
+ <ab n="120" type="medicinal" xml:id="a1b.120" xml:lang="de-x-enh"> <title key="Bay leaf oil"><ingredient commodity="Q72444924" en="bay oil">Loroell</ingredient></title> Das mach also Nym <ingredient commodity="Q2370943" en="bay leaf">lorberr</ingredient> vnd auch die <ingredient commodity="Q2370943" en="bay leaf">pleterr</ingredient> ob du sie gehaben magst stoß sie vnd seud sie mit <ingredient commodity="Q283" en="water">wasserr</ingredient> serr vnd das oeberst nymbt man ab vnd behelt es das ist gut furr die kalten gicht vnd furr alle seuchenn die von kalten dingenn komenn wann es ist heyß in dem dritten grad</ab>
+
+ <ab n="121" type="medicinal" xml:id="a1b.121" xml:lang="de-x-enh"> <title key="Pennyroyal oil"><foreign xml:lang="la"><dish commodity="Q42962" en="oil">Oleum</dish> <ingredient commodity="Q161235" en="pennyroyal">puleginum</ingredient></foreign></title> das macht man vonn <ingredient commodity="Q161235" en="pennyroyal">poley</ingredient> das ist heyß in dem vierden grad Nym <ingredient commodity="Q161235" en="pennyroyal">poley</ingredient> so er pluet vnd seud den mit <ingredient commodity="Q42962" en="oil">oel</ingredient> als hie vor geschriben stett vnd temperir es pej dem <tool commodity="Q177257" en="ember">fewerr</tool> ye lengerr es seudt ye pesser es wirt So soll mans dann auß zwingenn vnd behaltenn</ab>
+
+ <ab n="122" type="medicinal" xml:id="a1b.122" xml:lang="de-x-enh"> <title key="Elder flower oil"><dish commodity="Q42962" en="oil">Oleum</dish> <ingredient commodity="Q67778134" en="elder flower">sambucum</ingredient></title> <foreign xml:lang="la"><ingredient commodity="Q67778134" en="elder flower">Sambucus</ingredient></foreign> heyßt <ingredient commodity="Q67778134" en="elder flower">holderr</ingredient> der ist heyß an dem drittenn grad das <dish commodity="Q42962" en="oil">oel</dish> macht man von <ingredient commodity="Q67778134" en="elder flower">holderr plut</ingredient> vnd seudt es auch als ir vernomenn habt mit <ingredient commodity="Q42962" en="oil">oel</ingredient> vnd ist gut als die andernn die heyß sein Auch ist ein ander <ingredient commodity="Q42962" en="oil">oel</ingredient> von <ingredient commodity="Q67778134" en="elder flower">holder</ingredient> das ist kalter naturr das macht man von den <ingredient commodity="Q131448" en="elder berry">pernn</ingredient> die man veber mer bringt der vindt man hie nicht </ab>
+
+ <ab n="123" type="medicinal" xml:id="a1b.123" xml:lang="de-x-enh"> <title key="Spikenard oil"><dish commodity="Q42962" en="oil">Oleum</dish> <ingredient commodity="Q24853263" en="spikenard">Nardinum</ingredient></title> Das fleuß in Indea auß einem stein nit als man sagt Mann macht es also man nymbt <foreign xml:lang="la"><ingredient commodity="Q24853263" en="spikenard">spicanardi</ingredient></foreign> gantz vnd seudt in in <ingredient commodity="Q283" en="water">wasser</ingredient> mit <ingredient commodity="Q42962" en="oil">oel</ingredient> als ir vor vernomenn habt zu einem stampfftenn <ingredient commodity="Q282" en="wine">wein</ingredient> vnd lest es darnach czweintzig tag darInnen ligenn Wenn dann die krafft gantz in das <ingredient commodity="Q42962" en="oil">oel</ingredient> kumbt So ring es auß vnd behalt es Es hilfft furr alle seuchenn die von kalter naturr komenn vnd hilfft zu der dewung</ab>
+
+ <ab n="124" type="medicinal" xml:id="a1b.124" xml:lang="de-x-enh"> <title key="Common rue oil"><dish commodity="Q42962" en="oil">Oleum</dish> <ingredient commodity="Q25062" en="common rue">Ruteleon</ingredient></title> Macht man von den <ingredient commodity="Q25062" en="common rue">Rautenn</ingredient> als die <tool commodity="Q987767" en="container">schelhein</tool> mit den <ingredient commodity="Q25062" en="common rue">rawtenn pleternn</ingredient> sol man zu sammenn siedenn mit einem senfften <ingredient commodity="Q282" en="wine">wein</ingredient> vnd <ingredient commodity="Q42962" en="oil">oel</ingredient> vnd laß es czweintzig tag also darInnenn stenn so ring es dann auß vnd behalt es es ist gut vnd heyß in dem vierden grad </ab>
+
+ <ab n="125" type="medicinal" xml:id="a1b.125" xml:lang="de-x-enh"> <title key="Castor oil"><dish commodity="Q42962" en="oil">Oleum</dish> <ingredient commodity="Q162724" en="Castoreum">Castreleon</ingredient></title> <ingredient commodity="Q162724" en="Castoreum">Castorium</ingredient> macht man also Die <ingredient commodity="Q162724" en="Castoreum">Biber geyl</ingredient> soll man sieden in <ingredient commodity="Q42962" en="oil">oel</ingredient> mit sanfftem <ingredient commodity="Q282" en="wine">wein</ingredient> man darff das nit ringenn wann die <ingredient commodity="Q162724" en="Castoreum">pibergeil</ingredient> zufert all garr Das <ingredient commodity="Q42962" en="oil">oel</ingredient> ist gut <foreign xml:lang="la">Epilenticis Epilempsia</foreign> ist ein seuch in dem hirnn vnd verirret den menschen seinerr synne Auch ist es gut furr das gicht Es stercket vnd gibt crafft allen gelidernn </ab>
+
+ <ab n="126" type="medicinal" xml:id="a1b.126" xml:lang="de-x-enh"> <title key="Dill oil"><dish commodity="Q42962" en="oil">Oleum</dish> <ingredient commodity="Q26686" en="dill">Anetileon</ingredient></title> <ingredient commodity="Q26686" en="dill">Anetum</ingredient> heyßt <ingredient commodity="Q26686" en="dill">tille</ingredient> des samen zu stoß man ein teyl in <ingredient commodity="Q42962" en="oil">oel</ingredient> zu einem senfftenn <ingredient commodity="Q282" en="wine">wein</ingredient> vnd ring das auß das ist gut Als ich vor gesprochenn</ab>
+
+ <ab n="127" type="medicinal" xml:id="a1b.127" xml:lang="de-x-enh"><title key="Oil, how to prepare" type="none"></title> Als man hie vernomenn hat Also soll man machenn die <ingredient commodity="Q42962" en="oil">oel</ingredient> Es sey von <ingredient commodity="Q33971" en="leaf">kraut</ingredient> oder vonn <ingredient commodity="Q134267" en="plant stem">czelchein</ingredient> von <ingredient commodity="Q506" en="flower">plumen</ingredient> oder von <ingredient commodity="Q110611182" en="root">wurtzelnn</ingredient><ab n="1" subtype="subrecipe" type="recipe" xml:id="a1b.127.1" xml:lang="de-x-enh"> Item Wer do wil machenn <title key="Nutmeg, spikenard, rue oil"><foreign xml:lang="la"><dish commodity="Q42962" en="oil">oleum</dish> <ingredient commodity="Q83165" en="nutmeg apple">muscatellinum</ingredient></foreign> oder <foreign xml:lang="la"><ingredient commodity="Q24853263" en="spikenard">Nardinum</ingredient></foreign> oder <foreign xml:lang="la"><ingredient commodity="Q25062" en="common rue">Ruteleon</ingredient></foreign> oder <pb n="070r" xml:id="A1_070r"></pb> welcher hand es sey</title> Der nem das <ingredient commodity="Q33971" en="leaf">kraut</ingredient> <ingredient commodity="Q506" en="flower">plumen</ingredient> oder <ingredient commodity="Q134267" en="plant stem">holtz</ingredient> vnd stoß das nit vnd leg es in <ingredient commodity="Q42962" en="oil">oel</ingredient> drey stund Alsouil zusampt denn <ingredient commodity="Q282" en="wine">weine</ingredient> vnd laß er darynnen ligen dreyssig tag vnd faulen ye lenger es ligt ye pesser es wirt dann so ring man es durch vnd behalt das <ingredient commodity="Q42962" en="oil">oel</ingredient> </ab>
+
+ <ab n="2" subtype="subrecipe" type="medicinal" xml:id="a1b.127.2" xml:lang="de-x-enh"> Item <title key="Oil, how to prepare from seeds">Wenn man von <ingredient commodity="Q40763" en="seed">samenn</ingredient> will <dish commodity="Q42962" en="oil">oel</dish> machenn</title> So soll man den <ingredient commodity="Q40763" en="seed">samen</ingredient> stoßenn vnd in sieden wie vor gesagt ist Ir sult auch mercken wo des <ingredient commodity="Q427457" en="cooking oil">oels</ingredient> nit enist So ist meyenn <ingredient commodity="Q34172" en="butter">putternn</ingredient> gut darzu wanne sie ist gut vnd heylsam Dar vmb werr des <ingredient commodity="Q427457" en="cooking oil">oels</ingredient> nit mag gehabenn der nem meyen <ingredient commodity="Q34172" en="butter">putternn</ingredient> </ab>
+
+ </ab>
+
+ </div> </body>
+  </text>
+</TEI>

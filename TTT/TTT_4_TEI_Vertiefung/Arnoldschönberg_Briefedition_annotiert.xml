@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>F. M. Geidel an Universal-Edition, 3. Juni 1914</title>
+            <respStmt>
+               <persName>
+                  <forename>Philipp</forename>
+                  <surname>Kehrer</surname>
+               </persName>
+               <resp>
+                  <term>Transkription</term>
+                  <term>Annotation</term>
+               </resp>
+            </respStmt>
+            <respStmt>
+               <persName><forename>Katharina</forename>
+                  <surname>Bleier</surname></persName>
+               <resp>
+                  <term>Transkription</term>
+                  <term>Annotation</term>
+               </resp>
+            </respStmt>
+            <respStmt>
+               <persName><forename>Christopher</forename>
+                  <surname>Pollin</surname></persName>
+               <resp>
+                  <term>Datenmodellierung</term>
+               </resp>
+            </respStmt>
+            <respStmt>
+               <orgName xml:id="OSTV"> Österreichischer Verband für Stenografie und Textverarbeitung </orgName>
+               <resp>
+                  <note type="remarkResponsibility">Transkription Stenographie</note>
+               </resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher ref="http://d-nb.info/gnd/10000022-8">Arnold Schönberg Center</publisher>
+            <pubPlace>Wien</pubPlace>
+            <publisher ref="http://d-nb.info/gnd/10060012-8">Wissenschaftszentrum Arnold Schönberg
+               und die Wiener Schule an der Universität für Musik und darstellende Kunst
+               Wien</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                  >Attribution-ShareAlike 4.0 International (CC BY-NC-SA) 4.0)</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>The Correspondence between Arnold Schönberg and his Publishers Universal-Edition
+               and Verlag Dreililien. A Critical Hybrid Edition</title>
+            <editor>Therese Muxeneder</editor>
+            <editor>Katharina Bleier</editor>
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement><placeName key="#">Washington, D.C.</placeName></settlement>
+                  <institution ref="http://d-nb.info/gnd/35626-8">The Library of
+                     Congress</institution>
+                  <repository>Music Division</repository>
+                  <collection>Arnold Schoenberg Collection</collection>
+                  <altIdentifier>
+                     <settlement key="#"><placeName>Wien</placeName></settlement>
+                     <institution>Arnold Schönberg Center</institution>
+                     <idno type="signature">ASCC ID 23854</idno>
+                  </altIdentifier>
+               </msIdentifier>
+            </msDesc>
+            <listWit>
+               <witness><bibl>Katalog Sotheby's London, Juni 2002, Lot 704</bibl></witness>
+            </listWit>
+            <bibl>Arnold Schönberg: Sämtliche Werke. Abteilung III: Bühnenwerke. Reihe B, Band 6,
+               Teil 2. Bühnenwerke I. Erwartung op. 17. Herausgegeben von Ullrich Scheideler. Mainz,
+               Wien 2005.</bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName key="person.2"
+                  ><forename>Johannes</forename><surname>Geidel</surname></persName>
+               <orgName key="org.2">F. M. Geidel</orgName>
+               <placeName key="xxx">Leipzig</placeName>
+               <date when="1914-06-03"/>
+            </correspAction>
+            <correspAction type="received">
+               <orgName key="org.1">Universal-Edition</orgName>
+               <placeName key="xxx">Wien</placeName>
+             
+            </correspAction>
+            <note>Dokument enthält auch den Antwortbrief von Arnold Schönberg an F. M. Geidel, 6.
+               Juni 1914</note>
+            <correspContext>
+               <ref type="next" target="https://bit.ly/3BTGCex">Brief vom 6. Juni 1914</ref>
+               <ref type="prev">Brief vom 14. Mai 1914</ref>
+            </correspContext>
+         </correspDesc>
+         <textClass>
+            <keywords>
+               <term>Brief</term>
+               <term>Durchschlag</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2021-09-07" who="PK"> test </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter" xml:id="letter.1">
+            <pb n="1" xml:id="p.1" facs="#IMG.1"/>
+            <opener>
+               <stamp sameAs="#stamp.3"> F. M. GEIDEL, LEIPZIG<lb/>Anstalt für<lb/>Notenstich,
+                  Notendruck und Anastatischen Druck<lb/>Stein- und Buchdruckerei, Notensatz,
+                  Stereotype<lb/>Lithographie, Autographie und Buchbinderei<lb/>Fernsprecher 36 ····
+                  Bank-Konto: Frege &amp; Co<lb/> <placeName ref="#place.3">Leipzig</placeName> </stamp>
+               <dateline rend="right"><hi rend="preprint"><placeName><hi rend="italic"
+                        >Leipzig</hi></placeName>, <hi rend="italic">den</hi></hi> 3. Juni <hi
+                     rend="preprint"><hi rend="italic">191</hi></hi>4.<lb/><placeName><hi
+                        rend="preprint"><hi rend="italic">Wittenbergerstraße
+                     23</hi></hi></placeName></dateline>
+               <address>
+                  <addrLine><seg type="salute">Verehrl.</seg> <orgName>Universal-Edition</orgName>, A.-G., <hi
+                        rend="underline dotted"><placeName>Wien</placeName>.</hi></addrLine>
+               </address>
+            </opener>
+            <p>Mit gleicher Post übersende ich Ihnen <seg type="comment">
+                  <orig>2 Abzüge einer Pro<g ref="#typoHyphen"/><lb break="no"/>beseite</orig>
+                  <note xml:id="automatisch"><ref target="https://bit.ly/3BQVTfQ">Korrekturabzug
+                        (Probeseite) von S, 4 (T. 5-12) des Partiturdrucks</ref></note>
+               </seg> aus der Orchesterpartitur Schönberg. Ich hoffe, alles nach Wunsch <lb/>des
+               Autors ausgeführt zu haben und bitte um recht baldigen Bescheid, da<g
+                  ref="#typoHyphen"/><lb break="no"/>mit ich weiter arbeiten lassen kann.</p>
+            <p> Ich möchte hierzu noch bemerken, dass die Einteilung des <lb/>Manuskriptes es mit
+               sich bringt, dass ich gezwungen bin, <add place="above" hand="author">ab und zu</add>
+               verhältnismässig <lb/>wenig Linien auf eine Platte zu bringen, um unmittelbar im
+               Anschluss daran <lb/>wieder eine Platte mit Doppelsystemen einrichten zu können. Ich
+               bitte, <lb/>beim Autor anzufragen, <ref target="#"><add place="left" hand="#Schönberg"><metamark>1.
+                  <hi rend="circle">X</hi></metamark></add></ref><add place="inline"
+                  hand="#Schönberg"><metamark><hi rend="circle">X</hi></metamark></add>ob in diesem
+                  <hi rend="underline">Falle <add place="above" hand="author">bei</add>
+                     geeignete<add place="inline" hand="author">n</add> Instrumente<add
+                     place="inline" hand="author">n</add>, wo im</hi><lb/> Manuskript mehrere auf
+               eine Linie zusammen gezogen sind, ein Auseinander<g ref="#typoHyphen"/><lb break="no"
+               />ziehen in einzelnen Instrumenten vorgenommen werden kann, um zu vermeiden,
+               <lb/>dass plötzlich auf eine sehr enge Platte mit 34 Linien eine sehr weite <lb/>mit
+               18 oder 20 Linien folgt. Umgedreht macht es sich notwendig, in ein<g
+                  ref="#typoHyphen"/><lb break="no"/>zelnen Fällen, <add place="left"
+                  hand="#Schönberg">
+                  <metamark>2. <hi rend="circle">X</hi></metamark></add><add place="inline"
+                  hand="#Schönberg">
+                  <metamark><hi rend="circle">X</hi></metamark></add> dass 2 gleichartige
+               Instrumentenlinien auf eine Linie zu<g ref="#typoHyphen"/><lb break="no"
+               />sammengezogen werden, um eine 2systemige Platte einrichten zu können <lb/>und dabei
+               die Höchstzahl der Linien, 34, nicht zu überschreiten. Einer <lb/>kurzen Rückantwort
+               hierüber sehe ich entgegen. </p>
+            <p><hi rend="underline">Beethoven-Schenker.</hi> Korrektur der Vorbemerkung hoffe ich im
+               Laufe dieser <lb/>Woche auszusetzen; durch die vielen Feiertage hat sich leider die
+                  Fertig<g ref="#typoHyphen"/><lb break="no"/>stellung dieser Arbeit etwas
+               verzögert. </p>
+            <closer rend="right">
+               <salute>Hochachtungsvoll<lb/>
+                  <stamp>ppa. F. M. Geidel</stamp>
+               </salute>
+               <signed hand="#">Johannes Geidel</signed>
+            </closer>
+            <note place="left" hand="#Schönberg">
+               <p>Warum wurde<lb/> kein <hi rend="underline">breiteres Papier</hi> genommen?<lb/>
+                  <seg type="comment">
+                     <orig>Ich schrieb doch deswegen auch!!!</orig>
+                     <note type="footnote"><ref target="linkIntern">Brief vom x.y.</ref></note>
+                  </seg>
+               </p>
+            </note>
+            <!-- Vordruck "In Leipzig...statt": Werbetexte werden nicht transkribiert -->
+         </div>
+         <div type="letter" xml:id="letter.2">
+            <pb n="2" xml:id="p.2" facs="#IMG.1"/>
+            <p>Ich habe geglaubt, Ihre Fragen deutlich und klar beantwortet zu <lb/>haben. Nun sehe
+               ich mit Bedauern, dass Sie meine ausführlichen <lb/>Auseinandersetzungen nicht
+               genügend beachtet haben.</p>
+            <p>Ich schrieb wörtlich:</p>
+            <p rend="line left">„Es ist gar kein Unglück, sieht auch besser aus und ist
+               <lb/>lesbarer, wenn auf einer einsystemigen Platte nur 24 cm der <lb/>Höhe bedruckt
+               sind, als wenn Ueberflüssiges dort steht. <lb/>Die Partituren dienen einzig und
+               allein <hi rend="underline">praktischen</hi>
+               <lb/>Zwecken und je besser sie denen entsprechen, desto schöner <lb/>sind sie. Jede
+               andere Schönheit ist Mumpitz.“</p>
+            <p>Ich habe geglaubt, dass dieser Hinweis: <lb/><hi rend="underline">Lesbarkeit</hi> =
+                  <hi rend="underline">Schönheit</hi>
+               <lb/>von Ihnen zur Kenntnis genommen werden wird.</p>
+            <p>Ich habe gedacht, Sie werden einsehen, dass die <lb/>Partituren <lb/>für die <hi
+                  rend="underline">Dirigenten</hi> und <hi rend="underline">Musiker</hi> sind<lb/>
+               und dass man denen die Mühe der Entzifferung <lb/>so weit wie möglich zu erleichtern
+               hat !!!</p>
+            <p rend="line double left right"><hi rend="circle">1</hi> Deshalb ist es also durchaus
+               nicht an<g ref="#typoHyphen"/><lb break="no"/>gebracht, durchaus <hi
+                  rend="underline double">falsch</hi>, 2 Stimmen die auf <lb/>einer Zeile stehen
+               können, auf 2 zu stechen !! <lb/>Insbesondere, da meist die Akkorde leichter zu lesen
+               <lb/>sind, wenn möglichst viel davon (2 - 3 Töne) in einer <lb/>Zeile stehen.</p>
+            <p>Eine <hi rend="underline double">Ausnahme</hi> davon machen natürlich <lb/>Zeilen, in
+               denen zwei rhytmisch verschiedene <lb/>Stimmen stehen z Bsp : Seite 3, V<hi
+                  rend="superscript"><hi rend="underline double">cll</hi></hi> , 2 Takt:</p>
+            <notatedMusic>
+               <seg type="row">
+                  <seg type="column">
+                     <figure hand="#Schönberg">
+                        <graphic url="1914_06_03_23854/note_example/note_example1.jpg"/>
+                        <figDesc>Notenbeispiel</figDesc>
+                     </figure>
+                  </seg>
+                  <seg type="column">das ist besser als <lb/>2 Zeilen:</seg>
+                  <seg type="column">
+                     <figure hand="#Schönberg">
+                        <graphic url="1914_06_03_23854/note_example/note_example2.jpg"/>
+                        <figDesc>Notenbeispiel</figDesc>
+                     </figure>
+                  </seg>
+               </seg>
+               <seg type="row">
+                  <seg>oder: Seite 3: Takt 2, Flöten</seg>
+                  <seg type="row">
+                     <seg type="column">
+                        <figure hand="#Schönberg">
+                           <graphic url="1914_06_03_23854/note_example/note_example3.jpg"/>
+                           <figDesc>Notenbeispiel</figDesc>
+                        </figure>
+                     </seg>
+                     <seg type="column"> besser: </seg>
+                     <seg type="column">
+                        <figure hand="#Schönberg">
+                           <graphic url="1914_06_03_23854/note_example/note_example4.jpg"/>
+                           <figDesc>Notenbeispiel</figDesc>
+                        </figure>
+                     </seg>
+                  </seg>
+                  <seg>oder Seite 4, 2. System, 3. Takt, Fl u Pic</seg>
+                  <seg type="row">
+                     <seg type="column">
+                        <figure hand="#Schönberg">
+                           <graphic url="1914_06_03_23854/note_example/note_example5.jpg"/>
+                           <figDesc>Notenbeispiel</figDesc>
+                        </figure>
+                     </seg>
+                     <seg type="column"> besser: </seg>
+                     <seg type="column"><figure hand="#Schönberg">
+                           <graphic url="1914_06_03_23854/note_example/note_example6.jpg"/>
+                           <figDesc>Notenbeispiel</figDesc>
+                        </figure>
+                     </seg>
+                  </seg>
+               </seg>
+               <seg type="row">aber Seite 8, 1. System, 4. Takt Solo B <hi
+                     rend="superscript underline">r</hi>
+                  <lb/>besser in 2 Zeilen (eventuell !!)</seg>
+            </notatedMusic>
+            <p>dagegen sind folgende Stellen <hi rend="underline double">besser</hi> in <hi
+                  rend="underline double">einer</hi> Zeile als in 2: <lb/>Seite 6, Takt 5, die <choice>
+                  <abbr>B<hi rend="superscript"><hi rend="underline double"
+                     >r</hi></hi></abbr>
+                  <expan>Bratsche</expan>
+                  <reg>Viola</reg>
+               </choice>; | Seite 7, Takt 3, die <choice>
+                  <abbr>Clar.</abbr>
+                  <expan>Clarinette</expan>
+                  <reg>Klarinette</reg>
+               </choice> und die Fag. | <lb/>Seite 5, 1. System, Takt 1 die <choice>
+                  <abbr>Ktrbsse</abbr>
+                  <expan><term ref="http://d-nb.info/gnd/4032300-6">Kontrabässe</term></expan>
+               </choice> | Seite 9, 2. Syst, 6. Takt, Ob und <choice>
+                  <abbr>Klar</abbr>
+                  <expan>Klarinette</expan>
+               </choice></p>
+            <p><hi rend="circle">2.</hi> Zusammenziehungen nur bei Instrumenten der gleichen
+               Gattung, die die <lb/>gleiche Notierung haben !!!</p>
+            <closer rend="right">
+               <signed>Schönberg</signed>
+               <dateline>6./6. 1914</dateline>
+            </closer>
+         </div>
+      </body>
+   </text>
+   <facsimile>
+      <surface start="#page.1">
+         <graphic url="1914_06_03_23854/1914_06_03_23854.jpg" xml:id="IMG.1"/>
+      </surface>
+   </facsimile>
+</TEI>
