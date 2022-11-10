@@ -56,3 +56,4 @@ Dabei ist S die Menge aller Straßen, B ist die Menge aller Bäume. Außerdem ge
 
 * Timo Kötzing, Pascal Lenzner, Thomas Bläsius, Karen Seidel (2018). Einführung in die Mathematik der Algorithmik, openHPI, https://open.hpi.de/courses/mat-ws2018. 
 * Christian Spannagel (2010). Prädikatenlogik, https://youtu.be/lVSWLrC83zw.
+* Raphael van Riel / Gottfried Vosgerau (2018). Aussagen- und Prädikatenlogik. Eine Einführung. Springer https://link.springer.com/content/pdf/10.1007/978-3-476-04565-2.pdf 
