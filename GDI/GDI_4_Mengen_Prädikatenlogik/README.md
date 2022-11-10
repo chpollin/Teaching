@@ -1,11 +1,11 @@
 # Mengen und Prädikatenlogik
 
 * [Folien](https://docs.google.com/presentation/d/19b51V9_RjuJAN9ogYhZnPZVNFqUhMPqgbDJviZoaoDk/edit?usp=sharing)
-* [Video](https://youtu.be/zs8ZHLRPZhI)
+* [Screencast](https://youtu.be/zs8ZHLRPZhI)
 
 ## Literatur
 
-* [Prokop, Lukas: Grundlagen der Informatik, 2014, S.23-27](https://github.com/chpollin/Teaching/blob/master/GDI/Literature/PROKOP_GDI_Skriptum.pdf)
+* [Prokop, Lukas: Grundlagen der Informatik, 2014, S.23-27](https://github.com/chpollin/Teaching/blob/master/GDI/PROKOP_GDI_Skriptum.pdf)
 
 ## Assignment
 
@@ -28,7 +28,6 @@
 `C={12,14,17,24}`
 
 Beurteile, ob die folgenden Aussagen wahr oder falsch sind: 
-
 - *B ⊂ A*
 - *C ⊆ A*
 - *C ⊆ B*
@@ -36,11 +35,9 @@ Beurteile, ob die folgenden Aussagen wahr oder falsch sind:
 [Mehr Information gibt es hier.](https://www.mathebibel.de/teilmenge)
 
 **3) Zeige mit einem VENN-Diagramm, ob folgende Aussage true oder false ist.**
-
-​    `D'⋂(B∪C) = (D'⋂B)∪(D'⋂C)`
+*  *`D'⋂(B∪C) = (D'⋂B)∪(D'⋂C)`
 
 **4.) Welche der folgenden Aussagen sind äquivalent zu `¬∀x A(x) ⇒ B(x)`? [2 Punkte]**
-
 - `∃x ¬(A(x) ⇒ B(x))`
 - `∃x A(x) ∧ ¬B(x)`
 - `∀x ¬(A(x) ⇒ B(x))`
@@ -48,9 +45,14 @@ Beurteile, ob die folgenden Aussagen wahr oder falsch sind:
 
 **5.) Welche der folgenden Formeln formalisieren die Aussage "Es gibt eine Straße in der jeder Baum groß ist."? [2 Punkte]**
 
-Dabei ist S die Menge aller Straßen, B ist die Menge aller Bäume. Außerdem  geben die Prädikate stehtIn(b, s) und istGroß(b) an, ob der Baum b in  der Straße s steht beziehungsweise, ob der Baum b groß ist.
+Dabei ist S die Menge aller Straßen, B ist die Menge aller Bäume. Außerdem geben die Prädikate stehtIn(b, s) und istGroß(b) an, ob der Baum b in  der Straße s steht beziehungsweise, ob der Baum b groß ist.
 
 - `∃s∈S ¬∃b∈B stehtIn(b, s) ∧ ¬istGroß(b)`
 - `∃s∈S ∀b∈ B stehtIn(b, s) ⇒ istGroß(b)`
 - `∃s∈S ∀b∈B stehtIn(b, s) ∧ istGroß(b)`
 - `∃s∈S ¬∀b∈B ¬stehtIn(b,s) ∧ istGroß(b)`
+
+## Ressourcen
+
+* Timo Kötzing, Pascal Lenzner, Thomas Bläsius, Karen Seidel (2018). Einführung in die Mathematik der Algorithmik, openHPI, https://open.hpi.de/courses/mat-ws2018. 
+* Christian Spannagel (2010). Prädikatenlogik, https://youtu.be/lVSWLrC83zw.
