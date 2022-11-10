@@ -70,3 +70,7 @@ Ist diese Formel erfüllbar? **
 **Erstelle auch eine Wahrheitstabelle und die KNF für diese Formel**.
 
 `((q -> ¬p) v r) -> (q ∧ (r -> p))`
+
+## Ressourcen
+* Watching: AND OR NOT - Logic Gates Explained - Computerphile (8,5 min), [https://youtu.be/UvI-AMAtrvE](https://youtu.be/UvI-AMAtrvE) .
+* Watching: XOR & the Half Adder - Computerphile (9 min), [https://youtu.be/VPw9vPN-3ac](https://youtu.be/VPw9vPN-3ac) . 
