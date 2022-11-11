@@ -3,9 +3,12 @@
 * [Folien](https://docs.google.com/presentation/d/19b51V9_RjuJAN9ogYhZnPZVNFqUhMPqgbDJviZoaoDk/edit?usp=sharing)
 * [Screencast](https://youtu.be/zs8ZHLRPZhI)
 
-## Literatur
+## Literatur und Ressourcen
 
 * [Prokop, Lukas: Grundlagen der Informatik, 2014, S.23-27](https://github.com/chpollin/Teaching/blob/master/GDI/PROKOP_GDI_Skriptum.pdf)
+* Timo Kötzing, Pascal Lenzner, Thomas Bläsius, Karen Seidel (2018). Einführung in die Mathematik der Algorithmik, openHPI, https://open.hpi.de/courses/mat-ws2018. 
+* Christian Spannagel (2010). Prädikatenlogik, https://youtu.be/lVSWLrC83zw.
+* Raphael van Riel / Gottfried Vosgerau (2018). Aussagen- und Prädikatenlogik. Eine Einführung. Springer https://link.springer.com/content/pdf/10.1007/978-3-476-04565-2.pdf 
 
 ## Assignment
 
@@ -52,8 +55,3 @@ Dabei ist S die Menge aller Straßen, B ist die Menge aller Bäume. Außerdem ge
 - `∃s∈S ∀b∈B stehtIn(b, s) ∧ istGroß(b)`
 - `∃s∈S ¬∀b∈B ¬stehtIn(b,s) ∧ istGroß(b)`
 
-## Ressourcen
-
-* Timo Kötzing, Pascal Lenzner, Thomas Bläsius, Karen Seidel (2018). Einführung in die Mathematik der Algorithmik, openHPI, https://open.hpi.de/courses/mat-ws2018. 
-* Christian Spannagel (2010). Prädikatenlogik, https://youtu.be/lVSWLrC83zw.
-* Raphael van Riel / Gottfried Vosgerau (2018). Aussagen- und Prädikatenlogik. Eine Einführung. Springer https://link.springer.com/content/pdf/10.1007/978-3-476-04565-2.pdf 
