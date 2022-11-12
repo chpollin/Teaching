@@ -47,8 +47,12 @@
 ## Text Coding and Text Analysis with TEI
 
 * [TTT_1_XML_TEI](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_1_XML_TEI)
-* [TTT_2_XMLSchema](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_2_XMLSchema)
-
+* [TTT_2_DigitaleEdition](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_2_DigitaleEdition)
+* [TTT_3_XMLSchema](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_3_XMLSchema)
+* [TTT_4_TEI_Vertiefung](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_4_TEI_Vertiefung)
+* [TTT_5_XPath](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_5_XPath)
+* [TTT_6_XSLT](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_6_XSLT)
+* [TTT_7_Tools](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_7_Tools)
 ## Schools
 
 ### Winter School. Digitale Editionen Masterclass. Wuppertal (22.-26.2.2021)

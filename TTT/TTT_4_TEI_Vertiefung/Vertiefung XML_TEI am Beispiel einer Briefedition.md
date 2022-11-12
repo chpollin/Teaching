@@ -1,12 +1,10 @@
-# Vertiefung XML/TEI am Beispiel einer Briefedition
-
 [Folien: Vertiefung XML/TEI am Beispiel einer Briefedition](https://docs.google.com/presentation/d/1Z4QWvdTN60Wvrx9oVbMf8lILhMF4lKOKjPIaHALgJ9A/edit?usp=sharing)
 
-## Literatur
+# Literatur
 
 DUMONT, Stefan. Kommentieren in digitalen Brief-und Tagebuch-Editionen. In: *Annotieren, Kommentieren, Erläutern*. De Gruyter, 2020. S. 175-194.
 
-## Übung
+# Übung
 
 ### Vorüberlegungen zu einem Brief
 
@@ -16,6 +14,3 @@ Du kannst deine Überlegungen direkt als Kommentar (<!-- -->) in das XML/TEI sch
 
 * Transkription: 1914_06_03_23854.doc
 * Digitalisat: 1914_06_03_23854.jpg
-
-## Assignment 2 
-

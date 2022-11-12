@@ -1,13 +1,13 @@
 * *[Folien](https://docs.google.com/presentation/d/17QrDqIVVFtxc7_AMzSI8zGGMyMGS21DB8ciWEg1OCXE/edit?usp=sharing)
 
-## Literatur und Ressourcen
+# Literatur und Ressourcen
 
 * [openHPI (2020). Let’s Git - Versionsverwaltung und OpenSource](https://open.hpi.de/courses/git2020)
 * Blischak, J. D., Davenport, E. R., & Wilson, G. (2016). A quick introduction to version control with Git and GitHub. PLoS computational biology, 12(1), e1004668.
 * Git and GitHub Introduction, [https://www.w3schools.com/git/git_intro.asp?remote=github](https://www.w3schools.com/git/git_intro.asp?remote=github)
 * Git and GitHub Tutorial For Beginners | Full Course [2021] [NEW], [https://www.youtube.com/watch?v=3fUbBnN_H2c&ab_channel=Amigoscode](https://www.youtube.com/watch?v=3fUbBnN_H2c&ab_channel=Amigoscode)
 
-## Skript
+# Skript
 
 ### Einführung
 
