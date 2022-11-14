@@ -12,7 +12,7 @@
 Gegeben ist [szd_werke.xml](https://github.com/chpollin/Teaching/blob/master/TTT/TTT_5_XPath/szd_werke.xml). Dieses XML/TEI repräsentiert eine Liste (listBibl) von Werken im Nachlass von Stefan Zweig. Schreibe für folgende Fragen geeignete XPath Ausdrücke:
 1. Selektiere alle Werke (biblFull), die nicht "Deutsch" als Sprache angeführt haben. 
    * Lösung: `//listBibl/biblFull[not(.//lang = 'Deutsch')]`
-2. Gibt alle vorhanden Incipit (`<incipit>`) von Werken aus, die 'Romane/Erzählungen' klassifiziert wurden `<term type="classification" xml:lang="de">Romane/Erzählungen</term>`.
+2. Gibt alle vorhanden Incipit (`<incipit>`) von Werken aus, die als 'Romane/Erzählungen' klassifiziert wurden `<term type="classification" xml:lang="de">Romane/Erzählungen</term>`.
    * `listBibl/biblFull[.//term[@type] = 'Romane/Erzählungen']//incipit`
 3. Bei wievielen Werken gab es mehr als zwei Beteiligte? Gib jeweils den ersten Titel zurück.
    * `//biblFull[.//editor/position()>1]//title[1]`
