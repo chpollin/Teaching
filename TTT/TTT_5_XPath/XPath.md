@@ -9,7 +9,7 @@
 
 ## Übung
 
-Gegeben ist [szd_werke.xml](). Dieses XML/TEI repräsentiert eine Liste (listBibl) von Werken im Nachlass von Stefan Zweig. Schreibe für folgende Fragen geeignete XPath Ausdrücke:
+Gegeben ist [szd_werke.xml](https://github.com/chpollin/Teaching/blob/master/TTT/TTT_5_XPath/szd_werke.xml). Dieses XML/TEI repräsentiert eine Liste (listBibl) von Werken im Nachlass von Stefan Zweig. Schreibe für folgende Fragen geeignete XPath Ausdrücke:
 1. Selektiere alle Werke (biblFull), die nicht "Deutsch" als Sprache angeführt haben. 
    * Lösung: `//listBibl/biblFull[not(.//lang = 'Deutsch')]`
 2. Gibt alle vorhanden Incipit (`<incipit>`) von Werken aus, die 'Romane/Erzählungen' klassifiziert wurden `<term type="classification" xml:lang="de">Romane/Erzählungen</term>`.
