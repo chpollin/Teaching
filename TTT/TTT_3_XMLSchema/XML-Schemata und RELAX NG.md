@@ -1,5 +1,3 @@
-# XML Schema
-
 [Folien: XML-Schemata und RELAX NG](https://docs.google.com/presentation/d/1uxDHXrYJDtgBn2v460P-P3GbCALaZh87KPfNTAdBymM/edit?usp=sharing)
 
 ## Literatur
@@ -9,7 +7,7 @@
 
 ## Übung
 
-**Die Lösungen zu diesen Übungen findest du [hier](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_2_XMLSchema/Uebungen).**
+**Die Lösungen zu diesen Übungen findest du [hier](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_3_XMLSchema/Uebungen).**
 
 **1.) Erweitere [memo_schema.rng](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_2_XMLSchema/Uebungen).**
 
