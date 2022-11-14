@@ -1,4 +1,3 @@
-# Reguläre Sprachen (RegEx)
 [Folien](https://docs.google.com/presentation/d/1TcEmapxsaebBDcY73URAaE1AieseT_XzoDLhpZQNxJA/edit?usp=sharing)
 
 [Video](https://www.youtube.com/watch?v=eTFsb7qROt0)
@@ -8,6 +7,8 @@
 ## Literatur
 
 * [Prokop, Lukas: Grundlagen der Informatik, 2014, S.69-83](https://github.com/chpollin/Teaching/blob/master/GDI/Literature/PROKOP_GDI_Skriptum.pdf)
+* Grundlagen der Informatik, Lehrvideo; Formale Sprache, Endlicher Automat (DEA) - mit Übungsteil, https://www.youtube.com/playlist?list=PLqIUu1-N8ToMF0mmpyhHViR8Blv_bUAuy
+* [https://de.wikipedia.org/wiki/Formale_Sprache](https://de.wikipedia.org/wiki/Formale_Sprache)
 
 ## Assignment 4 (Reguläre Ausdrücke und Automaten)
 
