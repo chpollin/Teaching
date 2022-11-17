@@ -10,6 +10,7 @@
 	* xpath - //t:title vs /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title
 	* <xsl:apply-templates select="//t:table"/>
 	* <xsl:template match="t:table">, <xsl:template match="t:row">, <xsl:template match="t:cell">
+	* todo fixing heading - dates Nov. 1st 1828, 2, etc.
 	-->
 	<xsl:template match="/">
 		<html lang="en">
