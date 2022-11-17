@@ -14,11 +14,11 @@ Gegeben ist [szd_werke.xml](https://github.com/chpollin/Teaching/blob/master/TTT
    * Lösung: `//listBibl/biblFull[not(.//lang = 'Deutsch')]`
 2. Gibt alle vorhanden Incipit (`<incipit>`) von Werken aus, die als 'Romane/Erzählungen' klassifiziert wurden `<term type="classification" xml:lang="de">Romane/Erzählungen</term>`.
    * `listBibl/biblFull[.//term[@type] = 'Romane/Erzählungen']//incipit`
-3. Bei wievielen Werken gab es mehr als zwei Beteiligte? Gib jeweils den ersten Titel zurück.
+3. Bei wie vielen Werken gab es mehr als zwei Beteiligte? Gib jeweils den ersten Titel zurück.
    * `//biblFull[.//editor/position()>1]//title[1]`
    * `count(//biblFull[.//editor/position()>1])`
 4. Gib die Signaturen alle deutschsprachigen Werke aus, in denen mit Bleistift (in denen im Textknoten die Zeichenfolge 'Bleistift' vorkommt) `material[@ana='szdg:WritingInstrument']`) geschrieben wurde.
    * `//listBibl/biblFull[.//lang = 'Deutsch'][.//material[@ana='szdg:WritingInstrument'][contains(text(), 'Bleistift')]]//idno[@type="signature"]`
-5. Überlege dir einen eigenen Xpath und beschreibe kurz, was er aussagt.
+5. Überlege dir drei eigenen XPath für dein Ass 2 und beschreibe kurz, was sie aussagen.
 
 

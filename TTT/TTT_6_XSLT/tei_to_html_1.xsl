@@ -7,9 +7,9 @@
 	<!-- this is a comment :) -->
 	<!-- this is the first rule and it matches on the root element (/) of the input xml -->
 	<xsl:template match="/">
-		<!-- to create new elements, you can simply write them at some position in the code -->
+		<!-- to create new elements, you can simply write them inside a <xsl:template> -->
 		<root>
-			<!-- here everything that was selected in the current template by match="/" is printed. -->
+			<!-- xsl:value-of prints the text node of the current selection ("/") -->
 			<xsl:value-of select="."/>
 		</root>
 	</xsl:template>
