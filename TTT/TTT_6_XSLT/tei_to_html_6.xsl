@@ -2,102 +2,128 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="xs" version="2.0">
-
+    
     <!-- 
-	* <xsl:call-template name="getHead"/>
-	* 
+	* call template, named templates
+	* param
 	-->
     <xsl:template match="/">
-
+        
         <!-- create an additional html document -->
         <xsl:result-document href="person.html" method="html">
             <html lang="en">
                 <!-- call getHead -->
-                <xsl:call-template name="get_head"/>
+                <xsl:call-template name="get_head">
+                    <xsl:with-param name="title" select="'Personindex'"/>
+                </xsl:call-template>
                 <body>
                     <!-- call getNav -->
                     <xsl:call-template name="get_nav_and_header"/>
-                    <!-- content -->
+                    <div class="container-fluid p-5 bg-primary text-white text-center">
+                        <h1>
+                            <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"
+                            />
+                        </h1>
+                        <p>
+                            <xsl:value-of
+                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc"/>
+                        </p>
+                    </div>
                     <div class="container mt-5">
+                        <!--  -->
                         <xsl:apply-templates select="//t:teiHeader//t:listPerson"/>
                     </div>
                 </body>
             </html>
         </xsl:result-document>
-
-
+        
+        
         <html lang="en">
             <!-- call getHead -->
-            <xsl:call-template name="get_head"/>
+            <xsl:call-template name="get_head">
+                <xsl:with-param name="title" select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
+            </xsl:call-template>
             <body>
                 <!-- call getNav -->
                 <xsl:call-template name="get_nav_and_header"/>
-                <!-- content -->
+                <div class="container-fluid p-5 bg-primary text-white text-center">
+                    <h1>
+                        <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
+                    </h1>
+                    <p>
+                        <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc"/>
+                    </p>
+                </div>
                 <div class="container mt-5">
+                    <!--  -->
                     <xsl:apply-templates select="//t:table"/>
                 </div>
             </body>
         </html>
     </xsl:template>
-
+    
     <xsl:template match="t:head">
         <h2>
             <xsl:apply-templates/>
         </h2>
     </xsl:template>
-
+    
     <xsl:template match="t:date">
         <xsl:apply-templates/>
     </xsl:template>
-
+    
     <xsl:template match="t:table">
         <table class="my-5">
             <xsl:attribute name="class" select="'table'"/>
             <xsl:apply-templates/>
         </table>
     </xsl:template>
-
+    
     <xsl:template match="t:row[count(t:cell) > 1]">
         <tr>
             <xsl:apply-templates/>
         </tr>
     </xsl:template>
-
+    
     <xsl:template match="t:cell">
         <td>
             <xsl:apply-templates/>
         </td>
     </xsl:template>
-
+    
     <!-- select every t:row that has just 1 cell -->
     <xsl:template match="t:row[count(t:cell) = 1]">
         <h3>
             <xsl:value-of select="t:cell"/>
         </h3>
     </xsl:template>
-
+    
     <xsl:template match="t:choice">
         <span title="{t:expan}" class="text-decoration-underline">
             <xsl:value-of select="t:abbr"/>
         </span>
     </xsl:template>
-
+    
     <xsl:template match="t:listPerson">
-        <ul class="list-group">
+        <ul class="">
             <xsl:apply-templates select="t:person"/>
         </ul>
     </xsl:template>
-
+    
     <xsl:template match="t:person">
         <li class="list-group-item">
             <xsl:apply-templates/>
         </li>
     </xsl:template>
     
-    <!-- get_head -->
+    
+    
     <xsl:template name="get_head">
+        <xsl:param name="title"/>
         <head>
-            <title>Personindex</title>
+            <title>
+                <xsl:value-of select="$title"/>
+            </title>
             <meta charset="utf-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link
@@ -107,7 +133,6 @@
         </head>
     </xsl:template>
     
-    <!-- get_nav_and_header -->
     <xsl:template name="get_nav_and_header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
             <div class="container-fluid">
@@ -132,18 +157,8 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid p-5 bg-primary text-white text-center">
-            <h1>
-                <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"
-                />
-            </h1>
-            <p>
-                <xsl:value-of
-                    select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc"/>
-            </p>
-        </div>
     </xsl:template>
-
-
-
+    
+    
+    
 </xsl:stylesheet>

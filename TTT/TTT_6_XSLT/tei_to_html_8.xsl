@@ -4,20 +4,20 @@
     exclude-result-prefixes="xs" version="2.0">
     
     <!-- 
-	* xsl:if, xsl:choose
-	* boolean operators or, and
-	* format-date()
-	* substring-after()
-	* concat()
-	* castable as
+	* styling with Bootsgtrap 5 & th class="text-center"
+	* for-each, for-each-group
+	* selecting data from listPerson
 	-->
     <xsl:template match="/">
         
-        <!-- create an additional html document -->
+        <!-- /////////// -->
+        <!-- person.html -->
         <xsl:result-document href="person.html" method="html">
             <html lang="en">
                 <!-- call getHead -->
-                <xsl:call-template name="get_head"/>
+                <xsl:call-template name="get_head">
+                    <xsl:with-param name="title" select="'Personenindex'"/>
+                </xsl:call-template>
                 <body>
                     <!-- call getNav -->
                     <xsl:call-template name="get_nav_and_header"/>
@@ -29,16 +29,67 @@
             </html>
         </xsl:result-document>
         
-        <!-- HTML -->
+        <!-- /////////// -->
+        <!-- transaction_by_person.html -->
+        <xsl:result-document href="transaction_by_person.html" method="html">
+            <html lang="en">
+                <!-- call getHead -->
+                <xsl:call-template name="get_head">
+                    <xsl:with-param name="title" select="'Übersicht der Transaktionen nach Person'"/>
+                </xsl:call-template>
+                <body>
+                    <!-- call getNav -->
+                    <xsl:call-template name="get_nav_and_header"/>
+                    <!-- content -->
+                    <div class="container mt-5">
+                    <!--<ul>
+                        <xsl:for-each select="//t:name[@ana = 'bk:to']">
+                           <li><xsl:value-of select="."/></li>
+                        </xsl:for-each>
+                    </ul>-->
+                    <!--<ul>
+                        <xsl:for-each-group select="//t:row[@ana='bk:entry'][.//t:name[@ana = 'bk:to']]" group-by=".//t:name/@ref">
+                            <li><xsl:value-of select="current-grouping-key()"/><br/><xsl:value-of select="current-group()"/></li>
+                        </xsl:for-each-group>
+                    </ul>-->
+                    <xsl:for-each-group select="//t:row[@ana='bk:entry'][.//t:name[@ana = 'bk:to']]" group-by=".//t:name[@ana = 'bk:to']/@ref">
+                        <h3>
+                            <!-- pers_WCDH260 -->
+                            <xsl:variable name="PERSON_ID" select="substring-after(current-grouping-key(), '#')"/>
+                            <!-- pers_WCDH260 -->
+                            <xsl:variable name="PERSON" select="//t:listPerson/t:person[@xml:id = $PERSON_ID]"/>
+                            <xsl:value-of select="$PERSON/t:persName/t:surname"/>
+                            <xsl:if test="$PERSON/t:persName/t:forename">
+                             <xsl:text>, </xsl:text>
+                             <xsl:value-of select="$PERSON/t:persName/t:forename"/>
+                            </xsl:if>
+                            <xsl:value-of select="concat(' [@xml:id=', $PERSON_ID, ']')"/>
+                            <xsl:text> - Number of Transactions: </xsl:text>
+                            <xsl:value-of select="count(current-group())"/>
+                            
+                        </h3>
+                        <ul>
+                            <xsl:for-each select="current-group()">
+                                <li><xsl:value-of select="."/></li>
+                            </xsl:for-each>
+                        </ul>
+                    </xsl:for-each-group>
+                    </div>
+                </body>
+            </html>
+        </xsl:result-document>
+        
+        <!-- output.html aka edition -->
         <html lang="en">
             <!-- call getHead -->
-            <xsl:call-template name="get_head"/>
+            <xsl:call-template name="get_head">
+                <xsl:with-param name="title" select="'Edition'"/>
+            </xsl:call-template>
             <body>
                 <!-- call getNav -->
                 <xsl:call-template name="get_nav_and_header"/>
                 <!-- content -->
                 <div class="container mt-5">
-                    <!--  -->
                     <xsl:apply-templates select="//t:table"/>
                 </div>
             </body>
@@ -75,9 +126,9 @@
     </xsl:template>
     
     <xsl:template match="t:row[count(t:cell) = 1]">
-        <h3>
+        <th class="text-center">
             <xsl:value-of select="t:cell"/>
-        </h3>
+        </th>
     </xsl:template>
     
     <xsl:template match="t:choice">
@@ -93,6 +144,12 @@
                 <xsl:sort select="t:persName/t:surname[1]"/>
             </xsl:apply-templates>
         </ul>
+    </xsl:template>
+    
+    <xsl:template match="t:name">
+        <span class="bg-info">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
     
     <xsl:template match="t:person">
@@ -119,6 +176,7 @@
         </li>
     </xsl:template>
     
+    
     <xsl:template name="formate_date">
         <xsl:param name="when"/>
         <xsl:choose>
@@ -144,8 +202,9 @@
     
     <!-- get_head -->
     <xsl:template name="get_head">
+        <xsl:param name="title"/>
         <head>
-            <title>Personindex</title>
+            <title><xsl:value-of select="$title"/></title>
             <meta charset="utf-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link
@@ -157,6 +216,7 @@
     
     <!-- get_nav_and_header -->
     <xsl:template name="get_nav_and_header">
+        <xsl:param name="title"/>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
@@ -176,6 +236,12 @@
                             <a class="nav-link active" aria-current="page"
                                 href="person.html">Person</a>
                         </li>
+                        <li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href=" transaction_by_person.html">Übersicht der Transaktionen nach Person</a>
+                        </li> 
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -191,7 +257,5 @@
             </p>
         </div>
     </xsl:template>
-    
-    
-    
+
 </xsl:stylesheet>

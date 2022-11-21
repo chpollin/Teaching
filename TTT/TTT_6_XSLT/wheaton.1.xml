@@ -6878,12 +6878,6 @@
                   </persName>
                   <sex value="1"/>
                </person>
-               <person xml:id="pers_WCDH659">
-                  <persName>
-                     <forename/>
-                     <surname/>
-                  </persName>
-               </person>
                <person xml:id="pers_WCDH660">
                   <persName>
                      <forename>Hiram</forename>
