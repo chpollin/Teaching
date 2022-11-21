@@ -13,7 +13,7 @@
 	-->
 	
 	<!-- this is a comment :) -->
-	<!-- this is the first rule and it matches on the root element (/) of the input xml -->
+	
 	<xsl:template match="/">
 		<root>
 			<xsl:value-of select="."/>

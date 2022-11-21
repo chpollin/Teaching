@@ -43,13 +43,13 @@
 		</h2>
 	</xsl:template>
 	
-	<xsl:template match="t:date">
+	<!--<xsl:template match="t:date">
 		<xsl:apply-templates/>
-	</xsl:template>
+	</xsl:template>-->
 	
 	<xsl:template match="t:table">
-		<table class="my-5">
-			<xsl:attribute name="class" select="'table'"/>
+		<table>
+			<xsl:attribute name="class" select="'my-5 table'"/>
 			<xsl:apply-templates/>
 		</table>
 	</xsl:template>

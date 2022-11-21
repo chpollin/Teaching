@@ -13,39 +13,13 @@
         <!-- create an additional html document -->
         <xsl:result-document href="person.html" method="html">
             <html lang="en">
-                <head>
-                    <title>Personindex</title>
-                    <meta charset="utf-8"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                    <link
-                        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-                        rel="stylesheet"/>
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"/>
-                </head>
+                <!-- call getHead -->
+                <xsl:call-template name="get_head">
+                    <xsl:with-param name="title" select="'Personindex'"/>
+                </xsl:call-template>
                 <body>
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Navbar</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent"
-                                aria-controls="navbarSupportedContent" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"/>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="output.html"
-                                            >Edition</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page"
-                                            href="person.html">Person</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
+                    <!-- call getNav -->
+                    <xsl:call-template name="get_nav_and_header"/>
                     <div class="container-fluid p-5 bg-primary text-white text-center">
                         <h1>
                             <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"
@@ -66,40 +40,13 @@
 
 
         <html lang="en">
-            <head>
-                <title>
-                    <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
-                </title>
-                <meta charset="utf-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-                    rel="stylesheet"/>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"/>
-            </head>
+            <!-- call getHead -->
+            <xsl:call-template name="get_head">
+                <xsl:with-param name="title" select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
+            </xsl:call-template>
             <body>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"/>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="output.html"
-                                        >Edition</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page"
-                                        href="person.html">Person</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <!-- call getNav -->
+                <xsl:call-template name="get_nav_and_header"/>
                 <div class="container-fluid p-5 bg-primary text-white text-center">
                     <h1>
                         <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"/>
@@ -159,7 +106,7 @@
     </xsl:template>
 
     <xsl:template match="t:listPerson">
-        <ul class="list-group">
+        <ul class="">
             <xsl:apply-templates select="t:person"/>
         </ul>
     </xsl:template>
@@ -168,6 +115,49 @@
         <li class="list-group-item">
             <xsl:apply-templates/>
         </li>
+    </xsl:template>
+    
+    
+    
+    <xsl:template name="get_head">
+        <xsl:param name="title"/>
+        <head>
+            <title>
+                <xsl:value-of select="$title"/>
+            </title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <link
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+                rel="stylesheet"/>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"/>
+        </head>
+    </xsl:template>
+    
+    <xsl:template name="get_nav_and_header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"/>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="output.html"
+                                >Edition</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="person.html">Person</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </xsl:template>
 
 

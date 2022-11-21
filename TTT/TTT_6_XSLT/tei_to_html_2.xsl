@@ -4,7 +4,7 @@
 	exclude-result-prefixes="xs"
 	version="2.0">
 	
-	<!-- this XSL transform our data into a simple html file. add in the output scenario .html -->
+	<!-- * XML/TEI to HTML (with Bootstrap 5) -->
 	<xsl:template match="/">
 		<html lang="en">
 			<head>
