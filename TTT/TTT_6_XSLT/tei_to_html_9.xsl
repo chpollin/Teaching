@@ -5,8 +5,9 @@
 
     <!-- 
 	* <lb>, <pb>
-	* images
-	* taxonomy
+	* images on same height with pb and table -> changing structure 
+	* navigation per page (bottom), xml:id, templates vs for-each
+	* taxonomy, recursive templates
 	-->
     <xsl:template match="/">
 
@@ -75,29 +76,35 @@
                 </body>
             </html>
         </xsl:result-document>
-        
+
         <!-- /////////// -->
         <!-- taxonomy.html -->
         <xsl:result-document href="taxonomy.html" method="html">
             <html lang="en">
                 <!-- call getHead -->
                 <xsl:call-template name="get_head">
-                    <xsl:with-param name="title" select="'Taxonomie'"
-                    />
+                    <xsl:with-param name="title" select="'Taxonomie'"/>
                 </xsl:call-template>
                 <body>
                     <!-- call getNav -->
                     <xsl:call-template name="get_nav_and_header"/>
                     <!-- content -->
                     <div class="container mt-5">
-                        <xsl:for-each
-                            select="//t:taxonomy/t:category">
-                            <h3>
-                                <xsl:value-of select="."/>
-                            </h3>
-                            <p>
-                                <xsl:apply-templates select="t:category"/>
-                            </p>
+                        <xsl:if test="not(position()=1)">
+                            <xsl:attribute name="class" select="'container mt-5 row'"/>
+                        </xsl:if>
+                        <xsl:for-each select="//t:taxonomy/t:category">
+                            <xsl:sort select="t:catDesc/t:term" data-type="text"/>
+                            <div id="{@xml:id}" class="mt-5">
+                                <h1>
+                                    <xsl:value-of select="t:catDesc/t:term"/>
+                                </h1>
+                                <div>
+                                    <xsl:apply-templates select="t:category">
+                                        <xsl:sort select="t:catDesc/t:term" data-type="text"/>
+                                    </xsl:apply-templates>
+                                </div>
+                            </div>
                         </xsl:for-each>
                     </div>
                 </body>
@@ -115,41 +122,37 @@
                 <xsl:call-template name="get_nav_and_header"/>
                 <!-- content -->
                 <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-8">
-                            <xsl:apply-templates select="//t:body"/>
-                        </div>
-                        <div class="col-4">
-                            <xsl:for-each select="//t:pb">
-                                <!-- http://gams.uni-graz.at/archive/objects/o:depcha.wheaton.1/datastreams/IMG.001 -->
-                                <xsl:variable name="IMG"
-                                    select="concat('http://gams.uni-graz.at/archive/objects/o:depcha.wheaton.1/datastreams/', substring-after(@xml:id, 'WH_'), '/content')"/>
-                                <figure class="figure row py-4">
-                                    <img src="{$IMG}" class="figure-img img-fluid"
-                                        alt="Facsimile number {@n}"/>
-                                    <figcaption class="figure-caption">
-                                        <xsl:value-of
-                                            select="concat('Facsimile of page number: ', @n)"/>
-                                    </figcaption>
-                                </figure>
-                            </xsl:for-each>
-                        </div>
+                    <!-- navigation based on pages; on the bottom -->
+                    <div class="btn-group fixed-bottom container" role="group" aria-label="Page-Navigation">
+                        <xsl:for-each select="//t:pb">
+                            <a href="{concat('#page.', @n)}" class="btn btn-sm btn-primary" role="button">
+                                <xsl:value-of select="'Page.', @n"/>
+                            </a>
+                            <xsl:if test="not(position()=last())">
+                                <xsl:text> </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
                     </div>
+                    <!-- use the t:pb to structure the page -->
+                    <xsl:apply-templates select="//t:pb"/>
                 </div>
             </body>
         </html>
     </xsl:template>
 
+    <!--  -->
     <xsl:template match="t:head">
         <h2>
             <xsl:apply-templates/>
         </h2>
     </xsl:template>
 
+    <!--  -->
     <xsl:template match="t:date">
         <xsl:apply-templates/>
     </xsl:template>
 
+    <!--  -->
     <xsl:template match="t:table">
         <table class="my-5">
             <xsl:attribute name="class" select="'table'"/>
@@ -157,30 +160,35 @@
         </table>
     </xsl:template>
 
+    <!--  -->
     <xsl:template match="t:row[count(t:cell) > 1]">
         <tr>
             <xsl:apply-templates/>
         </tr>
     </xsl:template>
 
+    <!--  -->
     <xsl:template match="t:cell">
         <td>
             <xsl:apply-templates/>
         </td>
     </xsl:template>
 
+    <!--  -->
     <xsl:template match="t:row[count(t:cell) = 1]">
         <th class="text-center">
             <xsl:value-of select="t:cell"/>
         </th>
     </xsl:template>
 
+    <!--  -->
     <xsl:template match="t:choice">
         <span title="{t:expan}" class="text-decoration-underline">
             <xsl:value-of select="t:abbr"/>
         </span>
     </xsl:template>
 
+    <!--  -->
     <xsl:template match="t:listPerson">
         <ul class="list-group">
             <xsl:apply-templates select="t:person">
@@ -190,12 +198,14 @@
         </ul>
     </xsl:template>
 
+    <!--  -->
     <xsl:template match="t:name">
         <span class="bg-info">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
 
+    <!--  -->
     <xsl:template match="t:person">
         <li class="list-group-item">
             <xsl:value-of select="t:persName"/>
@@ -310,17 +320,50 @@
     </xsl:template>
 
     <xsl:template match="t:pb">
-        <hr class="border-3 border-top border-danger my-5"/>
+        <div class="row">
+            <!-- this is the left part for the text; process now only the first following-sibling table -->
+            <div class="col-md-8">
+                <!-- adding an id for the navigation -->
+                <xsl:attribute name="id" select="concat('page.', @n)"/>
+                <hr class="border-3 border-top border-danger my-5"/>
+                <xsl:apply-templates select="following-sibling::t:table[1]"/>
+            </div>
+            <!-- this is the right part fwith the image -->
+            <div class="col-md-4">
+                <xsl:variable name="IMG"
+                    select="concat('http://gams.uni-graz.at/archive/objects/o:depcha.wheaton.1/datastreams/', substring-after(@xml:id, 'WH_'), '/content')"/>
+                <figure class="figure row py-4">
+                    <img src="{$IMG}" class="figure-img img-fluid" alt="Facsimile number {@n}"/>
+                    <figcaption class="figure-caption">
+                        <xsl:value-of select="concat('Facsimile of page ', @n)"/>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
     </xsl:template>
-    
+
     <xsl:template match="t:category">
-        <h4>
-            <xsl:value-of select="t:gloss"/>
-        </h4>
-        <p>
-            <xsl:apply-templates select="t:category"/>
-        </p>
+        <div id="{@xml:id}">
+            <xsl:variable name="DEPTH" select="count(ancestor::t:category)"/>
+            <!-- builds <h2>, <h3>, <h4>, -->
+            <xsl:element name="{concat('h', $DEPTH+1)}">
+                <xsl:attribute name="class" select="concat('px-', $DEPTH)"/>
+                <xsl:value-of select="t:catDesc/t:term"/>
+            </xsl:element>
+            <!-- checks if there is a child -->
+            <xsl:if test="t:category">
+                <div>
+                    <!-- recursive call -->
+                    <xsl:apply-templates select="t:category">
+                        <xsl:sort select="t:catDesc/t:term" data-type="text"/>
+                    </xsl:apply-templates>
+                </div>
+            </xsl:if>
+        </div>
         <xsl:apply-templates/>
     </xsl:template>
+    
+    <!-- ignore elements -->
+    <xsl:template match="t:category/t:catDesc/t:term"/>
 
 </xsl:stylesheet>
