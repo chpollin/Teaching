@@ -35,10 +35,12 @@ Lade bitte die/das XML/TEI File(s) hoch. **Diese müssen wohlgeformt und valide 
 
 ## Assignment 3 - Web-Repräsentation / Digitale Edition mit XSLT
 
-Das aus Ass 2 entstandene XML/TEI soll nun mittels XSLT zur einer Web-Repräsentation transformiert werden. Wir machen das lokal und mit dem Oxygen XML Editor. Schreibe dazu eine XSL Transformation, die deine Ausgangsdaten in eines für deine Forschungsfrage passende Frontend Interface überführt. Gegebenenfalls musst du etwas an deinem XML/TEI anpassen, weil dir jetzt eine Unstimmigkeit aufgefallen ist. Zur Beurteilung muss in der Lage sein die Transformation auch bei mir lokal durchführen zu können.  
+Das in Ass 2 erarbeitete XML/TEI soll nun mittels XSLT als Web-Repräsentation umgesetzt werden. Wir machen das lokal und mit dem Oxygen XML Editor. Schreibe dazu eine XSL Transformation, die deine Ausgangsdaten in ein für deine Forschungsfrage passendes Frontend Interface überführt. Gegebenenfalls musst du etwas an deinem XML/TEI anpassen, weil dir jetzt eine Unstimmigkeit aufgefallen ist. Zur Beurteilung muss ich in der Lage sein, die Transformation auch bei mir lokal durchführen zu können.
 
-Styling und Design sind nicht zentral für dieses Assignment. Es gibt ein Bootstrap 5 basiertes Framework, das zu verwenden ist. Im Fokus steht der geschrieben XSLT Code, der aus deinem XML/TEI ein HTML generiert.  
+Styling und Design sind nicht zentral für dieses Assignment. Es gibt ein Bootstrap 5 basiertes Framework, das zu verwenden ist; es ist (noch) nicht Teil des Assignments, etwas am Design anzupassen (wie etwa CSS anlegen). Im Fokus steht der geschriebene XSLT Code, der aus deinem XML/TEI ein HTML generiert.
 
-Du musst in der Lage sein deinen Code erklären zu können.
+Du musst in der Lage sein, deinen Code erklären zu können.
 
-## Assignment 4 - Analyse, Reflexion und Review
+Es soll mindestens eine Edition bzw. Datenansicht geben und eine Ansicht für Metainformation, Index oder ähnliche Dinge.
+
+## Assignment 4 - 

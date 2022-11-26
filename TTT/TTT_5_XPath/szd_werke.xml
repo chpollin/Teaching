@@ -208,11 +208,6 @@
                 <term type="classification" xml:lang="en">Novels/Stories</term>
               </keywords>
             </textClass>
-            <textClass>
-              <keywords scheme="cirilo:normalizedPlaceNames">
-                <list></list>
-              </keywords>
-            </textClass>
           </profileDesc>
         </biblFull>
         <biblFull ana="01_Rausch" xml:id="SZDMSK.3">
