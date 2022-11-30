@@ -31,13 +31,11 @@
 
 “_I’m an egotistical bastard, and I name all my projects after myself. First ‘Linux’, now ‘Git’._”
 
-Ein Vorgänger System, das von Linux-Entwickler*innen verwendet wurde, konnte nicht mehr kostenlos verwendet werden und so entschloss der Erfinder von Linux - Linus Torvald - seine eigene Quellcode-Management-Software zu entwickeln. Was rauskam, ist Git. Und Git heißt eben auch “Blödmann”. Das ist der Gag dabei. Aber eigentlich dachte sich Linus Torvald, dass “Git” einfach ein kurzer, leichter Befehl ist. Ein Befehl, den man sich gut merken kann. 
+Ein Vorgänger System, das von Linux-Entwickler*innen verwendet wurde, konnte nicht mehr kostenlos verwendet werden und so entschloss der Erfinder von Linux - Linus Torvald - seine eigene Quellcode-Management-Software zu entwickeln. Was rauskam, ist Git. Und Git heißt eben auch “Blödmann”. Aber eigentlich dachte sich Linus Torvald, dass “Git” einfach ein kurzer Befehl ist, den man sich leicht merken kann. 
 
-Das nur ein ganz knapp Anekdote zum Einstieg in Git und warum  Git heißt, wie es heißt.
+Was ist Git? #Git ist ein freies, verteiltes Versionsverwaltungssystem für Dateien. Eine oder mehrere Personen sind so in der Lage, an einer gleichen Codegrundlage - also mit Dateien - zu arbeiten. Jeder/jede sieht die Änderungen des anderen, man kann gemeinsam Versionen verwalten, man sieht “was hat der/die andere gemacht?” und wenn es Konflikte gibt - also bei unserer gemeinsamen Arbeit ist was schiefgegangen - dann können wir diese Konflikte strukturiert beheben. Git ist vielleicht so etwas wie ein Mediator. Git erlaubt es, die ganze Geschichte des Entwicklungsprozesses einer Software zu dokumentieren und mit Dateien kollaborativ zu arbeiten.
 
-Was ist Git? Git ist ein freies, verteiltes Versionsverwaltungssystem für Dateien. Eine oder mehrere Personen sind so in der Lage, an einer gleichen Codegrundlage - also mit Dateien - zu arbeiten. Jeder/jede sieht die Änderungen des anderen, man kann gemeinsam Versionen verwalten, man sieht “was hat der/die andere gemacht?” und wenn es Konflikte gibt - also bei unserer gemeinsamen Arbeit ist was schiefgegangen - dann können wir diese Konflikte strukturiert beheben. Git ist vielleicht so etwas wie ein Mediator. Git erlaubt es, die ganze Geschichte des Entwicklungsprozesses einer Software zu dokumentieren und mit Dateien kollaborativ zu arbeiten.
-
-Und genau mit dieser Kerntechnologie - Git -, die wirklich State-of-the-Art ist - jeder/jeder im IT-Bereich arbeitet, damit und es ist in der Entwicklung von Software nicht mehr wegzudenken ist, werden wir uns im 1. Block und im Zuge dieses Workshops beschäftigen.
+Und genau mit dieser Kerntechnologie - Git -, die wirklich State-of-the-Art ist - jeder/jeder im IT-Bereich arbeitet, damit und es ist in der Entwicklung von Software nicht mehr wegzudenken ist, werden wir uns im 1. Block beschäftigen.
 
 **Begriffe**
 
@@ -45,19 +43,19 @@ Aber schauen uns wir vorher noch ein paar Grundbegriffe an.
 
 **Was ist eine Datei?** 
 
-Diese Frage mag trivial klingen, aber es geht um das Verwalten unsere Dateien. Wir wollen kollaborativ und möglichst effizient an unseren Dateien arbeiten. Dateien sind nach bestimmten Strukturen geordnete Daten. Unsere Text- oder Bilddateien. Beispielsweise .jpg oder .png für Bilder und eben auch unsere XML-Dateien. In einem Editionsvorhaben arbeiten mehrere Personen an einer gemeinsamen Sammlung an XML/TEI Dateien. Daten werden gelöscht, hinzugefügt, geändert. Dateien verändern sich also. Das wäre doch schön, wenn man darüber immer einen guten Überblick über die Änderungen hat.
+Diese Frage mag trivial klingen, aber es geht um das Verwalten unsere Dateien. Wir wollen kollaborativ und möglichst effizient an unseren Dateien arbeiten. Dateien sind nach bestimmten Strukturen geordnete Daten. Unsere Text- oder Bilddateien. Beispielsweise .jpg oder .png für Bilder und eben auch unsere XML-Dateien. In einem Editionsvorhaben arbeiten mehrere Personen an einer gemeinsamen Sammlung an XML/TEI Dateien. Daten werden gelöscht, hinzugefügt, geändert. Dateien verändern sich also. Das wäre doch schön, wenn man immer einen guten Überblick über alle Änderungen hätte.
 
 **Was ist eine Version?** 
 
-Eine Version beschreibt den Inhalt einer Datei zu einem bestimmten Zeitpunkt und jede Änderung erzeugt eine neue Version. Ich kann Ihnen aus Erfahrung sagen, dass das Thema Versionierung eines ist, dass Menschen, die für ein Repositorium für Forschungsdaten betreiben ein intensives Thema werden kann. Ab wann ist etwas eine neue Version? Technisch gesehen, wenn sich ein Zeichen ändert, aber das ist nicht immer pragmatisch. Von einer digitalen Edition wollen Sie ja keine neue Edition, nur weil sie einen Buchstaben - oder vielleicht gerade doch, weil sie auf der Ebene von Zeichen edieren - ausgebessert haben, sondern vielleicht eher, wenn inhaltlich eine Veränderung ist, oder ein größerer Eingriff. Aber das ist ein anderes Thema.
+Eine Version beschreibt den Inhalt einer Datei zu einem bestimmten Zeitpunkt und jede Änderung erzeugt eine neue Version. Ab wann wird von einer neuen Version gesprochen? Technisch gesehen, wenn sich ein Zeichen ändert, aber das ist nicht immer pragmatisch. Von einer digitalen Edition wollen Sie ja keine neue Version, nur weil sie einen Buchstaben - oder vielleicht gerade doch, weil sie auf der Ebene von Zeichen edieren - ausgebessert haben, sondern vielleicht eher, wenn inhaltlich eine Veränderung geschieht, oder ein größerer Eingriff. Aber das ist ein anderes Thema.
 
 **XML-Beispiel**
 
-Ich habe hier ein einfaches XML Beispiel. Eine XML Datei, die ein Memo beinhaltet mit dem Text “For your support thank I must!”. Und vielleicht möchte man statt den Anführungszeichen auch eine XML Element verwenden und setzt die direkte Rede in ein &lt;q> Element. Schon haben wir eine neue Version dieses Dokuments. Und wenn Sie jetzt damit weiter arbeiten wollen, dann hilft Ihnen Git und Anbieter der Software Git - wie GitHub - genau diese Art von Veränderungen zu dokumentieren, austauschen zu können und nachzuvollziehen. 
+Ich habe hier ein einfaches XML Beispiel. Eine XML Datei, die ein Memo beinhaltet mit dem Text “For your support thank I must!”. Und vielleicht möchte man statt den Anführungszeichen auch eine XML Element verwenden und setzt die direkte Rede in ein &lt;q> Element. Schon haben wir eine neue Version dieses Dokuments. Und wenn Sie jetzt damit weiter arbeiten wollen, dann hilft Git und Anbieter der Software Git - wie #GitHub - genau diese Art von Veränderungen zu dokumentieren, austauschen zu können und nachzuvollziehen. 
 
 **Was ist Versionskontrolle?**
 
-Das nämlich macht eine Versionskontrolle. Diese ermöglichen die Verwaltung verschiedener Versionen von Dateien und erlauben so einen “Blick zurück” durch die Versionen von Dateien.
+Das ist der Sinn einer Versionskontrolle. Diese ermöglichen die Verwaltung verschiedener Versionen von Dateien und erlauben so einen “Blick zurück” durch die Versionen von Dateien.
 
 Da gibt es - mal ganz einfach gesagt:
 
@@ -67,12 +65,12 @@ Da gibt es - mal ganz einfach gesagt:
 
 **Git ist - nochmal zusammenfassend - ein verteiltes Versionsverwaltungssystem von Dateien. Wie funktioniert es jetzt genau? **
 
-Wir haben eine XML-Datei. Unser einfaches memo.xml von vorhin. Diese Datei befindet sich in unserem Working Directory. Das Working Directory oder auch Working Tree genannt umfasst alle Dateien an denen gerade gearbeitet wird. Vielleicht alle XML/TEI Dateien an denen Sie im Editionsvorhaben arbeiten.
+Wir haben eine XML-Datei. Diese Datei befindet sich in unserem Working Directory. Das Working Directory oder auch Working Tree genannt umfasst alle Dateien an denen gerade gearbeitet wird. Vielleicht alle XML/TEI Dateien an denen Sie im Editionsvorhaben arbeiten.
 
 * Bei Git gibt es dann noch die sogenannte **Staging Area** und die **Commit History**. 
 * Das XML wurde bearbeitet und wir haben eine neue Version.
-* Die Information über die Änderung muss jetzt in unser System - in unser Git. Dafür verwenden wir den Befehl: <strong><code>git add memo.xml</code></strong> Das würde man so in den Computer eingeben bzw. mit einem Programm “in Auftrag” geben. Das schauen wir uns noch genauer an. Jeder Befehl beginnt immer mit git, damit man auch weiß welches “add” es ist. Und deshalb auch die Anekdote, es soll ein kurzer und einfacher Befehl sein. <code>add</code> ist der eigentlich Befehl - wir wollen unsere veränderte Datei - eben <strong><code>memo.xml</code></strong>- in der Staging Area anmelden. Wir wollen diese Datei hinzufügen - liebes Git - aber noch nicht “den anderen” mitteilen. 
-* Ist eine Datei mit add im System aufgenommen können wir nun mit <strong><code>git commit</code></strong> sagen, dass für alle angemeldeten Dateien, wenn es eine Änderung gibt, ein Commit eröffnet wird. Ein Commit ist ein save point / ein Sicherungspunkt. Wir haben genau den jetzigen Status unsere Dateien gesichert. Von der Staging Area kommt es also in die Commit History. Und dort reihen sich die Commits / die Sicherungspunkte.
+* Die Information über die Änderung muss jetzt in unser System - in unser Git. Dafür verwenden wir den Befehl: <strong><code>git add memo.xml</code></strong> Das würde man so in den Computer eingeben bzw. mit einem Programm “in Auftrag” geben. Das schauen wir uns noch genauer an. Jeder Befehl beginnt immer mit git, damit man auch weiß welches “add” es ist. <code>add</code> ist der eigentlich Befehl - wir wollen unsere veränderte Datei - eben <strong><code>memo.xml</code></strong>- in der Staging Area anmelden. Wir wollen diese Datei hinzufügen - liebes Git - aber noch nicht “den anderen” mitteilen. 
+* Ist eine Datei mit add im System aufgenommen, können wir nun mit <strong><code>git commit</code></strong> sagen, dass für alle angemeldeten Dateien, wenn es eine Änderung gibt, ein Commit eröffnet wird. Ein Commit ist ein save point / ein Sicherungspunkt. Wir haben genau den jetzigen Status unsere Dateien gesichert. Von der Staging Area kommt es also in die Commit History. Und dort reihen sich die Commits / die Sicherungspunkte.
 
 → alles was bis jetzt passiert ist, ist auf unserem lokalen Rechner passiert.
 
@@ -107,7 +105,7 @@ Schauen wir nur als kurzen theoretischen Einschub auf die Grundprinzipien von Gi
    Von allen zu speichernden Daten berechnet Git Prüfsummen (engl. checksum) und speichert diese als Referenz zusammen mit den Daten ab. Das macht es unmöglich, dass sich Inhalte von Dateien oder Verzeichnissen ändern, ohne dass Git das mitbekommt.
 4. **Git fügt im Regelfall nur Daten hinzu**
 5. **Die drei Zustände**
-   Eine wichtige Information im Umgang mit Git. Git definiert drei Hauptzustände, in denen sich eine Datei befinden kann: committet, geändert und für Commit vorgemerkt als _staged_).
+   Eine wichtige Information im Umgang mit Git. Git definiert drei Hauptzustände, in denen sich eine Datei befinden kann: committet, geändert und für Commit vorgemerkt als _staged_
    1. **Modified** bedeutet, dass eine Datei geändert, aber noch nicht in die lokale Datenbank eingecheckt wurde.
    2. **Staged** bedeutet, dass eine geänderte Datei in ihrem gegenwärtigen Zustand für den nächsten Commit vorgemerkt ist.
    3. **Committed** bedeutet, dass die Daten sicher in der lokalen Datenbank gespeichert sind.
