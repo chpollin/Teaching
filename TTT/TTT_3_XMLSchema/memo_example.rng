@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="memos">
+      <element name="memo">
+        <attribute name="id">
+          <data type="NCName"/>
+        </attribute>
+        <element name="head">
+          <element name="ref">
+            <attribute name="target">
+              <data type="NCName"/>
+            </attribute>
+          </element>
+        </element>
+        <element name="to">
+          <attribute name="type">
+            <data type="NCName"/>
+          </attribute>
+          <text/>
+        </element>
+        <element name="from">
+          <attribute name="type">
+            <data type="NCName"/>
+          </attribute>
+          <text/>
+        </element>
+        <element name="date">
+          <data type="date"/>
+        </element>
+        <element name="body">
+          <oneOrMore>
+            <element name="p">
+              <text/>
+            </element>
+          </oneOrMore>
+        </element>
+      </element>
+    </element>
+  </start>
+</grammar>

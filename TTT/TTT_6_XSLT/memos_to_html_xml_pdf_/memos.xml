@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<memos>
+	<memo id="memo.1">
+		<head><ref target="https://en.wikipedia.org/wiki/R2-D2"/></head>
+		<to type="Droid">R2D2</to>
+		<from type="Droid">C-3PO</from>
+		<date>1990-01-01</date>
+		<body><p><q>Bew" Pip Pip!</q></p></body>
+	</memo>
+	
+	<memo id="memo.2">
+		<head><ref target="https://en.wikipedia.org/wiki/Luke_Skywalker"/></head>
+		<to type="Jedi">Luke Skywalker</to>
+		<from>Rebel Alliance</from>
+		<body><p>Yoda says, <q>"For your support thank I must!"</q></p></body>
+	</memo>
+	
+	<memo id="memo.3">
+		<head><ref target="https://en.wikipedia.org/wiki/Obi-Wan_Kenobi"/></head>
+		<to type="Jedi">Obi-Wan Kenobi</to>
+		<from type="Sith">General Grievous</from>
+		<body><p>I've been trained in your Jedi arts by Count Dooku!</p></body>
+	</memo>
+	<memo id="memo.4">
+		<head><ref target="https://en.wikipedia.org/wiki/Obi-Wan_Kenobi"/></head>
+		<to/>
+		<from type="Jedi">Obi-Wan Kenobi</from>
+		<body><p>Strike me down and I will become more powerful than you could possibly imagine.</p></body>
+	</memo>
+	<memo id="memo.5">
+		<head>Let the wookie win.</head>
+		<to/>
+		<from type="Sith">Darth Vader</from>
+		<body><p>I find your lack of faith disturbing.</p></body>
+	</memo>
+	<memo id="memo.6">
+		<head>Lorem Ipsum</head>
+		<to/>
+		<from type="Droid">C-3PO</from>
+		<body><p>Let the wookie win.</p></body>
+	</memo>
+</memos>
