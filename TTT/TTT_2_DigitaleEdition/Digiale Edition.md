@@ -1,8 +1,6 @@
-# Digiale Edition
+* [Folien: Digitale Edition](https://docs.google.com/presentation/d/1piwA6a0NTyA3MIP-of3H-EiQZDcqgLnpxc1dCJAX32o/edit?usp=sharing)
 
-[Folien: Digitale Edition](https://docs.google.com/presentation/d/1piwA6a0NTyA3MIP-of3H-EiQZDcqgLnpxc1dCJAX32o/edit?usp=sharing)
-
-## Literatur
+## Literatur und Ressourcen
 
 Sahle P. (2017) Digitale Edition. In: Jannidis F., Kohle H., Rehbein M.  (eds) Digital Humanities. J.B. Metzler, Stuttgart.  https://doi.org/10.1007/978-3-476-05446-3_17
 

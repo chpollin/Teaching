@@ -1,6 +1,6 @@
-[Folien: XML-Schemata und RELAX NG](https://docs.google.com/presentation/d/1uxDHXrYJDtgBn2v460P-P3GbCALaZh87KPfNTAdBymM/edit?usp=sharing)
+* [Folien: XML-Schemata und RELAX NG](https://docs.google.com/presentation/d/1uxDHXrYJDtgBn2v460P-P3GbCALaZh87KPfNTAdBymM/edit?usp=sharing)
 
-## Literatur
+## Literatur und Ressourcen
 
 * [RELAX NG](http://books.xmlschemata.org/relaxng/page2.html)
 * [RELAX NG Tutorial](https://speedata.github.io/relaxngtutorial-de/)

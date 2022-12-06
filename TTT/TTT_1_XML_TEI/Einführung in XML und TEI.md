@@ -1,12 +1,10 @@
-[Folien: XML & TEI](https://docs.google.com/presentation/d/1fl0mrNu-NYNPvR9EhfEAedEdb8qoTlE-vXvN0PnKsis/edit?usp=sharing)
+* [Folien: XML & TEI](https://docs.google.com/presentation/d/1fl0mrNu-NYNPvR9EhfEAedEdb8qoTlE-vXvN0PnKsis/edit?usp=sharing)
+* [Video: XML](https://youtu.be/1ap-zO_bTMs)
+* [Video: TEI](https://youtu.be/j0VwsoGEfrk)
 
-[Video: XML](https://youtu.be/1ap-zO_bTMs)
+## Literatur und Ressourcen
 
-[Video: TEI](https://youtu.be/j0VwsoGEfrk)
-
-## Literatur
-
-## Übungen
+## Übung
 
 **Die Lösungen zu diesen Übungen findest du [hier](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_1_XML_TEI/Uebungen).**
 

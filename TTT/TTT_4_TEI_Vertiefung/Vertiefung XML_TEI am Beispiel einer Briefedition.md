@@ -1,6 +1,6 @@
-[Folien: Vertiefung XML/TEI am Beispiel einer Briefedition](https://docs.google.com/presentation/d/1Z4QWvdTN60Wvrx9oVbMf8lILhMF4lKOKjPIaHALgJ9A/edit?usp=sharing)
+* [Folien: Vertiefung XML/TEI am Beispiel einer Briefedition](https://docs.google.com/presentation/d/1Z4QWvdTN60Wvrx9oVbMf8lILhMF4lKOKjPIaHALgJ9A/edit?usp=sharing)
 
-## Literatur
+## Literatur und Ressourcen
 
 DUMONT, Stefan. Kommentieren in digitalen Brief-und Tagebuch-Editionen. In: *Annotieren, Kommentieren, Erläutern*. De Gruyter, 2020. S. 175-194.
 
