@@ -2,24 +2,24 @@
 <memos>
 	<memo id="memo.1">
 		<head><ref target="https://en.wikipedia.org/wiki/R2-D2"/></head>
-		<to type="Droid">R2D2</to>
-		<from type="Droid">C-3PO</from>
+		<to type="Droid">C-3PO</to>
+		<from type="Droid">R2D2</from>
 		<date>1990-01-01</date>
-		<body><p><q>Bew" Pip Pip!</q></p></body>
+		<body><p><q>Bew" Pip Pip!</q></p><p><q>a</q></p><p><q>Bdfdfip!</q></p><p><q>Bedfdf!</q></p></body>
 	</memo>
 	
 	<memo id="memo.2">
 		<head><ref target="https://en.wikipedia.org/wiki/Luke_Skywalker"/></head>
 		<to type="Jedi">Luke Skywalker</to>
 		<from>Rebel Alliance</from>
-		<body><p>Yoda says, <q>"For your support thank I must!"</q></p></body>
+		<body><p style="bold">Yoda says, <q>"For your support thank I must!"</q></p></body>
 	</memo>
 	
 	<memo id="memo.3">
 		<head><ref target="https://en.wikipedia.org/wiki/Obi-Wan_Kenobi"/></head>
 		<to type="Jedi">Obi-Wan Kenobi</to>
 		<from type="Sith">General Grievous</from>
-		<body><p>I've been trained in your Jedi arts by Count Dooku!</p></body>
+		<body><p style="bold">I've been trained in your Jedi arts by Count Dooku!</p></body>
 	</memo>
 	<memo id="memo.4">
 		<head><ref target="https://en.wikipedia.org/wiki/Obi-Wan_Kenobi"/></head>
