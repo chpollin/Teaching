@@ -1,11 +1,10 @@
-# RDF und RDFS
-[Folien](https://docs.google.com/presentation/d/1uv8o7v4b0DWM75JQBEG9GNrMiq2wYY45Drq7oIvE0n8/edit?usp=sharing)
+* [Folien](https://docs.google.com/presentation/d/1uv8o7v4b0DWM75JQBEG9GNrMiq2wYY45Drq7oIvE0n8/edit?usp=sharing)
+* [Video RDF](https://youtu.be/YRDVjWDsC1c)
+* [Video RDFS](https://youtu.be/KrjGDDXJ37c)
 
-[Video RDF](https://youtu.be/YRDVjWDsC1c)
+#rdf #rdfs #semanticweb #infomod
 
-[Video RDFS](https://youtu.be/KrjGDDXJ37c)
-
-## Literatur
+## Literatur und Ressourcen
 
 * [RDF 1.1 Primer](https://www.w3.org/TR/rdf11-primer/')
 * [Turtle vs RDF/XML vs N-Triples vs JSON-LD](https://medium.com/wallscope/understanding-linked-data-formats-rdf-xml-vs-turtle-vs-n-triples-eb931dbe9827)

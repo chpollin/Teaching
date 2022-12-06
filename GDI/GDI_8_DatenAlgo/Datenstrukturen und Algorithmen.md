@@ -1,17 +1,16 @@
-# Datenstrukturen und Algorithmen
+* [Folien](https://docs.google.com/presentation/d/12jttEA09WvhI77dJI8wd2p9rNpruHEiOPvHV8a2Uzz0/edit?usp=sharing)
+* [Video](https://www.youtube.com/watch?v=y5U3g9TI7I4)
 
-[Folien](https://docs.google.com/presentation/d/12jttEA09WvhI77dJI8wd2p9rNpruHEiOPvHV8a2Uzz0/edit?usp=sharing)
+#programming #datastructures #algorithm
 
-[Video](https://www.youtube.com/watch?v=y5U3g9TI7I4)
-
-## Literatur
+## Literatur und Ressourcen
 
 * [Adjazenzmatrix und Adjazenzliste](https://www.youtube.com/watch?v=Pw4aeb_UMOo)
 * [What on Earth is Recursion? - Computerphile](https://www.youtube.com/watch?v=Mv9NEXX1VHc)
 * [Programming Loops vs Recursion - Computerphile](https://www.youtube.com/watch?v=HXNhEYqFo0o)
 * [Getting Sorted & Big O Notation - Computerphile](https://www.youtube.com/watch?v=kgBjXUE_Nwc)
 
-## Assignment 7 (Datenstrukturen und Algorithmen)
+## Assignment
 
 **1.1) Zwerge und Schneewittchen beschuldigen sich gegenseitig**
 

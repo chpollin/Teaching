@@ -1,4 +1,4 @@
-# TORDF
+#rdf #linkeddata #semanticweb #infomod
 
 Here you can find some tutorials for different possibilities to convert your CSV files to RDF. 
 There are also some example files available to try out the following tutorials.
@@ -6,7 +6,7 @@ You can find all the files for these tutorials in the [Code section](https://git
 
 **Author: Christopher Pollin, Sabrina Strutz**
 
-## CSV to RDF via Python + rdflib
+## CSV to RDF via #Python + #rdflib
 
 * All the important files for this tutorial can be found in [CSV_to_RDF_Python](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/CSV_to_RDF_Python/)
 * Open a Jupyter Notebook (or if you don't have it yet, download it from [Jupyter-Website](https://jupyter.org/)) OR use [Google Colab](https://colab.research.google.com/)
@@ -206,8 +206,6 @@ You can find all the files for these tutorials in the [Code section](https://git
 * Your output should look like [this](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/CSV_to_RDF_Python/olympia_output.ttl)
   
 * You can now adapt the jupyter file to your data. Have fun! :)
-
-
 
 ## CSV to RDF via tarql (Windows 10, tarql-1.2)
 
@@ -442,7 +440,6 @@ You can find all the files for these tutorials in the [Code section](https://git
 * When transforming the data from the file [szd_personenliste.xml](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/data/szd_personenliste.xml) or from
 [wheaton_accounts.xml](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/data/wheaton_accounts.xml) with [TEI_to_RDF_listPerson_to_schema_foaf.xsl](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_listPerson_to_schema_foaf.xsl), the result does not look very appealing yet. 
 * Think about how you would have to adapt the stylesheet [TEI_to_RDF_listPerson_to_schema_foaf.xsl](https://github.com/chpollin/Teaching/blob/master/InfoMod/InfoMod_4_TORDF/TEI_to_RDF_XSLT/TEI_to_RDF_listPerson_to_schema_foaf.xsl) for a better output.
-
 
 ## Other ways to get your data into RDF
 

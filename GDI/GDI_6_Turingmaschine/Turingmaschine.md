@@ -1,16 +1,14 @@
-[Folien](https://docs.google.com/presentation/d/1DXSoVKMnkuWsoDUlKb8SdPBgCw8e1COLG83mPZ4wAlg/edit?usp=sharing)
+* [Folien](https://docs.google.com/presentation/d/1DXSoVKMnkuWsoDUlKb8SdPBgCw8e1COLG83mPZ4wAlg/edit?usp=sharing)
+* [Video](https://www.youtube.com/watch?v=SGvOrLy6QVg)
+* [Online Turing Machine Simulator](https://turingmachinesimulator.com/)
 
-[Video](https://www.youtube.com/watch?v=SGvOrLy6QVg)
+#turingmachine #gdi 
 
-[Online Turing Machine Simulator](https://turingmachinesimulator.com/)
-
-## Literatur
+## Literatur und Ressourcen
 
 * [Prokop, Lukas: Grundlagen der Informatik, 2014, S.29-40](https://github.com/chpollin/Teaching/blob/master/GDI/Literature/PROKOP_GDI_Skriptum.pdf)
 
-
-
-## Assignment 5
+## Assignment
 
 **Gegeben ist die Turingmaschine mit dem Eingabeband und dem Programm** **aus folgender Tabelle.  Die Bewegungsrichtungen sind rechts (>) und links (<). Weiters ist folgendes gegeben:**
 

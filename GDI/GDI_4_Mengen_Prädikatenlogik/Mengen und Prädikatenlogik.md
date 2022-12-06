@@ -1,6 +1,8 @@
 * [Folien](https://docs.google.com/presentation/d/19b51V9_RjuJAN9ogYhZnPZVNFqUhMPqgbDJviZoaoDk/edit?usp=sharing)
 * [Screencast](https://youtu.be/zs8ZHLRPZhI)
 
+#logic #sets #gdi 
+
 ## Literatur und Ressourcen
 
 * [Prokop, Lukas: Grundlagen der Informatik, 2014, S.23-27](https://github.com/chpollin/Teaching/blob/master/GDI/PROKOP_GDI_Skriptum.pdf)

@@ -1,21 +1,17 @@
-# SPARQL
+* [Folien: Triplestore einrichten (Blazegraph)](https://docs.google.com/presentation/d/12wupTsbqfXMki7r1WuUHkVflTrP_jr-7pRpMuKjqyXs/edit?usp=sharing)
+* [Video: Triplestore einrichten (Blazegraph)](https://youtu.be/LjB8kAOv5mM)
+* [Folien: SPARQL](https://docs.google.com/presentation/d/19rQz1HBn1OtVPdI0wvLWP3e5U5L75DK1y6S8BV-TVEw/edit?usp=sharing)
+* [Video: SPARQL 1](https://youtu.be/rfECeJ-JHVo)
+* [Video: SPARQL 2](https://youtu.be/cbWP-pRyCVk)
 
-[Folien: Triplestore einrichten (Blazegraph)](https://docs.google.com/presentation/d/12wupTsbqfXMki7r1WuUHkVflTrP_jr-7pRpMuKjqyXs/edit?usp=sharing)
+#sparql #semanticweb #infomod
 
-[Video: Triplestore einrichten (Blazegraph)](https://youtu.be/LjB8kAOv5mM)
-
-[Folien: SPARQL](https://docs.google.com/presentation/d/19rQz1HBn1OtVPdI0wvLWP3e5U5L75DK1y6S8BV-TVEw/edit?usp=sharing)
-
-[Video: SPARQL 1](https://youtu.be/rfECeJ-JHVo)
-
-[Video: SPARQL 2](https://youtu.be/cbWP-pRyCVk)
-
-## Literatur
+## Literatur und Ressourcen
 
 * [Video: Rebecca Kahn - Wikidata, Linked Data… all the data! Knowledge representation for everybody (50 min)](https://www.youtube.com/watch?v=wkPcUO6eZ5k)
 * [Example: Olympische Spiele Wikidata](https://docs.google.com/document/d/1TzNxRI__vmbafV9JFD-acBV_td5RCepnV0cuUjAHvMo/edit?usp=sharing)
 
-## Exercise
+## Übung
 
 Installiere einen Triplestore: Blazegraph oder GraphDB. Die Anleitung dafür findest du in den Folien.
 

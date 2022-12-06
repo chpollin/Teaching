@@ -1,16 +1,14 @@
-# Aussagenlogik
-
 * [Folien](https://docs.google.com/presentation/d/1dujrq3RTFDCgTUwCNwAacjZK6SfUYasNXWxUyLktdnY/edit?usp=sharing)
 * [Video](https://youtube.com/embed/2vfaQLVStmU)
 * [Wolfram|Alpha](https://www.wolframalpha.com/input/?i=%28p+and+q%29+or+r)
 
-## Literatur
+#logic #gdi 
+
+## Literatur und Ressourcen
 
 * [Prokop, Lukas: Grundlagen der Informatik, 2014, S.13-22](https://github.com/chpollin/Teaching/blob/master/GDI/Literature/PROKOP_GDI_Skriptum.pdf)
 
-
-
-## Assignment 2 (Aussagenlogik)
+## Assignment
 
 **1.) Formalisiere jede der folgenden Aussagen durch eine aussagenlogische Formel:**
 

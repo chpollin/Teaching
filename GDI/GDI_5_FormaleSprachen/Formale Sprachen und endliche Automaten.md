@@ -1,8 +1,6 @@
-[Folien](https://docs.google.com/presentation/d/1TcEmapxsaebBDcY73URAaE1AieseT_XzoDLhpZQNxJA/edit?usp=sharing)
-
-[Video](https://www.youtube.com/watch?v=eTFsb7qROt0)
-
-[RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
+* [Folien](https://docs.google.com/presentation/d/1TcEmapxsaebBDcY73URAaE1AieseT_XzoDLhpZQNxJA/edit?usp=sharing)
+* [Video](https://www.youtube.com/watch?v=eTFsb7qROt0)
+* [RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
 
 ## Literatur und Ressourcen
 
