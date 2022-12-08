@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" xml:id="letter.1">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Arnold Schönberg an Universal-Edition, 8. Juli 1913</title>
+                <respStmt>
+                    <persName>
+                        <forename>Therese</forename>
+                        <surname>Muxeneder</surname>
+                    </persName>
+                    <resp>
+                        <term>Projektleitung</term>
+                        <term>Herausgeberschaft</term></resp>
+                </respStmt>
+                <respStmt>
+                    <persName><forename>Katharina</forename>
+                        <surname>Bleier</surname></persName>
+                    <resp>
+                        <term>Wissenschaftliche Mitarbeit</term>
+                        <term>Herausgeberschaft</term>
+                    </resp>
+                </respStmt>
+                <respStmt>
+                    <persName><forename>Christopher</forename>
+                        <surname>Pollin</surname></persName>
+                    <resp>
+                        <term>Datenmodellierung</term>
+                    </resp>
+                </respStmt>
+                <respStmt>
+                    <persName><forename>Philipp</forename><surname>Kehrer</surname></persName>
+                    <resp>
+                        <term>Wissenschaftliche Mitarbeit</term>
+                    </resp>
+                </respStmt>
+                <respStmt>
+                    <persName><forename>N.</forename><surname>N.</surname></persName>
+                    <resp>
+                        <term>Wissenschaftliche Mitarbeit</term>
+                    </resp>
+                </respStmt>
+                <respStmt>
+                    <persName><forename>N.</forename><surname>N.</surname></persName>
+                    <resp>
+                        <term>Studentische Mitarbeit</term>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher ref="http://d-nb.info/gnd/10000022-8">Arnold Schönberg Center</publisher>
+                <pubPlace>Wien</pubPlace>
+                <publisher ref="http://d-nb.info/gnd/10060012-8">Wissenschaftszentrum Arnold
+                    Schönberg und die Wiener Schule an der Universität für Musik und darstellende
+                    Kunst Wien</publisher>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Attribution-ShareAlike 4.0 International (CC BY-NC-SA) 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>The Correspondence between Arnold Schönberg and his Publishers
+                    Universal-Edition and Verlag Dreililien. A Critical Hybrid Edition</title>
+                <editor>Therese Muxeneder</editor>
+                <editor>Katharina Bleier</editor>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement><placeName key="place.9.11">Wien</placeName></settlement>
+                        <institution ref="http://d-nb.info/gnd/10000022-8">Arnold Schönberg
+                            Center</institution>
+                        <collection>Universal Edition Collection</collection>
+                        <altIdentifier>
+                            <settlement><placeName key="place.9.11">Wien</placeName></settlement>
+                            <institution ref="http://d-nb.info/gnd/10000022-8">Arnold Schönberg
+                                Center</institution>
+                            <idno type="signature">ASCC ID 6852</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                </msDesc>
+                <listBibl>
+                    <bibl>Arnold Schönberg: Sämtliche Werke. Abteilung V: Chorwerke. Reihe B, Band
+                        16, Teil 3. Gurre-Lieder. Entstehungs- und Werkgeschichte, Dokumente.
+                        Herausgegeben von Ulrich Krämer. Mainz, Wien 2008.</bibl>
+                    <bibl>Arnold Schönberg: Sämtliche Werke. Abteilung III: Bühnenwerke. Reihe B,
+                        Band 6, Teil 2. Bühnenwerke I. Erwartung op. 17. Herausgegeben von Ullrich
+                        Scheideler. Mainz, Wien 2005.</bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="p_3263">
+                        <forename>Arnold</forename>
+                        <surname>Schönberg</surname>
+                    </persName>
+                    <placeName key="place.2.15">Gautzsch</placeName>
+                    <date when="1913-07-08"/>
+                </correspAction>
+                <correspAction type="received">
+                    <orgName key="org.1">Universal-Edition</orgName>
+                    <persName key="p_1538">
+                        <forename>Emil</forename>
+                        <surname>Hertzka</surname>
+                    </persName>
+                    <placeName key="place.9.11">Wien</placeName>
+                </correspAction>
+                <note/>
+                <correspContext>
+                    <ref type="prev" target="linkzumletzten Brief"/>
+                    <ref type="next" target="linkzumnächsten Brief"/>
+                </correspContext>
+            </correspDesc>
+            <textClass>
+                <keywords>
+                    <term>Brief</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2021-09-20" who="PK">Kodierung</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="letter">
+                <pb n="1" xml:id="page.1"/>
+                <opener>
+                    <metamark rendition="#r">I</metamark>
+                    <stamp sameAs="#stamp.1"><persName key="p_3263">Arnold Schönberg</persName><lb/> Berlin-Südende<lb/>
+                        <location>
+                            <placeName key="place.2.23.1.1">Berlinerstr. 17a, I.</placeName>
+                        </location><lb/> Tel.: Tempelhof 174.> </stamp>
+                    <dateline rendition="#r">8/7.1913</dateline>
+                    <address>
+                        <addrLine>z.Z. <hi rendition="#u">Gautzsch</hi> bei Leipzig, <placeName
+                                key="place.2.15.1">Charlottenstr. 18</placeName></addrLine>
+                        <addrLine><seg type="comment"><orig>per Adr.</orig><note xml:id="note_1"
+                                        ><ref
+                                        target="http://archive.schoenberg.at/resources/pages/preview.php?ref=11731&amp;search=&amp;order_by=relevance&amp;offset=0&amp;restypes=&amp;starsearch=&amp;archive=&amp;per_page=0&amp;default_sort_direction=DESC&amp;sort=DESC&amp;context=Root&amp;k=67f29e00b8&amp;curpos=&amp;ext=tif&amp;"
+                                        >Villa Albertine</ref></note></seg>
+                            <persName key="p_4303">D<hi rendition="#sup #u">r</hi> F.
+                                Zehme</persName></addrLine>
+                    </address>
+                </opener>
+                <p><seg type="salute">Lieber Herr Direktor</seg>
+                    <add place="intralinear">I.</add> ich habe bereits an <persName key="p_2817"
+                        >Polnauer</persName><lb/> geschrieben wegen der <seg type="comment"
+                                ><orig>„<hi rendition="#u"
+                            >Bläser-Partituren-Stimmen</hi>“</orig><note xml:id="note_2">Anfang Juli
+                            1913 entschloss sich Schönberg zu einer Revision der
+                            Gurre-Lieder-Stimmenmaterials. Anlass war die von Josef Polnauer im
+                            Auftrag der UE vorgenommene Durchsicht des gesamten Materials, da von
+                            Partitur und Bläserstimmen Abschriften hergestellt werden sollten. In
+                            diesem Zusammenhang hatte Schönberg vorgeschlagen, die Bläserstimmen zu
+                            Bläserpartituren zusammenzufassen. Am 8. Juli 1913 "schrieb er an
+                                Polnauer(<ref
+                                target="http://archive.schoenberg.at/letters/letters.php?id_letters=23133&amp;action=view&amp;sortieren=id%20DESC&amp;vonBis=0-19"
+                                >ASCC ID 23133</ref>), der im Zuge der Durchsicht des
+                            Gurre-Lieder-Materials mit der Übertragung der Retuschen in die
+                            Dirigierpartitur – bestehend aus dem auf dem großformatigen Papier
+                            geschriebenen Teil des Partiturautographs bis Seite 63v [GA B 16,1, <ref
+                                target="http://archive.schoenberg.at/compositions/quellen_einzelansicht.php?id_quelle=1531&amp;werke_id=480&amp;id_gatt=&amp;id_untergatt=&amp;herkunft=allewerke"
+                                >Quelle C</ref>] und der im selben Format hergestellten
+                            Partiturkopie des III. Teils ab T. 149 [GA B 16,1, <ref
+                                target="http://archive.schoenberg.at/compositions/quellen_einzelansicht.php?id_quelle=1532&amp;werke_id=480&amp;id_gatt=&amp;id_untergatt=&amp;herkunft=allewerke"
+                                >Quelle Ck</ref>] – und in die Orchesterstimmen betraut war, dass er
+                            die Gurre-Lieder-Partitur revidiere und zu diesem Zweck die von diesem
+                            übersandte Liste mit den Uraufführungsretuschen heranziehe." (GA B 16,3,
+                            27)</note></seg>.<lb/> Ich bin im Ganzen dafür, denn es hat den Vorteil,
+                    dass<lb/> die Bläser einander gegenseitig als Stichwort dienen.<lb/>
+                    <hi rendition="#u">Immerhin sollte man noch einige <seg type="comment"
+                                ><orig>Orchestermitglieder<lb/> befragen</orig><note xml:id="note_3"
+                                >Nach Rücksprache mit Orchestermusikern wurde der Plan aufgrund der
+                                Schwierigkeit, geeignete Wendestellen zu finden, aufgegeben. (<ref
+                                    target="http://archive.schoenberg.at/letters/letters.php?id_letters=15029&amp;action=view&amp;sortieren=id%20DESC&amp;vonBis=0-19"
+                                    >ASCC ID 15029</ref> und <ref
+                                    target="http://archive.schoenberg.at/letters/letters.php?id_letters=23084&amp;action=view&amp;sortieren=id%20DESC&amp;vonBis=0-19"
+                                    >ASCC ID 23084</ref>)</note></seg></hi>. Wenn man es aber macht,
+                    dann meine<lb/> ich: immer eine ganze Gruppe zusammen; also<lb/> alle 10 <term
+                        type="instrument" target="https://d-nb.info/gnd/4160662-0">Hörner</term>
+                    alle 6 <term type="instrument" target="https://d-nb.info/gnd/4060993-5"
+                        >Trp</term>, alle 8 <term type="instrument"
+                        target="https://d-nb.info/gnd/4046865-3">Posaunen</term>; Nur<lb/> wenn das
+                    geht, hat es Zweck. Man muss eben<lb/> Stichproben machen. Meines Erachtens
+                    dürften sobald <add place="superlinear">alle</add> 10 (resp 8<lb/> oder 6)
+                    Instrumente gleichzeitig beschäftigt<lb/>
+                    <del rendition="#s">I</del> sind, mehrere unisono spielen, wodurch für die<add
+                        place="intralinear">se</add> unisono<g ref="#typoHyphen"/><lb break="no"
+                    />spielenden stets <hi rendition="#u">eine</hi> Zeile genügte, so dass die
+                    Partitur<lb/> im Durchschnitt höchstens 6-8 Zeilen <gap rendition="#s"
+                        reason="illegible" quantity="2" unit="chars"/> und das an nicht allzu<lb/>
+                    vielen Stellen <del rendition="#s">!</del> erreichen dürfte. Allerdings: <hi
+                        rendition="#uu"> jede</hi> Stimme<lb/>
+                    <del rendition="#s">muss</del> (<hi rendition="#u">jedes</hi>
+                    <hi rendition="#uu">einzelne</hi> Instrument!!) muss wenden können.<lb/> Ob das
+                    geht kann ich nicht beurteilen.</p>
+                <p><del rendition="#s">II</del> Sollten Sie sich aber doch dafür entscheiden,<lb/>
+                    nicht alle <term type="instrument" target="https://d-nb.info/gnd/4160662-0"
+                        >Hörner</term> in <hi rendition="#u">eine</hi> Partitur zu geben, dann <pb
+                        n="2" xml:id="page.2"/> ist es besser, die I. (1. 3 u. 5.) und die II. (2.
+                    4. u. 6)<lb/> in je eine Partitur zu bringen und für 7. 8. 9. 10 eine<lb/> 3
+                    Partitur anzulegen.</p>
+                <p>Bei den <term type="instrument" target="https://d-nb.info/gnd/4060993-5"
+                        >Trompeten</term> müßte man <hi rendition="#rectangle">1. 2. </hi>
+                    <hi rendition="#rectangle">3 4</hi><lb/> und <hi rendition="#rectangle">5.
+                        6.</hi>
+                    <add place="superlinear">und <term type="instrument"
+                            target="https://d-nb.info/gnd/1206295287">Bss Trompete</term></add>
+                    teilen.</p>
+                <p>Bei den <term type="instrument" target="https://d-nb.info/gnd/4046865-3"
+                        >Posaunen</term>: <hi rendition="#rectangle"><term type="instrument"
+                            target="https://d-nb.info/gnd/1143266196">Alt</term>, I. II.</hi>
+                    <hi rendition="#rectangle">III. IV u <term type="instrument"
+                            target="https://d-nb.info/gnd/4807591-7">Bss Pos</term> in Es</hi><lb/>
+                    <hi rendition="#rectangle"><term type="instrument"
+                            target="https://d-nb.info/gnd/4286171-8">Ctrbss Pos</term> u <term
+                            type="instrument" target="https://d-nb.info/gnd/4061130-9">Ctrbss T<hi
+                                rendition="#sup">a</hi></term>
+                    </hi></p>
+                <p>Bei den <term type="instrument" target="https://d-nb.info/gnd/4030938-1"
+                        >Clarinetten</term>: <hi rendition="#rectangle">1.2 Es <term
+                            type="instrument" target="https://d-nb.info/gnd/4030938-1"
+                        >Cl</term></hi>
+                    <hi rendition="#rectangle">1.2.3. A (B) <term type="instrument"
+                            target="https://d-nb.info/gnd/4030938-1">Cl</term></hi><lb/>
+                    <hi rendition="#rectangle">1.2. <term type="instrument"
+                            target="https://d-nb.info/gnd/4414463-5">Bss Cl</term></hi></p>
+                <p>Bei den <term type="instrument" target="https://d-nb.info/gnd/4176713-5"
+                        >Flöten</term>
+                    <hi rendition="#rectangle">1. 2. 3. 4 <add place="sublinear"
+                            ><metamark/>gr.</add></hi>
+                    <hi rendition="#rectangle">1. 2. 3. 4 kl</hi></p>
+                <p>
+                    <choice>
+                        <orig>" "</orig>
+                        <reg>Bei den</reg>
+                    </choice><term type="instrument" target="https://d-nb.info/gnd/4139391-0"
+                        >Oboen</term>
+                    <hi rendition="#rectangle">l. 2 3 <term type="instrument"
+                            target="https://d-nb.info/gnd/4139391-0">Ob</term></hi>
+                    <hi rendition="#rectangle">1. 2 <term type="instrument"
+                            target="https://d-nb.info/gnd/4152282-5">EH</term></hi></p>
+                <p><choice>
+                        <orig>" "</orig>
+                        <reg>Bei den</reg>
+                    </choice><term type="instrument" target="https://d-nb.info/gnd/4153531-5"
+                        >Fagotten</term>
+                    <hi rendition="#rectangle">1. 2 3 <term type="instrument"
+                            target="https://d-nb.info/gnd/4153531-5">Fg</term></hi>
+                    <hi rendition="#rectangle">1. 2 <term type="instrument"
+                            target="https://d-nb.info/gnd/4165172-8">Ctr Fg</term></hi></p>
+                <p>II. Ich nehme mir jetzt die <lb/>
+                    <seg type="comment"><orig><bibl sameAs="werke.16">Gurre</bibl>
+                            Partitur</orig><note xml:id="note_4">Erstdruck. Faksimile der
+                            Partiturreinschrift (Studienpartitur)(<ref
+                                target="http://archive.schoenberg.at/compositions/quellen_einzelansicht.php?id_quelle=1533&amp;werke_id=480&amp;id_gatt=&amp;id_untergatt=&amp;herkunft=allewerke"
+                                >Quelle D</ref>)</note></seg> vor <hi rendition="#u">um etwaige
+                        Änderungen</hi> noch<lb/> rechtzeitig zu nennen. Ich hoffe diese Arbeit<lb/>
+                    in cirka 6-8 Tagen erledigt zu haben.</p>
+                <p>III. Bitte senden Sie mir eine <seg type="comment"><orig><hi rendition="#u"><term
+                                    key="#werkindex" type="artwork">Pelleas</term>-</hi><lb/><hi
+                                rendition="#u">Partitur</hi></orig><note xml:id="note_5">Erstdruck,
+                            Kopistenautographie. (<ref
+                                target="http://archive.schoenberg.at/compositions/quellen_einzelansicht.php?id_quelle=576&amp;werke_id=223&amp;id_gatt=&amp;id_untergatt=&amp;herkunft=allewerke"
+                                >Quelle H</ref>)</note></seg>; ich will auch hier einige
+                    Änderungen<lb/> eintragen (für mein Material)</p>
+                <p>IV. Das <bibl sameAs="werke.37">Cello-Konzert von Monn</bibl><lb/> scheinen Sie
+                    nicht erwerben zu wollen. Wenn<pb n="3" xml:id="page.3"/>das so ist <supplied
+                        cert="high">,</supplied> dann bitte ich um Nachricht, da ich es<lb/> leicht
+                        <orgName key="org.43">Peters</orgName> oder <orgName key="org.64"
+                        >Eulenburg</orgName> geben kann.</p>
+                <p rendition="#c">V.</p>
+                <p>Nun muss ich Ihnen noch etwas sehr Wichtiges<lb/> sagen. Nämlich: es sind nun 3 ¾
+                    Jahre ver<g ref="#typoHyphen"/><lb break="no"/>flossen seit wir unseren <seg
+                        type="comment"><orig>Vertrag</orig><note xml:id="note_6">Der Originalvertrag
+                            ist nicht erhalten, es dürfte sich aber um den üblichen Blanko-Vertrag
+                            handeln. (siehe Bouchon <!-- zotero --> S. 44-45)</note></seg>
+                    abgeschlossen haben<lb/> und 3 Jahre ist er in Kraft und eben so lange bin<lb/>
+                    ich verpflichtet gewesen zu warten, ob Sie meine<lb/> Werke herausgeben. Das
+                        <seg type="comment"><orig>Autorengesetz</orig><note xml:id="note_7">konnte
+                            noch nicht eruiert weden</note></seg> bestimmt<lb/> nun, dass wenn ein
+                    Werk innerhalb 3 Jahren<lb/> nicht gedruckt wird, der Autor frei wird und<lb/>
+                    die gezahlten Vorschussbeträge zu seinen Gunsten<lb/> verfallen. Ehe ich nun von
+                    diesem Recht Gebrauch<lb/> mache, möchte ich Ihnen noch Gelegenheit geben<lb/>
+                    Ihrer Druckverpflichtung nachzukommen und<lb/> bin geneigt die Ausübung meines
+                    Rechtes <del rendition="#s">solange</del><lb/> hinauszuschieben <add
+                        place="superlinear">damit ich innerhalb 8 Tagen</add>
+                    <del rendition="#s">bis ich</del> von Ihnen die Zusicherung<lb/> habe, dass Sie
+                    außer den freigewordenen Werken<lb/> auch diejenigen sofort drucken, die noch
+                    nicht<lb/> frei sind.</p>
+                <p>
+                    <list type="simple">
+                        <item>Es sind frei: I. Das Monodram<lb/> „<bibl sameAs="werke.50">Glückliche
+                                Hand</bibl>“</item>
+                        <pb n="4" xml:id="page.4"/>
+                        <item>II. Die <bibl sameAs="werke.24">George Lieder</bibl></item>
+                        <item>III. Die <bibl sameAs="werke.43">2 Balladen</bibl></item>
+                        <item>IV. Ein Heft Lieder</item>
+                    </list>
+                </p>
+                <p>Noch nicht frei dagegen</p>
+                <p>
+                    <list type="simple">
+                        <item>I. <bibl sameAs="werke.52">6 Klavierstücke</bibl></item>
+                        <item>II. <bibl sameAs="werke.53">Lied für Harm. Celesta u.
+                            Harfe</bibl></item>
+                        <item>III. <bibl sameAs="werke.54">Pierrot lunaire</bibl>.</item>
+                    </list>
+                </p>
+                <p>Ich bitte Sie mir in<add place="sublinear">nerhalb</add> 8 Tagen mitzuteilen, ob
+                    Sie bereit sind auf diese Bedingungen einzugehen:</p>
+                <p>
+                    <list type="simple">
+                        <head><hi rendition="#l">a)</hi></head>
+                        <item>I. <bibl sameAs="werke.50">Monodram</bibl> Partitur und
+                            Klavierauszug</item>
+                        <item>II. <bibl sameAs="werke.24">George Lieder</bibl></item>
+                        <item>III. <bibl sameAs="werke.54">Pierrot lunaire</bibl></item>
+                        <item>IV. <bibl sameAs="werke.52">6 Klavierstücke</bibl></item>
+                        <item>V. Partituren der <bibl sameAs="werke.11">6
+                            Orchesterlieder</bibl></item>
+                    </list></p>
+                <p> sofort in Druck zu geben und dafür zu sorgen, dass<lb/> sie in längstens 2
+                    Monaten zur I. Korrektur und<lb/> in längstens 4 Monaten <add
+                        place="superlinear">von heute</add> zum Verkauf fertig sind.</p>
+                <p><list type="simple">
+                        <head><hi rendition="#l">b)</hi></head>
+                        <item>1) die <bibl sameAs="werke.43">2 Balladen</bibl></item>
+                        <item>2) das Heft Lieder</item>
+                        <item>3) das <bibl sameAs="werke.53">Harm.-Cel.-Harfe-Lied</bibl> in 5
+                            Monaten</item>
+                    </list> zur I. Korrektur und in 7 Monaten von heute zum<lb/>
+                    <del rendition="#s">Ausgab</del> Verkauf fertig sind.</p>
+                <p> Sollten Sie auf diese Bedingungen nicht<lb/> eingehen können, so müsste ich mein
+                        gesetzliches<pb n="5" xml:id="page.5"/><metamark rendition="#r"
+                        >II.</metamark> Recht benutzen.</p>
+                <p> Es täte mir das sehr leid. Vor allem weil<lb/> ich darauf halte, dass meine
+                    Sachen möglichst<lb/> in einem Verlag bleiben. Insbesondere aber,<lb/> weil ich
+                    um jeden Preis eine Trübung unseres<lb/> freundschaftlichen Verhältnisses vermeiden<lb/>
+                    <supplied cert="high">mö</supplied>chte.</p>
+                <p> Aber, da es für mich klar ist, dass meine<lb/> Noten für mich nicht eher einen
+                    Ertrag ab<g ref="#typoHyphen"/><lb break="no"/>liefern können, als alles
+                    gedruckt ist und<lb/> !! da ich ja gar keine Beträge ausbezahlt<lb/> bekommen
+                    kann, solange Werke mit<lb/> Vorschuss belastet sind, die weil sie nicht<lb/>
+                    gedruckt sind, nicht verkauft werden können!!<lb/> So muss ich so vorgehen.</p>
+                <p> Ich hoffe, Sie sehen das selbst ein und sind<lb/> mir nicht böse. Ich kann es
+                    sehr gut verstehen,<lb/> dass Sie infolge anderer Verpflichtungen (gegen<lb/>
+                    jüngere und wahrscheinlich bedeutendere Autoren<lb/> als ich) nicht imstande
+                    sind meinen Werken<lb/> genügend Arbeit zu widmen. Aber ich muss nun<pb n="6"
+                        xml:id="page.6"/> endlich von meinen Werken <subst>
+                        <del rendition="#s">das</del>
+                        <add place="superlinear">etwas</add>
+                    </subst> haben, und da<lb/> kann ich nicht länger warten.</p>
+                <closer>Ich hoffe bald Nachricht zu haben und empfehle<lb/> mich Ihnen mit besten
+                    Grüßen <salute>Ihr ergebener Arnold Schönberg</salute>
+                </closer>
+            </div>
+        </body>
+    </text>
+    <facsimile>
+        <surface start="#page.1">
+            <graphic url="1913_07_08_6852_1.jpg" xml:id="IMG.1"/>
+        </surface>
+        <surface start="#page.2">
+            <graphic url="1913_07_08_6852_2.jpg" xml:id="IMG.2"/>
+        </surface>
+        <surface start="#page.3">
+            <graphic url="1913_07_08_6852_3.jpg" xml:id="IMG.3"/>
+        </surface>
+        <surface start="#page.4">
+            <graphic url="1913_07_08_6852_4.jpg" xml:id="IMG.4"/>
+        </surface>
+        <surface start="#page.5">
+            <graphic url="1913_07_08_6852_5.jpg" xml:id="IMG.5"/>
+        </surface>
+    </facsimile>
+</TEI>
