@@ -6,6 +6,7 @@ Folien: https://docs.google.com/presentation/d/1UBn-9Y0bPw0g46Xv42GwiQq0H20IBgXu
 + Hameed M. and Naumann F. (2020). Data Preparation: A Survey of Commercial Tools. SIGMOD Rec. 49, 3 (September 2020), 18–29. [https://doi.org/10.1145/3444831.3444835](https://doi.org/10.1145/3444831.3444835 "https://doi.org/10.1145/3444831.3444835").
 + Tebeka Miki (2022). Data Cleaning in Python Essential Training. In *LinkedIn Learning*. https://www.linkedin.com/learning/data-cleaning-in-python-essential-training.  
 + Alex The Analyst (2022). Cleaning Data in Excel | Excel Tutorials for Beginners. https://youtu.be/_jmiEGZ6PIY.
++ Delpeuch, A. (2020). Running a Reconciliation Service for Wikidata. [https://ceur-ws.org/Vol-2773/paper-17.pdf](https://ceur-ws.org/Vol-2773/paper-17.pdf)
 
 ## Tags
 
@@ -38,20 +39,29 @@ Data preparation is not a single step process. Rather, it usually comprises many
 * Data enrichment adds value or supplementary information to existing data from separate sources. Typically, it involves augmenting existing data with new or derived data values using data soemthign like inserting metadata.
 * Data filtering generates a subset of the data under consideration, facilitating manual inspection and removing irregular data rows or values. Examples include extracting text parts, and keeping or deleting filtered rows.
 * Data cleaning refers to removal, addition, or replacement of less accurate or inaccurate data values with more suitable, accurate or representative values. Typical examples are deduplication, fill missing values, and removing whitespace.
-Despite our definition, which distinguishes data
-preparation and cleaning, we include data cleaning
-steps here as well, as most data preparation tools
-also venture into this area.
-
-
-
-
-
-
 
 ### Standardization and Formatting 
 
-#### Dates
+Here we see tabular data about presidents of the USA. We have a column for names, the position before the presidency, party affiliation and vice presidents.
+
+What kind of errors can you identify in terms of standardization and formatting?
+
+* Uppercase vs. lowercase: “john adams”, “JAMES MONROE”, “Thomas Jefferson”
+* Additional spaces : “  Aaron Burr”, “John C. Calhoun”
+* Non-consistent text fields: “Whig   April 4, 1841  â€“  September 13, 1841”, “Whig”
+* Encoding: “â€“
+
+Let's take a look at a few solutions to clean up such things.
+
+#### Standardization and Formatting - Filtering
+
+The category data is important for visualization, for example, and must be the same string. Each blank character creates a new category, so to speak.
+
+Manual changes can be handy, but the most important thing is that you don't do them for nothing and keep a copy of the initial situation. The advantage of Googel Spradsheet is that it has a complete version history. And you have to think, "can't I do this automated as well."
+
+#### Standardization and Formatting - Whitespace
+
+#### Standardization and Formatting - Uppercase vs. lowercase 
 
 ### Missing Values
 
