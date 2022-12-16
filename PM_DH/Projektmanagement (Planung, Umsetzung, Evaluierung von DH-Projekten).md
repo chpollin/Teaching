@@ -1,4 +1,4 @@
-# Projektmanagement (Planung, Umsetzung, Evaluierung von DH-Projekten)
+#pm_dh #projectmanagement #teaching 
 
 ## PM_DH 1 - Organisation, Einführung
 

@@ -1,3 +1,5 @@
+#ttt
+
 # Abstract
 
 Die Lehrveranstaltung bildet eine theoretische und praktische Einführung in die Modellierung von geisteswissenschaftlichen Daten mit XML, wobei ein besonderer Fokus auf den Standard Text Encoding for Interchange (TEI) gelegt wird. TEI hat sich in den letzten zwei Jahrzehnten zu einem de-facto-Standard für die semantische Auszeichnung und Anreicherung von geisteswissenschaftlichen Daten entwickelt und kommt zum Beispiel bei der Entwicklung von digitalen Editionen, digitalen Sammlungen und linguistischen Textkorpora zum Einsatz.

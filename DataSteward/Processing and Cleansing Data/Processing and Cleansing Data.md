@@ -1,3 +1,5 @@
+#teaching #datapreperation #datacleansing
+
 Folien: https://docs.google.com/presentation/d/1UBn-9Y0bPw0g46Xv42GwiQq0H20IBgXukE3gi-EE9RY/edit?usp=sharing  
 
 # Literatur und Ressourcen
@@ -7,10 +9,6 @@ Folien: https://docs.google.com/presentation/d/1UBn-9Y0bPw0g46Xv42GwiQq0H20IBgXu
 + Tebeka Miki (2022). Data Cleaning in Python Essential Training. In *LinkedIn Learning*. https://www.linkedin.com/learning/data-cleaning-in-python-essential-training.  
 + Alex The Analyst (2022). Cleaning Data in Excel | Excel Tutorials for Beginners. https://youtu.be/_jmiEGZ6PIY.
 + Delpeuch, A. (2020). Running a Reconciliation Service for Wikidata. [https://ceur-ws.org/Vol-2773/paper-17.pdf](https://ceur-ws.org/Vol-2773/paper-17.pdf)
-
-## Tags
-
-#datapreperation #datacleansing
 
 # Skript
 

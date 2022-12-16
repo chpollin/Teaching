@@ -1,4 +1,4 @@
-# Tarql: SPARQL for Tables
+#tarql #sparql #tordf #rdf 
 
 Tarql is a command-line tool for converting CSV files to RDF using SPARQL 1.1 syntax. It's written in Java and based on Apache ARQ.
 
