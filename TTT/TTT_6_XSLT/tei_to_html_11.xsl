@@ -3,15 +3,10 @@
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="xs" version="2.0">
 	<!-- 
-	* processing multiple files, collection() 
-	* collapse metadata view from msDesc; locale-name() and wildcard (*)
+	* 
 	-->
-	
 	<!-- GLOBAL VARIABLE -->
-	<!-- selection multiple xml documents in a folder with collection() 
-    		http://web.uvic.ca/~mholmes/dhoxss2013/handouts/collection_function.pdf -->
 	<xsl:variable name="COLLECTION" select="collection('multiple_files')"/>
-	
 	<xsl:template match="/">
 		<!-- /////////// -->
 		<!-- person.html -->
@@ -110,9 +105,26 @@
 				</body>
 			</html>
 		</xsl:result-document>
+		<!-- /////////// -->
+		<!-- infovis.html -->
+		<xsl:result-document href="infovis.html" method="html">
+			<html lang="en">
+				<!-- call getHead -->
+				<xsl:call-template name="get_head">
+					<xsl:with-param name="title" select="'Informationsvisualisierung'"/>
+				</xsl:call-template>
+				<body>
+					<!-- call getNav -->
+					<xsl:call-template name="get_nav_and_header"/>
+					<!-- content -->
+					<div class="container mt-5">
+						<xsl:call-template name="createBarChart"/>
+					</div>
+				</body>
+			</html>
+		</xsl:result-document>
 		<!-- output.html aka edition -->
 		<xsl:call-template name="createOutputHTML"/>
-		
 		<!-- create output_2 - output_n.html; after output.html (=home) -->
 		<xsl:for-each select="$COLLECTION">
 			<xsl:result-document href="{concat('output_', position(), '.html')}" method="html">
@@ -120,19 +132,16 @@
 			</xsl:result-document>
 		</xsl:for-each>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:head">
 		<h2>
 			<xsl:apply-templates/>
 		</h2>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:date">
 		<xsl:apply-templates/>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:table">
 		<table class="my-5">
@@ -140,35 +149,30 @@
 			<xsl:apply-templates/>
 		</table>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:row[count(t:cell) > 1]">
 		<tr>
 			<xsl:apply-templates/>
 		</tr>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:cell">
 		<td>
 			<xsl:apply-templates/>
 		</td>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:row[count(t:cell) = 1]">
 		<th class="text-center">
 			<xsl:value-of select="t:cell"/>
 		</th>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:choice">
 		<span title="{t:expan}" class="text-decoration-underline">
 			<xsl:value-of select="t:abbr"/>
 		</span>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:listPerson">
 		<ul class="list-group">
@@ -178,14 +182,12 @@
 			</xsl:apply-templates>
 		</ul>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:name">
 		<span class="bg-info">
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:person">
 		<li class="list-group-item">
@@ -210,7 +212,6 @@
 			</xsl:if>
 		</li>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template name="formate_date">
 		<xsl:param name="when"/>
@@ -235,7 +236,6 @@
 		</xsl:choose>
 	</xsl:template>
 	<!-- get_head -->
-	
 	<xsl:template name="get_head">
 		<xsl:param name="title"/>
 		<head>
@@ -249,7 +249,6 @@
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"/>
 		</head>
 	</xsl:template>
-	
 	<!-- get_nav_and_header -->
 	<xsl:template name="get_nav_and_header">
 		<xsl:param name="title"/>
@@ -263,7 +262,6 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<!-- iteration over all documents; you can then further address content of the variable (~xml document) with xpath -->
 						<div class="dropdown">
 							<button class="btn dropdown-toggle" type="button"
 								id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -272,7 +270,8 @@
 								<xsl:for-each select="$COLLECTION">
 									<li>
 										<!-- just to keep output.html; -->
-										<a class="dropdown-item" href="{if (position()>1) then ( concat('output_', position(), '.html') ) else ('output.html')}">
+										<a class="dropdown-item"
+											href="{if (position()>1) then ( concat('output_', position(), '.html') ) else ('output.html')}">
 											<xsl:value-of
 												select="t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title"
 											/>
@@ -289,12 +288,14 @@
 							<a class="nav-link active" aria-current="page" href="taxonomy.html"
 								>Taxonomie</a>
 						</li>
-						<li>
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page"
-									href=" transaction_by_person.html">Übersicht der Transaktionen
-									nach Person</a>
-							</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page"
+								href="transaction_by_person.html">Übersicht der Transaktionen
+								nach Person</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page"
+								href="infovis.html">Informationsvisualisierung</a>
 						</li>
 					</ul>
 				</div>
@@ -306,12 +307,10 @@
 			</h1>
 		</div>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:lb">
 		<br/>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:pb">
 		<div class="row">
@@ -335,7 +334,6 @@
 			</div>
 		</div>
 	</xsl:template>
-	
 	<!--  -->
 	<xsl:template match="t:category">
 		<div id="{@xml:id}">
@@ -357,10 +355,8 @@
 		</div>
 		<xsl:apply-templates/>
 	</xsl:template>
-	
 	<!-- ignore elements -->
 	<xsl:template match="t:category/t:catDesc/t:term"/>
-	
 	<!-- creates body of edition view -->
 	<xsl:template name="createOutputHTML">
 		<html lang="en">
@@ -386,26 +382,43 @@
 							</xsl:if>
 						</xsl:for-each>
 					</div>
-					<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-						msDesc  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-							<path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-						</svg>
-					</a>
+					<p>
+						<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample"
+							role="button" aria-expanded="false" aria-controls="collapseExample"> msDesc <svg
+								xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-arrow-down-short" viewBox="0 0 16 16"> <path fill-rule="evenodd"
+									d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+								/> </svg> </a>
+					</p>
 					<div class="collapse" id="collapseExample">
 						<div class="row small card card-body">
 							<dl class="col-md-6">
-								<h4><xsl:text>msIdentifier</xsl:text></h4>
-								<xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/*">
-									<dt><xsl:value-of select="local-name()"/></dt>
-									<dd><xsl:value-of select="."/></dd>
+								<h4>
+									<xsl:text>msIdentifier</xsl:text>
+								</h4>
+								<xsl:for-each
+									select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/*">
+									<dt>
+										<xsl:value-of select="local-name()"/>
+									</dt>
+									<dd>
+										<xsl:value-of select="."/>
+									</dd>
 								</xsl:for-each>
 							</dl>
 							<dl class="col-md-6">
-								<h4><xsl:text>msContents</xsl:text></h4>
-								<xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/*">
+								<h4>
+									<xsl:text>msContents</xsl:text>
+								</h4>
+								<xsl:for-each
+									select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/*">
 									<xsl:for-each select="*">
-										<dt><xsl:value-of select="local-name()"/></dt>
-										<dd><xsl:value-of select="."/></dd>
+										<dt>
+											<xsl:value-of select="local-name()"/>
+										</dt>
+										<dd>
+											<xsl:value-of select="."/>
+										</dd>
 									</xsl:for-each>
 								</xsl:for-each>
 							</dl>
@@ -416,5 +429,58 @@
 				</div>
 			</body>
 		</html>
+	</xsl:template>
+	
+	<!-- http://dh.obdurodon.org/svg-stooges-xslt.xhtml -->
+	<xsl:template name="createBarChart">
+		<div class="border" style="overflow: scroll;">
+			<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" >
+				<xsl:variable name="maxHeight" select="500"/>
+				<xsl:variable name="colors" select="('red','blue','green')"/>
+				<g transform="translate(0,{$maxHeight + 20})">
+					<line x1="0" y1="0" x2="150" y2="0" stroke="purple" stroke-width="2"/>
+					<line x1="0" y1="-150" x2="0" y2="0" stroke="purple" stroke-width="2"/>
+					<xsl:for-each-group select="$COLLECTION//t:measure[@ana='bk:commodity']" group-by="@commodity">
+						<xsl:sort select="current-grouping-key()" order="descending"/>
+						<xsl:variable name="xPosition" select="(position() - 1) * 100"/>
+						<xsl:variable name="position" select="position()"/>
+						<rect x="{$xPosition}" y="-{sum(current-group()/@quantity)}" height="{sum(current-group()/@quantity)}" width="35" 
+							fill="{$colors[$position]}"/>
+						<text x="{$xPosition}" y="15">
+							<xsl:value-of select="current-grouping-key()"/>
+						</text>
+						<text x="{$xPosition}" y="-{sum(current-group()/@quantity) + 5}">
+							<xsl:value-of select="sum(current-group()/@quantity)"/>
+							<xsl:text> </xsl:text>
+							<xsl:value-of select="./@unit"/>
+						</text>
+					</xsl:for-each-group>
+				</g>
+			</svg>
+		</div>
+		
+	
+		
+		<!--<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+			<xsl:variable name="maxHeight" select="100"/>
+			<xsl:variable name="colors" select="('red','blue','green')"/>
+			<g transform="translate(0,{$maxHeight + 20})">
+				<line x1="0" y1="0" x2="150" y2="0" stroke="purple" stroke-width="2"/>
+				<line x1="0" y1="-150" x2="0" y2="0" stroke="purple" stroke-width="2"/>
+				<xsl:for-each select="//t:measure/@quantity">
+					<xsl:sort select="@name" order="descending"/>
+					<xsl:variable name="xPosition" select="(position() - 1) * 40"/>
+					<xsl:variable name="position" select="position()"/>
+					<rect x="{$xPosition}" y="-{.}" height="{.}" width="35" 
+						fill="{$colors[$position]}"/>
+					<text x="{$xPosition}" y="15">
+						<xsl:value-of select="@name"/>
+					</text>
+					<text x="{$xPosition}" y="-{. + 5}">
+						<xsl:value-of select="."/>
+					</text>
+				</xsl:for-each>
+			</g>
+		</svg>-->
 	</xsl:template>
 </xsl:stylesheet>
