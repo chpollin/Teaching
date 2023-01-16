@@ -12,7 +12,9 @@
     		http://web.uvic.ca/~mholmes/dhoxss2013/handouts/collection_function.pdf -->
 	<xsl:variable name="COLLECTION" select="collection('multiple_files')"/>
 	
-	<xsl:template match="/">
+
+	
+	<xsl:template match="/">		
 		<!-- /////////// -->
 		<!-- person.html -->
 		<xsl:result-document href="person.html" method="html">
