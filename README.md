@@ -2,21 +2,20 @@
 
 # Courses
 
-[ Copyright 2021 by the author, except as otherwise noted. This work is placed under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence. https://creativecommons.org/licenses/by/4.0/]
+[Copyright 2022 by the author, except as otherwise noted. This work is placed under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence. https://creativecommons.org/licenses/by/4.0/]
 
-## Introduction to Computer Science (VU)  / **Selected Questions of Computer Science** (KV)
+## Introduction to Computer Science (V0)  / **Selected Questions of Computer Science** (KV)
 
 * [GDI_0_Linux und Konsole](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_0_LinuxUndKonsole)
 * [GDI_1_Information](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_1_Information)
 * [GDI_2_Zeichenkodierung](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_2_Zeichenkodierung)          
 * [GDI_3_Aussagenlogik](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_3_Aussagenlogik)
 * [GDI_4_Mengen und Prädikatenlogik](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_4_Mengen_Prädikatenlogik)
-* [GDI_5_Reguläre Sprachen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_5_RegulaereSprachen)
+* [GDI_5_Formale Sprachen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_5_FormaleSprachen)
 * [GDI_6_Turingmaschine](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_6_Turingmaschine)
 * [GDI_7_Programmierung](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_7_Programmierung)
 * [GDI_8_Datenstrukturen und Algorithmen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_8_DatenAlgo) 
 * [GDI_9_Internet und Web](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_9_Internet)             
-* [GDI_10_Hardware](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_10_Hardware)        
 
 ## Web Development  (VU)       
 
@@ -43,6 +42,12 @@
 * [InfoMod_4_TORDF](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_4_TORDF)
 
 ## Project management (Planning, development, evaluation of DH projects)  (VU) 
+
+* [PM_DH_1_Projektmanagement](https://github.com/chpollin/Teaching/tree/master/PM_DH/PM_DH_1_Projektmanagement)
+* [PM_DH_3_Git_GitHub](https://github.com/chpollin/Teaching/tree/master/PM_DH/PM_DH_3_Git_GitHub)
+* [PM_DH_5_Wireframing](https://github.com/chpollin/Teaching/tree/master/PM_DH/PM_DH_5_Wireframing)
+
+
 
 ## Text Coding and Text Analysis with TEI
 
