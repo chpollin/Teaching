@@ -1,9 +1,13 @@
 Running JS | Values, Types, and Operators
 
-#JavaScript
+#JavaScript #webdev
 
 * [Folien](https://docs.google.com/presentation/d/1uZBL-oGf7E5VnHD6lfMav24IHa_wGCOmRTGLL4JdK30/edit?usp=sharing)
 * [Video](https://youtu.be/GHGeBiMjd4E)
+
+## Hands-On
+
+* Übungsaufgabe: DOM von openHPI https://jsfiddle.net/benjamin_daniel/5q1g3fLu/
 
 ## Übung  
 
@@ -19,3 +23,7 @@ Schreibe ein JavaScript Programm, das folgende Dinge auf der Konsole im Browser 
 - Was gibt console.log(3 > 2) bzw. console.log(3 < 2) aus? Was bedeutet es? 
 - Verwende die logischen Operatoren &&, || und ! in einem console.log()
 - Erzeuge eine Variabel *person* vom Typ Object mit *firstName* und *lastName*. Befülle es mit deinem Namen und gib nur den Nachnamen aus. 
+
+## Ressourcen
+
+* Spieleentwicklung mit JavaScript: Flappy Bird, openHPI, https://open.hpi.de/courses/javascript2022/items/7osOeX2Cy7Mx7SUfa5cdXn 

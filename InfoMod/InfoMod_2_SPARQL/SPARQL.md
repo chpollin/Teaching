@@ -10,6 +10,9 @@
 
 * [Video: Rebecca Kahn - Wikidata, Linked Data… all the data! Knowledge representation for everybody (50 min)](https://www.youtube.com/watch?v=wkPcUO6eZ5k)
 * [Example: Olympische Spiele Wikidata](https://docs.google.com/document/d/1TzNxRI__vmbafV9JFD-acBV_td5RCepnV0cuUjAHvMo/edit?usp=sharing)
+* Hinzmann, Maria, Klee, Anne, Konstanciak, Johanna, Röttgermann, Julia, Schöch, Christof, & Steffes, Moritz. (2023, March 10). SPARQL für (digitale) Geisteswissenschaftler:innen – Querying Wikidata und die MiMoTextBase. DHd 2023 Open Humanities Open Culture. 9. Tagung des Verbands "Digital Humanities im deutschsprachigen Raum" (DHd 2023), Trier, Luxemburg. https://doi.org/10.5281/zenodo.7715355
+  Hier die URL zum Tutorial: https://mimotext.github.io/MiMoTextBase_Tutorial/tutorial_index.html
+* Pollin, Christopher. Tutorial zur Nachnutzung der Daten in Exil:Trans (2023). https://gams.uni-graz.at/o:exil.tutorial
 
 ## Übung
 
