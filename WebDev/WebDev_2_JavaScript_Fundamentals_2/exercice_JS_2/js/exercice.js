@@ -9,8 +9,8 @@ console.log("################Chessboard");
 let size = 8;
 let board = "";
 
-for (let outer_count = 0; outer_count < 4; outer_count++) {
-  for (let inner_count = 0; inner_count < 16; inner_count++) {
+for (let outer_count = 0; outer_count < size; outer_count++) {
+  for (let inner_count = 0; inner_count < size; inner_count++) {
     if ((inner_count + outer_count) % 2 == 0) {
       board += " ";
     } else {
