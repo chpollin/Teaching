@@ -9,7 +9,7 @@ const FRUITS = [
 ];
 
 function buildTable(data) {
-  let table = $("<table></table>");
+  let table = $("<table class='test'></table>");
   let fields = Object.keys(data[0]);
   let headRow = $("<tr></tr>");
   

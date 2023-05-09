@@ -11,21 +11,22 @@ const FRUITS = [
   function buildTable(data) {
     let table = document.createElement("table");
     let fields = Object.keys(data[0]);
-    let headRow = document.createElement("tr");
+    console.log(fields);
+    const headRow = document.createElement("tr");
     
     fields.forEach(function(field) {
-      let headCell = document.createElement("th");
+      const headCell = document.createElement("th");
       headCell.textContent = field;
       headRow.appendChild(headCell);
     });
     
     table.appendChild(headRow);
   
-    data.forEach(function(object) {
+    data.forEach(function(hudriwu) {
       let row = document.createElement("tr");
       fields.forEach(function(field) {
         let cell = document.createElement("td");
-        cell.textContent = object[field];
+        cell.textContent = hudriwu[field];
         row.appendChild(cell);
       });
       table.appendChild(row);
@@ -34,5 +35,6 @@ const FRUITS = [
     return table;
   }
   
+  // JavaScript Function Chaining: https://medium.com/technofunnel/javascript-function-chaining-8b2fbef76f7f
   document.querySelector("#fruits").appendChild(buildTable(FRUITS));
   
