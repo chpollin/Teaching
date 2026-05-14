@@ -92,10 +92,66 @@ Wave order is recommendation. Deviations are logged in `journal.md`.
 
 ## Per-Chapter Mapping Table
 
-The schema is fixed; the table is empty until Phase 1 fills it. Filling it is part of Quality Gate A acceptance.
+Fills as chapters get stubbed in Phase 1. Status `stub` means folder and frontmatter exist with lead and learning goals; `draft` means both paths are written; `published` means a chapter has passed Gate B or Gate C.
 
 | Chapter ID | Title (working) | Block | CT primary | Substrate file | Vault-backing | Status | Notes |
 |---|---|---|---|---|---|---|---|
+| 00-01 | The Three Literacies | 00 | abstraction | — | AI Literacy folder | stub | Pilot |
+| 00-02 | Computational Thinking for the DH Developer | 00 | pattern-recognition | — | Computational Thinking | stub | Pilot |
+| 00-03 | Promptotyping as Method | 00 | algorithm-design | — | Promptotyping folder | stub | Pilot |
+| 01-01 | Information, Data, Knowledge | 01 | abstraction | GDI_1_Information | DIKW, Kodierung | stub | |
+| 01-02 | Character Encoding, Bits & Bytes | 01 | abstraction | GDI_2_Zeichenkodierung | Zeichenkodierung | stub | |
+| 01-03 | Shell and Filesystem | 01 | algorithm-design | GDI_0_LinuxUndKonsole | — | stub | Vault sparse |
+| 01-04 | Logic and Algorithms | 01 | algorithm-design | GDI_3, GDI_4, GDI_8 | — | stub | Vault sparse |
+| 01-05 | How the Internet and Web Work | 01 | abstraction | GDI_9_Internet | — | stub | Vault sparse |
+| 02-01 | What Is Data in the Humanities? | 02 | abstraction | — | Forschungsdaten, Daten in den GW | stub | |
+| 02-02 | Data Modelling Basics | 02 | abstraction | — | Datenmodellierung | stub | |
+| 02-03 | XML Foundations | 02 | abstraction | TTT_1_XML_TEI | Standards und Datenmodelle | stub | |
+| 02-04 | JSON and CSV | 02 | pattern-recognition | — | JSON | stub | |
+| 02-05 | Authority Data and Controlled Vocabularies | 02 | pattern-recognition | — | Standards und Datenmodelle | stub | |
+| 02-06 | Persistent Identifiers | 02 | abstraction | — | Persistent Identifier | stub | |
+| 02-07 | FAIR Principles in Practice | 02 | decomposition | — | Research Data Concepts | stub | |
+| 02-08 | Metadata and Dublin Core | 02 | pattern-recognition | — | — | stub | Vault gap (Dublin Core dedicated) |
+| 03-01 | Semantic Web Intro | 03 | abstraction | InfoMod_0_WebofData_LOD | — | stub | Vault gap (closes in Phase 1.5) |
+| 03-02 | RDF Basics | 03 | pattern-recognition | InfoMod_1_RDF | Standards und Datenmodelle | stub | |
+| 03-03 | Querying with SPARQL | 03 | algorithm-design | InfoMod_2_SPARQL | Standards und Datenmodelle | stub | |
+| 03-04 | Linked Open Data | 03 | pattern-recognition | InfoMod_0_WebofData_LOD | — | stub | Vault gap (closes in Phase 1.5) |
+| 03-05 | Ontologies: OWL, CIDOC-CRM, RiC-O | 03 | abstraction | — | Standards und Datenmodelle | stub | |
+| 03-06 | Factoid and Prosopography | 03 | abstraction | — | DH Knowledge | stub | |
+| 04-01 | Web Architecture | 04 | decomposition | WebDev | — | stub | |
+| 04-02 | Semantic HTML | 04 | abstraction | WebDev | Semantic HTML, HTML Living Standard | stub | |
+| 04-03 | CSS and Responsive Design | 04 | pattern-recognition | WebDev | CSS, Responsive Web Design | stub | |
+| 04-04 | JavaScript and the DOM | 04 | algorithm-design | WebDev | JavaScript folder, DOM | stub | |
+| 04-05 | REST APIs and Fetch | 04 | pattern-recognition | WebDev | Fetch API | stub | Partial vault gap (REST conceptual) |
+| 04-06 | Static Site Deployment | 04 | decomposition | WebDev | Static Site Deployment | stub | |
+| 04-07 | Web Accessibility | 04 | abstraction | WebDev | Web Accessibility | stub | |
+| 04-08 | Web Components | 04 | abstraction | WebDev | Web Components | stub | |
+| 05-01 | Scholarly Editions | 05 | abstraction | TTT | — | stub | |
+| 05-02 | TEI Basics | 05 | pattern-recognition | TTT | — | stub | |
+| 05-03 | TEI Critical Apparatus | 05 | abstraction | TTT | — | stub | |
+| 05-04 | Prosopography and Registers | 05 | abstraction | TTT | — | stub | |
+| 05-05 | IIIF and Image Annotation | 05 | pattern-recognition | TTT | — | stub | |
+| 05-06 | HTR and Transcription Workflows | 05 | algorithm-design | TTT | — | stub | |
+| 05-07 | Edition Publication | 05 | decomposition | TTT | — | stub | |
+| 05-08 | Agentic Editions | 05 | algorithm-design | TTT | — | stub | |
+| 06-01 | Git and GitHub | 06 | pattern-recognition | PM_DH | Git und GitHub | stub | |
+| 06-02 | Project Management for DH | 06 | decomposition | PM_DH | — | stub | Vault gap (closes in Phase 1.5) |
+| 06-03 | Promptotyping as Method | 06 | abstraction | PM_DH | — | stub | |
+| 06-04 | Open Source Licensing | 06 | abstraction | PM_DH, DataSteward | Open Source Lizenzierung | stub | Partial vault gap (data licences) |
+| 06-05 | Reproducible Pipelines | 06 | algorithm-design | PM_DH | — | stub | |
+| 06-06 | CI/CD for Research Code | 06 | algorithm-design | PM_DH | — | stub | |
+| 06-07 | Research Data Management | 06 | decomposition | PM_DH | Research Data and Open Science | stub | |
+| 06-08 | Documentation Practice | 06 | abstraction | PM_DH | — | stub | |
+| 07-01 | LLMs for DH Developers | 07 | abstraction | — | Applied Generative AI | stub | |
+| 07-02 | Prompting and Context Engineering | 07 | pattern-recognition | — | Applied Generative AI | stub | |
+| 07-03 | Retrieval Augmented Generation | 07 | algorithm-design | — | Applied Generative AI | stub | |
+| 07-04 | Embeddings and Semantic Search | 07 | abstraction | — | Applied Generative AI | stub | |
+| 07-05 | Coding Agents | 07 | algorithm-design | — | Applied Generative AI | stub | Partial vault gap (Claude Code) |
+| 07-06 | AI Literacy and Ethics | 07 | abstraction | — | AI Literacy folder | stub | |
+| 08-01 | Information Visualisation Fundamentals | 08 | abstraction | — | — | stub | Vault sparse |
+| 08-02 | Charts and Maps for Humanities Data | 08 | pattern-recognition | — | — | stub | Vault sparse |
+| 08-03 | Coordinated Multiple Views | 08 | abstraction | — | — | stub | Vault sparse |
+| 08-04 | Visualisation for Editions | 08 | abstraction | — | — | stub | Vault sparse |
 
 ## Legacy URL Mapping
 

@@ -244,7 +244,8 @@ async function renderChapter(chapter, chapterTpl) {
   const ctPrimary = fm.ct_markers ? fm.ct_markers.primary : "";
   const ctQuestion = parts.ctMarker ? parts.ctMarker.replace(/^>\s*\*\*CT in focus:\*\*\s*[^—]+—\s*/, "").trim() : "";
 
-  const cite = `${fm.authors ? fm.authors.join(", ") : "Pollin, C."} (${(fm.created || "").slice(0,4)}). ${fm.title}. DH Developer Skriptum, chapter ${fm.chapter_id}. ${fm.project ? fm.project.repository : ""}`;
+  const createdStr = fm.created instanceof Date ? fm.created.toISOString().slice(0, 10) : String(fm.created || "");
+  const cite = `${fm.authors ? fm.authors.join(", ") : "Pollin, C."} (${createdStr.slice(0,4)}). ${fm.title}. DH Developer Skriptum, chapter ${fm.chapter_id}. ${fm.project ? fm.project.repository : ""}`;
 
   const html = substituteTemplate(chapterTpl, {
     title: fm.title || "",

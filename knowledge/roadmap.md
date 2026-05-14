@@ -269,23 +269,23 @@ If Phase 1.5 vault gaps cannot be closed, the corresponding Phase 3 wave is defe
 
 ## Status Tracker
 
-The current state of each milestone. Update this section as milestones complete.
+The current state of each milestone. Updated as milestones complete.
 
-| Milestone | Status |
-|---|---|
-| M1 — Phase 0 complete | pending |
-| M2 — 45 chapter stubs | pending |
-| M3 — Vault gaps closed | pending |
-| M4 — Pilot Block 0 | pending |
-| M5 — Wave A (07 AI) | pending |
-| M6 — Wave B (05 Editions) | pending |
-| M7 — Wave C (02 Data + 08 InfoViz) | pending |
-| M8 — Wave D (04 Web + 01 CS) | pending |
-| M9 — Wave E (03 Semantic Web + 06 Workflows) | pending |
-| M10 — Exercises and cross-linking | pending |
-| M11 — Launch | pending |
+| Milestone | Status | Notes |
+|---|---|---|
+| M1 — Phase 0 complete | completed | Three commits on master: 28dd38e (Promptotyping layer), 1b6f6bf (migration), 2483b2f (architecture). Build runs, eight block index pages render. |
+| M2 — 45 chapter stubs | completed | 45/45 stubs written. Build renders 45 chapter pages plus 9 block indices. Gate A mechanical checks pass: frontmatter valid, chapters.json present, search.json present, navigation reachable, assets load under /Teaching/ prefix. |
+| M3 — Vault gaps closed | pending | Four real gaps, three partial gaps documented in `data.md`. |
+| M4 — Pilot Block 0 | pending | |
+| M5 — Wave A (07 AI) | pending | |
+| M6 — Wave B (05 Editions) | pending | |
+| M7 — Wave C (02 Data + 08 InfoViz) | pending | |
+| M8 — Wave D (04 Web + 01 CS) | pending | |
+| M9 — Wave E (03 Semantic Web + 06 Workflows) | pending | |
+| M10 — Exercises and cross-linking | pending | |
+| M11 — Launch | pending | |
 
-Pre-Milestone-1 setup completed (knowledge folder, CLAUDE.md, vault mirror, ACTIVE-WORK) is recorded in `journal.md`.
+Pre-Milestone-1 setup (knowledge folder, CLAUDE.md, vault mirror, ACTIVE-WORK) is recorded in `journal.md`.
 
 ## Related
 

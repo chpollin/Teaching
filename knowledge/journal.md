@@ -23,6 +23,40 @@ authors: ["Christopher Pollin"]
 
 Chronological record of decisions, deviations, and writing sessions. Append-only. Newest entries on top.
 
+## 2026-05-14 — M2 complete, 45/45 stubs, Gate A passed
+
+Stubs 23–45 written in one session: Block 03 Semantic Web (6), Block 04 Web (8), Block 05 Editions (8), Block 06 Workflows (8), Block 07 AI (6), Block 08 InfoViz (4). All forty-five chapter folders now exist under `chapters/<block>/<chapter_id>_<slug>/index.md` with the minimal pattern: full Promptotyping frontmatter (chapter_id, ct_markers primary plus optional secondary, paths.short/long set to false, vault_backing as dated `{path, read_on}` references, substrate where applicable), three-sentence lead, four learning goals, "Chapter in progress" marker.
+
+One build fix: `fm.created` arrived as a Date object after gray-matter YAML parsing, breaking the `cite` string template in `renderChapter`. Patched to handle both Date and string inputs. Build now runs clean: 9 blocks, 45 chapters, no validator errors.
+
+Local serve.py helper added: a forty-line prefix-aware HTTP handler that mounts `docs/` under `/Teaching/` so the GitHub Pages base-path resolves locally without rebuilding. Verified all key paths return 200: home, block index, deep chapter pages, chapters.json, search.json, CSS, JS.
+
+Gate A mechanical checks pass. The site looks complete from the outside; most chapters carry only the lead and learning goals.
+
+data.md per-chapter mapping table extended for Blocks 03–08 (twenty-nine new rows). Roadmap status tracker M2 → completed.
+
+Next: M3 Phase 1.5, closing four real vault gaps (Projektmanagement, Datenbanken, LOD Intro, Semantic Web Intro) and three partial gaps (Lizenzen für Forschungsdaten, REST-APIs konzeptionell, Claude Code Tool-Integration). M4 Pilot Block 0 follows.
+
+## 2026-05-14 — M2 in progress, 16/45 stubs written
+
+Started M2 after a brief stop-and-think prompted by the project owner: "should we refactor the plan, what are we doing here, what is the goal, what is in the vault?". A vault inventory (Explore agent) showed 288 vault documents available as backing across the eight blocks. Vault density is strongest for Block 07 AI (131 Applied Generative AI documents), strong for Blocks 02 (Data), 03 (Semantic Web), 04 (Web), 05 (Editions), sparse for Block 00 (Foundations needs synthesis writing) and Block 08 (InfoViz needs dedicated documents). Substrate inventory confirmed: four strong substrates (GDI, InfoMod, TTT, PM_DH), one mixed (WebDev), three weak or none (WissMod, DataSteward, Schools).
+
+The project owner chose "plan halten" — keep the 8-block, 45-chapter structure, address the InfoViz and Foundations gaps within the existing plan. M2 stub writing started with Block 00 (3 stubs), Block 01 (5 stubs), Block 02 (8 stubs). Sixteen stubs written so far; twenty-nine remain (Blocks 03, 04, 05, 06, 07, 08). The per-chapter mapping table in `data.md` is being filled as stubs land.
+
+Stubs follow the minimal pattern: full frontmatter (with chapter_id, ct_markers, paths.short/long set to false, vault_backing or empty list, substrate references where applicable), a 1-3 sentence lead, 3-5 learning goals as bullets, a "Chapter in progress" marker. No Long Form outline. The discipline avoids stylistic drift between pre-pilot outlines and post-pilot voice, per the specification.md Decisions entry of 2026-05-14.
+
+## 2026-05-14 — M1 complete (Phase 0 done)
+
+Three Phase-0 commits landed on master:
+
+- 28dd38e — Initialise Promptotyping knowledge base and refactor README. Eleven knowledge documents (INDEX, project, specification, design, architecture, data, user-stories, roadmap, cheat-sheet, sources, journal, CHANGELOG), CLAUDE.md as action layer, README rewritten.
+- 1b6f6bf — Phase 0 Commit 1: migrate legacy course material to _legacy/. Eight legacy folders moved by git mv, _config.yml removed, .nojekyll added. Git history preserved; 303 files renamed.
+- 2483b2f — Phase 0 Commit 2: scaffold chapters/, site/, build pipeline. Eight block folders with _block.md, four site/ HTML shells, dhcraft.css, three vanilla ES modules (app.js, nav.js, search.js), package.json with three dependencies, build.mjs (under 350 lines) implementing the eight-step pipeline, LICENSE-MIT for code, .gitignore for node_modules, initial docs/ build output.
+
+Verification: npm install succeeded (12 packages, no vulnerabilities); npm run build ran without validator errors and produced eight block index pages, an empty chapters.json, an empty search.json, sitemap.xml, robots.txt. Generated HTML spot-checked: block index for 00 Foundations renders the block-id, title, breadcrumbs, and canonical URL correctly.
+
+Not yet pushed to origin/master. The three commits sit locally pending review.
+
 ## 2026-05-14 — Roadmap document added
 
 A ninth knowledge document, `roadmap.md`, was added to the folder to make the operational sequence of work explicit. Previously the project plan was distributed across `specification.md` (eight blocks, quality gates), `data.md` (writing-queue waves), and `specification.md` Decisions (Phase 0 commit strategy) without a single document binding them into a sequence. `roadmap.md` lists six phases, eleven milestones, entry conditions, exit conditions, and how milestones tie to the four quality gates. A status tracker table at the end records milestone state.
