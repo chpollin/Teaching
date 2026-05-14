@@ -23,7 +23,7 @@ authors: ["Christopher Pollin"]
 
 ## Purpose
 
-The Promptotyping knowledge base for the DH Developer Skriptum. Eleven documents specify the project's identity, formal substance, design, build, material, narrative substance, operational roadmap, operational rules in short form, project-level sources, and chronological record. The folder is the canonical reference for any agent or human writing into the textbook.
+The Promptotyping knowledge base for the DH Developer Skriptum. Twelve documents specify the project's identity, formal substance, design, build, material, narrative substance, operational roadmap, operational rules in short form, project-level sources, chronological record, and a dated change log of the knowledge folder itself. The folder is the canonical reference for any agent or human writing into the textbook.
 
 The Obsidian vault at `c:/Users/Chrisi/Documents/obsidian/Projects/dh-developer-skriptum/` mirrors the project but is documentation. Source of truth is the repository.
 
@@ -39,6 +39,7 @@ The Obsidian vault at `c:/Users/Chrisi/Documents/obsidian/Projects/dh-developer-
 8. `cheat-sheet.md` — operational rules on one page (for active writing sessions)
 9. `sources.md` — project-level bibliography
 10. `journal.md` — chronological record
+11. `CHANGELOG.md` — dated list of substantial changes to the knowledge folder (diff trail, not narrative)
 
 When fixing a specific failure mode, jump to the document whose function matches it. See [[Konvention Promptotyping Documents]] reading heuristic.
 
@@ -57,22 +58,23 @@ When fixing a specific failure mode, jump to the document whose function matches
 | `cheat-sheet.md` | Operational summary | What are the non-negotiable rules in shortest form? |
 | `sources.md` | Bibliography | What are the project-level references for the knowledge base? |
 | `journal.md` | Genesis | How did we get here and what was decided? |
+| `CHANGELOG.md` | Diff trail | What changed in the knowledge folder and when? |
 
 ## Project Glossary
 
-Operational terms used across the knowledge documents.
+Quick-lookup definitions of operational terms. **Authoritative definitions live in the source documents**: when the glossary entry and the source disagree, the source prevails.
 
-- **Block** — One of the eight thematic groupings (00 Foundations to 08 InfoViz). A block contains 3 to 8 chapters and has a `_block.md` overview page.
-- **Chapter** — An atomic teaching unit, one folder under `chapters/`, one `index.md`. Forty-five chapters total.
-- **Chapter ID** — Two-segment identifier like `01-02` (block-number, chapter-position). Used as foreign key in cross-references, redirects, and substrate mapping.
-- **Both-Paths Convention** — Every chapter holds two H2 sections in one Markdown file: `## Short Synthesis` (essayistic) and `## Long Form` (systematic). They share frontmatter, exercises, glossary.
-- **Path** — Either the short or the long route through a chapter. Readers choose; the renderer presents both as tabs.
-- **CT-Marker** — A blockquote opening each chapter, naming one of the four Computational Thinking operations (Decomposition, Pattern Recognition, Abstraction, Algorithm Design) and a framing question.
-- **Literacy Trias** — Data Literacy, Computational Literacy, AI Literacy as three intersecting axes.
-- **Substrate** — Legacy material under `_legacy/` (former GDI, WebDev, InfoMod, TTT, PM_DH course content). Research source, not for verbatim quotation.
-- **Vault-Backing** — Path to an Obsidian vault document that holds the conceptual ground for a chapter. Declared in chapter frontmatter as `vault_backing:` with `path` and `read_on`.
-- **Writing Queue** — The order in which chapters are written, derived from `data.md`.
-- **DH Developer** — The reader profile this textbook addresses: someone who builds with data, code, and AI in humanities contexts.
+- **Block** — One of eight thematic groupings (00 Foundations to 08 InfoViz). Authoritative: `specification.md` "The Eight Blocks".
+- **Chapter** — Atomic teaching unit, one folder under `chapters/`, one `index.md`. Forty-five total. Authoritative: `specification.md`.
+- **Chapter ID** — Two-segment identifier like `01-02`. Authoritative: `specification.md` "Chapter Frontmatter".
+- **Both-Paths Convention** — Every chapter holds `## Short Synthesis` and `## Long Form` in one Markdown file. Authoritative: `specification.md` "Both-Paths Convention" and `design.md` "Voice".
+- **Path** — Either Short or Long route through a chapter. Authoritative: `specification.md`.
+- **CT-Marker** — Blockquote opening each chapter with one Computational Thinking operation and a framing question. Authoritative: `specification.md` "CT-Marker Distribution".
+- **Literacy Trias** — Data Literacy, Computational Literacy, AI Literacy. Authoritative: `project.md` "The Literacy Trias".
+- **Substrate** — Legacy material under `_legacy/`. Authoritative: `data.md` "Substrate Inventory" and `design.md` "Substrate Re-use Policy".
+- **Vault-Backing** — Path to an Obsidian vault document with `path` and `read_on`. Authoritative: `architecture.md` "Vault-Drift Protocol".
+- **Writing Queue** — Order in which chapters are written. Authoritative: `data.md`.
+- **DH Developer** — Reader profile this textbook addresses. Authoritative: `project.md` "Audience" and `user-stories.md`.
 
 ## Related
 
