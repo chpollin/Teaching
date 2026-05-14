@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DH Developer Skriptum — a textbook for the Digital Humanities Developer.">
+  <title>DH Developer Skriptum</title>
+  <link rel="stylesheet" href="/Teaching/assets/css/dhcraft.css">
+  <link rel="canonical" href="https://chpollin.github.io/Teaching/">
+</head>
+<body class="page-home">
+  <header class="site-header">
+    <a href="/Teaching/" class="site-title">DH Developer Skriptum</a>
+    <nav class="site-nav">
+      <button type="button" class="search-trigger" aria-label="Open search (Ctrl+K)">Search</button>
+      <a href="/Teaching/about/">About</a>
+    </nav>
+  </header>
+
+  <main class="content content-home">
+    <section class="hero">
+      <h1>DH Developer Skriptum</h1>
+      <p class="lede">An English-language textbook for the Digital Humanities Developer. Forty-five atomic chapters in eight thematic blocks, two paths per chapter, Computational Thinking as the methodological core.</p>
+    </section>
+
+    <section class="literacy-trias">
+      <h2>The Literacy Trias</h2>
+      <div class="trias-grid">
+        <article class="trias-card">
+          <h3>Data Literacy</h3>
+          <p>Reading, structuring, modelling, and licensing humanities data.</p>
+        </article>
+        <article class="trias-card">
+          <h3>Computational Literacy</h3>
+          <p>Operating shells, version control, format transformations, deployment.</p>
+        </article>
+        <article class="trias-card">
+          <h3>AI Literacy</h3>
+          <p>Using generative AI as a research tool, with disciplined prompt design and clear evaluation.</p>
+        </article>
+      </div>
+      <p class="trias-note">Methodological core: Computational Thinking — Decomposition, Pattern Recognition, Abstraction, Algorithm Design.</p>
+    </section>
+
+    <section class="block-tiles" aria-label="Blocks">
+      <h2>Blocks</h2>
+      <div class="tiles-grid" id="block-tiles">
+        {{block_tiles}}
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Content licensed under <a href="/Teaching/LICENSE-CC-BY">CC BY 4.0</a>. Code under MIT. Source on <a href="https://github.com/chpollin/Teaching">GitHub</a>.</p>
+  </footer>
+
+  <script type="module" src="/Teaching/assets/js/app.js"></script>
+</body>
+</html>

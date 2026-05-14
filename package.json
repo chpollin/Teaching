@@ -1,0 +1,26 @@
+{
+  "name": "dh-developer-skriptum",
+  "version": "0.1.0",
+  "description": "DH Developer Skriptum — a textbook for the Digital Humanities Developer, produced under the Promptotyping method.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "author": "Christopher Pollin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chpollin/Teaching.git"
+  },
+  "homepage": "https://chpollin.github.io/Teaching/",
+  "scripts": {
+    "build": "node build.mjs",
+    "validate": "node build.mjs --validate-only"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "lunr": "^2.3.9",
+    "marked": "^12.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

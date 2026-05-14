@@ -1,0 +1,17 @@
+{
+  "index": {
+    "version": "2.3.9",
+    "fields": [
+      "title",
+      "chapter_id",
+      "short",
+      "long"
+    ],
+    "fieldVectors": [],
+    "invertedIndex": [],
+    "pipeline": [
+      "stemmer"
+    ]
+  },
+  "records": []
+}

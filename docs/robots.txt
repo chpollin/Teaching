@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chpollin.github.io/Teaching/sitemap.xml

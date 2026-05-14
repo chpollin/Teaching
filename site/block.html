@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{block_title}} — DH Developer Skriptum</title>
+  <link rel="stylesheet" href="/Teaching/assets/css/dhcraft.css">
+  <link rel="canonical" href="{{canonical_url}}">
+</head>
+<body class="page-block">
+  <header class="site-header">
+    <a href="/Teaching/" class="site-title">DH Developer Skriptum</a>
+    <nav class="site-nav">
+      <button type="button" class="search-trigger" aria-label="Open search (Ctrl+K)">Search</button>
+      <a href="/Teaching/about/">About</a>
+    </nav>
+  </header>
+
+  <aside class="sidebar" aria-label="Site navigation" id="sidebar"></aside>
+
+  <main class="content content-block">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/Teaching/">Home</a>
+    </nav>
+
+    <header class="block-header">
+      <p class="block-id">{{block_id}}</p>
+      <h1>{{block_title}}</h1>
+    </header>
+
+    <section class="block-overview">
+      {{overview_html}}
+    </section>
+
+    <section class="chapter-list" aria-label="Chapters in this block">
+      <h2>Chapters</h2>
+      <ol class="chapter-cards">
+        {{chapter_cards}}
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Content licensed under <a href="/Teaching/LICENSE-CC-BY">CC BY 4.0</a>. Code under MIT.</p>
+  </footer>
+
+  <script type="module" src="/Teaching/assets/js/app.js"></script>
+</body>
+</html>

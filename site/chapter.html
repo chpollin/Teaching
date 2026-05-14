@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}} — DH Developer Skriptum</title>
+  <meta name="description" content="{{lead}}">
+  <meta name="dc.identifier" content="{{chapter_id}}">
+  <meta name="dc.rights" content="{{license}}">
+  <link rel="stylesheet" href="/Teaching/assets/css/dhcraft.css">
+  <link rel="stylesheet" href="/Teaching/assets/css/prism.css">
+  <link rel="canonical" href="{{canonical_url}}">
+</head>
+<body class="page-chapter">
+  <header class="site-header">
+    <a href="/Teaching/" class="site-title">DH Developer Skriptum</a>
+    <nav class="site-nav">
+      <button type="button" class="search-trigger" aria-label="Open search (Ctrl+K)">Search</button>
+      <a href="/Teaching/about/">About</a>
+    </nav>
+  </header>
+
+  <aside class="sidebar" aria-label="Chapter navigation" id="sidebar"></aside>
+
+  <main class="content content-chapter">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/Teaching/">Home</a>
+      <span aria-hidden="true">›</span>
+      <a href="{{block_url}}">{{block_title}}</a>
+    </nav>
+
+    <article class="chapter">
+      <header class="chapter-header">
+        <p class="chapter-id">{{chapter_id}}</p>
+        <h1 class="chapter-title">{{title}}</h1>
+        <p class="ct-marker"><span class="ct-pill">{{ct_primary}}</span> {{ct_question}}</p>
+        <p class="chapter-status status-{{status}}">{{status}}</p>
+      </header>
+
+      <div class="path-tabs" role="tablist" aria-label="Reading path">
+        <button type="button" role="tab" id="tab-short" aria-controls="panel-short" class="path-tab" data-path="short">Short Synthesis</button>
+        <button type="button" role="tab" id="tab-long" aria-controls="panel-long" class="path-tab" data-path="long">Long Form</button>
+      </div>
+
+      <section role="tabpanel" id="panel-short" aria-labelledby="tab-short" class="path-panel path-short">
+        {{short}}
+      </section>
+
+      <section role="tabpanel" id="panel-long" aria-labelledby="tab-long" class="path-panel path-long">
+        {{long}}
+      </section>
+
+      <section class="chapter-shared">
+        {{exercises}}
+        {{further_reading}}
+        {{glossary}}
+      </section>
+
+      <footer class="chapter-footer">
+        <p class="cite">Cite as: {{cite}}</p>
+        <nav class="chapter-nav" aria-label="Chapter navigation">
+          <a href="{{prev_url}}" rel="prev">← {{prev_title}}</a>
+          <a href="{{next_url}}" rel="next">{{next_title}} →</a>
+        </nav>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Content licensed under <a href="/Teaching/LICENSE-CC-BY">CC BY 4.0</a>. Code under MIT.</p>
+  </footer>
+
+  <script type="module" src="/Teaching/assets/js/app.js"></script>
+</body>
+</html>
