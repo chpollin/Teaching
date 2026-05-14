@@ -166,6 +166,10 @@ GitHub Pages serves `docs/` from `master`. Deploy steps:
 
 Custom domain deferred: add `CNAME` in `docs/`, configure DNS, enable HTTPS in Pages settings.
 
+## Local Preview
+
+The built site references assets under the deployed base path `/Teaching/`, so a plain `python -m http.server` rooted at `docs/` returns 404 for CSS, JS, and data fetches. `serve.py` solves this: a forty-line `http.server` subclass that mounts `docs/` under `/Teaching/`. Run `python serve.py` and visit `http://localhost:8081/Teaching/`. The script is a development helper, not part of the deploy pipeline.
+
 ## Migration of Legacy URLs
 
 Mapping lives in `data.md` (table "Legacy URL Mapping"). Build step 7 generates a redirect stub for each old path:

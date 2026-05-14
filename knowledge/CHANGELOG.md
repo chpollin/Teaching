@@ -22,6 +22,10 @@ Format: `YYYY-MM-DD — Doc — Change`
 
 ## 2026-05-14
 
+- 2026-05-14 — `architecture.md` — Local Preview section added documenting `serve.py` (`/Teaching/` prefix mount under `docs/`)
+- 2026-05-14 — `journal.md` — M2 completion entry added (45/45 stubs, Gate A passed, build-fix note, serve.py helper)
+- 2026-05-14 — `roadmap.md` — M2 status tracker entry set to completed
+- 2026-05-14 — `data.md` — per-chapter mapping table extended for Blocks 03 to 08 (29 new rows)
 - 2026-05-14 — `cheat-sheet.md` — created, operational rules on one page
 - 2026-05-14 — `sources.md` — created, central project-level bibliography
 - 2026-05-14 — `CHANGELOG.md` — created
