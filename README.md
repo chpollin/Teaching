@@ -1,65 +1,95 @@
-#teaching
+# DH Developer Skriptum
 
-# Courses
+An English-language textbook for the Digital Humanities Developer. Forty-five atomic chapters in eight thematic blocks. Each chapter is readable along two paths (a short essayistic synthesis and a long systematic exposition) and is framed by one Computational Thinking operation. The textbook is produced under the Promptotyping method.
 
-[Copyright 2022 by the author, except as otherwise noted. This work is placed under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence. https://creativecommons.org/licenses/by/4.0/]
+The site is published at `https://chpollin.github.io/Teaching/`.
 
-## Introduction to Computer Science (V0)  / **Selected Questions of Computer Science** (KV)
+## Status
 
-* [GDI_0_Linux und Konsole](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_0_LinuxUndKonsole)
-* [GDI_1_Information](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_1_Information)
-* [GDI_2_Zeichenkodierung](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_2_Zeichenkodierung)          
-* [GDI_3_Aussagenlogik](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_3_Aussagenlogik)
-* [GDI_4_Mengen und Prädikatenlogik](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_4_Mengen_Prädikatenlogik)
-* [GDI_5_Formale Sprachen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_5_FormaleSprachen)
-* [GDI_6_Turingmaschine](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_6_Turingmaschine)
-* [GDI_7_Programmierung](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_7_Programmierung)
-* [GDI_8_Datenstrukturen und Algorithmen](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_8_DatenAlgo) 
-* [GDI_9_Internet und Web](https://github.com/chpollin/Teaching/tree/master/GDI/GDI_9_Internet)             
+In development. The Promptotyping infrastructure (knowledge folder, action layer, vault mirror) is complete. Phase 0 (repository refactor) is the next step. Chapters are stubs or unwritten. See `knowledge/roadmap.md` for the milestone status.
 
-## Web Development  (VU)       
+This repository is a refactor of a 2022–2023 collection of teaching materials in German. Legacy content is being moved to `_legacy/` and serves as research substrate for the new English textbook. Legacy URLs receive redirect stubs.
 
-* [WebDev_0_JavaScript_Introduction](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_0_JavaScript_Introduction)
-* [WebDev_1_JavaScript_Fundamentals_1](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_1_JavaScript_Fundamentals_1)
-* [WebDev_2_JavaScript_Fundamentals_2](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_2_JavaScript_Fundamentals_2)
-* [WebDev_3_JavaScript_Fundamentals_3](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_3_JavaScript_Fundamentals_3)
-* [WebDev_4_JavaScript_Fundamentals_4](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_4_JavaScript_Fundamentals_4)
-* [WebDev_5_JavaScript_jQuery](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_5_JavaScript_jQuery)
-* [WebDev_6_JavaScript_EventHandling](https://github.com/chpollin/Teaching/tree/master/WebDev/WebDev_6_JavaScript_EventHandling)
+## What This Textbook Teaches
 
-## Knowledge Engineering in the Digital Humanities (VU)
+Three literacies as one practice:
 
-* [WissMod_InfoVis_1](https://github.com/chpollin/Teaching/tree/master/WissMod/WissMod_InfoVis_1)
+- **Data Literacy** — reading, structuring, modelling, and licensing humanities data.
+- **Computational Literacy** — operating shells, version control, format transformations, static-site deployment, pipelines.
+- **AI Literacy** — using generative AI as a research tool, with disciplined prompt design and clear evaluation.
 
-## Data-based knowledge production and  organization         
+Each chapter foregrounds one Computational Thinking operation (Decomposition, Pattern Recognition, Abstraction, Algorithm Design) as the methodological core.
 
-## Advanced Information Modelling  (VU)
+## Who This Is For
 
-* [InfoMod_0_Web of Data und LOD](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_0_WebofData_LOD)
-* [InfoMod_1_RDF](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_1_RDF)
-* [InfoMod_2_SPARQL](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_2_SPARQL)
-* [InfoMod_3_Ontology](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_3_Ontology)
-* [InfoMod_4_TORDF](https://github.com/chpollin/Teaching/tree/master/InfoMod/InfoMod_4_TORDF)
+Eight practice-driven reader roles, detailed in `knowledge/user-stories.md`:
 
-## Project management (Planning, development, evaluation of DH projects)  (VU) 
+- Edition Builder
+- Research Data Engineer
+- Cultural-Heritage Tool Maker
+- AI-Augmented Researcher
+- Knowledge Graph Builder
+- Teaching Adopter
+- Self-Learner
+- Coding Agent
 
-* [PM_DH_1_Projektmanagement](https://github.com/chpollin/Teaching/tree/master/PM_DH/PM_DH_1_Projektmanagement)
-* [PM_DH_3_Git_GitHub](https://github.com/chpollin/Teaching/tree/master/PM_DH/PM_DH_3_Git_GitHub)
-* [PM_DH_5_Wireframing](https://github.com/chpollin/Teaching/tree/master/PM_DH/PM_DH_5_Wireframing)
+## Repository Layout
 
+```
+Teaching/
+├── CLAUDE.md           # action layer for AI agents
+├── README.md           # this file
+├── LICENSE-CC-BY       # content licence
+├── LICENSE-MIT         # code licence (added in Phase 0)
+├── .nojekyll           # disables GitHub's Jekyll build (added in Phase 0)
+├── package.json        # build dependencies (added in Phase 0)
+├── build.mjs           # static-site generator (added in Phase 0)
+├── knowledge/          # Promptotyping knowledge base (canonical specification)
+├── chapters/           # textbook content (added in Phase 0)
+├── site/               # site templates and assets (added in Phase 0)
+├── docs/               # build output, served by GitHub Pages (added in Phase 0)
+└── _legacy/            # archived 2022-2023 substrate (moved in Phase 0)
+```
 
+## How to Read
 
-## Text Coding and Text Analysis with TEI
+Start with `knowledge/INDEX.md` for navigation and the project glossary. Then:
 
-* [TTT_1_XML_TEI](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_1_XML_TEI)
-* [TTT_2_DigitaleEdition](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_2_DigitaleEdition)
-* [TTT_3_XMLSchema](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_3_XMLSchema)
-* [TTT_4_TEI_Vertiefung](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_4_TEI_Vertiefung)
-* [TTT_5_XPath](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_5_XPath)
-* [TTT_6_XSLT](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_6_XSLT)
-* [TTT_7_Tools](https://github.com/chpollin/Teaching/tree/master/TTT/TTT_7_Tools)
-## Schools
+- `knowledge/project.md` — what this textbook is
+- `knowledge/specification.md` — formal scope, chapter structure, quality gates
+- `knowledge/design.md` — voice and form
+- `knowledge/roadmap.md` — phases, milestones, status tracker
 
-### Winter School. Digitale Editionen Masterclass. Wuppertal (22.-26.2.2021)
+## Build
 
-+ [Named Entities - Web of Data](https://github.com/chpollin/Teaching/tree/master/WuppertalSchool/NamedEntities_Wuppertal)
+After Phase 0 is complete:
+
+```bash
+npm install
+npm run build
+```
+
+The script reads Markdown from `chapters/`, validates frontmatter, splits each chapter's Short and Long sections, renders HTML into `docs/`, generates `chapters.json` and `search.json`, and produces redirect stubs for legacy URLs. Pipeline details in `knowledge/architecture.md`.
+
+## Method
+
+The textbook is developed under the Promptotyping method (`https://dhcraft.org/Promptotyping/`). The knowledge base in `knowledge/` is canonical; `CLAUDE.md` is the agent action layer that references it. Every writing session is recorded in `knowledge/journal.md`.
+
+## Licence
+
+Content: CC-BY-4.0 (existing `LICENSE-CC-BY`).
+Code and site: MIT (added in Phase 0).
+Legacy content under `_legacy/` retains its original CC-BY-4.0.
+
+## Contributing
+
+The repository is currently in an authored phase. External contributions become possible after Quality Gate B (pilot block complete) and are documented at that point.
+
+For corrections and suggestions, open a GitHub issue.
+
+## Related
+
+- `https://github.com/chpollin/Teaching` — this repository
+- `https://chpollin.github.io/Teaching/` — published site
+- `https://dhcraft.org/` — DHCraft
+- `https://dhcraft.org/Promptotyping/` — Promptotyping method
