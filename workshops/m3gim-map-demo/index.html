@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M3GIM Mobilitätskarte, Nachlass Ira Malaniuk</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    /* Sachliches Design: die Karte füllt den Schirm, die Beschriftung bleibt zurückhaltend. */
+    :root { --ink: #1a1a1a; --line: #d8d8d8; }
+    html, body { margin: 0; height: 100%; font-family: system-ui, sans-serif; color: var(--ink); }
+    #map { position: absolute; inset: 0; }
+    #caption {
+      position: absolute; z-index: 1000; top: 12px; left: 12px;
+      background: rgba(255,255,255,0.92); border: 1px solid var(--line);
+      padding: 8px 12px; max-width: 320px; font-size: 13px; line-height: 1.4;
+    }
+    #caption h1 { margin: 0 0 4px; font-size: 14px; font-weight: 600; }
+    #caption p { margin: 0; color: #555; }
+    .leaflet-popup-content { font-size: 13px; line-height: 1.4; }
+    .leaflet-popup-content .sig { color: #777; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="caption">
+    <h1>Stationen einer Sängerkarriere</h1>
+    <p>Nachlass Ira Malaniuk (UAKUG/NIM), Auswahl datierter Auftritte. Die Linie folgt der zeitlichen Reihenfolge.</p>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // Neutrale Graustufen-Basiskarte (CartoDB Positron), damit die Punkte tragen, nicht der Hintergrund.
+    const map = L.map('map', { scrollWheelZoom: true });
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '© OpenStreetMap, © CARTO', maxZoom: 19
+    }).addTo(map);
+
+    // Minimaler Parser für die semikolongetrennte CSV. Semikolon, weil die Spalte
+    // anlass Kommata enthält; so bleibt das Parsen ohne Quoting trivial.
+    function parseCsv(text) {
+      const lines = text.trim().split(/\r?\n/);
+      const head = lines.shift().split(';');
+      return lines.map(line => {
+        const cells = line.split(';');
+        return Object.fromEntries(head.map((h, i) => [h.trim(), (cells[i] || '').trim()]));
+      });
+    }
+
+    fetch('data.csv')
+      .then(r => r.text())
+      .then(text => {
+        const rows = parseCsv(text)
+          .filter(r => r.lat && r.lon)
+          .sort((a, b) => a.datum.localeCompare(b.datum)); // chronologisch für die Wegelinie
+
+        const points = [];
+        rows.forEach(r => {
+          const latlng = [parseFloat(r.lat), parseFloat(r.lon)];
+          points.push(latlng);
+          L.circleMarker(latlng, {
+            radius: 6, color: '#1a1a1a', weight: 1.5,
+            fillColor: '#c0392b', fillOpacity: 0.85
+          }).addTo(map).bindPopup(
+            `<strong>${r.ort}</strong>, ${r.datum}<br>${r.anlass}` +
+            `<br><span class="sig">${r.signatur}</span>`
+          );
+        });
+
+        if (points.length > 1) {
+          L.polyline(points, { color: '#1a1a1a', weight: 1, opacity: 0.4, dashArray: '4 4' }).addTo(map);
+        }
+        map.fitBounds(L.latLngBounds(points).pad(0.2));
+      })
+      .catch(err => {
+        document.getElementById('caption').innerHTML =
+          '<h1>Daten nicht geladen</h1><p>data.csv konnte nicht gelesen werden. ' +
+          'Die Seite muss über einen lokalen Server laufen, nicht per Doppelklick.</p>';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
