@@ -210,7 +210,7 @@
     "block": "03_semantic_web",
     "block_title": "Semantic Web",
     "order": 2,
-    "status": "stub",
+    "status": "draft",
     "ct_primary": "pattern-recognition",
     "url": "/Teaching/chapters/03_semantic_web/03-02_rdf-basics/",
     "block_url": "/Teaching/chapters/03_semantic_web/"

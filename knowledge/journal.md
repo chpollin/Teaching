@@ -23,6 +23,16 @@ authors: ["Christopher Pollin"]
 
 Chronological record of decisions, deviations, and writing sessions. Append-only. Newest entries on top.
 
+## 2026-07-23 — First chapter draft: 03-02 RDF Basics (Block-03 pilot)
+
+Writer: Claude (Opus-class agent), directed by Christopher Pollin.
+
+Deviation from the writing queue: Block 03 was slotted for Wave E (last). Operator decision to pull 03-02 forward because new substrate arrived: chapter 5 of the author's dissertation (Pollin 2025, "Operationalising Historical Information"), which covers the Semantic Web Stack, RDF, RDF-star, RDF 1.2, RDFS, SKOS, and SPARQL in English academic prose. Registered as external substrate in `data.md` (author's copy, not committed to this public repository). The dissertation substrate also covers the content side of vault gaps 3 and 4 (Semantic Web Intro, LOD Intro); noted in `data.md`.
+
+03-02 written per Both-Paths Convention: Long Form first (six numbered subsections: table-to-graph, three term kinds, Turtle worked example, serialisations, RDFS, statements-about-statements), Short Synthesis distilled after. CT marker pattern-recognition with the question "What single three-part pattern can record a medal win, a nineteenth-century debt, and a manuscript attribution alike?". Worked example uses the Wheaton Day Book settlement entry, rewritten from dissertation substrate per Substrate Re-use Policy (content substrate, rewritten from scratch). Exercises modernised from InfoMod_1_RDF: the Olympia CSV-to-Turtle task kept (CSV copied from `_legacy` into the chapter folder), validation moved from easyrdf.org to rdflib so exercise 2 runs end-to-end on a fresh machine; an RDF-star exercise added. Vault backing re-read today: `RDF.md` and `RDFS.md` under Standards und Datenmodelle, `read_on` updated.
+
+Remaining Block-03 chapters stay stubs pending operator review of this pilot.
+
 ## 2026-05-14 — M2 complete, 45/45 stubs, Gate A passed
 
 Stubs 23–45 written in one session: Block 03 Semantic Web (6), Block 04 Web (8), Block 05 Editions (8), Block 06 Workflows (8), Block 07 AI (6), Block 08 InfoViz (4). All forty-five chapter folders now exist under `chapters/<block>/<chapter_id>_<slug>/index.md` with the minimal pattern: full Promptotyping frontmatter (chapter_id, ct_markers primary plus optional secondary, paths.short/long set to false, vault_backing as dated `{path, read_on}` references, substrate where applicable), three-sentence lead, four learning goals, "Chapter in progress" marker.

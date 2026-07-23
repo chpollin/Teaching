@@ -33,8 +33,8 @@
       <header class="chapter-header">
         <p class="chapter-id">03-02</p>
         <h1 class="chapter-title">RDF Basics</h1>
-        <p class="ct-marker"><span class="ct-pill">pattern-recognition</span> </p>
-        <p class="chapter-status status-stub">stub</p>
+        <p class="ct-marker"><span class="ct-pill">pattern-recognition</span> What single three-part pattern can record a medal win, a nineteenth-century debt, and a manuscript attribution alike?</p>
+        <p class="chapter-status status-draft">draft</p>
       </header>
 
       <div class="path-tabs" role="tablist" aria-label="Reading path">
@@ -43,11 +43,106 @@
       </div>
 
       <section role="tabpanel" id="panel-short" aria-labelledby="tab-short" class="path-panel path-short">
-        <p><em>Short Synthesis pending.</em></p>
+        <p>Open a day book from 1828. One line reads: &quot;Sept. 15. Settlement with Derius Drake for ax delivered, $1.50.&quot; A human reader unpacks this without effort. There was a transaction. It happened on a date. It involved a person. It concerned an object and an amount of money. The line is one string of ink, but the knowledge in it is a small web of connected claims.</p>
+<p>A spreadsheet forces that web into a row: one column for date, one for person, one for amount. This works until it does not. What if two people were involved? What if the amount is disputed between two sources? What if you want to connect Derius Drake in this ledger to the same Derius Drake in a church register? Rows and columns answer the questions the table designer anticipated. Historical research keeps asking questions nobody anticipated.</p>
+<p>The Resource Description Framework, RDF, takes the opposite starting point. Instead of designing a container and pouring data in, you break knowledge down into its smallest complete statements and let structure emerge from their connections. Each statement is a triple: subject, predicate, object. The transaction involves Derius Drake. The transaction has the date 1828-09-15. The amount is 1.50 dollars. Each triple stands on its own, and every triple follows the same three-part pattern. Because subjects and objects are identified by web addresses (IRIs), a triple written in Graz can point at a resource defined in Boston, and the two statements join into one graph the moment they meet.</p>
+<p>That is the insight this chapter turns into practice: RDF is a data model, and the formats you will meet, Turtle, JSON-LD, N-Triples, are only different ways of writing the same graph down. Learn to see the graph behind the syntax and the syntaxes become interchangeable, the way you already treat a CSV export and an Excel sheet as two skins of one table. The graph has no fixed schema to outgrow. When a new question arrives, when a second source contradicts the first, when a person turns out to be two people, you add triples. You never redesign the container, because there is no container.</p>
+<p>There is a cost. A graph of atomic statements is more verbose than a tidy table, harder to eyeball, and it needs its own query language before it answers anything (see [03-03_sparql], Querying with SPARQL). The trade is worth it exactly where humanities data lives: heterogeneous sources, incomplete records, contested claims, and entities that recur across collections.</p>
+<p>The smallest mental model: RDF is knowledge chopped into three-word sentences, and a database is what happens when the sentences start sharing words.</p>
+
       </section>
 
       <section role="tabpanel" id="panel-long" aria-labelledby="tab-long" class="path-panel path-long">
-        <p><em>Long Form pending.</em></p>
+        <h3>1. From Table to Graph</h3>
+<p>Most data you have met so far arrives in rectangles. A CSV of Olympic athletes has one row per result and one column per attribute. A relational database refines the rectangle but keeps its logic: schema first, data second. The schema is a set of decisions about which questions the data will answer.</p>
+<p>Historical material resists this. Consider a single line from the Wheaton Day Book, an account book kept in Massachusetts between 1828 and 1859: a settlement with one Derius Drake for an ax, at one dollar fifty. To put this in a table you must decide the columns now: date, creditor, debtor, commodity, amount, currency. Then the next page produces an entry with two debtors, or a payment partly in kind, or a sum a later hand corrected. Each surprise is a schema migration.</p>
+<p>RDF inverts the order. You commit to nothing but a pattern: every piece of knowledge is expressed as a statement with exactly three parts, subject, predicate, and object. Such a statement is called a triple.</p>
+<pre><code>subject         predicate        object
+:Transaction123 :involvesPerson  :DeriusDrake
+:Transaction123 :amount          &quot;1.50&quot;
+</code></pre>
+<p>A set of triples is an RDF graph. Subjects and objects are the nodes; predicates are the labelled, directed edges between them. Two triples that mention the same resource connect automatically. Nothing else is needed: no table definition, no column order, no migration when statement number 5001 has a shape the first 5000 lacked.</p>
+<p>The graph view has a second consequence that tables cannot replicate. Because nodes are identified globally (next section), graphs from different sources merge by simple union. Your transcription of the day book and a colleague&#39;s prosopography of Massachusetts farmers become one queryable graph the moment both use the same identifier for Derius Drake. This is the mechanism behind Linked Open Data (see [03-04_linked-open-data], Linked Open Data).</p>
+<h3>2. Three Kinds of Term</h3>
+<p>Every position in a triple is filled by one of three kinds of term, and the rules about which kind may stand where are the whole grammar of RDF.</p>
+<p><strong>IRIs</strong> identify resources. An IRI (Internationalized Resource Identifier) is a generalisation of the URL that permits Unicode. <code>http://example.org/DeriusDrake</code> names a person; the IRI is the name, whether or not a browser finds a page there. IRIs give RDF its global reach: because identifiers live in namespaces you control, your <code>:Transaction123</code> cannot collide with anyone else&#39;s, and reusing a foreign IRI, say a Wikidata entity, is an act of deliberate linking, an idea you know from authority files (see [02-05_authority-data-and-vocabularies], Authority Data and Controlled Vocabularies).</p>
+<p><strong>Literals</strong> carry values: strings, numbers, dates. A literal may declare a datatype (<code>&quot;1828-09-15&quot;^^xsd:date</code>) or a language tag (<code>&quot;axe&quot;@en</code>). Datatypes matter because they tell a machine that <code>&quot;1.50&quot;</code> is a decimal it can sum, and that two spellings of a date denote the same day.</p>
+<p><strong>Blank nodes</strong> are resources without a global name, existential placeholders. Use them when something must exist as a node, the unnamed recipient of a payment, but minting an IRI for it would be pretence of knowledge you do not have. Use them sparingly; a blank node cannot be referenced from outside its graph.</p>
+<p>The placement rules: a subject is an IRI or blank node. A predicate is always an IRI. An object may be any of the three. In consequence, a literal can never be the subject of a statement. You cannot say things about <code>&quot;1.50&quot;</code>; you can only say things about resources. If you catch yourself wanting to annotate a value, that is a modelling signal: the value deserves promotion to a resource, a <code>:MoneyAmount123</code> with a <code>:value</code> and a <code>:unit</code>, which can then carry as many further statements as the sources demand.</p>
+<p>In practice you will mint IRIs in a namespace you control, typically under a project domain, and reuse foreign IRIs wherever a shared referent exists. The decision follows a simple heuristic. Entities your project is <em>about</em> and that others might want to link to (persons, places, transactions, documents) get project IRIs, ideally stable ones (see [02-06_persistent-identifiers], Persistent Identifiers). Entities the wider world already identifies (Massachusetts, the US dollar, the concept &quot;speed skating&quot;) should point at established authorities such as Wikidata or the GND, because every reused IRI is a free join with everyone else&#39;s data.</p>
+<h3>3. Writing the Graph Down: Turtle</h3>
+<p>Turtle is the serialisation you will read and write most. It is designed for humans, and it compresses repetitive graph structure into a form close to prose punctuation. Here is the Wheaton entry, built up in three steps.</p>
+<p>First, one triple, fully spelled out:</p>
+<pre><code class="language-turtle">&lt;http://example.org/Transaction123&gt; &lt;http://example.org/involvesPerson&gt; &lt;http://example.org/DeriusDrake&gt; .
+</code></pre>
+<p>Legal, but unreadable. Second, prefix declarations shorten the namespaces:</p>
+<pre><code class="language-turtle">@prefix : &lt;http://example.org/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+:Transaction123 :involvesPerson :DeriusDrake .
+</code></pre>
+<p>Third, Turtle&#39;s punctuation folds several statements about one subject together. A semicolon repeats the subject; a comma repeats subject and predicate; <code>a</code> abbreviates <code>rdf:type</code>:</p>
+<pre><code class="language-turtle">@prefix : &lt;http://example.org/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+:Transaction123 a :FinancialTransaction ;
+    :date &quot;1828-09-15&quot;^^xsd:date ;
+    :involvesPerson :DeriusDrake ;
+    :amount &quot;1.50&quot;^^xsd:decimal ;
+    :description &quot;Settlement for ax delivered on September 1st&quot; .
+</code></pre>
+<p>Read this back as what it is: five triples sharing a subject. <code>:Transaction123</code> is typed as a financial transaction; it carries a date, a person, an amount, and a free-text description. The datatype annotations are the machine-facing half of the contract. <code>^^xsd:date</code> promises a parseable calendar day; <code>^^xsd:decimal</code> promises arithmetic.</p>
+<p>Notice what the model made you do. The day book line mentioned an ax, a delivery date in September, and a settlement date. The five triples above capture some of this and flatten the rest into the description string. Modelling is deciding which distinctions become structure and which stay prose, and the decision is revisable: tomorrow you can add <code>:concernsObject :Ax123</code> without touching what exists. Data modelling as an activity has its own chapter (see [02-02_data-modelling-basics], Data Modelling Basics).</p>
+<h3>4. One Graph, Many Serialisations</h3>
+<p>The graph is the invariant; the file format is a choice. The same five triples in N-Triples, the line-based format used for bulk exchange and diffing:</p>
+<pre><code>&lt;http://example.org/Transaction123&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://example.org/FinancialTransaction&gt; .
+&lt;http://example.org/Transaction123&gt; &lt;http://example.org/date&gt; &quot;1828-09-15&quot;^^&lt;http://www.w3.org/2001/XMLSchema#date&gt; .
+&lt;http://example.org/Transaction123&gt; &lt;http://example.org/involvesPerson&gt; &lt;http://example.org/DeriusDrake&gt; .
+</code></pre>
+<p>(Two triples omitted; the pattern continues.) Every line is one complete triple, no prefixes, no state. Ugly for humans, ideal for machines and version control.</p>
+<p>And in JSON-LD, the format web APIs and IIIF manifests speak:</p>
+<pre><code class="language-json">{
+  &quot;@context&quot;: {
+    &quot;@vocab&quot;: &quot;http://example.org/&quot;,
+    &quot;xsd&quot;: &quot;http://www.w3.org/2001/XMLSchema#&quot;
+  },
+  &quot;@id&quot;: &quot;http://example.org/Transaction123&quot;,
+  &quot;@type&quot;: &quot;FinancialTransaction&quot;,
+  &quot;date&quot;: { &quot;@value&quot;: &quot;1828-09-15&quot;, &quot;@type&quot;: &quot;xsd:date&quot; },
+  &quot;involvesPerson&quot;: { &quot;@id&quot;: &quot;http://example.org/DeriusDrake&quot; },
+  &quot;amount&quot;: { &quot;@value&quot;: &quot;1.50&quot;, &quot;@type&quot;: &quot;xsd:decimal&quot; }
+}
+</code></pre>
+<p>JSON-LD is ordinary JSON with an <code>@context</code> that maps keys to IRIs. It exists because the Semantic Web community learned, after years of asking developers to adopt new formats, to add semantics to a format developers already used. A JavaScript application can consume JSON-LD as plain JSON and ignore the semantics entirely; an RDF tool reads the same file as a graph. This dual readability is why IIIF chose it.</p>
+<p>Two further formats you will encounter without writing them. RDF/XML, the oldest serialisation, embeds the graph in XML and survives in archival contexts and older repository software. RDFa embeds triples in HTML attributes so that a web page carries its own structured data; search engines read it, and schema.org rests on this mechanism.</p>
+<p>The practical rule: choose Turtle for editing, teaching, and anything a human reviews; N-Triples for pipelines, dumps, and version control diffs; JSON-LD for APIs and the web; RDF/XML only when a legacy system demands it. Conversion between all of them is lossless, because each is a complete notation for the same abstract graph. Exercise 3 makes you perform the round-trip so the equivalence stops being a claim and becomes an observation.</p>
+<h3>5. Typing and a Little Schema: RDFS</h3>
+<p>RDF alone says nothing about what a <code>:FinancialTransaction</code> is. RDF Schema (RDFS) adds a small vocabulary, about a dozen terms, for describing your terms. The two mechanisms you will use constantly:</p>
+<pre><code class="language-turtle">@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+:FinancialTransaction rdfs:subClassOf crm:E7_Activity ;
+    rdfs:label &quot;Financial Transaction&quot;@en ;
+    rdfs:comment &quot;A documented exchange of value between economic agents.&quot;@en .
+
+:involvesPerson a rdf:Property ;
+    rdfs:domain :FinancialTransaction ;
+    rdfs:range :Person .
+</code></pre>
+<p><code>rdfs:subClassOf</code> builds hierarchies with inheritance: every <code>:FinancialTransaction</code> is automatically also a <code>crm:E7_Activity</code>, so a query for activities finds your transactions without extra triples. Here your local vocabulary docks onto CIDOC-CRM, the reference ontology for cultural heritage (see [03-05_ontologies-and-cidoc], Ontologies). <code>rdfs:domain</code> and <code>rdfs:range</code> declare what kinds of resource a property connects. Beware a trap for programmers: these are not validation constraints. RDF operates under the open-world assumption, so a domain declaration does not reject a mistyped subject; it infers that the subject is a transaction. Validation is a separate concern with separate tools (SHACL), and absence of a triple never means the fact is false, only that it is unstated. For most DH vocabularies RDFS is enough; reach for OWL only when you need disjointness, cardinality, or real inference.</p>
+<h3>6. Statements about Statements</h3>
+<p>Historical data has a need most data models ignore: the claims themselves have provenance. The ledger says the amount was 1.50; a journal in another hand says 1.75. You do not want to pick a winner. You want to record both claims, each with its source and your confidence in it.</p>
+<p>Classic RDF offers workarounds (reification, named graphs), all clumsy at the level of a single statement. The current answer is RDF-star, standardised in RDF 1.2, which lets a triple be the subject of another triple, written with double angle brackets:</p>
+<pre><code class="language-turtle">&lt;&lt; :MoneyAmount123 :value &quot;1.50&quot;^^xsd:decimal &gt;&gt;
+    :accordingTo :LedgerBook7 ;
+    :certainty 0.9 .
+
+&lt;&lt; :MoneyAmount123 :value &quot;1.75&quot;^^xsd:decimal &gt;&gt;
+    :accordingTo :JournalBook3 ;
+    :certainty 0.7 .
+</code></pre>
+<p>Two conflicting attestations coexist, each annotated, neither erased. For source-critical modelling this is the structural mechanism the factoid approach builds on (see [03-06_factoid-and-prosopography], Factoid and Prosopography). At this stage, recognise the pattern and its purpose; you will use it in earnest once plain triples feel routine.</p>
+
       </section>
 
       <section class="chapter-shared">

@@ -45,6 +45,7 @@ The `_legacy/` folder (after Phase 0a) contains substrate from eight course unit
 | `_legacy/WissMod/` | 1 stub (14 lines) | none | (skip) |
 | `_legacy/DataSteward/` | 2 files | weak | 06 Workflows (licenses) |
 | `_legacy/Schools/Wuppertal21/` | workshop materials | none | (skip) |
+| Pollin 2025 diss., ch. 5 "Operationalising Historical Information" (author's copy, external, not in repository) | ~1 chapter, English academic prose | strong | 03 Semantic Web |
 
 Strong substrates carry the majority of the legacy material's value. The two weak-or-none substrates leave their chapters to be vault-backed only.
 
@@ -74,6 +75,8 @@ Three partial gaps (existing documents, need extension):
 7. Claude Code und Tools: `Applied Generative AI/.../Claude Code.md` exists; tool integration patchy.
 
 Phase 1.5 closes these before the corresponding chapters are written.
+
+Update 2026-07-23: the dissertation substrate (Pollin 2025, ch. 5) covers the content of gaps 3 and 4 (Semantic Web Intro, LOD Intro) on the substrate side. The vault atoms remain to be written for vault completeness, but chapters 03-01 and 03-04 are no longer blocked on them.
 
 ## Writing Queue
 
@@ -113,7 +116,7 @@ Fills as chapters get stubbed in Phase 1. Status `stub` means folder and frontma
 | 02-07 | FAIR Principles in Practice | 02 | decomposition | — | Research Data Concepts | stub | |
 | 02-08 | Metadata and Dublin Core | 02 | pattern-recognition | — | — | stub | Vault gap (Dublin Core dedicated) |
 | 03-01 | Semantic Web Intro | 03 | abstraction | InfoMod_0_WebofData_LOD | — | stub | Vault gap (closes in Phase 1.5) |
-| 03-02 | RDF Basics | 03 | pattern-recognition | InfoMod_1_RDF | Standards und Datenmodelle | stub | |
+| 03-02 | RDF Basics | 03 | pattern-recognition | InfoMod_1_RDF; Pollin 2025 ch. 5 | RDF.md, RDFS.md (Standards und Datenmodelle) | draft | Block-03 pilot, written out of wave order (operator decision 2026-07-23) |
 | 03-03 | Querying with SPARQL | 03 | algorithm-design | InfoMod_2_SPARQL | Standards und Datenmodelle | stub | |
 | 03-04 | Linked Open Data | 03 | pattern-recognition | InfoMod_0_WebofData_LOD | — | stub | Vault gap (closes in Phase 1.5) |
 | 03-05 | Ontologies: OWL, CIDOC-CRM, RiC-O | 03 | abstraction | — | Standards und Datenmodelle | stub | |
