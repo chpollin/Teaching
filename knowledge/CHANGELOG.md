@@ -20,6 +20,14 @@ Dated list of substantial changes to the knowledge documents. One line per chang
 
 Format: `YYYY-MM-DD — Doc — Change`
 
+## 2026-07-23
+
+- 2026-07-23 — `diss-integration.md` — created: content-filling programme D0 to D8 (dissertation + teaching corpus + Grounded Vault evidence layer), supersedes roadmap M3 to M9
+- 2026-07-23 — `roadmap.md` — deviation entry and status tracker updated (M3 to M9 superseded by D-programme)
+- 2026-07-23 — `INDEX.md` — diss-integration.md registered in reading order and document map
+- 2026-07-23 — `journal.md` — two entries: pilot chapter 03-02 drafted; D-programme decided
+- 2026-07-23 — `data.md` — dissertation ch. 5 registered as external substrate; 03-02 row set to draft; vault-gap note updated
+
 ## 2026-05-14
 
 - 2026-05-14 — `architecture.md` — Local Preview section added documenting `serve.py` (`/Teaching/` prefix mount under `docs/`)

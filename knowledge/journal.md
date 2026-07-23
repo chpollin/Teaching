@@ -23,6 +23,16 @@ authors: ["Christopher Pollin"]
 
 Chronological record of decisions, deviations, and writing sessions. Append-only. Newest entries on top.
 
+## 2026-07-23 — Content-filling programme re-planned: D0 to D8 (diss-integration.md)
+
+Writer: Claude (orchestrator session), decisions by Christopher Pollin.
+
+Three operator decisions recorded in the new plan document `diss-integration.md`: (1) the author's dissertation (Pollin 2025, published on unipub) becomes the third substrate source, mapped chapter-by-chapter to the eight blocks; (2) a Grounded Vault instance (working name `skriptum-vault`, from the template DigitalHumanitiesCraft/grounded-vault, own repository) becomes the evidence layer between raw sources and chapter writing; (3) grounding depth is substrate-layer, chapters stay teaching prose without anchor apparatus.
+
+The teaching corpus (courses per chpollin.github.io/teaching) joins as source family; with it every block has strong substrate, including the formerly gap-flagged Projektmanagement (Block 06) and the substrate-less Block 08. Milestones D0 to D8 supersede roadmap M3 to M9 (roadmap status tracker updated); M10/M11 remain, M10 extended by a chapter-against-claims consistency pass. Execution model: three Opus agent waves per milestone (distill, claim+write, review) under one orchestrator, flat delegation, self-reports verified against real file state.
+
+Open operator points before D0 executes: dissertation full-text source, pilot 03-02 review, D-order confirmation.
+
 ## 2026-07-23 — First chapter draft: 03-02 RDF Basics (Block-03 pilot)
 
 Writer: Claude (Opus-class agent), directed by Christopher Pollin.

@@ -36,6 +36,7 @@ The Obsidian vault at `c:/Users/Chrisi/Documents/obsidian/Projects/dh-developer-
 5. `architecture.md` — build pipeline, routing, deployment
 6. `user-stories.md` — eight reader roles
 7. `roadmap.md` — phases, milestones, status tracker
+7a. `diss-integration.md` — content-filling programme D0 to D8 (dissertation + teaching corpus + Grounded Vault evidence layer); supersedes roadmap M3 to M9
 8. `cheat-sheet.md` — operational rules on one page (for active writing sessions)
 9. `sources.md` — project-level bibliography
 10. `journal.md` — chronological record
@@ -55,6 +56,7 @@ When fixing a specific failure mode, jump to the document whose function matches
 | `architecture.md` | Build | How is the static site assembled and deployed? |
 | `user-stories.md` | Substance (narrative) | Who uses this and for what? |
 | `roadmap.md` | Plan | What is the sequence of work, what milestones, what is next? |
+| `diss-integration.md` | Plan (content programme) | How do dissertation, teaching corpus, and the Grounded Vault evidence layer fill the 45 chapters? |
 | `cheat-sheet.md` | Operational summary | What are the non-negotiable rules in shortest form? |
 | `sources.md` | Bibliography | What are the project-level references for the knowledge base? |
 | `journal.md` | Genesis | How did we get here and what was decided? |

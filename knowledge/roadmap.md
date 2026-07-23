@@ -261,6 +261,8 @@ After M9: all 45 chapters at `status: review` minimum. Skriptum is content-compl
 
 ## Deviations
 
+**2026-07-23 — D-programme supersedes M3 to M9.** The content-filling sequence is re-planned in `diss-integration.md`: the author's dissertation and the teaching corpus become substrate sources, a Grounded Vault instance (`skriptum-vault`, from the template DigitalHumanitiesCraft/grounded-vault) becomes the evidence layer, and milestones D0 to D8 replace the wave sequence M3 to M9. M10 and M11 remain, M10 extended by a chapter-against-claims consistency pass. Quality gates apply unchanged. First deliverable of the new programme: pilot chapter 03-02 (see `journal.md`).
+
 The wave order in Phase 3 is recommendation. If external context (a workshop, a citation request, a paper deadline) makes a different chapter more urgent, that chapter is written first. The deviation is logged in `journal.md` with reason. Quality gates apply regardless of order.
 
 If a chapter fails a Gate C spot-check, it returns to `draft`. The wave is not complete with one broken chapter. Repair before marking M5–M9 complete.
@@ -275,13 +277,13 @@ The current state of each milestone. Updated as milestones complete.
 |---|---|---|
 | M1 — Phase 0 complete | completed | Three commits on master: 28dd38e (Promptotyping layer), 1b6f6bf (migration), 2483b2f (architecture). Build runs, eight block index pages render. |
 | M2 — 45 chapter stubs | completed | 45/45 stubs written. Build renders 45 chapter pages plus 9 block indices. Gate A mechanical checks pass: frontmatter valid, chapters.json present, search.json present, navigation reachable, assets load under /Teaching/ prefix. |
-| M3 — Vault gaps closed | pending | Four real gaps, three partial gaps documented in `data.md`. |
-| M4 — Pilot Block 0 | pending | |
-| M5 — Wave A (07 AI) | pending | |
-| M6 — Wave B (05 Editions) | pending | |
-| M7 — Wave C (02 Data + 08 InfoViz) | pending | |
-| M8 — Wave D (04 Web + 01 CS) | pending | |
-| M9 — Wave E (03 Semantic Web + 06 Workflows) | pending | |
+| M3 — Vault gaps closed | superseded | Replaced by D-programme (`diss-integration.md`); the two Block-03 gaps are substrate-covered by the dissertation, Projektmanagement by the teaching corpus. |
+| M4 — Pilot Block 0 | superseded | Pilot function moved to chapter 03-02 (drafted 2026-07-23); Block 00 becomes D8. |
+| M5 — Wave A (07 AI) | superseded | Now D5. |
+| M6 — Wave B (05 Editions) | superseded | Now D4. |
+| M7 — Wave C (02 Data + 08 InfoViz) | superseded | Now D2 and D3. |
+| M8 — Wave D (04 Web + 01 CS) | superseded | Now D7. |
+| M9 — Wave E (03 Semantic Web + 06 Workflows) | superseded | Now D1 (in progress: 03-02 drafted) and D6. |
 | M10 — Exercises and cross-linking | pending | |
 | M11 — Launch | pending | |
 
