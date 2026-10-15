@@ -14,7 +14,7 @@ language: en
 
 # Specification
 
-Teaching organises reusable units around an observable learning outcome, a concrete task and inspectable evidence. A course or workshop selects these units for its audience; topic navigation offers a second way into the same material.
+Teaching organises reusable units around an observable learning outcome, a concrete task and inspectable evidence. A course or workshop selects these units for its audience. Topic navigation offers a second way into the same material.
 
 ## Content areas
 
@@ -36,8 +36,8 @@ The vault document `Projects/Teaching/ai-literacies.md` owns the competence prof
 
 | Path | Entry task | Inspectable performance | Reuse boundary |
 |---|---|---|---|
-| Understand and evaluate generative AI | Compare outputs for a domain question or extract structured information from a source image | Distinguish observations, generated claims, verified values and unresolved cases | VetMedAI is source material; examples, rights and domain assumptions require review |
-| Develop artefacts through Promptotyping | Describe a small research or teaching artefact, build an iteration and inspect it against explicit requirements | Relate requirements, data, implementation and acceptance evidence | Prefer the established method and existing KCE material; a local task explains its audience-specific adaptation |
+| Understand and evaluate generative AI | Compare outputs for a domain question or extract structured information from a source image | Distinguish observations, generated claims, verified values and unresolved cases | VetMedAI is source material. Examples, rights and domain assumptions require review |
+| Develop artefacts through Promptotyping | Describe a small research or teaching artefact, build an iteration and inspect it against explicit requirements | Relate requirements, data, implementation and acceptance evidence | Prefer the established method and existing KCE material. A local task explains its audience-specific adaptation |
 | Organise knowledge and projects with AI harnesses | Prepare a bounded source collection and document an allowed reading or write-back operation | Trace a claim to its source and verify a resulting change against its authorised scope | KCE owns its maintained teaching basis; Grounded Vault and Research Mission Control retain their method definitions |
 
 Information and Data Literacy, Computational Thinking, verification and critical reflection cross these paths. Units identify the prerequisites they actually need. Tool-specific instructions carry the source and context needed for later revision.
@@ -51,14 +51,14 @@ Information and Data Literacy, Computational Thinking, verification and critical
 | Learning outcome | Observable action and the evidence by which it can be assessed |
 | Learning material | Explanation or worked example with public sources and explicit source boundaries |
 | Task | Input, permitted assistance, expected output and instructions sufficient to attempt the task |
-| Assessment | Separate formal, source-based and professional criteria; unresolved cases remain visible |
+| Assessment | Separate formal, source-based and professional criteria. Unresolved cases remain visible |
 | Reflection | Limits, omissions and relevant ethical, infrastructure or institutional constraints |
 | Reuse evidence | Material origin, licence, third-party exceptions and generalisation changes |
 | Media | Optional links to slides, video, code or data serving the same unit |
 | Relationships | Prerequisites, related units and course or workshop uses |
 | Review evidence | What was checked, against which source, and what the responsible person accepted |
 
-This is an editorial contract. A machine-readable catalogue and its parser remain implementation work. Until then, a unit can express the contract as ordinary Markdown. Optional media create no obligation to produce slides or video for every unit. Existing material keeps its language; translation follows a concrete teaching use and carries a relation to the maintained source.
+This is an editorial contract. A machine-readable catalogue and its parser remain implementation work. Until then, a unit can express the contract as ordinary Markdown. Optional media create no obligation to produce slides or video for every unit. Existing material keeps its language. Translation follows a concrete teaching use and carries a relation to the maintained source.
 
 ## Reuse and evidence
 
@@ -76,9 +76,9 @@ These are current renderer contracts. The broader learning-unit contract does no
 
 - A learner enters through a course page and reaches the correct canonical unit with its task and prerequisites.
 - A learner enters through a topic and can identify the appropriate level and material language without knowing the internal folder layout.
-- A teacher reuses a unit after checking sources, rights and context; the adaptation identifies its origin and didactic change.
+- A teacher reuses a unit after checking sources, rights and context. The adaptation identifies its origin and didactic change.
 - A course and a workshop refer to the same unit without copying its text into portfolio data.
-- A KCE reference opens the maintained KCE resource; a local adaptation preserves the relationship to that source.
+- A KCE reference opens the maintained KCE resource. A local adaptation preserves the relationship to that source.
 - An existing public course or material address continues to resolve after navigation changes.
 
 ## Validation and acceptance

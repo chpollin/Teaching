@@ -6,7 +6,7 @@ The academic [teaching page](https://chpollin.github.io/teaching/) provides cour
 
 ## Editorial direction
 
-The author confirmed the shared university-and-workshop scope on 2026-10-15. The former DH Developer Skriptum continues as source material; its independent writing programme has been incorporated into the Applied Generative AI for Research book. KCE retains its maintained teaching system and is linked where it already provides a suitable unit.
+The author confirmed the shared university-and-workshop scope on 2026-10-15. The former DH Developer Skriptum continues as source material. Its independent writing programme has been incorporated into the Applied Generative AI for Research book. KCE retains its maintained teaching system and is linked where it already provides a suitable unit.
 
 Current code still renders the existing chapter organisation. The broader material entry and generalised learning units are documented implementation work. This direction does not establish subject acceptance of existing drafts.
 
@@ -16,7 +16,7 @@ Current code still renders the existing chapter organisation. The broader materi
 - `chapters/` contains existing chapter material.
 - `workshops/` contains workshop examples and teaching sources.
 - `knowledge/` contains the current editorial contract, integration plan and provenance.
-- `site/` and `build.mjs` implement the current site; `docs/` contains generated output.
+- `site/` and `build.mjs` implement the current site. `docs/` contains generated output.
 
 ## Work from the maintained knowledge
 

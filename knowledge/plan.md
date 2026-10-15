@@ -18,7 +18,7 @@ The shared Teaching collection is implemented through a complete learning unit a
 
 ## Existing foundation
 
-The repository contains a chapter renderer, historical course sources and workshop material. The academic website contains course metadata, course detail pages and material references. The shared direction and competence profile are documented. Current code still presents the former textbook organisation; the revised public material navigation is pending.
+The repository contains a chapter renderer, historical course sources and workshop material. The academic website contains course metadata, course detail pages and material references. The shared direction and competence profile are documented. Current code still presents the former textbook organisation. The revised public material navigation is pending.
 
 ## Implementation sequence
 
@@ -32,7 +32,7 @@ The repository contains a chapter renderer, historical course sources and worksh
 
 ## Reuse candidate
 
-The VetMedAI WS4 example from a source image to structured data is a candidate because it connects AI use, data modelling and source verification. Before selecting it, inspect the original slides, notes, data, public source and rights. This candidate is a proposal; no completed OER adaptation or existing ai-literacies repository is assumed.
+The VetMedAI WS4 example from a source image to structured data is a candidate because it connects AI use, data modelling and source verification. Before selecting it, inspect the original slides, notes, data, public source and rights. This candidate is a proposal. No completed OER adaptation or existing ai-literacies repository is assumed.
 
 ## Existing implementation contracts
 

@@ -29,17 +29,17 @@ Teaching maintains learning materials shared across university courses and works
 
 | Document | Use under the shared Teaching direction |
 |---|---|
-| [Architecture](architecture.md) | Prior description of the chapter renderer; verify against code before technical work |
-| [Data](data.md) | Historical substrate and chapter mapping; inspect original sources before reuse |
-| [Design](design.md) | Existing textbook design and writing proposals; evaluate against the actual target interface |
+| [Architecture](architecture.md) | Prior description of the chapter renderer. Verify against code before technical work |
+| [Data](data.md) | Historical substrate and chapter mapping. Inspect original sources before reuse |
+| [Design](design.md) | Existing textbook design and writing proposals. Evaluate against the actual target interface |
 | [User stories](user-stories.md) | Historical DH Developer reader scenarios that may inform a concrete unit |
 | [Sources](sources.md) | Bibliographic leads requiring full-text checks for newly written claims |
-| [Roadmap](roadmap.md) | Superseded textbook milestones; current work follows Plan |
+| [Roadmap](roadmap.md) | Superseded textbook milestones. Current work follows Plan |
 | [Dissertation integration](diss-integration.md) | Superseded D-programme and possible source relationships for book work |
-| [Cheat sheet](cheat-sheet.md) | Historical textbook writing instructions; current action layer governs new work |
+| [Cheat sheet](cheat-sheet.md) | Historical textbook writing instructions. Current action layer governs new work |
 | [Changelog](CHANGELOG.md) | Dated knowledge-base changes |
 
-The former chapter totals, mandatory dual-path writing programme and textbook acceptance milestones are superseded by the author decisions of 2026-10-15. Retained source documents preserve the earlier design. Their normative statements apply only to the old textbook context; current requirements are in Specification. Existing machine-enforced chapter rules remain current renderer contracts until implementation changes them.
+The former chapter totals, mandatory dual-path writing programme and textbook acceptance milestones are superseded by the author decisions of 2026-10-15. Retained source documents preserve the earlier design. Their normative statements apply only to the old textbook context. Current requirements are in Specification. Existing machine-enforced chapter rules remain current renderer contracts until implementation changes them.
 
 ## Material locations
 

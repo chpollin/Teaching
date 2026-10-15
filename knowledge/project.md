@@ -18,7 +18,7 @@ Teaching maintains reusable learning materials for university teaching and works
 
 ## Purpose and audience
 
-The shared collection serves students and practitioners in the humanities, cultural heritage, libraries, research support and administration, together with teachers adapting exercises. A unit identifies its actual audience and prerequisites. Introductory AI teaching can start with domain expertise and ordinary computer use; technical units state the additional data and programming knowledge they require.
+The shared collection serves students and practitioners in the humanities, cultural heritage, libraries, research support and administration, together with teachers adapting exercises. A unit identifies its actual audience and prerequisites. Introductory AI teaching can start with domain expertise and ordinary computer use. Technical units state the additional data and programming knowledge they require.
 
 ## Editorial organisation
 
@@ -31,10 +31,10 @@ The ai-literacies area develops role-sensitive AI competencies through the curri
 | Project | Responsibility | Relationship with Teaching |
 |---|---|---|
 | Academic teaching portfolio | Course context, institutional evidence and public material access | Links to maintained material targets under [Integration](integration.md) |
-| KCE | Shared Knowledge, Context and Agentic Engineering teaching system | Teaching links to suitable canonical material; adaptations identify their didactic purpose and source |
+| KCE | Shared Knowledge, Context and Agentic Engineering teaching system | Teaching links to suitable canonical material. Adaptations identify their didactic purpose and source |
 | Applied Generative AI for Research | Authored book and its source-bound manuscript | Receives selected and independently edited material from the former DH Developer Skriptum |
 | Workshops and courses | Actual audience, session sequence and teaching context | Select reusable units and retain contextual evidence |
-| Vault | Theory, competence profile and cross-project relationships | Supplies research context; public teaching text has public source references |
+| Vault | Theory, competence profile and cross-project relationships | Supplies research context. Public teaching text has public source references |
 
 ## Material ownership
 

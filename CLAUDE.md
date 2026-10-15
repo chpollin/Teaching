@@ -10,7 +10,7 @@ Apply these decisions when reading the retained textbook-era documents. Their ch
 
 ## Writing and evidence
 
-- Write knowledge documents in English. Preserve existing learning-material languages; translate for a concrete teaching purpose.
+- Write knowledge documents in English. Preserve existing learning-material languages. Translate for a concrete teaching purpose.
 - Follow the author's global writing style. Use one source for each maintained claim and link its consumers.
 - Read original sources before adding or correcting cited claims. Separate source findings, adaptations and observed behaviour.
 - Describe the current stage accurately. A draft, validation result, professional acceptance and publication are separate events.
