@@ -1,118 +1,56 @@
 ---
-title: "DH Developer Skriptum — Project"
+title: Project
 project:
-  name: dh-developer-skriptum
+  name: Teaching
   repository: https://github.com/chpollin/Teaching
 method:
   name: Promptotyping
   url: https://dhcraft.org/Promptotyping/
-template:
-  name: Vorlage Projekt-Wissensdokument
-  version: 0.1
-  url: https://dhcraft.org/Promptotyping/promptotyping-document/project
-  alias: https://dhcraft.org/Promptotyping/#promptotyping-document-project
-status: active
+status: draft
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-10-15
 language: en
-version: 0.1
-authors: ["Christopher Pollin"]
-topics:
-  - "[[Digital Humanities]]"
-  - "[[Computational Thinking]]"
-  - "[[AI Literacy]]"
-  - "[[Data Literacy]]"
-  - "[[Promptotyping]]"
-knowledge-sources:
-  institutions:
-    - label: "Centre for Information Modelling, University of Graz"
-      url: https://informationsmodellierung.uni-graz.at/
-    - label: "DHCraft"
-      url: https://dhcraft.org/
-  methods:
-    - label: "Promptotyping Method"
-      url: https://dhcraft.org/Promptotyping/
-    - label: "Computational Thinking (Wing 2006)"
-      url: https://doi.org/10.1145/1118178.1118215
 ---
 
-# DH Developer Skriptum — Project
+# Project
 
-## Scope
+Teaching maintains reusable learning materials for university teaching and workshops. Learners work with concrete data, sources and artefacts, and teachers assemble contextual courses from the same maintained units. The academic website provides the public entry through course descriptions and a thematic material overview.
 
-An English-language textbook for the Digital Humanities Developer. Forty-five atomic chapters in eight thematic blocks. Each chapter has two H2 sections (Short Synthesis and Long Form) and is framed by one Computational Thinking operation. The textbook is published as a static site on GitHub Pages and developed under the Promptotyping method.
+## Purpose and audience
 
-The project is a refactor of `chpollin/Teaching`, a German-language collection of course materials from 2022 and 2023. Existing material is moved to `_legacy/` and serves as research substrate; no substrate is quoted verbatim.
+The shared collection serves students and practitioners in the humanities, cultural heritage, libraries, research support and administration, together with teachers adapting exercises. A unit identifies its actual audience and prerequisites. Introductory AI teaching can start with domain expertise and ordinary computer use; technical units state the additional data and programming knowledge they require.
 
-## Not in Scope
+## Editorial organisation
 
-- Introductory text for readers who do not intend to build artefacts.
-- A Python textbook with humanities examples. Code is one of three literacies.
-- An introduction to machine learning. AI Literacy is treated operationally.
-- A translation of the German substrate. Substrate is research material.
+The collection connects computational foundations, data and knowledge modelling, web development, digital editions, research workflows, information visualisation and generative AI. These are discovery topics. A unit has one maintained source and may appear under several topics or in several course selections.
 
-## Mission
+The ai-literacies area develops role-sensitive AI competencies through the curriculum profile in the vault. Concrete learning outcomes, tasks, evidence and media belong to this repository and follow [Specification](specification.md).
 
-The reader who finishes the textbook can: model humanities data in a chosen format and ontology, operate a Linux toolchain, transform data between formats, deploy a static site, build a TEI edition with an XSLT pipeline, manage a research project with version control and clear licensing, operate generative AI as a working tool, and visualise the result.
+## Project relationships
 
-Output target: capacity to apply the Promptotyping method to a self-defined research artefact.
+| Project | Responsibility | Relationship with Teaching |
+|---|---|---|
+| Academic teaching portfolio | Course context, institutional evidence and public material access | Links to maintained material targets under [Integration](integration.md) |
+| KCE | Shared Knowledge, Context and Agentic Engineering teaching system | Teaching links to suitable canonical material; adaptations identify their didactic purpose and source |
+| Applied Generative AI for Research | Authored book and its source-bound manuscript | Receives selected and independently edited material from the former DH Developer Skriptum |
+| Workshops and courses | Actual audience, session sequence and teaching context | Select reusable units and retain contextual evidence |
+| Vault | Theory, competence profile and cross-project relationships | Supplies research context; public teaching text has public source references |
 
-## The Literacy Trias
+## Material ownership
 
-The textbook treats three literacies as one practice with three lenses.
+`_legacy/` preserves historical course sources, `chapters/` holds the existing chapter collection and `workshops/` holds workshop material. Their current paths and existing public addresses remain stable during the conceptual integration. Generated output in `docs/` is owned by the existing renderer.
 
-**Data Literacy** is the capacity to read, structure, model, and license data — knowing what a dataset is, what a controlled vocabulary provides, when XML is preferable to CSV, what a persistent identifier commits to.
+The author confirmed the shared university-and-workshop scope on 2026-10-15. The independent ai-literacies platform and the separate DH Developer textbook completion programme are superseded. Existing drafts retain their actual review state. Their existence supplies no evidence of subject acceptance.
 
-**Computational Literacy** is the capacity to operate computational systems — using a shell, version-controlling code, transforming formats with scripts, deploying a static site, running a pipeline.
+## Development principle
 
-**AI Literacy** is the capacity to operate generative AI as a tool — writing prompts that distil knowledge, recognising LLM hallucination, knowing which research operations LLMs support and which they damage, building harnesses with discipline.
+Concrete teaching needs select the next unit. Each selected unit gains the smallest complete combination of learning outcome, material, task and assessment. An existing KCE unit or external teaching resource is linked where it already meets the need. A new local treatment carries a reason for the adaptation.
 
-The three literacies share a methodological core: Computational Thinking — Decomposition, Pattern Recognition, Abstraction, Algorithm Design — applied equally to data modelling, code, and prompt design. Each chapter foregrounds one CT operation.
-
-## Rationale
-
-Three pressures motivate the project.
-
-First, generative AI has changed the operational profile of a humanities developer's work: prompt engineering, agent harnesses, and LLM-assisted curation are now research tools. Teaching materials are not yet adjusted.
-
-Second, the existing `chpollin/Teaching` substrate is fragmented across courses, dated, and German-only. Consolidation is required.
-
-Third, the DHCraft consultancy practice and the Applied Generative AI working group (AGKI-AG) produce practical knowledge — on AI harnesses, edition pipelines, the Promptotyping method itself — without a teaching home.
-
-## Audience
-
-Eight practice-driven reader roles, detailed in `user-stories.md`: Edition Builder, Research Data Engineer, Cultural-Heritage Tool Maker, AI-Augmented Researcher, Knowledge Graph Builder, Teaching Adopter, Self-Learner, Coding Agent. Each role brings concrete DH project tasks; stories drive chapter design choices.
-
-The Short path serves first-encounter readers and Self-Learners on a new topic. The Long path serves practising readers executing tasks. Both paths are written for every chapter.
-
-## Method
-
-The textbook is itself a Promptotyping artefact. Its knowledge base is in `knowledge/`, its action layer in `CLAUDE.md`, its substrate in `_legacy/`, its build pipeline in `build.mjs`. Every writing session is recorded in `journal.md`. Quality gates with mechanical and human acceptance criteria are specified in `specification.md`.
-
-## Source-of-Truth Rule
-
-The repository is canonical. The Obsidian vault at `c:/Users/Chrisi/Documents/obsidian/` mirrors the project for personal knowledge management and provides research substrate, but textbook content lives only in the repository.
-
-Vault-backing references (`vault_backing:` in chapter frontmatter) are dated research traces with a `read_on` field, not live dependencies. The Vault-Drift Protocol in `architecture.md` describes the handling.
-
-## Visibility
-
-The site is public from the first push to `master`. GitHub Pages serves `chpollin.github.io/Teaching/` as soon as the build runs, including while most chapters are stubs. Stubs carry a "Chapter in progress" marker with a link to `_legacy/` substrate where present.
-
-## Success Criteria
-
-- Forty-five chapters published with both paths, CT-marker, exercises, cross-references.
-- A reader can complete the Short path through a block in one sitting and the Long path over a week.
-- At least three academic articles or blog posts cite the textbook as a teaching resource within twelve months of launch.
-- The textbook is referenced by the DHCraft training portfolio.
-- The build pipeline remains under 200 lines without becoming a maintenance burden.
+The strategic integration is documentation. The revised site navigation, a structured material catalogue and the first generalised OER unit are subsequent implementation work described in [Plan](plan.md).
 
 ## Related
 
-- `specification.md` (formal scope)
-- `design.md` (voice and form)
-- `roadmap.md` (operational sequence)
-- `user-stories.md` (reader roles)
-- [[Project Overview DH Developer Skriptum]] (vault mirror)
-- [[Promptotyping]] (method)
-- [[Applied-GenerativeAI MOC]] (AI Literacy entry point)
+- [Specification](specification.md)
+- [Integration](integration.md)
+- [Plan](plan.md)
+- [Journal](journal.md)

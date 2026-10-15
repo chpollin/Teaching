@@ -1,95 +1,38 @@
-# DH Developer Skriptum
+# Teaching
 
-An English-language textbook for the Digital Humanities Developer. Forty-five atomic chapters in eight thematic blocks. Each chapter is readable along two paths (a short essayistic synthesis and a long systematic exposition) and is framed by one Computational Thinking operation. The textbook is produced under the Promptotyping method.
+Reusable learning materials for university teaching and workshops in the Digital Humanities and related professional contexts. Materials connect source work, data, computational practice and generative AI through concrete tasks and verifiable results.
 
-The site is published at `https://chpollin.github.io/Teaching/`.
+The academic [teaching page](https://chpollin.github.io/teaching/) provides course context and is the intended entry for thematic material discovery. This repository maintains the material. ai-literacies is the AI-related area within the shared collection.
 
-## Status
+## Editorial direction
 
-In development. The Promptotyping infrastructure (knowledge folder, action layer, vault mirror) is complete. Phase 0 (repository refactor) is the next step. Chapters are stubs or unwritten. See `knowledge/roadmap.md` for the milestone status.
+The author confirmed the shared university-and-workshop scope on 2026-10-15. The former DH Developer Skriptum continues as source material; its independent writing programme has been incorporated into the Applied Generative AI for Research book. KCE retains its maintained teaching system and is linked where it already provides a suitable unit.
 
-This repository is a refactor of a 2022–2023 collection of teaching materials in German. Legacy content is being moved to `_legacy/` and serves as research substrate for the new English textbook. Legacy URLs receive redirect stubs.
+Current code still renders the existing chapter organisation. The broader material entry and generalised learning units are documented implementation work. This direction does not establish subject acceptance of existing drafts.
 
-## What This Textbook Teaches
+## Materials
 
-Three literacies as one practice:
+- `_legacy/` contains historical course sources.
+- `chapters/` contains existing chapter material.
+- `workshops/` contains workshop examples and teaching sources.
+- `knowledge/` contains the current editorial contract, integration plan and provenance.
+- `site/` and `build.mjs` implement the current site; `docs/` contains generated output.
 
-- **Data Literacy** — reading, structuring, modelling, and licensing humanities data.
-- **Computational Literacy** — operating shells, version control, format transformations, static-site deployment, pipelines.
-- **AI Literacy** — using generative AI as a research tool, with disciplined prompt design and clear evaluation.
+## Work from the maintained knowledge
 
-Each chapter foregrounds one Computational Thinking operation (Decomposition, Pattern Recognition, Abstraction, Algorithm Design) as the methodological core.
+Start with [Index](knowledge/INDEX.md), [Project](knowledge/project.md) and [Specification](knowledge/specification.md). [Integration](knowledge/integration.md) describes the academic website relationship. [Plan](knowledge/plan.md) describes the next implementation.
 
-## Who This Is For
+## Existing renderer
 
-Eight practice-driven reader roles, detailed in `knowledge/user-stories.md`:
+With the installed project dependencies:
 
-- Edition Builder
-- Research Data Engineer
-- Cultural-Heritage Tool Maker
-- AI-Augmented Researcher
-- Knowledge Graph Builder
-- Teaching Adopter
-- Self-Learner
-- Coding Agent
-
-## Repository Layout
-
-```
-Teaching/
-├── CLAUDE.md           # action layer for AI agents
-├── README.md           # this file
-├── LICENSE-CC-BY       # content licence
-├── LICENSE-MIT         # code licence (added in Phase 0)
-├── .nojekyll           # disables GitHub's Jekyll build (added in Phase 0)
-├── package.json        # build dependencies (added in Phase 0)
-├── build.mjs           # static-site generator (added in Phase 0)
-├── knowledge/          # Promptotyping knowledge base (canonical specification)
-├── chapters/           # textbook content (added in Phase 0)
-├── site/               # site templates and assets (added in Phase 0)
-├── docs/               # build output, served by GitHub Pages (added in Phase 0)
-└── _legacy/            # archived 2022-2023 substrate (moved in Phase 0)
-```
-
-## How to Read
-
-Start with `knowledge/INDEX.md` for navigation and the project glossary. Then:
-
-- `knowledge/project.md` — what this textbook is
-- `knowledge/specification.md` — formal scope, chapter structure, quality gates
-- `knowledge/design.md` — voice and form
-- `knowledge/roadmap.md` — phases, milestones, status tracker
-
-## Build
-
-After Phase 0 is complete:
-
-```bash
-npm install
+```sh
+npm run validate
 npm run build
 ```
 
-The script reads Markdown from `chapters/`, validates frontmatter, splits each chapter's Short and Long sections, renders HTML into `docs/`, generates `chapters.json` and `search.json`, and produces redirect stubs for legacy URLs. Pipeline details in `knowledge/architecture.md`.
-
-## Method
-
-The textbook is developed under the Promptotyping method (`https://dhcraft.org/Promptotyping/`). The knowledge base in `knowledge/` is canonical; `CLAUDE.md` is the agent action layer that references it. Every writing session is recorded in `knowledge/journal.md`.
+The renderer operates on the current chapter schema. Documentation changes to the broader unit model do not migrate the renderer or its public pages.
 
 ## Licence
 
-Content: CC-BY-4.0 (existing `LICENSE-CC-BY`).
-Code and site: MIT (added in Phase 0).
-Legacy content under `_legacy/` retains its original CC-BY-4.0.
-
-## Contributing
-
-The repository is currently in an authored phase. External contributions become possible after Quality Gate B (pilot block complete) and are documented at that point.
-
-For corrections and suggestions, open a GitHub issue.
-
-## Related
-
-- `https://github.com/chpollin/Teaching` — this repository
-- `https://chpollin.github.io/Teaching/` — published site
-- `https://dhcraft.org/` — DHCraft
-- `https://dhcraft.org/Promptotyping/` — Promptotyping method
+Original teaching text follows [CC BY 4.0](LICENSE-CC-BY), and original code follows [MIT](LICENSE-MIT). Check the applicable licence and provenance of each reused source or third-party asset. Access and permission to reuse are separate properties.

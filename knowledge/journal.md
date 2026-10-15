@@ -13,7 +13,7 @@ template:
   alias: https://dhcraft.org/Promptotyping/#promptotyping-document-journal
 status: active
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-10-15
 language: en
 version: 0.1
 authors: ["Christopher Pollin"]
@@ -171,3 +171,9 @@ The knowledge folder was written in one session as a coherent piece — every do
 The English-output decision (project language = English, vault language = German) holds for the knowledge folder. The vault mirror under `Projects/` will be in German, following vault convention.
 
 No emojis. No dashes as punctuation. The voice across documents is intentionally less essayistic than the textbook itself — knowledge documents serve agents and writers, not readers; clarity and grep-ability beat style.
+
+## 2026-10-15 integrated shared Teaching direction
+
+- Source: the author's instruction to consolidate Teaching and ai-literacies and explicit confirmation that university teaching and reusable workshop material belong together.
+- Targets: project.md, specification.md, integration.md, plan.md, INDEX.md, handoff.md, README.md and the repository action layer, together with the corresponding vault and academic website knowledge.
+- Result: Teaching owns the shared material collection, ai-literacies becomes a topic area, and the academic website supplies course context and material discovery. The previous textbook completion programme is superseded; KCE remains a separate material owner. Existing source documents and the chapter renderer are retained. The public material entry, OER adaptation, subject acceptance and publication remain subsequent work.
