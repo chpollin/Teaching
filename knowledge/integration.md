@@ -14,7 +14,7 @@ language: en
 
 # Integration
 
-Teaching supplies maintained material targets to the academic website. The website owns public teaching context and material discovery; the material remains at its canonical source.
+Teaching supplies maintained material targets to the academic website. The website owns public teaching context and material discovery. The material remains at its canonical source.
 
 ## Counterpart
 
@@ -25,10 +25,10 @@ The counterpart is `chpollin/chpollin.github.io`. Its existing `content/teaching
 | Entry | User question | Content owner |
 |---|---|---|
 | University teaching | Which course is this, where does it take place, and what is taught? | Academic website and institutional sources |
-| Teaching materials | What can I learn or reuse on this topic? | Teaching supplies units; academic website supplies concise discovery text and links |
+| Teaching materials | What can I learn or reuse on this topic? | Teaching supplies units. Academic website supplies concise discovery text and links |
 | Course material references | What material belongs to this session? | Course context on the academic website, linked unit at its canonical source |
 
-The existing teaching page gains a material entry alongside the course overview. A first implementation can use ordinary links to verified material targets. A dedicated catalogue data format is introduced only when the actual selected material needs it. Free workshop materials appear through this material entry; their presence creates no institutional course attribution.
+The existing teaching page gains a material entry alongside the course overview. A first implementation can use ordinary links to verified material targets. A dedicated catalogue data format is introduced only when the actual selected material needs it. Free workshop materials appear through this material entry. Their presence creates no institutional course attribution.
 
 ## Ownership contract
 
