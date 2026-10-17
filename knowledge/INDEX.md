@@ -8,7 +8,7 @@ method:
   url: https://dhcraft.org/Promptotyping/
 status: draft
 created: 2026-05-14
-updated: 2026-10-15
+updated: 2026-10-17
 language: en
 ---
 
@@ -42,6 +42,8 @@ Teaching maintains learning materials shared across university courses and works
 The former chapter totals, mandatory dual-path writing programme and textbook acceptance milestones are superseded by the author decisions of 2026-10-15. Retained source documents preserve the earlier design. Their normative statements apply only to the old textbook context. Current requirements are in Specification. Existing machine-enforced chapter rules remain current renderer contracts until implementation changes them.
 
 ## Material locations
+
+- [Reusable learning-unit drafts](../units/README.md) provides local access to the KCE-derived verification exercise, including its source and acceptance limits.
 
 - `_legacy/` preserves historical course sources.
 - `chapters/` holds the existing chapter material in its renderer-compatible format.

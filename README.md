@@ -12,6 +12,8 @@ Current code still renders the existing chapter organisation. The broader materi
 
 ## Materials
 
+[Reusable learning-unit drafts](units/README.md) provide a local material entry with audience, prerequisites, exercises and review evidence. The first unit adapts the KCE draft on Verification, Validation und Acceptance. It remains subject to author review.
+
 - `_legacy/` contains historical course sources.
 - `chapters/` contains existing chapter material.
 - `workshops/` contains workshop examples and teaching sources.

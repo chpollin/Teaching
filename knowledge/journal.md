@@ -13,7 +13,7 @@ template:
   alias: https://dhcraft.org/Promptotyping/#promptotyping-document-journal
 status: active
 created: 2026-05-14
-updated: 2026-10-15
+updated: 2026-10-17
 language: en
 version: 0.1
 authors: ["Christopher Pollin"]
@@ -22,6 +22,13 @@ authors: ["Christopher Pollin"]
 # DH Developer Skriptum — Journal
 
 Chronological record of decisions, deviations, and writing sessions. Append-only. Newest entries on top.
+
+## 2026-10-17 Reusable verification exercise
+
+The bounded Teaching assignment selected the existing KCE draft at commit `5455a3b`, `script/drafts/verification-validation-acceptance-de.md`, as unaccepted source material. `units/verification-validation-acceptance-de.md` adapts its edition scenario for humanities learners without requiring programming, a schema validator or a model call. It adds an explicit constructed case, a display requirement, a response sheet and a worked assessment. The source draft was read in full. Its earlier external and Google checks were not repeated; no new external literature claim is introduced.
+
+The repository README and `units/README.md` supply local Markdown access. Existing chapters and course references remain unchanged. The academic website integration and public rendering are still pending. KCE term decision RD-002 and teaching-section acceptance RD-025 remain at their existing source. This adaptation has no curricular or publication acceptance. The additional remote Teaching commit concerns unrelated workshop data; it was inspected without merging.
+
 
 ## 2026-07-23 — Content-filling programme re-planned: D0 to D8 (diss-integration.md)
 
