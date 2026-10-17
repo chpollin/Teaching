@@ -23,6 +23,10 @@ authors: ["Christopher Pollin"]
 
 Chronological record of decisions, deviations, and writing sessions. Append-only. Newest entries on top.
 
+## 2026-10-17 Verification exercise simplified
+
+The direct request to refactor the current work identified duplicate material identifiers and repeated submission instructions in `units/verification-validation-acceptance-de.md`. The material table now uses the same identifiers as the task and worked assessment. The task groups evidence review, display correction, acceptance proposal and self-review into one sequence. Repeated submission and revision instructions were condensed. The learning outcome, constructed case, evidential limits, terminology reservation and rights remain in place. This bounded edit does not resume further Teaching work or establish subject acceptance.
+
 ## 2026-10-17 Reusable verification exercise
 
 The bounded Teaching assignment selected the existing KCE draft at commit `5455a3b`, `script/drafts/verification-validation-acceptance-de.md`, as unaccepted source material. `units/verification-validation-acceptance-de.md` adapts its edition scenario for humanities learners without requiring programming, a schema validator or a model call. It adds an explicit constructed case, a display requirement, a response sheet and a worked assessment. The source draft was read in full. Its earlier external and Google checks were not repeated; no new external literature claim is introduced.

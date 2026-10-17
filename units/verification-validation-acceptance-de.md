@@ -11,7 +11,7 @@ unit_id: verification-validation-acceptance-de
 
 Eine Editionsansicht kann technisch funktionieren und eine unsichere Lesung trotzdem als gesicherten Text zeigen. In dieser Einheit prüfen Sie, welche Aussage ein Befund trägt, welche Prüfung noch fehlt und unter welchen Bedingungen eine interne Besprechung vertretbar wäre.
 
-Der Text ist ein nicht abgenommener Lehrentwurf. Die Begriffe folgen vorläufig dem KCE-Entwurf vom 15. Oktober 2026. Seine offene Autorenentscheidung bleibt bestehen.
+Die Einheit ist ein Lehrentwurf. Die vorläufige Terminologie und der Prüfstand sind unter Herkunft, Rechte und Prüfstand dokumentiert.
 
 ## Zielgruppe und Lernziel
 
@@ -33,27 +33,26 @@ Ein weiterer Agent kann einen Prüfhinweis liefern. Für dessen Beurteilung muss
 
 ## Arbeitsmaterial
 
-Alle folgenden Angaben sind eigens konstruierte Übungsdaten. Sie stammen aus keiner historischen Quelle und aus keinem ausgeführten Modell- oder Validatorlauf. Die Kennungen A bis E dienen nur dem Vergleich im Fall. Es liegt weder ein vollständiges TEI-Dokument noch ein Schema vor. Sie führen deshalb keinen Schema-Check nach, sondern beurteilen die Reichweite eines vorgegebenen Befunds.
+Alle folgenden Angaben sind eigens konstruierte Übungsdaten. Sie stammen aus keiner historischen Quelle und aus keinem ausgeführten Modell- oder Validatorlauf. Die Kennungen identifizieren das Material innerhalb des Falls. Es liegt weder ein vollständiges TEI-Dokument noch ein Schema vor. Sie führen deshalb keinen Schema-Check nach, sondern beurteilen die Reichweite eines vorgegebenen Befunds.
 
 | Kennung | Material im Fall |
 |---|---|
 | A | Redaktionelle Arbeitsnotiz: „Die Lesung des Wortes `Rat` ist unsicher. Vor einer Aussage zur Quelle muss die Stelle am Original geprüft werden.“ Das Original ist im Übungspaket nicht vorhanden. |
-| B | Datenzustand B1: Text `Der Rat tagte.`; markiertes Wort `Rat`; Lesestatus `unsicher`; Bezug auf Notiz A. Diese Tabelle beschreibt den Inhalt der Auszeichnung in gewöhnlicher Sprache. |
-| C | Prüfprotokoll C1: „B1 besteht den Check gegen Schema S1.“ Weitere Prüfkriterien, die Schemadatei und die Ausführungsumgebung fehlen. |
-| D | Anzeige D1: `Der Rat tagte.` Es gibt weder eine sichtbare Unsicherheitsmarkierung noch eine Erläuterung dazu. |
-| E | Agentenbericht E1: „Die Transkription wirkt plausibel.“ Der Bericht nennt D1 als Eingabe und dokumentiert keinen Zugriff auf das Original oder B1. |
+| B1 | Datenzustand: Text `Der Rat tagte.`; markiertes Wort `Rat`; Lesestatus `unsicher`; Bezug auf Notiz A. Diese Tabelle beschreibt den Inhalt der Auszeichnung in gewöhnlicher Sprache. |
+| C1 | Prüfprotokoll: „B1 besteht den Check gegen Schema S1.“ Weitere Prüfkriterien, die Schemadatei und die Ausführungsumgebung fehlen. |
+| D1 | Anzeige: `Der Rat tagte.` Es gibt weder eine sichtbare Unsicherheitsmarkierung noch eine Erläuterung dazu. |
+| E1 | Agentenbericht: „Die Transkription wirkt plausibel.“ Der Bericht nennt D1 als Eingabe und dokumentiert keinen Zugriff auf das Original oder B1. |
 
 Für diesen Übungsfall gilt die ausdrücklich gesetzte Darstellungsanforderung R1: Jede in den Daten markierte unsichere Lesung muss in der Anzeige am betroffenen Wort erkennbar sein; eine Erläuterung muss die Bedeutung der Markierung nennen. Für die interne Besprechung soll die Darstellung dieser Unsicherheit diskutiert werden. Über die historische Richtigkeit des Wortes soll dort noch nicht entschieden werden.
 
 ## Aufgabe
 
-Bearbeiten Sie die Schritte zunächst ohne den Erwartungshorizont. Papier oder ein lokaler Texteditor genügen. Im Grunddurchgang arbeiten Sie ohne AI-Unterstützung. Optional darf ein bereits zugelassenes System anschließend Gegenargumente zum eigenen Bericht formulieren. Dokumentieren Sie dann Eingabe, Antwort und die Änderungen, die Sie selbst begründet übernehmen. Ein externer Lauf ist für diese Einheit nicht nötig.
+Bearbeiten Sie die Schritte 1 bis 3 zunächst ohne den Erwartungshorizont. Papier oder ein lokaler Texteditor genügen. Im Grunddurchgang arbeiten Sie ohne AI-Unterstützung. Optional darf ein bereits zugelassenes System anschließend Gegenargumente zum eigenen Bericht formulieren. Dokumentieren Sie dann Eingabe, Antwort und die Änderungen, die Sie selbst begründet übernehmen. Ein externer Lauf ist für diese Einheit nicht nötig.
 
-1. Vergleichen Sie B1 mit D1 anhand von R1. Benennen Sie den konkreten Unterschied und die Grenze Ihrer Aussage zur Fehlerursache.
-2. Füllen Sie die Befundtabelle unten aus. Trennen Sie eine gegebene Behauptung, einen selbst nachvollziehbaren Vergleich und eine fehlende Prüfung.
-3. Schreiben Sie eine korrigierte Anzeige D2 als gewöhnlichen Text mit einer verständlichen Markierung und Erläuterung. Prüfen Sie D2 erneut gegen R1.
-4. Entwerfen Sie einen Vorschlag für die verantwortliche Editionsleitung. Benennen Sie den vorgeschlagenen Zustand, den Zweck der internen Besprechung, die noch fehlende Quellenprüfung und die Grenze gegenüber einer Veröffentlichung. Formulieren Sie eine ausstehende Entscheidung, keine bereits erteilte Freigabe.
-5. Erklären Sie, was E1 zur Beurteilung der historischen Lesung beiträgt und welche Unterlagen für eine belastbare Prüfung nachgereicht werden müssten.
+1. Füllen Sie die Befundtabelle aus. Benennen Sie für jeden Gegenstand das Kriterium, den belegbaren Befund und die Aussagegrenze. Vergleichen Sie B1 und D1 anhand von R1. Erklären Sie auch, was C1 und E1 zur Beurteilung der historischen Lesung beitragen und welche Unterlagen dafür fehlen.
+2. Schreiben Sie eine korrigierte Anzeige D2 mit einer verständlichen Markierung und Erläuterung. Tragen Sie in der letzten Tabellenzeile ein, ob D2 die Anforderung R1 erfüllt und woran Sie das erkennen.
+3. Formulieren Sie einen Vorschlag an die Editionsleitung zur Annahme für die interne Besprechung. Nennen Sie den vorgesehenen Zustand, den Zweck, die vorhandenen Nachweise und die offenen Prüfungen. Machen Sie deutlich, wer die Entscheidung noch treffen muss und welchen weitergehenden Gebrauch Ihr Vorschlag nicht abdeckt.
+4. Vergleichen Sie Ihre Abgabe mit dem Erwartungshorizont. Überarbeiten Sie abweichende Aussagen oder begründen Sie, warum eine andere Lösung die Kriterien ebenfalls erfüllt.
 
 ### Abgabevorlage
 
@@ -65,7 +64,7 @@ Bearbeiten Sie die Schritte zunächst ohne den Erwartungshorizont. Papier oder e
 | Agentenbericht E1 | | | |
 | Eigene Anzeige D2 | | | |
 
-Ergänzen Sie unter der Tabelle die Anzeige D2 und Ihren Entscheidungsvorschlag. Der Vorschlag enthält die verantwortliche Rolle, die Zustandskennungen, den vorgesehenen Zweck, die vorhandenen Nachweise und die offenen Einschränkungen.
+Geben Sie die ausgefüllte Tabelle, Ihre Anzeige D2 und den Entscheidungsvorschlag ab.
 
 ## Erwartungshorizont
 
@@ -91,7 +90,7 @@ Ein möglicher Entscheidungsvorschlag lautet:
 
 ## Ergebnisprüfung und Reflexion
 
-Prüfen Sie Ihre Abgabe anhand der folgenden Kriterien. Eine Lehrperson oder eine andere lernende Person kann denselben Vergleich durchführen und Abweichungen mit den Materialkennungen begründen.
+Für die Selbstprüfung und die Besprechung durch eine Lehrperson oder andere Lernende gelten dieselben Kriterien. Begründen Sie Abweichungen mit den Materialkennungen.
 
 - Die Tabelle behandelt alle vorgegebenen Gegenstände und nennt für jeden Befund einen nachvollziehbaren Beleg oder ausdrücklich das Fehlen eines Belegs.
 - Der Unterschied zwischen B1 und D1 ist mit R1 begründet. Die historische Lesung bleibt offen.
@@ -99,7 +98,7 @@ Prüfen Sie Ihre Abgabe anhand der folgenden Kriterien. Eine Lehrperson oder ein
 - Der Entscheidungsvorschlag nennt Zustand, Zweck, verantwortliche Rolle und Einschränkungen. Eine erfolgte Annahme wird nicht erfunden.
 - C1 und E1 werden entsprechend ihrem dokumentierten Prüfumfang behandelt.
 
-Falls ein Kriterium fehlt, überarbeiten Sie die betreffende Zeile und erläutern Sie die Änderung. Unterschiede zwischen zwei begründeten Vorschlägen können in der Besprechung bestehen bleiben. Die Kriterien prüfen das Lernziel dieses Falls; sie sind keine validierte Messskala für AI Literacy.
+Unterschiede zwischen begründeten Vorschlägen können in der Besprechung bestehen bleiben. Die Kriterien prüfen das Lernziel dieses Falls. Sie sind keine validierte Messskala für AI Literacy.
 
 Übertragen Sie den Fall abschließend auf eine eigene Domänenaufgabe. Welche fachliche Frage könnte trotz eines bestandenen Formatchecks offenbleiben? Welche Quelle und welche verantwortliche Rolle müssten dafür hinzukommen? Der konstruierte Fall erlaubt weder einen Befund zur historischen Lesung noch eine Aussage über den Kompetenzzuwachs durch die Einheit.
 
